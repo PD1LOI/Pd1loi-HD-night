@@ -1,0 +1,13 @@
+#!/bin/sh
+rm -rf /usr/lib/enigma2/python/Plugins/Extensions/WeatherPlugin
+rm -rf /usr/lib/enigma2/python/Components/Converter/MSNWeather.py*
+rm -rf /usr/lib/enigma2/python/Components/Renderer/MSNWeatherPixmap.py*
+rm -rf /usr/lib/enigma2/python/Components/WeatherMSN.py*
+rm -rf /usr/lib/enigma2/python/Components/Sources/MSNWeather.py*
+rm -rf /usr/lib/enigma2/python/Plugins/Extensions/WeatherPlugin
+rm -rf /usr/lib/enigma2/python/Plugins/SkinComponents/WeatherComponent/README.*
+rm -rf /usr/lib/enigma2/python/Plugins/SystemPlugins/WeatherComponentHandler/*.*
+echo
+echo      Rebooting now....
+sleep 5
+init 4 && sleep 8 && init 3
