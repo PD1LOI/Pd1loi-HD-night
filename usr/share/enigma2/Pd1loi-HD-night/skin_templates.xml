@@ -189,13 +189,13 @@
 <!-- Infobar Template -->
 
 	<screen name="InfoBarTemplate">
-   <widget backgroundColor="secondBG" font="LiberationSans-Regular; 22" foregroundColor="unffff00" halign="right" noWrap="1" position="1341,944" render="Label" borderWidth="2" size="300,26" source="session.CurrentService" transparent="1" valign="top" zPosition="10">
+   <widget backgroundColor="secondBG" font="LiberationSans-Regular; 20" foregroundColor="unffff00" halign="right" noWrap="1" position="1341,944" render="Label" borderWidth="2" size="300,26" source="session.CurrentService" transparent="1" valign="top" zPosition="10">
   <convert type="ServiceName">Provider</convert>
 </widget>
-   <widget source="session.Event_Now" render="Label" position="1180,984" size="300,33" font="Regular;30" halign="right" foregroundColor="orange" backgroundColor="secondBG" transparent="1" zPosition="1">
+   <widget source="session.Event_Now" render="Label" position="1180,984" size="300,33" font="Regular;30" halign="right" foregroundColor="darkgrey" backgroundColor="secondBG" transparent="1" zPosition="1">
     <convert type="EventName">SmallRating</convert>
   </widget>
-  <widget source="session.Event_Next" render="Label" position="1180,1029" size="300,33" font="Regular;30" halign="right" foregroundColor="orange" backgroundColor="secondBG" transparent="1" zPosition="1">
+  <widget source="session.Event_Next" render="Label" position="1180,1029" size="300,33" font="Regular;30" halign="right" foregroundColor="darkgrey" backgroundColor="secondBG" transparent="1" zPosition="1">
     <convert type="EventName">SmallRating</convert>
   </widget>
  <widget backgroundColor="background" font="Regular; 32" foregroundColor="green" halign="right" position="990,855" render="Label" size="370,35" source="session.MSNWeather" transparent="1" zPosition="1">
