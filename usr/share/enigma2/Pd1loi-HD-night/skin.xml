@@ -2308,7 +2308,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
     <panel name="BasicTemplate"/>
     <ePixmap pixmap="Pd1loi-HD-night/buttons/left.png" position="1064,1030" size="34,34" alphatest="blend"/>
     <ePixmap pixmap="Pd1loi-HD-night/buttons/right.png" position="1500,1030" size="34,34" alphatest="blend"/>
-    <widget name="AboutScrollLabel" font="Fixed;26" position="30,100" size="1860,912" zPosition="2" halign="left"/>
+    <widget name="AboutScrollLabel" font="Regular;30" position="30,100" size="1860,912" zPosition="2" halign="left"/>
   </screen>
 	<!-- Translation Info -->
 	<screen flags="wfNoBorder" name="TranslationInfo" position="fill" >
