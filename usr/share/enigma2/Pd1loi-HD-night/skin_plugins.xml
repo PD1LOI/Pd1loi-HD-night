@@ -9,6 +9,7 @@
   <widget name="config" position="780,105" size="1110,350" itemHeight="45" font="Regular; 32" selectionPixmap="Pd1loi-HD-night/buttons/sel4.png" />
 
 </screen>
+  
 
   <!-- PiconPath -->  
 <screen name="piconPath" position="fill" title="piconPath" flags="wfNoBorder">
@@ -870,7 +871,7 @@ n\n\n\n\n\n\t\t\n\t\t\n\t\t\n\n\n\n\n\n
 
 	<screen name="OpenWebifConfig" position="fill" title="OpenWebif Configuration" flags="wfNoBorder">
 		<panel name="PigTemplate"/>
-		<widget name="config" position="780,100" selectionPixmap="Pd1loi-HD-night/buttons/sel4.png" size="1110,912" itemHeight="38" font="Regular;28" scrollbarMode="showOnDemand"/>
+		<widget name="config" position="780,100" selectionPixmap="Pd1loi-HD-night/buttons/sel4.png" size="1110,912" itemHeight="40" font="Regular;30" scrollbarMode="showOnDemand"/>
 		<widget name="lab1" position="780,975" halign="center" size="1110,34" zPosition="1" font="Regular;30" valign="top" transparent="1"/>
 	</screen>
 
@@ -878,14 +879,14 @@ n\n\n\n\n\n\t\t\n\t\t\n\t\t\n\n\n\n\n\n
 
 	<screen name="WebIfConfigScreen" title="Main Setup" position="fill" flags="wfNoBorder">
 		<panel name="PigTemplate"/>
-		<widget name="config" position="780,100" size="1110,912" itemHeight="38" font="Regular;28" backgroundColor="secondBG" transparent="1" scrollbarMode="showOnDemand"/>
+		<widget name="config" position="780,100" selectionPixmap="Pd1loi-HD-night/buttons/sel4.png" size="1110,912" itemHeight="38" font="Regular;28" backgroundColor="secondBG" transparent="1" scrollbarMode="showOnDemand"/>
 	</screen>
 
 	<!-- VPS Plugin -->
 
 	<screen name="VPS_Setup" position="fill" title="VPS-Plugin" flags="wfNoBorder">
 		<panel name="PigTemplate"/>
-		<widget name="config" position="780,100" size="1110,912" itemHeight="38" font="Regular;28" scrollbarMode="showOnDemand" transparent="1"/>
+		<widget name="config" position="780,100" size="1110,912" selectionPixmap="Pd1loi-HD-night/buttons/sel4.png" itemHeight="38" font="Regular;28" scrollbarMode="showOnDemand" transparent="1"/>
 		<widget source="help" render="Label" font="Regular;33" position="30,600" size="720,300" transparent="1"/>
 	</screen>
 
@@ -983,7 +984,7 @@ n\n\n\n\n\n\t\t\n\t\t\n\t\t\n\n\n\n\n\n
 	<screen name="ledManager" position="fill" title="LED Manager 0.2" flags="wfNoBorder">
 		<panel name="PigTemplate"/>
 		<panel name="ButtonGreen"/>
-		<widget name="config" position="780,105" size="1110,152" itemHeight="38" font="Regular;28" scrollbarMode="showOnDemand"/>
+		<widget name="config" position="780,105" size="1110,152" selectionPixmap="Pd1loi-HD-night/buttons/sel4.png" itemHeight="38" font="Regular;28" scrollbarMode="showOnDemand"/>
 		<widget render="Label" source="ButtonGreentext" position="678,1030" size="600,38" font="Regular;34" backgroundColor="darkgrey" zPosition="2" transparent="1" foregroundColor="grey" halign="left"/>
 	</screen>
 
@@ -1180,7 +1181,7 @@ n\n\n\n\n\n\t\t\n\t\t\n\t\t\n\n\n\n\n\n
 		<ePixmap pixmap="skin_default/buttons/key_info.png" alphatest="on" position="97,1030" size="52,38"/>
 		<eLabel text="'OK' = ZAP" backgroundColor="secondBG" font="Regular;33" halign="left" position="600,877" size="225,39" transparent="1" zPosition="1"/>
 		<widget name="info" font="Regular;33" position="30,600" size="720,232" transparent="1"/>
-		<widget name="channellist" scrollbarMode="showOnDemand" position="780,100" size="1110,912" itemHeight="38" font="Regular;28" transparent="1"/>
+		<widget name="channellist" selectionPixmap="Pd1loi-HD-night/buttons/sel4.png" scrollbarMode="showOnDemand" position="780,100" size="1110,912" itemHeight="38" font="Regular;28" transparent="1"/>
 	</screen>
 
 	<!-- Google Maps -->
@@ -1210,7 +1211,7 @@ n\n\n\n\n\n\t\t\n\t\t\n\t\t\n\n\n\n\n\n
 	<screen name="EPGImportConfig" position="fill" title="EPG Import Configuration" flags="wfNoBorder">
 		<panel name="PigTemplate"/>
 		<panel name="KeyMenuInfoTemplate"/>
-		<widget name="config" position="780,105" size="1110,600" itemHeight="38" font="Regular;28" scrollbarMode="showOnDemand"/>
+		<widget name="config" position="780,105" selectionPixmap="Pd1loi-HD-night/buttons/sel4.png" size="1110,600" itemHeight="38" font="Regular;28" scrollbarMode="showOnDemand"/>
 		<widget name="statusbar" position="780,975" size="1110,34" font="Regular;30"/>
 		<widget name="status" position="780,780" size="1110,90" font="Regular;30"/>
 	</screen>
@@ -1219,7 +1220,7 @@ n\n\n\n\n\n\t\t\n\t\t\n\t\t\n\n\n\n\n\n
 
 	<screen name="EPGImportProfile" position="fill" title="EPG Import Profile" flags="wfNoBorder">
 		<panel name="PigTemplate"/>
-		<widget name="config" position="780,105" size="1110,600" itemHeight="38" font="Regular;28" scrollbarMode="showOnDemand"/>
+		<widget name="config" selectionPixmap="Pd1loi-HD-night/buttons/sel4.png" position="780,105" size="1110,600" itemHeight="38" font="Regular;28" scrollbarMode="showOnDemand"/>
 	</screen>
 
 	<!-- EPG Import Sources -->
@@ -1240,7 +1241,7 @@ n\n\n\n\n\n\t\t\n\t\t\n\t\t\n\n\n\n\n\n
 
 	<screen name="HdmiCECSetupScreen" position="fill" title="HDMI-CEC Setup" flags="wfNoBorder">
 		<panel name="PigTemplate"/>
-		<widget name="config" position="780,105" size="1110,874" itemHeight="38" font="Regular;28" scrollbarMode="showOnDemand"/>
+		<widget name="config" selectionPixmap="Pd1loi-HD-night/buttons/sel4.png" position="780,105" size="1110,874" itemHeight="38" font="Regular;28" scrollbarMode="showOnDemand"/>
 		<widget source="current_address" render="Label" position="30,562" size="720,45" zPosition="10" font="Regular;31" halign="left" valign="center"/>
 		<widget source="fixed_address" render="Label" position="30,607" size="720,45" zPosition="10" font="Regular;31" halign="left" valign="center"/>
 	</screen>
@@ -1290,7 +1291,7 @@ n\n\n\n\n\n\t\t\n\t\t\n\t\t\n\n\n\n\n\n
 
 	<screen flags="wfNoBorder" name="CrossEPG_Providers" position="fill" title="CrossEPG Providers">
 		<panel name="PigTemplate"/>
-		<widget source="list" render="Listbox" transparent="0" position="780,100" size="1110,912" scrollbarMode="showOnDemand">
+		<widget source="list" render="Listbox" selectionPixmap="Pd1loi-HD-night/buttons/sel4.png" transparent="0" position="780,100" size="1110,912" scrollbarMode="showOnDemand">
 			<convert type="TemplatedMultiContent">
 	{"template": [
 	MultiContentEntryText(pos = (18,1), size = (660,48), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_TOP, text = 0),
@@ -2422,8 +2423,8 @@ n\n\n\n\n\n\t\t\n\t\t\n\t\t\n\n\n\n\n\n
 		<widget name="poster" position="778,110" size="165,270" alphatest="blend" />
 		<widget name="detailslabel" position="977,110" size="912,45" font="Regular;30" halign="center" foregroundColor="secondFG" />
 		<widget name="menu" position="978,169" size="912,405" selectionPixmap="Pd1loi-HD-night/buttons/sel3.png" font="Regular;35" itemHeight="45" scrollbarMode="showOnDemand" zPosition="3" enableWrapAround="1" foregroundColor="grey" />
-		<widget name="castlabel" position="978,624" size="912,390" font="Regular;33" halign="block" foregroundColor="white" />
-		<widget name="extralabel" position="978,169" size="912,455" font="Regular;30" foregroundColor="grey" />
+		<widget name="castlabel" position="978,635" size="912,380" font="Regular;33" halign="block" foregroundColor="white" />
+		<widget name="extralabel" position="978,169" size="912,465" font="Regular;30" foregroundColor="grey" />
                 <ePixmap pixmap="Pd1loi-HD-night/logos/pd1loi.png" position="30,967" size="320,40" alphatest="on" />
 	</screen>
 	<screen name="TMBDSettings" position="fill" flags="wfNoBorder">

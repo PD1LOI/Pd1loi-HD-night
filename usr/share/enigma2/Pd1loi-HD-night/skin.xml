@@ -293,9 +293,7 @@
     <widget name="status" position="0,0" size="300,53" backgroundColor="transparent" transparent="1" font="Regular;39" borderColor="black" borderWidth="2" valign="center" halign="center"/>
   </screen>
   
-  
-
-
+ 
         <!-- Overscan -->
         
         <screen name="OverscanWizard" position="fill" flags="wfNoBorder">
@@ -589,7 +587,9 @@
 	<screen name="EventView" title="Eventview" position="fill" flags="wfNoBorder">
 		<panel name="SelectionTemplate"/>
 		<panel name="KeyMenuTemplate"/>
-		<widget name="epg_description" position="780,100" size="1110,912" transparent="1" font="Regular;36" halign="left"/>
+		<widget source="Event" render="RunningText2" options="movetype=running,startpoint=0,direction=top,steptime=50,repeat=5,startdelay=20000,wrap" position="780,100" size="1110,912" backgroundColor="background" transparent="1" font="Regular;35" halign="left">
+                <convert type="EventName">ExtendedDescription</convert>
+                </widget>
 		<widget source="session.CurrentService" render="Label" position="30,525" size="720,35" foregroundColor="unffff00" font="Regular;30" valign="center" halign="center" transparent="1" zPosition="1">
 			<convert type="TransponderInfo"/>
 		</widget>
@@ -2475,11 +2475,11 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
 
 	<!-- RDS InfoDisplay -->
 
-  <screen name="RdsInfoDisplay" position="0,0" size="1920,300" backgroundColor="transparent" zPosition="-2" flags="wfNoBorder">
-  <widget position="21,33" size="1875,80" backgroundColor="transparent" transparent="1" zPosition="1" foregroundColor="unffff00" borderWidth="4" font="Regular; 46" borderColor="black" valign="center" halign="center" name="RadioText" />
-  <widget position="21,162" size="1875,80" backgroundColor="transparent" transparent="1" zPosition="1" foregroundColor="unffff00" borderWidth="4" font="Regular; 46" borderColor="black" valign="center" halign="center" name="RtpText" />
+  <screen name="RdsInfoDisplay" position="center,90" size="1920,300" backgroundColor="transparent" zPosition="-2" flags="wfNoBorder">
+  <widget position="22,12" size="1875,135" backgroundColor="transparent" transparent="1" zPosition="1" foregroundColor="unffff00" borderWidth="4" font="Regular;46" borderColor="black" valign="center" halign="center" name="RadioText" />
+  <widget position="22,156" size="1875,135" backgroundColor="transparent" transparent="1" zPosition="1" foregroundColor="unffff00" borderWidth="4" font="Regular;46" borderColor="black" valign="center" halign="center" name="RtpText" />
   <widget position="0,0" size="0,0" name="RassLogo" />
-</screen>
+  </screen>
 	
 
 
@@ -2499,9 +2499,9 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
 
 	<!-- QuickSubtitlesConfigMenu -->
 
-        <screen name="QuickSubtitlesConfigMenu" position="20,30" size="724,462" title="Subtitle settings" backgroundColor="#7f000000" flags="wfNoBorder">
-        <widget name="config" position="7,7" size="710,418" selectionPixmap="Pd1loi-HD-night/buttons/sel4.png" itemHeight="38" font="Regular;24" zPosition="1" transparent="1" valign="center" />
-        <widget name="videofps" position="10,428" size="710,30" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;24" valign="center" halign="left" foregroundColor="blue"/>
+        <screen name="QuickSubtitlesConfigMenu" position="20,30" size="800,462" title="Subtitle settings" backgroundColor="un7f000000" flags="wfNoBorder">
+        <widget name="config" position="7,7" size="786,418" selectionPixmap="Pd1loi-HD-night/buttons/sel4.png" itemHeight="38" font="Regular;26" zPosition="1" transparent="1" valign="center" />
+        <widget name="videofps" position="7,428" size="786,30" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;24" valign="center" halign="left" foregroundColor="blue" />
         </screen>
 	
 	 <!-- QuickSubtitlesClearRests -->
