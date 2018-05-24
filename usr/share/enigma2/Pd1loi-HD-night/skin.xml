@@ -894,7 +894,7 @@
 	<screen name="ChoiceBox" title="" position="fill" flags="wfNoBorder">
 		<panel name="PigTemplate"/>
 		<panel name="TextTemplate"/>
-		<widget name="list" position="780,100" size="1110,912" selectionPixmap="Pd1loi-HD-night/buttons/sel4.png" scrollbarMode="showOnDemand"/>
+		<widget name="list" position="780,108" size="1110,900" selectionPixmap="Pd1loi-HD-night/buttons/sel4.png" scrollbarMode="showOnDemand"/>
 	</screen>
 
 	<!-- SortbyChoiceBox -->
@@ -2586,4 +2586,31 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
 			<convert type="ClientsStreaming">INFO_RESOLVE_SHORT</convert>
 		</widget>
 	</screen>
+	
+	 <!-- SelectImage -->
+  <screen name="SelectImage" title="" position="fill" flags="wfNoBorder">
+    <panel name="ChoiceBox" />
+  </screen>
+	
+  <!-- Flash_OnLine -->
+	
+  <screen name="FlashOnline" position="fill" title="FlashOnline" flags="wfNoBorder">
+    <panel name="PigTemplate" />
+    <panel name="ButtonTemplate" />
+    <widget name="info-local" position="780,108" size="1110,466" halign="left" foregroundColor="unc6e0f3" font="Regular; 32" />
+    <widget name="info-online" position="780,578" size="1110,180" halign="left" font="Regular; 30" foregroundColor="unffff00" />
+  </screen>
+	
+  <screen name="doFlashImage" position="fill" title="FlashOnline" flags="wfNoBorder">
+    <panel name="PigTemplate" />
+    <panel name="ButtonTemplate" />
+    <widget name="imageList" position="780,108" size="1110,466" halign="left" scrollbarMode="showOnDemand" itemHeight="38" selectionPixmap="Pd1loi-HD-night/buttons/sel4.png" foregroundColor="unc6e0f3" font="Regular; 32" />
+  </screen>
+	
+  <screen name="DeviceBrowser" position="fill" title="FlashOnline" flags="wfNoBorder">
+    <panel name="PigTemplate" />
+    <panel name="ButtonTemplate" />
+    <widget name="filelist" position="780,108" size="1110,466" halign="left" scrollbarMode="showOnDemand" itemHeight="38" selectionPixmap="Pd1loi-HD-night/buttons/sel4.png" foregroundColor="unc6e0f3" font="Regular; 32" />
+    <widget name="message" position="780,108" size="1110,466" halign="left" foregroundColor="unc6e0f3" font="Regular; 32" />
+  </screen>
 </skin>
