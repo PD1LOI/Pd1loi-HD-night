@@ -894,7 +894,7 @@
 	<screen name="ChoiceBox" title="" position="fill" flags="wfNoBorder">
 		<panel name="PigTemplate"/>
 		<panel name="TextTemplate"/>
-		<widget name="list" position="780,108" size="1110,900" selectionPixmap="Pd1loi-HD-night/buttons/sel4.png" scrollbarMode="showOnDemand"/>
+		<widget name="list" position="780,100" size="1110,912" selectionPixmap="Pd1loi-HD-night/buttons/sel4.png" scrollbarMode="showOnDemand"/>
 	</screen>
 
 	<!-- SortbyChoiceBox -->
