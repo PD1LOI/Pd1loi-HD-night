@@ -19,6 +19,7 @@
                 <font filename="/usr/share/enigma2/Pd1loi-HD-night/fonts/hdi.ttf" name="Crs" scale="100" />
                 <font filename="/usr/share/enigma2/Pd1loi-HD-night/fonts/lcd.ttf" name="LCD" scale="100" />
                 <font filename="/usr/share/enigma2/Pd1loi-HD-night/fonts/tuxtxt.ttf" name="Console" scale="100" />
+		<font filename="/usr/share/enigma2/Pd1loi-HD-night/fonts/prive3.ttf" name="prive3" scale="100" /
                 <font filename="/usr/share/enigma2/Pd1loi-HD-night/fonts/LADYCA__.ttf" name="Ladyca" scale="100" />
                 <font filename="/usr/share/enigma2/Pd1loi-HD-night/fonts/Megadeth.ttf" name="Megadeth" scale="100" />
                 <font filename="/usr/share/enigma2/Pd1loi-HD-night/fonts/OpenSans-Regular.ttf" name="OpenSans" scale="100" />
