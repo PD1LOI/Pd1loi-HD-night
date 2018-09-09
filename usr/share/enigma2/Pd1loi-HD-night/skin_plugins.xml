@@ -32,6 +32,35 @@
     <ePixmap pixmap="Pd1loi-HD-night/border/smallshadowline.png" position="0,1020" size="1920,3" />
   </screen>
 
+  	<!-- SetPicon -->
+
+	<screen name="setPicon" position="fill" title="SetPicon" flags="wfNoBorder">
+		<panel name="PigTemplate"/>
+		<panel name="KeyMenuTemplate"/>
+		<panel name="KeyOkTemplate"/>
+  <widget name="nowpicon" position="1605,165" zPosition="2" size="150,112" alphatest="on" />
+  <widget name="name" position="945,165" zPosition="2" size="450,45" valign="center" halign="left" font="Regular;37" foregroundColor="orange1" />
+  <widget name="current" position="1440,172" zPosition="2" size="150,33" valign="top" halign="right" font="Regular;27" foregroundColor="white" />
+  <widget name="reference" position="945,225" zPosition="2" size="645,37" valign="center" halign="left" font="Regular;30" foregroundColor="unffff00" />
+  <widget name="orbital" position="945,270" zPosition="2" size="150,37" valign="center" halign="left" font="Regular;30" foregroundColor="white" />
+  <widget name="provider" position="945,315" zPosition="2" size="645,37" valign="center" halign="left" font="Regular;30" foregroundColor="white" />
+  <widget name="text" position="945,412" zPosition="2" size="810,37" valign="center" halign="left" font="Regular; 28" foregroundColor="myblue" />
+  <ePixmap pixmap="~/img/borderhd.png" position="1267,472" zPosition="1" size="165,128" />
+  <widget name="picon2l" position="945,480" zPosition="2" size="150,112" alphatest="on" />
+  <widget name="picon1l" position="1110,480" zPosition="2" size="150,112" alphatest="on" />
+  <widget name="picon" position="1275,480" zPosition="2" size="150,112" alphatest="on" />
+  <widget name="picon1p" position="1440,480" zPosition="2" size="150,112" alphatest="on" />
+  <widget name="picon2p" position="1605,480" zPosition="2" size="150,112" alphatest="on" />
+  <widget name="message" position="1275,607" zPosition="2" size="150,30" valign="center" halign="center" font="Regular;27" foregroundColor="white" />
+  <widget name="path" position="945,675" zPosition="2" size="810,33" valign="center" halign="center" font="Regular; 28" foregroundColor="green" />
+  <widget name="search" position="945,787" zPosition="2" size="300,33" valign="center" halign="left" font="Regular;27" foregroundColor="white" />
+</screen>>
+
+	<screen name="setPiconCfg" position="fill" title="SetPicon Setup" flags="wfNoBorder">
+		<panel name="PigTemplate"/>
+  <widget name="config" position="780,105" selectionPixmap="Pd1loi-HD-night/buttons/sel4.png" size="1110,684" itemHeight="38" font="Regular; 30" zPosition="1" transparent="0" backgroundColor="black" scrollbarMode="showOnDemand" />
+  <widget name="statusbar" position="780,975" size="1110,34" font="Regular;30" halign="center" backgroundColor="black" foregroundColor="unffff00" />
+</screen>
 
   <!-- SetPiconPath -->    
  <screen name="SetPiconPath" position="fill" title="Picon Path Set" flags="wfNoBorder">
@@ -1728,35 +1757,7 @@ n\n\n\n\n\n\t\t\n\t\t\n\t\t\n\n\n\n\n\n
 		<widget name="6" pixmaps="skin_default/buttons/button_green_off.png,skin_default/buttons/button_green.png" position="780,344" zPosition="10" size="22,24" transparent="1" alphatest="on"/>
 	</screen>
 
-	<!-- SetPicon -->
 
-	<screen name="setPicon" position="fill" title="SetPicon" flags="wfNoBorder">
-		<panel name="PigTemplate"/>
-		<panel name="KeyMenuTemplate"/>
-		<panel name="KeyOkTemplate"/>
-		<widget name="nowpicon" position="1605,165" zPosition="2" size="150,112" alphatest="on"/>
-		<widget name="name" position="945,165" zPosition="2" size="450,45" valign="center" halign="left" font="Regular;37" foregroundColor="white"/>
-		<widget name="current" position="1440,172" zPosition="2" size="150,33" valign="top" halign="right" font="Regular;27" foregroundColor="white"/>
-		<widget name="reference" position="945,225" zPosition="2" size="645,37" valign="center" halign="left" font="Regular;30" foregroundColor="white"/>
-		<widget name="orbital" position="945,270" zPosition="2" size="150,37" valign="center" halign="left" font="Regular;30" foregroundColor="white"/>
-		<widget name="provider" position="945,315" zPosition="2" size="645,37" valign="center" halign="left" font="Regular;30" foregroundColor="white"/>
-		<widget name="text" position="945,420" zPosition="2" size="810,37" valign="center" halign="left" font="Regular;27" foregroundColor="white"/>
-		<ePixmap pixmap="~/img/borderhd.png" position="1267,472" zPosition="1" size="165,128"/>
-		<widget name="picon2l" position="945,480" zPosition="2" size="150,112" alphatest="on"/>
-		<widget name="picon1l" position="1110,480" zPosition="2" size="150,112" alphatest="on"/>
-		<widget name="picon" position="1275,480" zPosition="2" size="150,112" alphatest="on"/>
-		<widget name="picon1p" position="1440,480" zPosition="2" size="150,112" alphatest="on"/>
-		<widget name="picon2p" position="1605,480" zPosition="2" size="150,112" alphatest="on"/>
-		<widget name="message" position="1275,607" zPosition="2" size="150,30" valign="center" halign="center" font="Regular;27" foregroundColor="white"/>
-		<widget name="path" position="945,675" zPosition="2" size="810,33" valign="center" halign="center" font="Regular;27" foregroundColor="white"/>
-		<widget name="search" position="945,787" zPosition="2" size="300,33" valign="center" halign="left" font="Regular;27" foregroundColor="white"/>
-	</screen>
-
-	<screen name="setPiconCfg" position="fill" title="SetPicon Setup" flags="wfNoBorder">
-		<panel name="PigTemplate"/>
-		<widget name="config" position="780,105" size="1110,684" itemHeight="38" font="Regular;28" zPosition="1" transparent="0" backgroundColor="black" scrollbarMode="showOnDemand"/>
-		<widget name="statusbar" position="780,975" size="1110,34" font="Regular;30" halign="center" backgroundColor="black"/>
-	</screen>
 
 	<!-- Clear Memory -->
 
@@ -2072,37 +2073,33 @@ n\n\n\n\n\n\t\t\n\t\t\n\t\t\n\n\n\n\n\n
 
 	<screen name="SystemToolsSc" position="fill" title="System Tools Main Menu" flags="wfNoBorder">
 		<panel name="PigTemplate"/>
-		<widget name="entries" selectionPixmap="Pd1loi-HD-night/buttons/sel14.png" position="780,105" size="1110,699" font="Regular;36" itemHeight="55" scrollbarMode="showOnDemand"/>
+		<widget name="entries" selectionPixmap="Pd1loi-HD-night/buttons/sel14.png" position="780,105" size="1110,699" font="Regular;34" itemHeight="50" scrollbarMode="showOnDemand"/>
 	</screen>
 	<screen name="SystemToolsConfig" position="fill" title="System Tools Config Screen" flags="wfNoBorder">
 		<panel name="PigTemplate"/>
-		<widget name="config" selectionPixmap="Pd1loi-HD-night/buttons/sel14.png" position="780,105" size="1110,699" itemHeight="38" font="Regular;32" scrollbarMode="showOnDemand"/>
+		<widget name="config" selectionPixmap="Pd1loi-HD-night/buttons/sel14.png" position="780,105" size="1110,699" itemHeight="45" font="Regular;32" scrollbarMode="showOnDemand"/>
 	</screen>
 	<screen name="SystemToolsInf" position="fill" title="System Tools Info Menu" flags="wfNoBorder">
 		<panel name="PigTemplate"/>
-		<widget name="entries" selectionPixmap="Pd1loi-HD-night/buttons/sel14.png" position="780,105" size="1110,699" font="Regular;36" itemHeight="55" scrollbarMode="showOnDemand"/>
+		<widget name="entries" selectionPixmap="Pd1loi-HD-night/buttons/sel14.png" position="780,105" size="1110,699" font="Regular;34" itemHeight="50" scrollbarMode="showOnDemand"/>
 	</screen>
 	<screen name="SystemToolsSwap" position="fill" title="System Tools Swapfile Menu" flags="wfNoBorder">
 		<panel name="PigTemplate"/>
-		<widget name="entries" selectionPixmap="Pd1loi-HD-night/buttons/sel14.png" position="780,105" size="1110,699" font="Regular;36" itemHeight="55" scrollbarMode="showOnDemand"/>
+		<widget name="entries" selectionPixmap="Pd1loi-HD-night/buttons/sel14.png" position="780,105" size="1110,699" font="Regular;34" itemHeight="50" scrollbarMode="showOnDemand"/>
 	</screen>
 	<screen name="SystemToolsTextBox" position="fill" title="System Tools Text Box" flags="wfNoBorder">
 		<panel name="PigTemplate"/>
-		<widget name="text" position="780,105" size="1110,699" font="prive3;34" scrollbarMode="showOnDemand"/>
+		<widget name="text" position="780,105" size="1110,699" font="prive;32" scrollbarMode="showOnDemand"/>
 	</screen>
 	<screen name="SystemToolsConsole" position="fill" title="System Tools Console" flags="wfNoBorder">
 		<panel name="PigTemplate"/>
-		<widget name="text" position="780,105" size="1110,699" font="prive3;34" scrollbarMode="showOnDemand"/>
+		<widget name="text" position="780,105" size="1110,699" font="prive;32" scrollbarMode="showOnDemand"/>
 	</screen>
 
 	<screen name="SystemToolsTextBox2" position="fill" title="System Tools Text Box" flags="wfNoBorder">
 		<panel name="PigTemplate"/>
-		<widget name="text" position="780,105" size="1110,699" font="prive3;34" scrollbarMode="showOnDemand"/>
+		<widget name="text" position="780,105" size="1110,699" font="prive;34" scrollbarMode="showOnDemand"/>
 	</screen>
-
-	
-
-	
 
 
 	<!-- Videoenhancement -->
