@@ -367,7 +367,14 @@
             <widget name="marker" zPosition="2" position="%d,%d" size="%d,%d" transparent="1" alphatest="blend" />
             <widget name="page_marker" zPosition="3" position="%d,%d" size="%d,%d" transparent="1" alphatest="blend" />
             </screen>
- 
+            
+  <screen name="IPTVUpdateMainWindow" position="center,center" title="">\n 
+  <panel name="PigTemplate" />
+  <panel name="KeyInfoTemplate" />           
+<widget name="sub_title" position="35,617" zPosition="2" size="600,35" valign="center" halign="left" font="Regular;22" transparent="1" foregroundColor="white" />\n            
+<widget name="list" position="780,105" size="1110,699" selectionPixmap="Pd1loi-HD-night/buttons/sel4.png" zPosition="1" enableWrapAround="1" transparent="1" scrollbarMode="showOnDemand" />\n            
+<widget name="console" position="35,528" size="700,85" zPosition="2" valign="center" halign="center" font="Regular;34" transparent="0" foregroundColor="white" backgroundColor="black" />\n    
+</screen>
 
 
           <!-- EasyMedia -->
