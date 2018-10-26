@@ -836,7 +836,7 @@
 		</widget>
 		<widget name="network" position="135,105" size="705,45" valign="center" zPosition="2" font="Regular;33" transparent="1"/>
 		<widget name="transponder" position="135,157" size="705,45" valign="center" zPosition="2" font="Regular;33" transparent="1"/>
-		<widget name="scan_progress" position="30,270" size="810,22" pixmap="Pd1loi-HD-night/infobar/progress_big.png" borderWidth="2" borderColor="#cccccc"/>
+		<widget name="scan_progress" position="30,270" size="810,22" pixmap="Pd1loi-HD-night/infobar/progress_big.png" borderWidth="1" borderColor="#cccccc"/>
 		<widget name="scan_state" position="30,307" zPosition="2" size="810,70" valign="top" font="Regular;30" transparent="1"/>
 		<widget name="pass" position="30,380" size="810,45" valign="center" font="Regular;33" transparent="1"/>
 		<widget name="servicelist" position="870,100" size="1020,912" selectionPixmap="Pd1loi-HD-night/buttons/sel4.png" itemHeight="38" font="Regular;28" selectionDisabled="1" scrollbarMode="showOnDemand"/>
@@ -855,7 +855,7 @@
 		<panel name="BasicTemplate"/>
 		<widget name="frontend" pixmap="Pd1loi-HD-night/icons/scan-s.png" position="30,105" size="96,96" zPosition="2" transparent="1" alphatest="on"/>
 		<widget name="scan_state" position="30,270" zPosition="2" size="810,45" valign="center" font="Regular;30" transparent="1"/>
-		<widget name="scan_progress" position="30,322" size="810,22" pixmap="Pd1loi-HD-night/infobar/progress_big.png" borderWidth="2" borderColor="#cccccc"/>
+		<widget name="scan_progress" position="30,322" size="810,22" pixmap="Pd1loi-HD-night/infobar/progress_big.png" borderWidth="1" borderColor="#cccccc"/>
 	</screen>
 	
 	<!-- CableScan -->
@@ -872,7 +872,7 @@
 		<panel name="BasicTemplate"/>
 		<widget name="frontend" pixmap="Pd1loi-HD-night/icons/scan-c.png" position="30,105" size="96,96" zPosition="2" transparent="1" alphatest="on"/>
 		<widget name="scan_state" position="30,270" zPosition="2" size="810,45" valign="center" font="Regular;30" transparent="1"/>
-		<widget name="scan_progress" position="30,322" size="810,22" pixmap="Pd1loi-HD-night/infobar/progress_big.png" borderWidth="2" borderColor="#cccccc"/>
+		<widget name="scan_progress" position="30,322" size="810,22" pixmap="Pd1loi-HD-night/infobar/progress_big.png" borderWidth="1" borderColor="#cccccc"/>
 	</screen>
 
 	<!-- RecordPathSettings -->
