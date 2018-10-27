@@ -694,6 +694,7 @@ n\n\n\n\n\n\t\t\n\t\t\n\t\t\n\n\n\n\n\n
   <widget name="display" position="60,982" size="1800,40" zPosition="1" transparent="1" font="Regular;28" foregroundColor="unfcc000" />
 </screen>
 
+
 <screen name="iDreamAddToDatabase" position="center,center" size="1920,1080" title="Add music files to iDream database" flags="wfNoBorder">
   <ePixmap pixmap="Pd1loi-HD-night/buttons/red.png" position="192,1032" size="34,34" alphatest="blend" />
   <ePixmap pixmap="Pd1loi-HD-night/buttons/green.png" position="628,1032" size="34,34" alphatest="blend" />
@@ -706,6 +707,7 @@ n\n\n\n\n\n\t\t\n\t\t\n\t\t\n\n\n\n\n\n
   
 </screen> 
        
+
 	<!-- PartnerBox -->
 
 	<screen name="CurrentRemoteTV" position="fill" flags="wfNoBorder"> <!--remote info -->
