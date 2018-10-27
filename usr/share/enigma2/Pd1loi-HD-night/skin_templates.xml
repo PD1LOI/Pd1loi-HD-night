@@ -217,7 +217,7 @@
   <widget backgroundColor="background" font="Regular2; 30" foregroundColor="red" halign="center" position="1530,855" render="Label" size="310,35" source="session.MSNWeather" transparent="1" zPosition="1">
     <convert type="MSNWeather">winddisplay</convert>
   </widget>
-  <widget alphatest="blend" position="1800,847" render="MSNWeatherPixmap" size="90,90" source="session.MSNWeather" zPosition="5" transparent="0">
+  <widget alphatest="blend" position="1800,830" render="MSNWeatherPixmap" size="100,100" source="session.MSNWeather" zPosition="5" transparent="0">
     <convert type="MSNWeather">weathericon,current,/usr/share/enigma2/weather_icons/,png</convert>
   </widget>
   <widget backgroundColor="secondBG" font="OpenSans; 24" foregroundColor="orange" halign="center" zPosition="1" position="1705,946" render="Label" size="71,30" source="session.CurrentService" transparent="1">
