@@ -214,7 +214,7 @@
   <widget backgroundColor="background" font="Regular2; 30" foregroundColor="unffff00" halign="center" position="1463,855" render="Label" size="80,35" source="session.MSNWeather" transparent="1" zPosition="1">
     <convert type="MSNWeather">temperature_current</convert>
   </widget>
-  <widget backgroundColor="background" font="Regular2; 30" foregroundColor="red" halign="center" position="1522,855" render="Label" size="310,35" source="session.MSNWeather" transparent="1" zPosition="1">
+  <widget backgroundColor="background" font="Regular2; 30" foregroundColor="red" halign="center" position="1515,855" render="Label" size="310,35" source="session.MSNWeather" transparent="1" zPosition="1">
     <convert type="MSNWeather">winddisplay</convert>
   </widget>
 <widget alphatest="blend" position="1800,830" size="100,100" render="MSNWeatherPixmap" source="session.MSNWeather" zPosition="5" transparent="0">
