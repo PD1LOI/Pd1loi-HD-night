@@ -2206,7 +2206,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
 		<convert type="FrontendInfo">SNR</convert>
 	</widget>
 	
-	<widget source="Frontend" render="Progress" pixmap="Pd1loi-HD-night/infobar/bar_big.png" position="30,240" size="1860,75" borderWidth="1" borderColor="un808888">
+	<widget source="Frontend" render="Progress" pixmap="Pd1loi-HD-night/infobar/bar_big1.png" position="30,240" size="1860,75" borderWidth="1" borderColor="un808888">
 		<convert type="FrontendInfo">AGC</convert>
 	</widget>
 	<eLabel text="AGC:" position="37,240" size="150,75" valign="center" backgroundColor="darkgrey" borderWidth="1" transparent="1" font="Regular;52" foregroundColor="blue" />
