@@ -2229,7 +2229,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
 		<convert type="FrontendInfo">BER</convert>
 	</widget>
 
-	<widget text="LOCK" source="Frontend" render="FixedLabel" position="30,900" size="465,135" font="Crs; 108" halign="left" foregroundColor="green" backgroundColor="darkgrey" transparent="1">
+	<widget text="LOCK" source="Frontend" render="FixedLabel" position="30,884" size="465,135" font="Crs; 108" halign="left" foregroundColor="green" backgroundColor="darkgrey" transparent="1">
 		<convert type="FrontendInfo">LOCK</convert>
 		<convert type="ConditionalShowHide" />
 	</widget>
