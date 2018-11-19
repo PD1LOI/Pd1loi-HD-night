@@ -30,6 +30,28 @@
     <ePixmap pixmap="Pd1loi-HD-night/border/smallshadowline.png" position="0,1020" size="1920,3" />
   </screen>
 
+  <!-- SwapManager -->
+
+<screen name="SwapManager" position="fill" title="Swap File Manager" flags="wfBorder">
+<panel name="PigTemplate" />
+<ePixmap pixmap="Pd1loi-HD-night/buttons/red.png" position="192,1032" size="34,34" alphatest="blend" />
+  <ePixmap pixmap="Pd1loi-HD-night/buttons/green.png" position="628,1032" size="34,34" alphatest="blend" />
+   <ePixmap pixmap="Pd1loi-HD-night/buttons/yellow.png" position="1064,1032" size="34,34" alphatest="blend" />
+    <widget name="key_red" position="242,1030" size="370,38" foregroundColor="red" backgroundColor="black" zPosition="1" transparent="1" font="Regular;34" halign="left" />
+		<widget name="key_green" position="678,1030" size="370,38" foregroundColor="green" backgroundColor="black" zPosition="1" transparent="1" font="Regular;34" halign="left" />
+		<widget name="key_yellow" position="1114,1030" size="370,38" foregroundColor="yellow" backgroundColor="black" zPosition="1" transparent="1" font="Regular;34" halign="left" />
+		<widget name="autostart_off" position="780,108" zPosition="1" pixmap="skin_default/icons/lock_off.png" size="35,35" alphatest="on" />
+		<widget name="autostart_on" position="780,108" zPosition="2" pixmap="skin_default/icons/lock_on.png" size="35,35" alphatest="on" />
+		<widget name="lab1" position="823,108" size="640,40" font="Regular; 30" valign="center" transparent="1" halign="center" />
+		<widget name="lab2" position="780,170" size="350,40" font="Regular; 30" valign="center" transparent="1" />
+		<widget name="lab3" position="780,231" size="350,40" font="Regular; 30" valign="center" transparent="1" />
+		<widget name="lab4" position="780,293" size="350,40" font="Regular; 30" valign="center" transparent="1" />
+		<widget name="labplace" position="1134,170" size="330,40" font="Regular; 32" valign="center" backgroundColor="#4D5375" halign="center" />
+		<widget name="labsize" position="1134,231" size="330,40" font="Regular; 30" valign="center" backgroundColor="#4D5375" halign="center" />
+		<widget name="inactive" position="1134,293" size="330,40" font="Regular; 30" valign="center" halign="center" backgroundColor="red" />
+		<widget name="active" position="1134,293" size="330,40" font="Regular; 30" valign="center" halign="center" backgroundColor="green" />
+                </screen>	
+	
   	<!-- SetPicon -->
 
 	<screen name="setPicon" position="fill" title="SetPicon" flags="wfNoBorder">
