@@ -628,7 +628,6 @@ n\n\n\n\n\n\t\t\n\t\t\n\t\t\n\n\n\n\n\n
   <panel name="KeyMenuTemplate" />
   <ePixmap pixmap="Pd1loi-HD-night/logos/pd1loi.png" position="30,967" size="320,40" alphatest="on"/>
   <widget name="menu" position="780,108" foregroundColor="unc6e0f3" size="1110,900" font="Regular; 32" itemHeight="38" scrollbarMode="showOnDemand" selectionPixmap="Pd1loi-HD-night/buttons/sel4.png" />
-     <eLabel text="Exit" position="242,1030" size="370,38" backgroundColor="secondBG" transparent="1" zPosition="2" font="Regular; 30" valign="center" halign="left" foregroundColor="red" />
   </screen>
   
   <screen flags="wfNoBorder" name="OpenUgSetupScreen" position="fill" title="OpenUgSetupScreen">
