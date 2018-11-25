@@ -30,7 +30,7 @@
                 <font filename="/usr/share/enigma2/Pd1loi-HD-night/fonts/army-digital.ttf" name="army-digital" scale="100" />
                 <font filename="/usr/share/enigma2/Pd1loi-HD-night/fonts/LiberationSans-Regular.ttf" name="LiberationSans-Regular" scale="100" />
 		<alias name="ChoiceList" font="Regular" size="28" height="38"/>
-		<alias name="FileList" font="Regular" size="28" height="38"/>
+		<alias name="FileList" font="Regular" size="30" height="40"/>
 		<alias name="FileListMulti" font="Regular" size="28" height="38"/>
 		<alias name="PluginBrowser0" font="Regular" size="32" height="76"/>
 		<alias name="PluginBrowser1" font="Regular" size="22"/>
@@ -53,9 +53,9 @@
 		<alias name="Dreamexplorer" font="Regular" size="30" height="45"/>
 		<alias name="PlayList" font="Regular" size="28" height="38"/>
                 <alias name="Weermenu" font="Regular" size="28" height="38"/>
-                <alias name="EasyMedia" font="Regular" size="32"/>
-                <alias name="OpenUitzendingGemist" font="Regular" size="32" height="38"/>
-                <alias name="iptvlistitem" font="Regular" size="32" height="40"/>
+                <alias name="EasyMedia" font="Regular" size="32" height="38"/>
+                <alias name="MPanelListsetFont" font="Regular" size="32" height="38"/>
+                <alias name="iptvlistitem" font="Regular" size="32" height="40"/> 
         </fonts>	
 
 	<!-- Colors -->
@@ -2380,9 +2380,9 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
 		<panel name="PigTemplate"/>
 		<panel name="KeyInfoTemplate"/>
 		<panel name="KeyMenuTemplate"/>
-		<widget name="config" position="780,105" size="1110,300" selectionPixmap="Pd1loi-HD-night/buttons/sel4.png" itemHeight="38" font="Regular;28" scrollbarMode="showOnDemand"/>
-		<widget name="status" position="780,495" size="1110,210" font="Regular;28"/>
-		<widget name="statusbar" position="780,750" size="1110,30" font="Regular;28"/>
+		<widget name="config" position="780,105" size="1110,300" selectionPixmap="Pd1loi-HD-night/buttons/sel4.png" itemHeight="40" font="Regular;32" scrollbarMode="showOnDemand"/>
+		<widget name="status" position="780,495" size="1110,210" font="Regular;32"/>
+		<widget name="statusbar" position="780,750" size="1110,30" font="Regular;32"/>
 	</screen>
 
 	<!-- PicturePlayer -->
