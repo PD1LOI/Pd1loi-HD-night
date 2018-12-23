@@ -593,7 +593,7 @@
 		</widget>
 	</screen>
 
-<screen name="EventView" title="Eventview" position="fill" flags="wfNoBorder">
+	<screen name="EventView" title="Eventview" position="fill" flags="wfNoBorder">
   <panel name="SelectionTemplate" />
   <panel name="KeyMenuTemplate" />
   <widget name="epg_description" position="780,100" size="1110,912" transparent="1" font="Regular;36" halign="left" />
@@ -613,7 +613,7 @@
   <widget source="session.Event_Now" render="Label" position="30,832" size="720,35" transparent="1" zPosition="1" foregroundColor="blue" font="Regular;32" halign="left">
     <convert type="EventName">Rating</convert>
   </widget>
-  <widget source="Service" render="NextEpgInfo" position="30,943" size="720,64" transparent="1" font="Regular;28" noWrap="1" NumberOfItems="2" noLabel="1" foregroundColor="secondFG" timeColor="grey" numOfSpaces="2" />
+<widget source="Service" render="NextEpgInfo" position="30,943" size="720,64" transparent="1" font="Regular;28" noWrap="1" NumberOfItems="2" noLabel="1" foregroundColor="secondFG" timeColor="grey" numOfSpaces="2" />
 </screen>
 
 	<screen name="EPGSelectionMulti" title="EPG Selection" position="fill" flags="wfNoBorder">
