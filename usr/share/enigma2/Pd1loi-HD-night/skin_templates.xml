@@ -48,8 +48,8 @@
 	</screen>
 
 	<screen name="TextTemplate">
-		<widget name="text" position="30,535" size="725,150" foregroundColor="unffff00" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;36" valign="center" halign="left"/>
-	</screen>
+		<widget name="text" position="30,535" size="725,150" foregroundColor="unffff00" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;36" valign="top" halign="left" />
+                </screen>
 
 	<screen name="SelectionTemplate">
 		<panel name="BasicTemplate"/>
@@ -75,8 +75,7 @@
 
 	<screen name="MenuTemplate">
 		<panel name="PigTemplate"/>
- 	   <!-- <widget source="title" foregroundColor="orange1" render="Label" position="30,7" size="1860,75" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;36" valign="center" halign="left"/> -->
-		<widget source="menu" render="Listbox" selectionPixmap="Pd1loi-HD-night/buttons/sel6.png" position="780,105" size="1110,900" font="Regular;36" transparent="1" scrollbarMode="showOnDemand">
+          <widget source="menu" render="Listbox" selectionPixmap="Pd1loi-HD-night/buttons/sel6.png" position="780,105" size="1110,900" font="Regular;36" transparent="1" scrollbarMode="showOnDemand">
 			<convert type="TemplatedMultiContent">
 				{"template": [ MultiContentEntryText(pos = (75,15),size = (1035,45),flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER,text = 0) ],
 		"fonts": [gFont("Regular",36)],
