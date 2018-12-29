@@ -442,7 +442,7 @@
         <screen flags="wfNoBorder" name="EasyMedia" position="0,0" size="720,1280" title="Easy Media">
         <ePixmap pixmap="Pd1loi-HD-night/buttons/bg1.png" position="0,0" size="720,1280" />
         <ePixmap pixmap="Pd1loi-HD-night/buttons/bg1.png" position="0,1280" size="720,200" />
-        <widget name="list" position="15,30" scrollbarMode="showNever" font="Regular;32" selectionPixmap="Pd1loi-HD-night/buttons/sel4.png" size="575,1250" transparent="1" zPosition="10" />
+        <widget name="list" position="15,30" scrollbarMode="showNever" font="Regular;32" selectionPixmap="Pd1loi-HD-night/buttons/sel06.png" size="575,1250" transparent="1" zPosition="10" />
         </screen>       
        
               
