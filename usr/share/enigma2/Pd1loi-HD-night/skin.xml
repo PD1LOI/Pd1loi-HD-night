@@ -954,8 +954,15 @@
 		<eLabel position="825,459" size="990,3" backgroundColor="grey"/>
 		<widget name="ServiceList" position="885,472" size="900,450" backgroundColor="background" zPosition="1" transparent="1" scrollbarMode="showOnDemand"/>
 		<widget source="ServiceList_info" render="Label" position="825,472" size="990,450" backgroundColor="background" zPosition="2" transparent="1" font="Regular;33"/>
-	</screen>
+	</screen> 
+	
+	<!-- SelectImage -->
 
+	<screen name="SelectImage" title="" position="fill" flags="wfNoBorder">
+		<panel name="ChoiceBox"/>
+	</screen>	
+	
+	
 	<!-- Console -->
   
 
@@ -2477,9 +2484,9 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
 
 	<!-- RDS InfoDisplay -->
 
-<screen name="RdsInfoDisplay" position="0,840" size="1920,240" backgroundColor="transparent" zPosition="-2" flags="wfNoBorder">
-  <widget position="21,50" size="1875,70" backgroundColor="transparent" transparent="1" zPosition="1" foregroundColor="white" borderWidth="4" font="Regular; 46" borderColor="black" valign="center" halign="center" name="RadioText" />
-  <widget position="21,120" size="1875,70" backgroundColor="transparent" transparent="1" zPosition="1" foregroundColor="white" borderWidth="4" font="Regular; 46" borderColor="black" valign="center" halign="center" name="RtpText" />
+<screen name="RdsInfoDisplay" position="0,780" size="1920,300" backgroundColor="transparent" zPosition="-2" flags="wfNoBorder">
+   <widget position="22,53" size="1875,100" backgroundColor="transparent" transparent="1" zPosition="1" foregroundColor="white" borderWidth="4" font="Regular; 46" borderColor="black" valign="center" halign="center" name="RadioText" />
+  <widget position="22,157" size="1875,100" backgroundColor="transparent" transparent="1" zPosition="1" foregroundColor="white" borderWidth="4" font="Regular; 46" borderColor="black" valign="center" halign="center" name="RtpText" />
   <widget position="0,0" size="0,0" name="RassLogo" />
 </screen>
 	
