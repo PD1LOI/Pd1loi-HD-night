@@ -993,7 +993,7 @@
 	<!-- PVR State -->
 
 	<screen name="PVRState" position="192,172" size="225,45" backgroundColor="transparent" zPosition="2" flags="wfNoBorder">
-		<widget name="state" position="0,0" size="225,45" backgroundColor="transparent" borderWidth="2" font="Regular;37" borderColor="black" halign="left"/>
+		<widget name="state" position="0,0" size="225,45" foregroundColor="unffff00" backgroundColor="transparent" borderWidth="2" font="Regular;37" borderColor="black" halign="left"/>
 	</screen>
 
 	<!-- Timeshift state -->
