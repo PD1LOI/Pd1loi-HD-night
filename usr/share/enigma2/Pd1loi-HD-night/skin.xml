@@ -2027,7 +2027,7 @@
 		<widget name="ErrorPixmap" pixmap="skin_default/icons/input_error.png" position="10,10" size="80,80" alphatest="blend"/>
 		<widget name="QuestionPixmap" pixmap="skin_default/icons/input_question.png" position="10,10" size="80,80" alphatest="blend"/>
 		<widget name="InfoPixmap" pixmap="skin_default/icons/input_info.png" position="10,10" size="80,80" alphatest="blend"/>
-		<widget name="list" position="150,150" selectionPixmap="Pd1loi-HD-night/buttons/sel41.png" size="720,570" itemHeight="38" font="Regular;28"/>
+		<widget name="list" position="150,150" selectionPixmap="Pd1loi-HD-night/buttons/sel42.png" size="720,570" itemHeight="38" font="Regular;28"/>
 	<applet type="onLayoutFinish">
 from enigma import eSize, ePoint
 if self.timerRunning:
