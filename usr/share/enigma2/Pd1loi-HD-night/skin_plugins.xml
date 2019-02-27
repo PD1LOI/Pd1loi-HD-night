@@ -2248,7 +2248,7 @@ n\n\n\n\n\n\t\t\n\t\t\n\t\t\n\n\n\n\n\n
 	<screen name="Blindscan" position="fill" title="Blind scan">
 		<panel name="BasicTemplate"/>
 		<widget name="rotorstatus" position="30,120" size="720,405" font="Regular;60" zPosition="1" transparent="1" foregroundColor="secondFG" valign="center" halign="center"/>
-		<widget name="config" position="780,105" size="1110,836" itemHeight="38" font="Regular;28" scrollbarMode="showOnDemand"/>
+		<widget name="config" position="780,105" size="1110,836" itemHeight="38" selectionPixmap="Pd1loi-HD-night/buttons/sel4.png" font="Regular;28" scrollbarMode="showOnDemand"/>
 		<widget name="description" position="30,560" size="720,210" font="Regular;30" foregroundColor="foreground" halign="left"/>
 		<widget name="introduction" position="780,975" size="1100,37" font="Regular;32" foregroundColor="foreground" halign="center"/>
 	</screen>
@@ -2258,7 +2258,7 @@ n\n\n\n\n\n\t\t\n\t\t\n\t\t\n\n\n\n\n\n
 	<screen name="ModifyPLiFullHD" position="fill" title="Modify PLi-FullHD - setup font and colors">
 		<panel name="PigTemplate"/>
 		<ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Extensions/ModifyPLiFullHD/png/help.png" position="30,540" size="720,405" zPosition="2"/>
-		<widget name="config" position="780,105" size="1110,760" itemHeight="38" font="Regular;28" zPosition="1" scrollbarMode="showOnDemand"/>
+		<widget name="config" position="780,105" size="1110,760" selectionPixmap="Pd1loi-HD-night/buttons/sel4.png" itemHeight="38" font="Regular;28" zPosition="1" scrollbarMode="showOnDemand"/>
 		<widget name="info" position="780,975" size="1100,37" font="Regular;32" foregroundColor="foreground" halign="center"/>
 	</screen>
 
@@ -2273,7 +2273,7 @@ n\n\n\n\n\n\t\t\n\t\t\n\t\t\n\n\n\n\n\n
 
 	<screen name="RemoteTimerSetup" position="fill" title="Timer entry" flags="wfNoBorder">
 		<panel name="PigTemplate"/>
-		<widget name="config" position="780,105" size="1110,765" itemHeight="40" font="Regular;33" scrollbarMode="showOnDemand"/>
+		<widget name="config" position="780,105" size="1110,765" selectionPixmap="Pd1loi-HD-night/buttons/sel4.png" itemHeight="40" font="Regular;33" scrollbarMode="showOnDemand"/>
 	</screen>
 	<screen name="RemoteTimerScreen" position="fill" title="Timer Overview" flags="wfNoBorder">
 		<panel name="PigTemplate"/>
@@ -2304,7 +2304,7 @@ n\n\n\n\n\n\t\t\n\t\t\n\t\t\n\n\n\n\n\n
 
 	<screen name="VFD_INISetup" position="fill" title="LED Display Setup" flags="wfNoBorder">
 		<panel name="PigTemplate"/>
-		<widget name="config" position="780,105" size="1110,380" itemHeight="38" font="Regular;33" scrollbarMode="showOnDemand"/>
+		<widget name="config" position="780,105" size="1110,380" selectionPixmap="Pd1loi-HD-night/buttons/sel4.png" itemHeight="38" font="Regular;33" scrollbarMode="showOnDemand"/>
 	</screen>
 	
 	<!-- ## History ZAP ## -->
