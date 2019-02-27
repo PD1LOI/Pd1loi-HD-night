@@ -16,11 +16,11 @@
                 <font filename="/usr/share/enigma2/Pd1loi-HD-night/fonts/ae_sindibad.ttf" name="ae_sindibad" scale="100" />
                 <font filename="/usr/share/enigma2/Pd1loi-HD-night/fonts/nmsbd.ttf" name="Regular2" scale="100" />
                 <font filename="/usr/share/enigma2/Pd1loi-HD-night/fonts/LiberationSans-Italic.ttf" name="Crs2" scale="100" />
-                <font filename="/usr/share/enigma2/Pd1loi-HD-night/fonts/LiberationSans-Regular.ttf" name="Regular" scale="100" />
+                <font filename="/usr/share/enigma2/Pd1loi-HD-night/fonts/sf_r.ttf" name="Regular" scale="100" />
                 <font filename="/usr/share/enigma2/Pd1loi-HD-night/fonts/hdi.ttf" name="Crs" scale="100" />
                 <font filename="/usr/share/enigma2/Pd1loi-HD-night/fonts/Time.ttf" name="Time" scale="100" />
                 <font filename="/usr/share/enigma2/Pd1loi-HD-night/fonts/lcd.ttf" name="LCD" scale="100" />
-                <font filename="/usr/share/enigma2/Pd1loi-HD-night/fonts/prive3.ttf" name="prive" scale="100" />
+                <font filename="/usr/share/enigma2/Pd1loi-HD-night/fonts/DejaVuSans.ttf" name="prive" scale="100" />
                 <font filename="/usr/share/enigma2/Pd1loi-HD-night/fonts/tuxtxt.ttf" name="Console" scale="100" />
                 <font filename="/usr/share/enigma2/Pd1loi-HD-night/fonts/LADYCA__.ttf" name="Ladyca" scale="100" />
                 <font filename="/usr/share/enigma2/Pd1loi-HD-night/fonts/Megadeth.ttf" name="Megadeth" scale="100" />
@@ -408,7 +408,7 @@
 		<widget source="session.Event_Now" render="Label" position="645,68" size="300,33" font="Regular;30" halign="right" foregroundColor="blue" backgroundColor="secondBG" transparent="1" zPosition="1">
 			<convert type="EventName">SmallRating</convert>
 		</widget>
-		<widget source="session.Event_Now" render="Label" position="30,118" size="915,702" font="Regular;38" halign="block" zPosition="1" transparent="1">
+		<widget source="session.Event_Now" render="Label" position="30,118" size="915,702" font="Regular;38" halign="block" zPosition="1" transparent="1" foregroundColor="unffffff">
 			<convert type="EventName">FullDescription</convert>
 		</widget>
 		<widget source="session.Event_Next" render="Label" position="975,20" size="915,39" backgroundColor="secondBG" transparent="1" zPosition="1" foregroundColor="secondFG" noWrap="1" font="Regular;33" halign="left">
@@ -420,7 +420,7 @@
 		<widget source="session.Event_Next" render="Label" position="1590,68" size="300,33" font="Regular;30" halign="right" foregroundColor="blue" backgroundColor="secondBG" transparent="1" zPosition="1">
 			<convert type="EventName">SmallRating</convert>
 		</widget>
-		<widget source="session.Event_Next" render="Label" position="975,118" size="915,702" font="Regular;38" halign="block" zPosition="1" transparent="1">
+		<widget source="session.Event_Next" render="Label" position="975,118" size="915,702" font="Regular;38" halign="block" zPosition="1" transparent="1" foregroundColor="unffffff">
 			<convert type="EventName">FullDescription</convert>
 		</widget>
 		<panel name="InfoBarTemplate"/>
