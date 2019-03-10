@@ -29,8 +29,14 @@
                 <font filename="/usr/share/enigma2/Pd1loi-HD-night/fonts/LiberationSans-Regular.ttf" name="prive3" scale="100" />
                 <font filename="/usr/share/enigma2/Pd1loi-HD-night/fonts/army-digital.ttf" name="army-digital" scale="100" />
                 <font filename="/usr/share/enigma2/Pd1loi-HD-night/fonts/LiberationSans-Regular.ttf" name="LiberationSans-Regular" scale="100" />
+		<font name="LCD" filename="lcd.ttf" scale="100"/>
+		<font name="Console" filename="tuxtxt.ttf" scale="100"/>
+		<font name="Fixed" filename="andale.ttf" scale="100"/>
+		<font name="DejaVuSans" filename="DejaVuSans.ttf" scale="100" />
 		<alias name="ChoiceList" font="Regular" size="28" height="38"/>
-		<alias name="FileList" font="Regular" size="30" height="40"/>
+		<alias name="TextNormal" font="Regular" size="28" height="38"/>
+		<alias name="ChoiceBoxDescription" font="Regular" size="22" height="25"/>
+		<alias name="FileList" font="Regular" size="28" height="38"/>
 		<alias name="FileListMulti" font="Regular" size="28" height="38"/>
 		<alias name="PluginBrowser0" font="Regular" size="32" height="76"/>
 		<alias name="PluginBrowser1" font="Regular" size="22"/>
@@ -46,16 +52,14 @@
 		<alias name="PartnerBoxChannelList1" font="Regular" size="28"/>
 		<alias name="PartnerBoxChannelEPGList0" font="Regular" size="32" height="38"/>
 		<alias name="PartnerBoxChannelEPGList1" font="Regular" size="24"/>
-		<alias name="VirtualKeyboard" font="Regular" size="42" height="68"/>
+		<alias name="VirtualKeyBoard" font="DejaVuSans" size="42" height="68" />
 		<alias name="HelpMenuList" font="Regular" size="30" height="45"/>
 		<alias name="HelpMenuListExt0" font="Regular" size="32" height="75"/>
 		<alias name="HelpMenuListExt1" font="Regular" size="28"/>
-		<alias name="Dreamexplorer" font="Regular" size="30" height="45"/>
+		<alias name="Dreamexplorer" font="Regular" size="28" height="38"/>
 		<alias name="PlayList" font="Regular" size="28" height="38"/>
-                <alias name="Weermenu" font="Regular" size="28" height="38"/>
-                <alias name="EasyMedia" font="Regular" size="32" height="38"/>
-                <alias name="MPanelListsetFont" font="Regular" size="32" height="38"/>
-                <alias name="iptvlistitem" font="Regular" size="32" height="40"/> 
+		<alias name="FallbackReceiverList0" font="Regular" size="28" height="38"/>
+		<alias name="FallbackReceiverList1" font="Regular" size="28"/> 
         </fonts>	
 
 	<!-- Colors -->
