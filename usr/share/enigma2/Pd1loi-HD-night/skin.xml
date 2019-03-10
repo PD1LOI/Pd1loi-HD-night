@@ -60,6 +60,7 @@
 		<alias name="PlayList" font="Regular" size="28" height="38"/>
 		<alias name="FallbackReceiverList0" font="Regular" size="28" height="38"/>
 		<alias name="FallbackReceiverList1" font="Regular" size="28"/> 
+		<alias name="iptvlistitem" font="Regular" size="32" height="40"/>
         </fonts>	
 
 	<!-- Colors -->
