@@ -544,7 +544,7 @@
   </widget>
   <ePixmap pixmap="Pd1loi-HD-night/border/bottom_bg5.png" position="30,598" size="720,3" />
   <ePixmap pixmap="Pd1loi-HD-night/border/bottom_bg5.png" position="30,870" size="720,3" />
-  <widget source="ServiceEvent" render="RunningText2" position="30,643" size="720,220" transparent="1" font="Regular;32" halign="block" foregroundColor="unc6e0f3" options="movetype=running,startpoint=0,direction=top,steptime=60,repeat=5,startdelay=7000,wrap">
+  <widget source="ServiceEvent" render="RunningText2" position="30,643" size="720,220" transparent="1" font="Regular;32" halign="block" foregroundColor="unc6e0f3" options="movetype=running,startpoint=0,direction=top,steptime=60,repeat=5,startdelay=10000,wrap">
     <convert type="EventName">FullDescription</convert>
   </widget>
   <widget source="ServiceEvent" render="NextEpgInfo" position="30,880" size="720,130" transparent="1" foregroundColor="unffff00" noWrap="1" font="Regular;29" NumberOfItems="3" />
