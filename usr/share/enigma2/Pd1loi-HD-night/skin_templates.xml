@@ -31,7 +31,7 @@
 		<eLabel position="0,0" size="1920,87" backgroundColor="toptemplatecolor"/>
 		<ePixmap pixmap="Pd1loi-HD-night/border/top2_bg.png" position="fill" size="1920,88" />
 		<ePixmap pixmap="Pd1loi-HD-night/border/smallshadowline.png" position="0,88" size="1920,3" zPosition="2"/>
-                <widget source="screen_path" render="Label" position="30,5" size="1860,20" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;19" valign="center" halign="left"/>
+                <widget source="screen_path" render="Label" position="30,5" size="1860,20" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;20" valign="center" halign="left"/>
                 <widget source="Title" render="Label" position="30,7" size="1550,75" backgroundColor="secondBG" foregroundColor="orange1" transparent="1" zPosition="1" font="Regular;36" valign="center" halign="left"/>
 		<widget source="global.CurrentTime" render="Label" position="1665,22" size="225,37" foregroundColor="orange1" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;36" valign="center" halign="right">
 			<convert type="ClockToText">Format:%-H:%M:%S</convert>
@@ -48,7 +48,7 @@
 	</screen>
 
 	<screen name="TextTemplate">
-		<widget name="text" position="30,535" size="725,300" foregroundColor="unffff00" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;36" valign="top" halign="left" />
+		<widget name="text" position="30,535" size="725,300" foregroundColor="unffff00" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;34" valign="top" halign="left" />
                 </screen>
 
 	<screen name="SelectionTemplate">
@@ -75,7 +75,7 @@
 
 	<screen name="MenuTemplate">
 		<panel name="PigTemplate"/>
-          <widget source="menu" render="Listbox" selectionPixmap="Pd1loi-HD-night/buttons/sel6.png" position="780,105" size="1110,900" font="Regular;34" transparent="1" scrollbarMode="showOnDemand">
+          <widget source="menu" render="Listbox" selectionPixmap="Pd1loi-HD-night/buttons/sel6.png" position="780,105" size="1110,900" font="Regular;36" transparent="1" scrollbarMode="showOnDemand">
 			<convert type="TemplatedMultiContent">
 				{"template": [ MultiContentEntryText(pos = (75,15),size = (1035,45),flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER,text = 0) ],
 		"fonts": [gFont("Regular",36)],
@@ -305,7 +305,7 @@
   <widget font="Regular; 20" halign="left" noWrap="1" position="30,822" render="Label" size="400,26" source="session.CurrentService" transparent="1" zPosition="1" backgroundColor="background" foregroundColor="grey">
     <convert type="pliCamd">Camd</convert>
   </widget>
-  <widget foregroundColor="white" backgroundColor="background" font="Regular2; 22" render="Label" position="1379,844" size="70,45" source="session.MSNWeather" zPosition="1" halign="center" transparent="1">
+  <widget foregroundColor="white" backgroundColor="background" font="Regular2; 20" render="Label" position="1379,839" size="70,54" source="session.MSNWeather" zPosition="1" halign="center" transparent="1">
     <convert type="MSNWeather">temperature_heigh_low,current</convert>
   </widget>
   <widget backgroundColor="background" font="Regular2; 30" foregroundColor="unffff00" halign="center" position="1463,855" render="Label" size="80,35" source="session.MSNWeather" transparent="1" zPosition="1">
