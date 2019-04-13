@@ -513,32 +513,32 @@
 
 	<!-- Channel,EPG,EventInfo -->
 
-	<screen name="ChannelSelection" title="Channel Selection" position="fill" flags="wfNoBorder">
-		<panel name="SelectionTemplate" />
-		<panel name="KeyInfoTemplate"/>
-		<panel name="KeyMenuInfoTemplate" />
+<screen name="ChannelSelection" title="Channel Selection" position="fill" flags="wfNoBorder">
+  <panel name="SelectionTemplate" />
+  <panel name="KeyInfoTemplate" />
+  <panel name="KeyMenuInfoTemplate" />
   <widget name="list" position="780,108" size="1110,900" selectionPixmap="Pd1loi-HD-night/buttons/sel4.png" itemHeight="50" transparent="1" serviceNumberFont="Regular;36" scrollbarMode="showOnDemand" serviceInfoFont="Crs2;36" serviceNameFont="Regular;36" serviceItemHeight="50" picServiceEventProgressbar="PLi-FullNightHD/window/progress.png" progressbarHeight="15" progressBarWidth="70" progressPercentWidth="80" colorEventProgressbarBorder="un33333a" fieldMargins="15" nonplayableMargins="15" colorEventProgressbarBorderSelected="darkgrey" colorServiceDescription="#4FFF86" progressbarBorderWidth="3" foregroundColorServiceNotAvail="#656565" backgroundColorMarked="#656565" colorServiceDescriptionFallback="#4FFF86" colorServiceDescriptionSelectedFallback="#4FFF86" colorFallbackItem="#aaaaaa" colorServiceSelectedFallback="#4FFF86" />
   <widget source="ServiceEvent" render="Label" position="30,529" size="720,30" foregroundColor="unffff00" font="Regular;26" valign="center" halign="center" transparent="1" zPosition="1">
     <convert type="TransponderInfo">NoRoot</convert>
   </widget>
-  <widget source="ServiceEvent" render="Label" position="30,562" size="90,32" transparent="1" foregroundColor="foreground" font="Regular;28" halign="left">
+  <widget source="ServiceEvent" render="Label" position="30,562" size="90,32" transparent="1" foregroundColor="foreground" font="Regular;28" halign="left" valign="top">
     <convert type="EventTime">StartTime</convert>
     <convert type="ClockToText">Format:%H:%M</convert>
   </widget>
   <widget source="ServiceEvent" render="Progress" position="120,572" size="540,10" pixmap="Pd1loi-HD-night/window/progress1.png" transparent="0" backgroundColor="un33333a" borderWidth="0">
     <convert type="EventTime">Progress</convert>
   </widget>
-  <widget source="ServiceEvent" render="Label" position="660,562" size="90,32" transparent="1" foregroundColor="foreground" font="Regular;28" halign="right">
+  <widget source="ServiceEvent" render="Label" position="660,562" size="90,32" transparent="1" foregroundColor="foreground" font="Regular;28" halign="right" valign="top">
     <convert type="EventTime">EndTime</convert>
     <convert type="ClockToText">Format:%H:%M</convert>
   </widget>
-  <ePixmap pixmap="Pd1loi-HD-night/border/bottom_bg5.png" position="30,598" size="720,3" />
+  <ePixmap pixmap="Pd1loi-HD-night/border/bottom_bg5.png" position="30,595" size="720,3" />
   <ePixmap pixmap="Pd1loi-HD-night/border/bottom_bg5.png" position="30,870" size="720,3" />
-  <widget source="ServiceEvent" render="RunningText2" position="30,643" size="720,220" transparent="1" font="Regular;32" halign="block" foregroundColor="unc6e0f3" options="movetype=running,startpoint=0,direction=top,steptime=60,repeat=5,startdelay=10000,wrap">
+  <widget source="ServiceEvent" render="RunningText2" position="30,643" size="720,220" transparent="1" font="Regular;32" halign="left" foregroundColor="unc6e0f3" options="movetype=running,startpoint=0,direction=top,steptime=60,repeat=5,startdelay=7000,wrap">
     <convert type="EventName">FullDescription</convert>
   </widget>
   <widget source="ServiceEvent" render="NextEpgInfo" position="30,880" size="720,130" transparent="1" foregroundColor="unffff00" noWrap="1" font="Regular;29" NumberOfItems="3" />
-  <widget source="ServiceEvent" render="Label" position="30,605" size="720,35" transparent="1" foregroundColor="unffff00" font="Regular;32" halign="left">
+  <widget source="ServiceEvent" render="Label" position="30,602" size="720,37" transparent="1" foregroundColor="unffff00" font="Regular;32" halign="left">
     <convert type="EventName">Name</convert>
   </widget>
 </screen>		
