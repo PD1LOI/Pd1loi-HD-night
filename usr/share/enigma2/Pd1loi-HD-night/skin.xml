@@ -23,6 +23,7 @@
                 <font filename="/usr/share/enigma2/Pd1loi-HD-night/fonts/tuxtxt.ttf" name="Console" scale="100" />
                 <font filename="/usr/share/enigma2/Pd1loi-HD-night/fonts/andale.ttf" name="Fixed" scale="100" />
                 <font filename="/usr/share/enigma2/Pd1loi-HD-night/fonts/army-digital.ttf" name="army-digital" scale="100" />
+		 <font filename="/usr/share/enigma2/Pd1loi-HD-night/fonts/OpenSans-Regular.ttf" name="OpenSans" scale="100" />
 		<alias name="ChoiceList" font="Regular" size="28" height="38"/>
 		<alias name="TextNormal" font="Regular" size="28" height="38"/>
 		<alias name="ChoiceBoxDescription" font="Regular" size="22" height="25"/>
