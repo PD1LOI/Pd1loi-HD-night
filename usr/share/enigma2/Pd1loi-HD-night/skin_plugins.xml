@@ -1027,7 +1027,7 @@ n\n\n\n\n\n\t\t\n\t\t\n\t\t\n\n\n\n\n\n
 
 	<screen name="VPS_Setup" position="fill" title="VPS-Plugin" flags="wfNoBorder">
 		<panel name="PigTemplate"/>
-		<widget name="config" position="780,100" size="1110,912" itemHeight="38" font="Regular;28" scrollbarMode="showOnDemand" transparent="1"/>
+		<widget name="config" position="780,100" size="1110,912" selectionPixmap="Pd1loi-HD-night/buttons/sel4.png" itemHeight="38" font="Regular;28" scrollbarMode="showOnDemand" transparent="1"/>
 		<widget source="help" render="Label" font="Regular;33" position="30,600" size="720,300" transparent="1"/>
 	</screen>
 
