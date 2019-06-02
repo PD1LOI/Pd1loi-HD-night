@@ -284,7 +284,7 @@
  <!-- Infobar template -->
 
 <screen name="InfoBarTemplate">
-  <widget backgroundColor="secondBG" font="LiberationSans-Regular; 20" foregroundColor="unffff00" halign="right" noWrap="1" position="1341,944" render="Label" borderWidth="2" size="300,26" source="session.CurrentService" transparent="1" valign="top" zPosition="10">
+  <widget backgroundColor="transparent" font="LiberationSans-Regular; 20" foregroundColor="unffff00" halign="left" noWrap="1" position="387,856" size="400,26" render="Label" borderWidth="2" source="session.CurrentService" transparent="1" valign="top" zPosition="10">
     <convert type="ServiceName">Provider</convert>
   </widget>
   <eLabel backgroundColor="secondBG" font="OpenSans; 25" foregroundColor="unff0000" halign="center" position="1778,940" size="30,30" text="X" transparent="1" />
@@ -302,7 +302,7 @@
   <widget source="session.FrontendStatus" render="Progress" position="1705,1015" size="180,8" zPosition="3" pixmap="Pd1loi-HD-night/infobar/snron0.png" transparent="1">
     <convert type="FrontendInfo">SNR</convert>
   </widget>
-  <widget font="Regular; 20" halign="left" noWrap="1" position="30,822" render="Label" size="400,26" source="session.CurrentService" transparent="1" zPosition="1" backgroundColor="background" foregroundColor="grey">
+  <widget font="Regular; 20" halign="left" noWrap="1" position="30,823" render="Label" size="400,26" source="session.CurrentService" transparent="1" zPosition="1" backgroundColor="background" foregroundColor="grey">
     <convert type="pliCamd">Camd</convert>
   </widget>
   <widget foregroundColor="white" backgroundColor="background" font="Regular2; 20" render="Label" position="1379,839" size="70,54" source="session.MSNWeather" zPosition="1" halign="center" transparent="1">
@@ -320,8 +320,8 @@
   <widget source="session.CurrentService" render="Picon" position="69,902" size="150,90" alphatest="blend" backgroundColor="secondBG" transparent="1" zPosition="1">
     <convert type="ServiceName">Reference</convert>
   </widget>
-  <widget source="session.CurrentService" render="ChannelNumber" borderWidth="2" position="242,880" size="150,70" backgroundColor="secondBG" transparent="1" zPosition="1" foregroundColor="foreground" font="Regular;40" valign="center" halign="center" />
-  <widget source="session.CurrentService" render="Label" borderWidth="2" position="387,880" size="774,75" backgroundColor="secondBG" transparent="1" zPosition="1" foregroundColor="foreground" font="Regular;40" valign="center" halign="left">
+  <widget source="session.CurrentService" render="ChannelNumber" borderWidth="2" position="241,890" size="150,60" backgroundColor="secondBG" transparent="1" zPosition="1" foregroundColor="foreground" font="Regular;40" valign="center" halign="center" />
+  <widget source="session.CurrentService" render="Label" borderWidth="2" position="387,890" size="774,60" backgroundColor="secondBG" transparent="1" zPosition="1" foregroundColor="foreground" font="Regular;40" valign="center" halign="left">
     <convert type="ServiceName">Name</convert>
   </widget>
   <widget source="global.CurrentTime" render="Label" borderWidth="2" position="30,845" size="540,45" backgroundColor="secondBG" noWrap="1" transparent="1" zPosition="1" foregroundColor="unffff00" font="Regular;26" valign="center" halign="left">
@@ -333,7 +333,7 @@
   <widget source="session.RecordState" render="Pixmap" pixmap="Pd1loi-HD-night/buttons/rec.png" position="1168,902" size="30,30" zPosition="3" alphatest="on">
     <convert type="ConditionalShowHide">Blink</convert>
   </widget>
-  <widget source="session.CurrentService" render="Label" borderWidth="2" position="390,845" size="740,45" backgroundColor="secondBG" transparent="1" zPosition="1" foregroundColor="grey" font="Regular; 22" valign="center" halign="left">
+  <widget source="session.CurrentService" render="Label" borderWidth="2" position="388,823" size="740,26" backgroundColor="secondBG" transparent="1" zPosition="1" foregroundColor="grey" font="Regular; 22" valign="center" halign="left">
     <convert type="CryptoInfo">VerboseInfo</convert>
   </widget>
   <widget source="session.Event_Now" render="Label" position="260,978" size="105,45" backgroundColor="secondBG" transparent="1" zPosition="1" foregroundColor="green" font="Regular;36" halign="left">
@@ -358,7 +358,7 @@
     <convert type="EventTime">Duration</convert>
     <convert type="ClockToText">InMinutes</convert>
   </widget>
-  <widget source="session.Event_Now" render="Progress" pixmap="Pd1loi-HD-night/infobar/pbar.png" position="260,952" size="1380,12" backgroundColor="un33333a" transparent="0" zPosition="2" borderWidth="0">
+  <widget source="session.Event_Now" render="Progress" pixmap="Pd1loi-HD-night/infobar/pbar.png" position="261,957" size="1380,12" backgroundColor="un33333a" transparent="0" zPosition="2" borderWidth="0">
     <convert type="EventTime">Progress</convert>
   </widget>
   <widget source="session.CurrentService" render="Pixmap" pixmap="Pd1loi-HD-night/infobar/ico_format_4_3.png" position="1576,901" size="60,32" zPosition="3" alphatest="on">
