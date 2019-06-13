@@ -321,7 +321,7 @@
     <convert type="ServiceName">Reference</convert>
   </widget>
   <widget source="session.CurrentService" render="ChannelNumber" borderWidth="2" position="242,891" size="150,60" backgroundColor="secondBG" transparent="1" zPosition="1" foregroundColor="foreground" font="Regular;40" valign="center" halign="center" />
-  <widget source="session.CurrentService" render="Label" borderWidth="2" position="387,891" size="774,60" backgroundColor="secondBG" transparent="1" zPosition="1" foregroundColor="foreground" font="Regular;40" valign="center" halign="left">
+  <widget source="session.CurrentService" render="Label" borderWidth="2" position="387,891" size="774,60" backgroundColor="secondBG" transparent="1" zPosition="1" foregroundColor="foreground" font="OLED;40" valign="center" halign="left">
     <convert type="ServiceName">Name</convert>
   </widget>
   <widget source="global.CurrentTime" render="Label" borderWidth="2" position="30,845" size="540,45" backgroundColor="secondBG" noWrap="1" transparent="1" zPosition="1" foregroundColor="unffff00" font="Regular;26" valign="center" halign="left">
@@ -351,7 +351,7 @@
     <convert type="EventTime">StartTime</convert>
     <convert type="ClockToText">Format:%H:%M</convert>
   </widget>
-  <widget source="session.Event_Next" render="Label" position="387,1023" size="1072,45" backgroundColor="secondBG" transparent="1" zPosition="1" foregroundColor="unc6e0f3" noWrap="1" font="OLED;36" halign="left">
+  <widget source="session.Event_Next" render="Label" position="387,1023" size="1072,45" backgroundColor="secondBG" transparent="1" zPosition="1" foregroundColor="unc6e0f3" noWrap="1" font="Regular;36" halign="left">
     <convert type="EventName">Name</convert>
   </widget>
   <widget source="session.Event_Next" render="Label" position="1430,1023" size="210,45" backgroundColor="secondBG" transparent="1" zPosition="1" foregroundColor="unc6e0f3" font="Regular;36" halign="right">
