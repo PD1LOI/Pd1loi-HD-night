@@ -330,7 +330,7 @@
   <widget source="global.CurrentTime" render="Label" borderWidth="2" position="46,1008" size="210,60" backgroundColor="secondBG" noWrap="1" transparent="1" zPosition="1" foregroundColor="myblue" font="Time; 50" valign="center" halign="left">
     <convert type="ClockToText">Format:%H:%M:%S</convert>
   </widget>
-  <widget source="session.RecordState" render="Pixmap" pixmap="Pd1loi-HD-night-ATV/buttons/rec.png" position="1168,902" size="30,30" zPosition="3" alphatest="on">
+  <widget source="session.RecordState" render="Pixmap" pixmap="Pd1loi-HD-night/buttons/rec.png" position="1168,902" size="30,30" zPosition="3" alphatest="on">
     <convert type="ConditionalShowHide">Blink</convert>
   </widget>
   <widget source="session.CurrentService" render="Label" borderWidth="2" position="390,845" size="740,45" backgroundColor="secondBG" transparent="1" zPosition="1" foregroundColor="grey" font="Regular; 22" valign="center" halign="left">
@@ -358,50 +358,50 @@
     <convert type="EventTime">Duration</convert>
     <convert type="ClockToText">InMinutes</convert>
   </widget>
-  <widget source="session.Event_Now" render="Progress" pixmap="Pd1loi-HD-night-ATV/infobar/pbar.png" position="260,952" size="1380,12" backgroundColor="un33333a" transparent="0" zPosition="2" borderWidth="0">
+  <widget source="session.Event_Now" render="Progress" pixmap="Pd1loi-HD-night/infobar/pbar.png" position="260,952" size="1380,12" backgroundColor="un33333a" transparent="0" zPosition="2" borderWidth="0">
     <convert type="EventTime">Progress</convert>
   </widget>
-  <widget source="session.CurrentService" render="Pixmap" pixmap="Pd1loi-HD-night-ATV/infobar/ico_format_4_3.png" position="1576,901" size="60,32" zPosition="3" alphatest="on">
+  <widget source="session.CurrentService" render="Pixmap" pixmap="Pd1loi-HD-night/infobar/ico_format_4_3.png" position="1576,901" size="60,32" zPosition="3" alphatest="on">
     <convert type="ServiceInfo">IsSDAndNotWidescreen</convert>
     <convert type="ConditionalShowHide" />
   </widget>
-  <widget source="session.CurrentService" render="Pixmap" pixmap="Pd1loi-HD-night-ATV/infobar/ico_format_16_9.png" position="1576,901" size="60,32" zPosition="3" alphatest="on">
+  <widget source="session.CurrentService" render="Pixmap" pixmap="Pd1loi-HD-night/infobar/ico_format_16_9.png" position="1576,901" size="60,32" zPosition="3" alphatest="on">
     <convert type="ServiceInfo">IsSDAndWidescreen</convert>
     <convert type="ConditionalShowHide" />
   </widget>
-  <widget source="session.CurrentService" render="Pixmap" pixmap="Pd1loi-HD-night-ATV/infobar/ico_format_hd.png" position="1576,901" size="60,32" zPosition="4" alphatest="on">
+  <widget source="session.CurrentService" render="Pixmap" pixmap="Pd1loi-HD-night/infobar/ico_format_hd.png" position="1576,901" size="60,32" zPosition="4" alphatest="on">
     <convert type="ServiceInfo">IsHD</convert>
     <convert type="ConditionalShowHide" />
   </widget>
-  <widget source="session.CurrentService" render="Pixmap" pixmap="Pd1loi-HD-night-ATV/infobar/ico_format_4k.png" position="1576,901" size="60,32" zPosition="4" alphatest="on">
+  <widget source="session.CurrentService" render="Pixmap" pixmap="Pd1loi-HD-night/infobar/ico_format_4k.png" position="1576,901" size="60,32" zPosition="4" alphatest="on">
     <convert type="ServiceInfo">Is4K</convert>
     <convert type="ConditionalShowHide" />
   </widget>
-  <widget source="session.CurrentService" render="Pixmap" pixmap="Pd1loi-HD-night-ATV/infobar/ico_txt_on.png" position="1520,901" size="50,32" zPosition="2" alphatest="on">
+  <widget source="session.CurrentService" render="Pixmap" pixmap="Pd1loi-HD-night/infobar/ico_txt_on.png" position="1520,901" size="50,32" zPosition="2" alphatest="on">
     <convert type="ServiceInfo">HasTelext</convert>
     <convert type="ConditionalShowHide" />
   </widget>
-  <widget source="session.CurrentService" render="Pixmap" pixmap="Pd1loi-HD-night-ATV/infobar/ico_dolby_on.png" position="1465,901" size="50,32" zPosition="2" alphatest="on">
+  <widget source="session.CurrentService" render="Pixmap" pixmap="Pd1loi-HD-night/infobar/ico_dolby_on.png" position="1465,901" size="50,32" zPosition="2" alphatest="on">
     <convert type="ServiceInfo">IsMultichannel</convert>
     <convert type="ConditionalShowHide" />
   </widget>
-  <widget source="session.CurrentService" render="Pixmap" pixmap="Pd1loi-HD-night-ATV/infobar/ico_crypt_on.png" position="1435,901" size="25,32" zPosition="2" alphatest="on">
+  <widget source="session.CurrentService" render="Pixmap" pixmap="Pd1loi-HD-night/infobar/ico_crypt_on.png" position="1435,901" size="25,32" zPosition="2" alphatest="on">
     <convert type="ServiceInfo">IsCrypted</convert>
     <convert type="ConditionalShowHide" />
   </widget>
-  <widget source="session.CurrentService" render="Pixmap" pixmap="Pd1loi-HD-night-ATV/infobar/ico_hbbtv_on.png" position="1360,901" size="70,32" zPosition="2" alphatest="on">
+  <widget source="session.CurrentService" render="Pixmap" pixmap="Pd1loi-HD-night/infobar/ico_hbbtv_on.png" position="1360,901" size="70,32" zPosition="2" alphatest="on">
     <convert type="ServiceInfo">HasHBBTV</convert>
     <convert type="ConditionalShowHide" />
   </widget>
-  <widget source="session.CurrentService" render="Pixmap" pixmap="Pd1loi-HD-night-ATV/infobar/ico_sub_on.png" position="1304,901" size="50,32" zPosition="2" alphatest="on">
+  <widget source="session.CurrentService" render="Pixmap" pixmap="Pd1loi-HD-night/infobar/ico_sub_on.png" position="1304,901" size="50,32" zPosition="2" alphatest="on">
     <convert type="ServiceInfo">SubservicesAvailable</convert>
     <convert type="ConditionalShowHide" />
   </widget>
-  <widget source="session.Event_Now" render="Pixmap" pixmap="Pd1loi-HD-night-ATV/infobar/ico_pdc.png" position="1240,901" size="58,32" zPosition="2" alphatest="on">
+  <widget source="session.Event_Now" render="Pixmap" pixmap="Pd1loi-HD-night/infobar/ico_pdc.png" position="1240,901" size="58,32" zPosition="2" alphatest="on">
     <convert type="EventName">Pdc</convert>
     <convert type="ConditionalShowHide" />
   </widget>
-  <widget source="session.CurrentService" render="Pixmap" pixmap="Pd1loi-HD-night-ATV/buttons/stream.png" position="1204,902" size="30,30" zPosition="3" alphatest="on">
+  <widget source="session.CurrentService" render="Pixmap" pixmap="Pd1loi-HD-night/buttons/stream.png" position="1204,902" size="30,30" zPosition="3" alphatest="on">
     <convert type="ClientsStreaming" />
     <convert type="ConditionalShowHide" />
   </widget>
@@ -414,7 +414,7 @@
   <widget source="session.CurrentService" render="Label" position="1712,1030" size="165,33" backgroundColor="secondBG" transparent="1" zPosition="1" text="DVB-S" font="Regular;28" halign="center">
     <convert type="ServiceOrbitalPosition" />
   </widget>
-  <!--<ePixmap pixmap="Pd1loi-HD-night-ATV/icons/icon_update_off.png" position="90,52" size="30,30" zPosition="0" alphatest="blend"/>-->
+  <!--<ePixmap pixmap="Pd1loi-HD-night/icons/icon_update_off.png" position="90,52" size="30,30" zPosition="0" alphatest="blend"/>-->
 </screen>
 
 `</skin>
