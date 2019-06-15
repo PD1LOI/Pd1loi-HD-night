@@ -13,7 +13,7 @@
 	</output>
 
 	<fonts>
-		<font filename="/usr/share/enigma2/Pd1loi-HD-night/fonts/gtks.ttf" name="OLED" scale="100"/>
+		<font filename="/usr/share/enigma2/Pd1loi-HD-night/fonts/ks.ttf" name="OLED" scale="100"/>
 	        <font filename="/usr/share/enigma2/Pd1loi-HD-night/fonts/NotoSans_Regular.ttf" name="Regular2" scale="100" />
                 <font filename="/usr/share/enigma2/Pd1loi-HD-night/fonts/LiberationSans-Italic.ttf" name="Crs2" scale="100" />
                 <font filename="/usr/share/enigma2/Pd1loi-HD-night/fonts/LiberationSans-Regular.ttf" name="Regular" scale="100" />
