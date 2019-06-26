@@ -475,11 +475,11 @@
         <ePixmap pixmap="Pd1loi-HD-night/buttons/red.png" position="192,1032" size="34,34" alphatest="blend" />
         <widget name="list" position="860,101" size="1000,465" scrollbarMode="showOnDemand" font="Regular;34" itemHeight="45" selectionPixmap="Pd1loi-HD-night/buttons/sel6.png" />\n
         <widget name="mess1" position="30,570" size="720,40" foregroundColor="green" font="Console;28" />
-        <ePixmap pixmap="Pd1loi-HD-night/Images/lo/nlflagsd.png" position="794,104" size="47,32" alphatest="on" />
-        <ePixmap pixmap="Pd1loi-HD-night/Images/lo/beflagsd.png" position="794,150" size="47,32" alphatest="on" />
-        <ePixmap pixmap="Pd1loi-HD-night/Images/lo/euflagsd.png" position="794,195" size="47,32" alphatest="on" />
-        <ePixmap pixmap="Pd1loi-HD-night/Images/lo/lokaalsd.png" position="794,240" size="47,32" alphatest="on" />
-        </screen>
+        <ePixmap pixmap="Pd1loi-HD-night/Images/lo/lokaalsd.png" position="794,104" size="47,32" alphatest="on" />
+        <ePixmap pixmap="Pd1loi-HD-night/Images/lo/nlflagsd.png" position="794,150" size="47,32" alphatest="on" />
+        <ePixmap pixmap="Pd1loi-HD-night/Images/lo/beflagsd.png" position="794,195" size="47,32" alphatest="on" />
+        <ePixmap pixmap="Pd1loi-HD-night/Images/lo/euflagsd.png" position="794,240" size="47,32" alphatest="on" />
+	</screen>
 
         <screen name="weatherMenuSub" position="fill" title="WeerInfo" flags="wfNoBorder" >
         <panel name="PigTemplate"/>
