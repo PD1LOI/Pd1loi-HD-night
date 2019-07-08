@@ -479,7 +479,7 @@
         <ePixmap pixmap="Pd1loi-HD-night/Images/lo/nlflagsd.png" position="794,150" size="47,32" alphatest="on" />
         <ePixmap pixmap="Pd1loi-HD-night/Images/lo/beflagsd.png" position="794,195" size="47,32" alphatest="on" />
         <ePixmap pixmap="Pd1loi-HD-night/Images/lo/euflagsd.png" position="794,240" size="47,32" alphatest="on" />
-	</screen>
+        </screen>
 
         <screen name="weatherMenuSub" position="fill" title="WeerInfo" flags="wfNoBorder" >
         <panel name="PigTemplate"/>
@@ -1956,9 +1956,9 @@ n\n\n\n\n\n\t\t\n\t\t\n\t\t\n\n\n\n\n\n
 		<panel name="PigTemplate"/>
 		<panel name="KeyMenuInfoTemplate"/>
 		<panel name="KeyOkTemplate"/>
-		<widget source="Titel2" render="Label" position="30,600" zPosition="3" size="720,150" font="Regular;32" valign="center" halign="left" transparent="1" foregroundColor="#00ffffff"/>
-		<widget source="Titel3" render="Label" position="30,600" zPosition="2" size="720,150" font="Regular;32" valign="center" halign="left" transparent="1" foregroundColor="#00ffffff"/>
-		<widget name="MainList" position="780,109" size="1110,896" itemHeight="128" font0="Regular;26" font1="Regular;36" font2="Regular;24" font3="Regular;28"
+	  <widget source="Titel2" render="Label" position="30,600" zPosition="3" size="720,150" font="Regular;32" valign="center" halign="center" transparent="1" foregroundColor="unffff00" />
+    <widget source="Titel3" render="Label" position="30,600" zPosition="3" size="720,150" font="Regular;32" valign="center" halign="center" transparent="1" foregroundColor="unffff00" />
+   <widget name="MainList" position="780,109" size="1110,896" itemHeight="128" font0="Regular;26" font1="Regular;36" font2="Regular;24" font3="Regular;28"
 						setTime="40,49,90,30" setPict="155,24,70,70" setPictScale="1" setTemp="270,22,120,30" setTempUnits="270,68,120,30"
 						setWindPict="410,43,42,42" setWindPictScale="1" setWind="470,22,150,30" setWindUnits="470,68,150,30"
 						text1Pos="615,15,500,35" text2Pos="615,50,500,35" text3Pos="615,80,500,35" scrollbarMode="showOnDemand" transparent="1"/>
@@ -1972,7 +1972,8 @@ n\n\n\n\n\n\t\t\n\t\t\n\t\t\n\n\n\n\n\n
 	<screen flags="wfNoBorder" name="CityPanel" position="fill">
 		<panel name="ForecaTemplate"/>
 		<panel name="PigTemplate"/>
-		<widget name="Mlist" position="780,100" size="1110,912" itemHeight="38" font="Regular;28" foregroundColorSelected="yellow" foregroundColor="foreground" backgroundColorSelected="selectorcolor" column="40" transparent="1" scrollbarMode="showOnDemand"/>
+		<ePixmap pixmap="Pd1loi-HD-night/border/top2_bg.png" position="fill" size="1920,88" />
+		<widget name="Mlist" position="780,100" size="1110,912" selectionPixmap="Pd1loi-HD-night/buttons/sel4.png" itemHeight="38" font="Regular;28" foregroundColorSelected="yellow" foregroundColor="foreground" backgroundColorSelected="selectorcolor" column="40" transparent="1" scrollbarMode="showOnDemand"/>
 	</screen>
 
 	<screen flags="wfNoBorder" name="SatPanel" position="fill">
