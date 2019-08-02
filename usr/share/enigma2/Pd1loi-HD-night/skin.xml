@@ -13,6 +13,8 @@
 	</output>
 
 	<fonts>
+	    <font filename="/usr/share/fonts/nmsbd.ttf" name="Emu" replacement="0" scale="100" />
+    <font filename="/usr/share/fonts/nmsbd.ttf" name="Menu" replacement="0" scale="102" />
 		<font filename="/usr/share/enigma2/Pd1loi-HD-night/fonts/ks.ttf" name="OLED" scale="100"/>
      <font filename="/usr/share/enigma2/Pd1loi-HD-night/fonts/NotoSans_Regular.ttf" name="Regular2" scale="100" />
      <font filename="/usr/share/enigma2/Pd1loi-HD-night/fonts/LiberationSans-Italic.ttf" name="Crs2" scale="100" />
@@ -191,7 +193,7 @@
     <color name="white" value="#00f0f0f0" />
     <color name="yellow" value="#00ffc000" />
     <color name="yellowtransparent" value="#084b4b00" />
-        <color name="toptemplatecolor" value="#000D0F16"/>
+    <color name="toptemplatecolor" value="#000D0F16"/>
 		<color name="basictemplatecolor" value="#00000020"/>
 		<color name="selectorcolor" value="#00000030"/>
 		<color name="background" value="#00000000"/>
@@ -227,6 +229,7 @@
 		<color name="un4a00a0a" value="#04a00a0a"/>
 		<color name="uncccccc" value="#00cccccc"/>
 		<color name="white" value="#00f0f0f0"/>
+		<color name="backgroundColor" value="#00ffffff"/>
 		<color name="yellow" value="#00F9C731"/>
 		<color name="yellowsoft" value="#00CCAC68"/>
 		<color name="yellowtransparent" value="#084b4b00"/>

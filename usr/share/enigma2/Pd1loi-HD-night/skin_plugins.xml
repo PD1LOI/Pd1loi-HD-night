@@ -609,32 +609,32 @@ n\n\n\n\n\n\t\t\n\t\t\n\t\t\n\n\n\n\n\n
        <screen name="MSNWeatherPlugin" position="fill" title="MSNWeatherPlugin" flags="wfNoBorder" >
         <panel name="PigTemplate"/>
         <panel name="KeyMenuTemplate"/>     
-  <widget render="Label" source="caption" position="1050,111" zPosition="1" size="800,50" font="Regular; 32" transparent="1" foregroundColor="green" halign="center" />
-  <widget render="Label" source="observationtime" position="1050,182" zPosition="1" size="800,40" font="Regular; 28" transparent="1" halign="center" foregroundColor="unffff00" />
-  <widget render="Label" source="observationpoint" position="1050,223" zPosition="1" size="800,40" font="Regular; 28" transparent="1" halign="center" foregroundColor="unffff00" />
-  <widget name="currenticon" position="924,191" zPosition="1" size="100,99" alphatest="blend" />
-  <widget render="Label" source="currentTemp" position="917,300" zPosition="1" size="110,50" font="Regular2; 36" transparent="1" halign="center" foregroundColor="green" />
-  <widget render="Label" source="feelsliketemp" position="851,353" zPosition="1" size="250,50" font="Regular; 30" transparent="1" foregroundColor="green" halign="center" />
-  <widget render="Label" source="condition" position="1248,280" zPosition="1" size="400,40" font="Regular; 30" transparent="1" foregroundColor="orange1" />
-  <widget render="Label" source="wind_condition" position="1248,324" zPosition="1" size="400,40" font="Regular; 30" transparent="1" foregroundColor="orange1" />
-  <widget render="Label" source="humidity" position="1248,369" zPosition="1" size="400,40" font="Regular; 30" valign="center" transparent="1" foregroundColor="orange1" />
+  <widget render="Label" source="caption" position="794,111" zPosition="1" size="1080,58" font="OpenSans;40" transparent="1" foregroundColor="unff0000" halign="center" />
+  <widget render="Label" source="observationtime" position="965,182" zPosition="1" size="909,40" font="Regular; 28" transparent="1" halign="center" foregroundColor="unffff00" />
+  <widget render="Label" source="observationpoint" position="965,223" zPosition="1" size="909,40" font="Regular; 28" transparent="1" halign="center" foregroundColor="unffff00" />
+  <widget name="currenticon" position="852,191" zPosition="1" size="100,100" alphatest="blend" />
+  <widget render="Label" source="currentTemp" position="847,297" zPosition="1" size="110,50" font="Regular2; 36" transparent="1" halign="center" foregroundColor="green" />
+  <widget render="Label" source="feelsliketemp" position="800,353" zPosition="1" size="250,50" font="Regular; 30" transparent="1" foregroundColor="green" halign="center" />
+  <widget render="Label" source="condition" position="1214,277" zPosition="1" size="400,40" font="Regular; 30" transparent="1" foregroundColor="orange1" halign="center" />
+  <widget render="Label" source="wind_condition" position="1214,331" zPosition="1" size="400,40" font="Regular; 30" transparent="1" foregroundColor="orange1" halign="center" />
+  <widget render="Label" source="humidity" position="1214,383" zPosition="1" size="400,40" font="Regular; 30" valign="center" transparent="1" foregroundColor="orange1" halign="center" />
   <widget render="Label" source="weekday1" position="800,462" zPosition="1" size="200,100" halign="center" valign="center" font="Regular; 30" transparent="1" foregroundColor="blue" />
-  <widget name="weekday1_icon" position="852,573" zPosition="1" size="100,99" alphatest="blend" />
+  <widget name="weekday1_icon" position="852,573" zPosition="1" size="100,100" alphatest="blend" />
   <widget render="Label" source="weekday1_temp" position="800,680" zPosition="1" size="200,100" halign="center" valign="bottom" font="Regular; 30" transparent="1" foregroundColor="myblue" />
   <widget render="Label" source="weekday2" position="1021,462" zPosition="1" size="200,100" halign="center" valign="center" font="Regular; 30" transparent="1" foregroundColor="blue" />
-  <widget name="weekday2_icon" position="1060,573" zPosition="1" size="100,99" alphatest="blend" />
+  <widget name="weekday2_icon" position="1060,573" zPosition="1" size="100,100" alphatest="blend" />
   <widget render="Label" source="weekday2_temp" position="1021,680" zPosition="1" size="200,100" halign="center" valign="bottom" font="Regular; 30" transparent="1" foregroundColor="myblue" />
   <widget render="Label" source="weekday3" position="1240,462" zPosition="1" size="200,100" halign="center" valign="center" font="Regular; 30" transparent="1" foregroundColor="blue" />
-  <widget name="weekday3_icon" position="1292,573" zPosition="1" size="100,99" alphatest="blend" />
+  <widget name="weekday3_icon" position="1292,573" zPosition="1" size="100,100" alphatest="blend" />
   <widget render="Label" source="weekday3_temp" position="1240,680" zPosition="1" size="200,100" halign="center" valign="bottom" font="Regular; 30" transparent="1" foregroundColor="myblue" />
   <widget render="Label" source="weekday4" position="1454,462" zPosition="1" size="200,100" halign="center" valign="center" font="Regular; 28" transparent="1" foregroundColor="blue" />
-  <widget name="weekday4_icon" position="1498,573" zPosition="1" size="100,99" alphatest="blend" />
+  <widget name="weekday4_icon" position="1498,573" zPosition="1" size="100,100" alphatest="blend" />
   <widget render="Label" source="weekday4_temp" position="1454,680" zPosition="1" size="200,100" halign="center" valign="bottom" font="Regular; 30" transparent="1" foregroundColor="myblue" />
   <widget render="Label" source="weekday5" position="1673,462" zPosition="1" size="200,100" halign="center" valign="center" font="Regular; 30" transparent="1" foregroundColor="blue" />
-  <widget name="weekday5_icon" position="1727,573" zPosition="1" size="100,99" alphatest="blend" />
+  <widget name="weekday5_icon" position="1727,573" zPosition="1" size="100,100" alphatest="blend" />
   <widget render="FixedLabel" source="weekday5_temp" position="1673,680" zPosition="1" size="200,100" halign="center" valign="bottom" font="Regular; 30" transparent="0" foregroundColor="myblue" />
   <widget render="Label" source="statustext" position="780,105" size="1110,800" zPosition="0" font="Regular;30" halign="center" valign="center" transparent="1" />
-</screen> 
+</screen>
 
   	<screen name="MSNWeatherPluginEntriesListConfigScreen" title="MSNWeatherPluginEntriesListConfigScreen" position="fill" flags="wfNoBorder">
                 <panel name="PigTemplate" />
