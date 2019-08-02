@@ -10,5 +10,5 @@ rm -rf /usr/lib/enigma2/python/Plugins/SystemPlugins/WeatherComponentHandler/*.*
 rm -rf /usr/share/enigma2/Pd1loi-HD-night
 echo
 echo      Rebooting now....
-sleep 5
-init 4 && sleep 8 && init 3
+sleep 2
+init 4 && sleep 3 && init 3
