@@ -315,7 +315,7 @@
     <convert type="MSNWeather">winddisplay</convert>
   </widget>
   <widget alphatest="blend" position="1800,831" size="100,100" render="MSNWeatherPixmap" source="session.MSNWeather" zPosition="5" transparent="0">
-    <convert type="MSNWeather">weathericon,current,/usr/share/enigma2/weather_icons/,png</convert>
+    <convert type="MSNWeather">weathericon,current,/usr/share/enigma2/Pd1loi-HD-night/weather_icons/,png</convert>
   </widget>
   <widget source="session.CurrentService" render="Picon" position="69,902" size="150,90" alphatest="blend" backgroundColor="secondBG" transparent="1" zPosition="1">
     <convert type="ServiceName">Reference</convert>
