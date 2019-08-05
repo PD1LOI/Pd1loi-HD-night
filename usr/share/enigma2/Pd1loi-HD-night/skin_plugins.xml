@@ -632,7 +632,7 @@ n\n\n\n\n\n\t\t\n\t\t\n\t\t\n\n\n\n\n\n
   <widget render="Label" source="weekday4_temp" position="1454,680" zPosition="1" size="200,100" halign="center" valign="bottom" font="Regular; 30" transparent="1" foregroundColor="myblue" />
   <widget render="Label" source="weekday5" position="1673,462" zPosition="1" size="200,100" halign="center" valign="center" font="Regular; 30" transparent="1" foregroundColor="blue" />
   <widget name="weekday5_icon" position="1727,573" zPosition="1" size="100,100" alphatest="blend" />
-  <widget render="FixedLabel" source="weekday5_temp" position="1673,680" zPosition="1" size="200,100" halign="center" valign="bottom" font="Regular; 30" transparent="0" foregroundColor="myblue" />
+  <widget render="Label" source="weekday5_temp" position="1673,680" zPosition="1" size="200,100" halign="center" valign="bottom" font="Regular; 30" transparent="0" foregroundColor="myblue" />
   <widget render="Label" source="statustext" position="780,105" size="1110,800" zPosition="0" font="Regular;30" halign="center" valign="center" transparent="1" />
 </screen>
 
