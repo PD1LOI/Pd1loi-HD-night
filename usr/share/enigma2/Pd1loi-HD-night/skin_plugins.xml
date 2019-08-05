@@ -609,7 +609,7 @@ n\n\n\n\n\n\t\t\n\t\t\n\t\t\n\n\n\n\n\n
        <screen name="MSNWeatherPlugin" position="fill" title="MSNWeatherPlugin" flags="wfNoBorder" >
         <panel name="PigTemplate"/>
         <panel name="KeyMenuTemplate"/>     
-  <widget render="Label" source="caption" position="794,111" zPosition="1" size="1080,58" font="OpenSans;40" transparent="1" foregroundColor="unff0000" halign="center" />
+  <widget render="Label" source="caption" position="966,111" zPosition="1" size="908,58" font="OpenSans;40" transparent="1" foregroundColor="unff0000" halign="center" />
   <widget render="Label" source="observationtime" position="965,182" zPosition="1" size="909,40" font="Regular; 28" transparent="1" halign="center" foregroundColor="unffff00" />
   <widget render="Label" source="observationpoint" position="965,223" zPosition="1" size="909,40" font="Regular; 28" transparent="1" halign="center" foregroundColor="unffff00" />
   <widget name="currenticon" position="852,191" zPosition="1" size="100,100" alphatest="blend" />
