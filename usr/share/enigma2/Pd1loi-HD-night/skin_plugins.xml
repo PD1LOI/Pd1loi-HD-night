@@ -1,13 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <skin>
+<!-- FileCommander-->
+
+<screen name="InputBoxWide" position="fill" title="Input" flags="wfNoBorder">
+    <panel name="BasicTemplate" />
+    <panel name="KeyMenuInfoTemplate" />
+  <widget name="text" position="30,100" size="1860,80" font="Regular; 32" foregroundColor="unffff00" />
+  <widget name="input" position="30,187" size="1860,80" font="Regular; 32" />
+</screen>
+
+<screen name="ArchiverMenuScreen" position="fill" title="" flags="wfNoBorder">
+<panel name="PigTemplate" />
+<panel name="KeyMenuInfoTemplate" />
+<widget name="list_left_head" position="780,100" size="1110,60" font="Regular;30" foregroundColor="cyan" />
+<widget name="list_left" position="780,260" size="1110,470" scrollbarMode="showOnDemand" font="Regular; 30" />
+<widget name="unpacking" position="778,180" size="1110,50" scrollbarMode="showOnDemand" foregroundColor="orange" font="Regular; 30" halign="center" />
+</screen>
 
  <!-- TaskListScreen-->
  
-<screen name="TaskListScreen" position="fill" title="Task list" flags="wfNoBorder">
+<screen name="TaskListScreen" position="fill" title="" flags="wfNoBorder">
   <panel name="PigTemplate" />
   <panel name="KeyMenuInfoTemplate" />
-<widget source="tasklist" render="Listbox" position="780,100" size="1110,912" itemHeight="40" zPosition="7" scrollbarMode="showOnDemand">
-<convert type="TemplatedMultiContent">
+    <widget source="tasklist" render="Listbox" position="780,100" size="1110,912" zPosition="7" scrollbarMode="showOnDemand">
+      <convert type="TemplatedMultiContent">
 					{"template": [
 							MultiContentEntryText(pos = (5, 1), size = (675, 24), font=1, flags = RT_HALIGN_LEFT, text = 1), # name
 							MultiContentEntryText(pos = (5, 25), size = (150, 24), font=1, flags = RT_HALIGN_LEFT, text = 2), # state
@@ -18,10 +34,10 @@
 					"itemHeight": 50
 					}
 				</convert>
-			</widget>
- <widget name="key_red" position="242,1030" size="370,38" zPosition="1" font="Regular; 34" foregroundColor="red" halign="left" valign="center" backgroundColor="background" transparent="1" />
- <ePixmap pixmap="Pd1loi-HD-night/buttons/red.png" position="192,1032" size="34,34" alphatest="blend" />
-  </screen>
+    </widget>
+    <widget name="key_red" position="242,1030" size="370,38" zPosition="1" font="Regular; 34" foregroundColor="red" halign="left" valign="center" backgroundColor="background" transparent="1" />
+    <ePixmap pixmap="Pd1loi-HD-night/buttons/red.png" position="192,1032" size="34,34" alphatest="blend" />
+  </screen>>
   
   <!--FileCommanderContextMen-->
 
@@ -48,92 +64,96 @@
 <screen name="FileCommanderScreen" position="fill" title="File CommanderScreen" flags="wfNoBorder">
   <panel name="BasicTemplate" />
   <panel name="KeyMenuInfoTemplate" />
-  <ePixmap pixmap="Pd1loi-HD-night/border/bottom_bg7.png" position="959,179" size="3,835" />
-  <widget name="list_left_head1" position="30,152" size="930,25" font="Regular;18" foregroundColor="unfff000" />
-  <widget source="list_left_head2" render="Listbox" position="30,101" size="930,50" foregroundColor="unfff000" selectionDisabled="1" transparent="1">
-    <convert type="TemplatedMultiContent">
+  <ePixmap pixmap="Pd1loi-HD-night/border/bottom_bg7.png" position="961,194" size="3,820" />
+    <ePixmap pixmap="Pd1loi-HD-night/border/top2_bg.png" position="fill" size="1920,88" />
+    <ePixmap pixmap="Pd1loi-HD-night/border/smallshadowline.png" position="0,88" size="1920,3" zPosition="2" />
+    <widget name="list_left_head1" position="30,152" size="930,35" font="Regular;28" foregroundColor="unfff000" />
+    <widget source="list_left_head2" render="Listbox" position="30,101" size="930,50" foregroundColor="unfff000" selectionDisabled="1" transparent="1">
+      <convert type="TemplatedMultiContent">
 					{"template": [
 						MultiContentEntryText(pos = (0, 0), size = (115, 30), font = 0, flags = RT_HALIGN_LEFT, text = 1), # index 1 is a symbolic mode
 						MultiContentEntryText(pos = (130, 0), size = (90, 30), font = 0, flags = RT_HALIGN_RIGHT, text = 11), # index 11 is the scaled size
 						MultiContentEntryText(pos = (235, 0), size = (260, 30), font = 0, flags = RT_HALIGN_LEFT, text = 13), # index 13 is the modification time
 						],
 						"fonts": [gFont("Regular", 28)],
-						"itemHeight": 30,
+						"itemHeight": 35,
 						"selectionEnabled": False
 					}
 				</convert>
-  </widget>
-  <widget name="list_right_head1" position="962,152" size="930,25" font="Regular;18" foregroundColor="unfff000" />
-  <widget source="list_right_head2" render="Listbox" position="962,101" size="930,50" foregroundColor="unfff000" selectionDisabled="1" transparent="1">
-    <convert type="TemplatedMultiContent">
+    </widget>
+    <widget name="list_right_head1" position="963,152" size="930,35" font="Regular;28" foregroundColor="unfff000" />
+    <widget source="list_right_head2" render="Listbox" position="963,101" size="930,50" foregroundColor="unfff000" selectionDisabled="1" transparent="1">
+      <convert type="TemplatedMultiContent">
 					{"template": [
 						MultiContentEntryText(pos = (0, 0), size = (115, 30), font = 0, flags = RT_HALIGN_LEFT, text = 1), # index 1 is a symbolic mode
 						MultiContentEntryText(pos = (130, 0), size = (90, 30), font = 0, flags = RT_HALIGN_RIGHT, text = 11), # index 11 is the scaled size
 						MultiContentEntryText(pos = (235, 0), size = (260, 30), font = 0, flags = RT_HALIGN_LEFT, text = 13), # index 13 is the modification time
 						],
 						"fonts": [gFont("Regular", 28)],
-						"itemHeight": 30,
+						"itemHeight": 35,
 						"selectionEnabled": False
 					}
 				</convert>
-  </widget>
-  <widget name="list_left" selectionPixmap="Pd1loi-HD-night/buttons/sel4.png" position="30,179" size="930,835" itemHeight="40" scrollbarMode="showOnDemand" />
-  <widget name="list_right" selectionPixmap="Pd1loi-HD-night/buttons/sel4.png" position="962,179" size="930,835" itemHeight="40" scrollbarMode="showOnDemand" />
-  <widget name="key_red" position="242,1030" size="370,38" zPosition="1" font="Regular; 34" foregroundColor="red" halign="left" valign="center" backgroundColor="background" transparent="1" />
-  <widget name="key_green" position="678,1030" size="370,38" zPosition="1" font="Regular; 34" foregroundColor="green" halign="left" valign="center" backgroundColor="background" transparent="1" />
-  <widget name="key_yellow" position="1114,1030" size="370,38" zPosition="1" font="Regular; 34" foregroundColor="yellow" halign="left" valign="center" backgroundColor="background" transparent="1" />
-  <widget name="key_blue" position="1550,1030" size="320,38" zPosition="1" font="Regular; 34" foregroundColor="blue" halign="left" valign="center" backgroundColor="background" transparent="1" />
-  <ePixmap pixmap="Pd1loi-HD-night/buttons/red.png" position="192,1032" size="34,34" alphatest="blend" />
-  <ePixmap pixmap="Pd1loi-HD-night/buttons/green.png" position="628,1032" size="34,34" alphatest="blend" />
-  <ePixmap pixmap="Pd1loi-HD-night/buttons/yellow.png" position="1064,1032" size="34,34" alphatest="blend" />
-  <ePixmap pixmap="Pd1loi-HD-night/buttons/blue.png" position="1500,1032" size="34,34" alphatest="blend" />
-</screen>
+    </widget>
+    <widget name="list_left" selectionPixmap="Pd1loi-HD-night/buttons/sel4.png" position="30,194" size="930,820" itemHeight="40" scrollbarMode="showOnDemand" />
+    <widget name="list_right" selectionPixmap="Pd1loi-HD-night/buttons/sel4.png" position="964,194" size="930,820" itemHeight="40" scrollbarMode="showOnDemand" />
+    <widget name="key_red" position="242,1030" size="370,38" zPosition="1" font="Regular; 34" foregroundColor="red" halign="left" valign="center" backgroundColor="background" transparent="1" />
+    <widget name="key_green" position="678,1030" size="370,38" zPosition="1" font="Regular; 34" foregroundColor="green" halign="left" valign="center" backgroundColor="background" transparent="1" />
+    <widget name="key_yellow" position="1114,1030" size="370,38" zPosition="1" font="Regular; 34" foregroundColor="yellow" halign="left" valign="center" backgroundColor="background" transparent="1" />
+    <widget name="key_blue" position="1550,1030" size="320,38" zPosition="1" font="Regular; 34" foregroundColor="blue" halign="left" valign="center" backgroundColor="background" transparent="1" />
+    <ePixmap pixmap="Pd1loi-HD-night/buttons/red.png" position="192,1032" size="34,34" alphatest="blend" />
+    <ePixmap pixmap="Pd1loi-HD-night/buttons/green.png" position="628,1032" size="34,34" alphatest="blend" />
+    <ePixmap pixmap="Pd1loi-HD-night/buttons/yellow.png" position="1064,1032" size="34,34" alphatest="blend" />
+    <ePixmap pixmap="Pd1loi-HD-night/buttons/blue.png" position="1500,1032" size="34,34" alphatest="blend" />
+  </screen>
 
  <!--FileCommanderScreenFileSelect-->
 
 <screen name="FileCommanderScreenFileSelect" position="fill" title="File CommanderScreenSelect" flags="wfNoBorder">
   <panel name="BasicTemplate" />
   <panel name="KeyMenuInfoTemplate" />
-  <ePixmap pixmap="Pd1loi-HD-night/border/bottom_bg7.png" position="959,179" size="3,835" />
-  <widget name="list_left_head1" position="30,152" size="930,25" font="Regular;18" foregroundColor="unfff000" />
-  <widget source="list_left_head2" render="Listbox" position="30,101" size="930,50" foregroundColor="unfff000" selectionDisabled="1" transparent="1">
-    <convert type="TemplatedMultiContent">
+  <ePixmap pixmap="Pd1loi-HD-night/border/bottom_bg7.png" position="961,194" size="3,820" />
+    <ePixmap pixmap="Pd1loi-HD-night/border/top2_bg.png" position="fill" size="1920,88" />
+    <ePixmap pixmap="Pd1loi-HD-night/border/smallshadowline.png" position="0,88" size="1920,3" zPosition="2" />
+    <widget name="list_left_head1" position="30,152" size="930,35" font="Regular;28" foregroundColor="unfff000" />
+    <widget source="list_left_head2" render="Listbox" position="30,101" size="930,50" foregroundColor="unfff000" selectionDisabled="1" transparent="1">
+      <convert type="TemplatedMultiContent">
 					{"template": [
 						MultiContentEntryText(pos = (0, 0), size = (115, 30), font = 0, flags = RT_HALIGN_LEFT, text = 1), # index 1 is a symbolic mode
 						MultiContentEntryText(pos = (130, 0), size = (90, 30), font = 0, flags = RT_HALIGN_RIGHT, text = 11), # index 11 is the scaled size
 						MultiContentEntryText(pos = (235, 0), size = (260, 30), font = 0, flags = RT_HALIGN_LEFT, text = 13), # index 13 is the modification time
 						],
 						"fonts": [gFont("Regular", 28)],
-						"itemHeight": 30,
+						"itemHeight": 35,
 						"selectionEnabled": False
 					}
 				</convert>
-  </widget>
-  <widget name="list_right_head1" position="962,152" size="930,25" font="Regular;18" foregroundColor="unfff000" />
-  <widget source="list_right_head2" render="Listbox" position="962,101" size="930,50" foregroundColor="unfff000" selectionDisabled="1" transparent="1">
-    <convert type="TemplatedMultiContent">
+    </widget>
+    <widget name="list_right_head1" position="963,152" size="930,35" font="Regular;28" foregroundColor="unfff000" />
+    <widget source="list_right_head2" render="Listbox" position="963,101" size="930,50" foregroundColor="unfff000" selectionDisabled="1" transparent="1">
+      <convert type="TemplatedMultiContent">
 					{"template": [
 						MultiContentEntryText(pos = (0, 0), size = (115, 30), font = 0, flags = RT_HALIGN_LEFT, text = 1), # index 1 is a symbolic mode
 						MultiContentEntryText(pos = (130, 0), size = (90, 30), font = 0, flags = RT_HALIGN_RIGHT, text = 11), # index 11 is the scaled size
 						MultiContentEntryText(pos = (235, 0), size = (260, 30), font = 0, flags = RT_HALIGN_LEFT, text = 13), # index 13 is the modification time
 						],
 						"fonts": [gFont("Regular", 28)],
-						"itemHeight": 30,
+						"itemHeight": 35,
 						"selectionEnabled": False
 					}
 				</convert>
-  </widget>
-  <widget name="list_left" selectionPixmap="Pd1loi-HD-night/buttons/sel4.png" position="30,179" size="930,835" itemHeight="40" scrollbarMode="showOnDemand" />
-  <widget name="list_right" selectionPixmap="Pd1loi-HD-night/buttons/sel4.png" position="962,179" size="930,835" itemHeight="40" scrollbarMode="showOnDemand" />
-  <widget name="key_red" position="242,1030" size="370,38" zPosition="1" font="Regular; 34" foregroundColor="red" halign="left" valign="center" backgroundColor="background" transparent="1" />
-  <widget name="key_green" position="678,1030" size="370,38" zPosition="1" font="Regular; 34" foregroundColor="green" halign="left" valign="center" backgroundColor="background" transparent="1" />
-  <widget name="key_yellow" position="1114,1030" size="370,38" zPosition="1" font="Regular; 34" foregroundColor="yellow" halign="left" valign="center" backgroundColor="background" transparent="1" />
-  <widget name="key_blue" position="1550,1030" size="320,38" zPosition="1" font="Regular; 34" foregroundColor="blue" halign="left" valign="center" backgroundColor="background" transparent="1" />
-  <ePixmap pixmap="Pd1loi-HD-night/buttons/red.png" position="192,1032" size="34,34" alphatest="blend" />
-  <ePixmap pixmap="Pd1loi-HD-night/buttons/green.png" position="628,1032" size="34,34" alphatest="blend" />
-  <ePixmap pixmap="Pd1loi-HD-night/buttons/yellow.png" position="1064,1032" size="34,34" alphatest="blend" />
-  <ePixmap pixmap="Pd1loi-HD-night/buttons/blue.png" position="1500,1032" size="34,34" alphatest="blend" />
-</screen>
+    </widget>
+    <widget name="list_left" selectionPixmap="Pd1loi-HD-night/buttons/sel4.png" position="30,194" size="930,820" itemHeight="40" scrollbarMode="showOnDemand" />
+    <widget name="list_right" selectionPixmap="Pd1loi-HD-night/buttons/sel4.png" position="964,194" size="930,820" itemHeight="40" scrollbarMode="showOnDemand" />
+    <widget name="key_red" position="242,1030" size="370,38" zPosition="1" font="Regular; 34" foregroundColor="red" halign="left" valign="center" backgroundColor="background" transparent="1" />
+    <widget name="key_green" position="678,1030" size="370,38" zPosition="1" font="Regular; 34" foregroundColor="green" halign="left" valign="center" backgroundColor="background" transparent="1" />
+    <widget name="key_yellow" position="1114,1030" size="370,38" zPosition="1" font="Regular; 34" foregroundColor="yellow" halign="left" valign="center" backgroundColor="background" transparent="1" />
+    <widget name="key_blue" position="1550,1030" size="320,38" zPosition="1" font="Regular; 34" foregroundColor="blue" halign="left" valign="center" backgroundColor="background" transparent="1" />
+    <ePixmap pixmap="Pd1loi-HD-night/buttons/red.png" position="192,1032" size="34,34" alphatest="blend" />
+    <ePixmap pixmap="Pd1loi-HD-night/buttons/green.png" position="628,1032" size="34,34" alphatest="blend" />
+    <ePixmap pixmap="Pd1loi-HD-night/buttons/yellow.png" position="1064,1032" size="34,34" alphatest="blend" />
+    <ePixmap pixmap="Pd1loi-HD-night/buttons/blue.png" position="1500,1032" size="34,34" alphatest="blend" />
+  </screen>
 
 
   <!-- Swapmanager -->
