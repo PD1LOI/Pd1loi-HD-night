@@ -1,5 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <skin>
+<!--VPN-->
+<screen name="VpnScreen" backgroundColor="#00000000" position="fill" title="Vpn Menu" flags="wfNoBorder">
+  <panel name="PigTemplate" />
+  <widget name="countryPng" position="34,556" alphatest="blend" size="50,33" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/VpnChanger/icon/default.png" zPosition="2" />
+  <widget name="list" position="870,108" size="1000,900" backgroundColor="un0" selectionPixmap="Pd1loi-HD-night/buttons/sel4.png" scrollbarMode="showOnDemand" zPosition="2" transparent="1" />
+  <widget name="vpnLoad" position="870,108" size="1000,900" backgroundColor="un0" foregroundColor="unb8b8b8" font="Regular; 32" valign="top" halign="left" zPosition="2" transparent="1" />
+  <widget name="ipLabel" position="91,556" size="725,39" backgroundColor="un0" foregroundColor="unffff00" font="Regular; 32" valign="top" halign="left" zPosition="2" transparent="1" /><eLabel text="Start/Stop OpenVpn" position="75,677" size="333,43" backgroundColor="un0" transparent="1" foregroundColor="white" zPosition="2" font="Regular; 32" valign="top" halign="left" />
+  <widget name="vpnStatus" position="406,677" size="333,43" backgroundColor="un0" foregroundColor="white" font="Regular; 32" valign="top" halign="left" zPosition="2" transparent="1" />
+  <widget name="vpnInfo" position="406,729" size="333,43" backgroundColor="un0" foregroundColor="white" font="Regular; 32" valign="top" halign="left" zPosition="2" transparent="1" />  <widget name="vpnDir" position="75,729" size="333,43" backgroundColor="un0" foregroundColor="white" font="Regular; 32" valign="top" halign="left" zPosition="2" transparent="1" />
+  <widget name="check" position="75,781" size="333,43" backgroundColor="un0" foregroundColor="white" font="Regular; 32" valign="top" halign="left" zPosition="2" transparent="1" />
+  <widget name="checkLabel" position="406,781" size="333,43" backgroundColor="un0" foregroundColor="white" font="Regular; 32" valign="top" halign="left" zPosition="2" transparent="1" />
+  <widget name="network" position="75,832" size="333,43" backgroundColor="un0" foregroundColor="white" font="Regular; 32" valign="top" halign="left" zPosition="2" transparent="1" />
+  <eLabel position="57,682" size="5,33" zPosition="2" backgroundColor="#00ff0000" />
+  <eLabel position="57,733" size="5,33" zPosition="2" backgroundColor="#0000ff00" />
+  <eLabel position="57,786" size="5,33" zPosition="2" backgroundColor="#00ebff00" />
+  <eLabel position="57,837" size="5,33" zPosition="2" backgroundColor="#003000ff" />
+</screen>
+              
+              <screen name="FolderScreen" position="fill" title="Sicherungs Ordner">
+              <panel name="PigTemplate" />
+       <widget name="media" position="870,108" size="1000,40" valign="top" font="Regular; 35" />
+       <widget name="folderlist" position="870,159" zPosition="1" selectionPixmap="Pd1loi-HD-night/buttons/sel4.png" size="1000,500" scrollbarMode="showOnDemand" />
+ <ePixmap objectTypes="key_green,Button,Label" pixmap="Pd1loi-HD-night/buttons/green.png" position="628,1032" size="34,34" zPosition="1" alphatest="blend" />
+     <widget objectTypes="key_red,StaticText" source="key_red" render="Pixmap" pixmap="Pd1loi-HD-night/buttons/red.png" position="192,1032" size="34,34" zPosition="1" alphatest="blend" />
+<ePixmap objectTypes="key_red,Button,Label" pixmap="Pd1loi-HD-night/buttons/red.png" position="192,1032" size="34,34" zPosition="1" alphatest="blend" />
+ </screen>
+
 <!-- FileCommander-->
 
 <screen name="InputBoxWide" position="fill" title="Input" flags="wfNoBorder">
