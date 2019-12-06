@@ -485,6 +485,39 @@
   
 </screen>
 
+<!-- BlindScan -->
+<screen name="DmmBlindscan" position="fill" title="Satellite Blindscan">
+<panel name="PigTemplate" />
+<panel name="KeyMenuInfoTemplate" />
+<widget name="config" position="780,108" size="1110,870" selectionPixmap="Pd1loi-HD-night/buttons/sel4.png" font="Regular;30" itemHeight="40" scrollbarMode="showOnDemand" />
+<eLabel position="780,550" size="1110,1" backgroundColor="green" />
+<widget name="introduction" position="30,535" size="725,300" font="Regular;32" halign="top" foregroundColor="unffff00" />
+</screen>
+
+<screen name="BlindscanState" position="fill" title="Satellite Blindscan">
+  <panel name="PigTemplate" />
+  <panel name="KeyMenuInfoTemplate" />
+<eLabel position="30,840" size="725,2" backgroundColor="grey" />
+  <widget name="progress" position="10,5" size="800,85" font="Regular;19" />
+  <eLabel position="775,108" size="2,900" backgroundColor="grey" />
+  <widget name="config" position="780,108" size="1110,900" selectionPixmap="Pd1loi-HD-night/buttons/sel4.png" font="Regular;18" />
+  <widget name="post_action" position="30,535" size="725,300" foregroundColor="unffff00" font="Regular;30" halign="center" />
+</screen>
+
+
+<screen name="Blindscan" position="0,0" title="Blind scan">
+    <panel name="BasicTemplate" />
+    <panel name="KeyMenuInfoTemplate" />
+<widget name="rotorstatus" position="30,667" size="700,35" font="Regular;30" foregroundColor="#00ffc000" />
+<widget name="config" position="780,108" size="1110,500" selectionPixmap="Pd1loi-HD-night/buttons/sel4.png" scrollbarMode="showOnDemand" />
+<widget name="description" position="780,626" size="1110,380" font="Regular;30" foregroundColor="#00ffc000" />
+<widget name="introduction" position="30,612" size="700,40" font="Regular;30" foregroundColor="green" halign="center" />
+<widget text="LOCK" source="Frontend" render="FixedLabel" position="617,972" zPosition="2" size="160,35" font="Regular;30" foregroundColor="green" transparent="1">
+<convert type="FrontendInfo">LOCK</convert>
+<convert type="ConditionalShowHide" />
+</widget>
+</screen>
+
 	<!-- Movie Player Infobar -->
        
         <screen name="MoviePlayer" title="InfoBar" position="147,880" size="1620,150" backgroundColor="transparent" flags="wfNoBorder">
