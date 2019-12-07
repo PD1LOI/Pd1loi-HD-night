@@ -2494,7 +2494,7 @@ n\n\n\n\n\n\t\t\n\t\t\n\t\t\n\n\n\n\n\n
 		<eLabel position="10,70" size="800,1" backgroundColor="grey" />
 		<widget source="list" render="Listbox" position="780,159" size="1110,850" selectionPixmap="Pd1loi-HD-night/buttons/sel4.png" scrollbarMode="showAlways">
 			<convert type="TemplatedMultiContent">
-				{"template": [ MultiContentEntryText(pos = (5, 2), size = (514, 35), flags = RT_HALIGN_LEFT, text = 0) ],
+				{"template": [ MultiContentEntryText(pos = (5, 2), size = (550, 35), flags = RT_HALIGN_LEFT, text = 0) ],
 				 "fonts": [gFont("Regular", 30)],
 				 "itemHeight": 40
 				}
@@ -2505,17 +2505,17 @@ n\n\n\n\n\n\t\t\n\t\t\n\t\t\n\n\n\n\n\n
 </screen>
 
 
-<screen name="Blindscan" position="fill" title="Blind scan">
-    <panel name="BasicTemplate" />
-    <panel name="KeyMenuInfoTemplate" />
-<widget name="rotorstatus" position="30,667" size="700,35" font="Regular;30" foregroundColor="#00ffc000" />
-<widget name="config" position="780,108" size="1110,500" selectionPixmap="Pd1loi-HD-night/buttons/sel4.png" scrollbarMode="showOnDemand" />
-<widget name="description" position="780,626" size="1110,380" font="Regular;30" foregroundColor="#00ffc000" />
-<widget name="introduction" position="30,612" size="700,40" font="Regular;30" foregroundColor="green" halign="center" />
-<widget text="LOCK" source="Frontend" render="FixedLabel" position="617,972" zPosition="2" size="160,35" font="Regular;30" foregroundColor="green" transparent="1">
-<convert type="FrontendInfo">LOCK</convert>
-<convert type="ConditionalShowHide" />
-</widget>
+<screen name="Blindscan" position="fill" title="Blind scan" flags="wfNoBorder">
+  <panel name="PigTemplate" />
+  <panel name="KeyMenuInfoTemplate" />
+  <widget name="rotorstatus" position="30,609" size="719,40" font="Regular;30" foregroundColor="orange" />
+  <widget name="config" position="780,108" size="1110,500" selectionPixmap="Pd1loi-HD-night/buttons/sel4.png" scrollbarMode="showOnDemand" />
+  <widget name="description" position="780,626" size="1110,380" font="Regular;30" foregroundColor="orange" />
+  <widget name="introduction" position="30,547" size="719,40" font="Regular;30" foregroundColor="green" halign="center" />
+  <widget text="LOCK" source="Frontend" render="FixedLabel" position="617,972" zPosition="2" size="160,35" font="Regular;30" foregroundColor="green" transparent="1">
+    <convert type="FrontendInfo">LOCK</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
 </screen>
 
 	<!-- ModifyPLiFullHD -->
