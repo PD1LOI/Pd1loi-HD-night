@@ -5,7 +5,7 @@
 		<panel name="PigTemplate"/>
 		<panel name="KeyMenuInfoTemplate"/>
 		<widget name="text" position="30,560" size="720,210" foregroundColor="unffff00" font="Regular;36" halign="center" zPosition="1"/>
-		<widget source="list" render="Listbox" transparent="0" selectionPixmap="Pd1loi-HD-night/buttons/sel81.png" position="780,100" size="1110,912" scrollbarMode="showOnDemand" >
+		<widget source="list" render="Listbox" transparent="0" selectionPixmap="Pd1loi-HD-night/buttons/sel81.png" position="780,100" size="1110,914" scrollbarMode="showOnDemand" >
 			<convert type="TemplatedMultiContent" >
 				{"template": [
 				MultiContentEntryPixmapAlphaTest(pos=(0,0), size=(150,108), png=2), # Thumbnail
@@ -25,7 +25,7 @@
 		<panel name="PigTemplate"/>
 		<panel name="KeyMenuTemplate"/>
 		<widget name="config" position="780,100" size="1110,45" itemHeight="45" font="Regular;30" halign="center" zPosition="1"/> <!-- Search box -->
-		<widget source="list" render="Listbox" transparent="0" selectionPixmap="Pd1loi-HD-night/buttons/sel6.png" position="780,150" size="1110,712" scrollbarMode="showOnDemand" >
+		<widget source="list" render="Listbox" transparent="0" selectionPixmap="Pd1loi-HD-night/buttons/sel6.png" position="780,150" size="1110,864" scrollbarMode="showOnDemand" >
 			<convert type="TemplatedMultiContent" >
 				{"template": [
 				MultiContentEntryText(pos=(15,1), size=(870,45), font=0, flags=RT_HALIGN_LEFT, text=0)
@@ -2478,13 +2478,45 @@ n\n\n\n\n\n\t\t\n\t\t\n\t\t\n\n\n\n\n\n
 
 	<!-- BlindScan -->
 
-	<screen name="Blindscan" position="fill" title="Blind scan">
-		<panel name="BasicTemplate"/>
-		<widget name="rotorstatus" position="30,120" size="720,405" font="Regular;60" zPosition="1" transparent="1" foregroundColor="secondFG" valign="center" halign="center"/>
-		<widget name="config" position="780,105" size="1110,836" itemHeight="38" selectionPixmap="Pd1loi-HD-night/buttons/sel4.png" font="Regular;28" scrollbarMode="showOnDemand"/>
-		<widget name="description" position="30,560" size="720,210" font="Regular;30" foregroundColor="foreground" halign="left"/>
-		<widget name="introduction" position="780,975" size="1100,37" font="Regular;32" foregroundColor="foreground" halign="center"/>
-	</screen>
+<screen name="DmmBlindscan" position="fill" title="Satellite Blindscan">
+<panel name="PigTemplate" />
+<panel name="KeyMenuInfoTemplate" />
+<widget name="config" position="780,108" size="1110,870" selectionPixmap="Pd1loi-HD-night/buttons/sel4.png" font="Regular;30" itemHeight="40" scrollbarMode="showOnDemand" />
+<eLabel position="780,550" size="1110,1" backgroundColor="green" />
+<widget name="introduction" position="30,535" size="725,300" font="Regular;32" halign="top" foregroundColor="unffff00" />
+</screen>
+
+<screen name="SatBlindscanState" position="fill" title="Satellite Blindscan" flags="wfNoBorder">
+  <panel name="PigTemplate" />
+  <panel name="KeyMenuInfoTemplate" />
+	<widget name="text" position="10,10" size="800,25" font="Regular;20" />
+		<widget name="progress" position="780,108" size="1110,50" foregroundColor="unffff00" font="Regular;30" />
+		<eLabel position="10,70" size="800,1" backgroundColor="grey" />
+		<widget source="list" render="Listbox" position="780,159" size="1110,850" selectionPixmap="Pd1loi-HD-night/buttons/sel4.png" scrollbarMode="showAlways">
+			<convert type="TemplatedMultiContent">
+				{"template": [ MultiContentEntryText(pos = (5, 2), size = (514, 35), flags = RT_HALIGN_LEFT, text = 0) ],
+				 "fonts": [gFont("Regular", 30)],
+				 "itemHeight": 40
+				}
+			</convert>
+		</widget>
+		
+		<widget name="post_action" position="30,550" size="700,140" foregroundColor="unffff00" font="Regular;32" halign="center" />
+</screen>
+
+
+<screen name="Blindscan" position="fill" title="Blind scan">
+    <panel name="BasicTemplate" />
+    <panel name="KeyMenuInfoTemplate" />
+<widget name="rotorstatus" position="30,667" size="700,35" font="Regular;30" foregroundColor="#00ffc000" />
+<widget name="config" position="780,108" size="1110,500" selectionPixmap="Pd1loi-HD-night/buttons/sel4.png" scrollbarMode="showOnDemand" />
+<widget name="description" position="780,626" size="1110,380" font="Regular;30" foregroundColor="#00ffc000" />
+<widget name="introduction" position="30,612" size="700,40" font="Regular;30" foregroundColor="green" halign="center" />
+<widget text="LOCK" source="Frontend" render="FixedLabel" position="617,972" zPosition="2" size="160,35" font="Regular;30" foregroundColor="green" transparent="1">
+<convert type="FrontendInfo">LOCK</convert>
+<convert type="ConditionalShowHide" />
+</widget>
+</screen>
 
 	<!-- ModifyPLiFullHD -->
 
