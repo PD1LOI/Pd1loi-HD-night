@@ -2489,7 +2489,6 @@ n\n\n\n\n\n\t\t\n\t\t\n\t\t\n\n\n\n\n\n
 <screen name="SatBlindscanState" position="fill" title="Satellite Blindscan" flags="wfNoBorder">
   <panel name="PigTemplate" />
   <panel name="KeyMenuInfoTemplate" />
-	<widget name="text" position="10,10" size="800,25" font="Regular;20" />
 		<widget name="progress" position="780,108" size="1110,50" foregroundColor="unffff00" font="Regular;30" />
 		<eLabel position="10,70" size="800,1" backgroundColor="grey" />
 		<widget source="list" render="Listbox" position="780,159" size="1110,850" selectionPixmap="Pd1loi-HD-night/buttons/sel4.png" scrollbarMode="showAlways">
