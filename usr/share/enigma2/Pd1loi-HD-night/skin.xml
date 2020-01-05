@@ -219,7 +219,7 @@
 		<color name="secondBG" value="#18101214"/>
 		<color name="secondFG" value="#00F9C731"/>
 		<color name="selectedBG" value="#06303240"/>
-		<color name="selectedFG" value="#00fcc000"/>
+		<color name="selectedFG" value="#0000ff00"/>
 		<color name="transparent" value="#ff000000"/>
 		<color name="transpBlack" value="#54111112"/>
 		<color name="transpDark" value="#54242424"/>
