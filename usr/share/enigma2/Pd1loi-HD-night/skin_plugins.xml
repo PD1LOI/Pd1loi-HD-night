@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <skin>
 <screen name="DiseqcTester" position="fill" title="DiSEqC Tester">
-  <panel name="PigTemplate" />
+   <panel name="PigTemplate" />
   <panel name="KeyInfoTemplate" />
   <widget source="progress_list" render="Listbox" position="780,100" selectionPixmap="Pd1loi-HD-night/buttons/sel4.png" size="1110,560" scrollbarMode="showOnDemand" itemHeight="35">
     <convert type="TemplatedMultiContent">
 					{"template": [
-							MultiContentEntryText(pos = (10, 0), size = (330, 35), flags = RT_HALIGN_LEFT, text = 1), # index 1 is the index name,
-							MultiContentEntryText(pos = (330, 0), size = (150, 35), flags = RT_HALIGN_RIGHT, text = 2) # index 2 is the status,
+							MultiContentEntryText(pos = (10, 0), size = (750, 40), flags = RT_HALIGN_LEFT, text = 1), # index 1 is the index name,
+							MultiContentEntryText(pos = (850, 0), size = (250, 40), flags = RT_HALIGN_RIGHT, text = 2) # index 2 is the status,
 						],
 					"fonts": [gFont("Regular", 30)],
-					"itemHeight": 45
+					"itemHeight": 50
 					}
 				</convert>
   </widget>
@@ -19,15 +19,16 @@
   <widget name="Progress" position="780,781" size="1110,35" font="Regular; 31" halign="center" transparent="1" foregroundColor="selectedFG" />
   <widget source="sub_progress" render="Progress" position="780,836" size="1110,35" borderWidth="2" backgroundColor="un254f7497" />
   <widget name="Failed" position="31,540" size="200,40" font="Regular; 30" halign="left" transparent="0" />
-  <widget source="failed_counter" render="Label" position="234,540" size="360,40" font="Regular; 30" />
+  <widget source="failed_counter" render="Label" position="393,540" size="360,40" font="Regular; 30" halign="right" />
   <widget name="Succeeded" position="31,582" size="360,40" font="Regular; 30" halign="left" transparent="1" />
-  <widget source="succeeded_counter" render="Label" position="234,582" size="360,40" font="Regular; 30" />
+  <widget source="succeeded_counter" render="Label" position="393,582" size="360,40" font="Regular; 30" halign="right" />
   <widget name="With_errors" position="31,624" size="360,40" font="Regular; 30" halign="left" transparent="1" />
-  <widget source="witherrors_counter" render="Label" position="234,624" size="360,40" font="Regular; 30" />
+  <widget source="witherrors_counter" render="Label" position="393,624" size="360,40" font="Regular; 30" halign="right" />
   <widget name="Not_tested" position="31,666" size="360,40" font="Regular; 30" halign="left" transparent="1" />
-  <widget source="untestable_counter" render="Label" position="234,666" size="360,40" font="Regular; 30" />
+  <widget source="untestable_counter" render="Label" position="393,666" size="360,40" font="Regular; 30" halign="right" />
   <widget source="CmdText" render="Label" position="30,709" size="719,250" font="Regular; 32" foregroundColor="unffff00" />
 </screen>
+
  <screen name="SDGRadioScreen" position="fill" title="SDG Radio" backgroundColor="background" flags="wfNoBorder">
    <panel name="PigLessTemplate" />
   <panel name="KeyInfoTemplate" />
