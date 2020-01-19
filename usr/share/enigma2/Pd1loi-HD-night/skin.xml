@@ -482,7 +482,7 @@
     <convert type="EventName">FullDescription</convert>
 	<panel name="InfoBarTemplate" />
   </widget>
-  
+ <panel name="InfoBarTemplate" /> 
 </screen>
 
 
