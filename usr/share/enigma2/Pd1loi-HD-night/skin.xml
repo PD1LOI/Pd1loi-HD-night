@@ -289,11 +289,11 @@
     
  	<!-- Volume -->
  
-        <screen name="Volume" title="Volume" position="75,180" size="30,330" backgroundColor="background" zPosition="1" flags="wfNoBorder">
-	<widget name="Volume" pixmap="Pd1loi-HD-night/infobar/volumeslider.png" position="0,3" size="30,300" orientation="orBottomToTop" transparent="1" zPosition="1">
-	</widget>
-	<ePixmap pixmap="Pd1loi-HD-night/infobar/vol_box.png" position="0,303" size="30,24" alphatest="on" zPosition="4"/>
-	</screen>
+<screen name="Volume" title="Volume" position="65,379" size="30,325" backgroundColor="background" zPosition="1" flags="wfNoBorder">
+  <widget name="Volume" pixmap="Pd1loi-HD-night/infobar/volumeslider.png" position="0,0" size="30,300" orientation="orBottomToTop" transparent="1" zPosition="1">
+  </widget>
+  <ePixmap pixmap="Pd1loi-HD-night/infobar/vol_box.png" position="0,301" size="30,24" alphatest="on" zPosition="4" />
+</screen>
 	
 	
 	<screen name="Mute" title="Mute" position="center,15" size="45,45" backgroundColor="transparent" zPosition="10" flags="wfNoBorder">
