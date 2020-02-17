@@ -2886,28 +2886,30 @@ n\n\n\n\n\n\t\t\n\t\t\n\t\t\n\n\n\n\n\n
 
 	<!-- ## TMBD ##-->
 	<screen name="TMBD" position="fill" flags="wfNoBorder">
-		<panel name="SelectionTemplate"/>
-		<panel name="KeyMenuTemplate"/>
-		<panel name="KeyInfoTemplate"/>
-		<widget name="title" position="30,561" size="715,40" font="RegularSmall;30" foregroundColor="secondFG" halign="center" />
-		<widget alphatest="blend" name="starsbg" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/TMBD/starsbar_empty.png" position="271,619" size="315,31" zPosition="2" />
-		<widget name="stars" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/TMBD/starsbar_filled.png" position="271,619" size="315,31" transparent="1" zPosition="3" />
-		<widget name="ratinglabel" position="30,673" size="715,36" font="Regular;30" foregroundColor="grey" halign="center" />
-		<widget name="voteslabel" position="30,728" size="715,36" font="Regular;30" foregroundColor="grey" halign="center" />
-		<widget name="statusbar" position="27,859" size="715,45" font="Regular;30" halign="center" valign="bottom" foregroundColor="unffff00" />
-		<widget name="poster" position="778,110" size="165,270" alphatest="blend" />
-		<widget name="detailslabel" position="977,110" size="912,45" font="Regular;30" halign="center" foregroundColor="secondFG" />
-		<widget name="menu" position="978,169" size="912,405" selectionPixmap="Pd1loi-HD-night/buttons/sel3.png" font="Regular;35" itemHeight="45" scrollbarMode="showOnDemand" zPosition="3" enableWrapAround="1" foregroundColor="grey" />
-		<widget name="castlabel" position="978,624" size="912,390" font="Regular;33" halign="block" foregroundColor="white" />
-		<widget name="extralabel" position="978,169" size="912,455" font="Regular;30" foregroundColor="grey" />
-                <ePixmap pixmap="Pd1loi-HD-night/logos/pd1loi.png" position="30,967" size="320,40" alphatest="on" />
-	</screen>
+  <panel name="SelectionTemplate" />
+  <panel name="KeyMenuTemplate" />
+  <panel name="KeyInfoTemplate" />
+		<widget name="title" position="30,570" size="715,45" font="RegularSmall;30" foregroundColor="secondFG" halign="center" />
+		<widget alphatest="blend" name="starsbg" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/TMBD/starsbar_empty.png" position="273,627" size="315,31" zPosition="2" />
+		<widget name="stars" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/TMBD/starsbar_filled.png" position="273,627" size="315,31" transparent="1" zPosition="3" />
+		<widget name="ratinglabel" position="30,675" size="715,36" font="Regular;30" foregroundColor="grey" halign="center" />
+		<widget name="voteslabel" position="30,730" size="715,36" font="Regular;30" foregroundColor="grey" halign="center" />
+		<widget name="statusbar" position="30,783" size="715,45" font="Regular;30" halign="center" valign="center" foregroundColor="unffff00" />
+		<widget name="poster" position="780,188" size="165,270" alphatest="blend" />
+		<widget name="detailslabel" position="980,117" size="907,45" font="Regular;30" halign="center" foregroundColor="secondFG" />
+		<widget name="menu" position="980,161" size="907,405" selectionPixmap="Pd1loi-HD-night/buttons/sel3.png" font="Regular;33" itemHeight="45" scrollbarMode="showOnDemand" zPosition="3" enableWrapAround="1" foregroundColor="grey" />
+		<widget name="castlabel" position="780,580" size="1110,395" font="Regular;33" foregroundColor="grey" />
+		<widget name="extralabel" position="980,117" size="905,450" font="Regular;30" foregroundColor="grey" />
+	<ePixmap pixmap="Pd1loi-HD-night/logos/pd1loi.png" position="30,967" size="320,40" alphatest="on" />
+  </screen>
 	<screen name="TMBDSettings" position="fill" flags="wfNoBorder">
-		<panel name="PigTemplate"/>
-		<widget name="config" position="780,123" size="1110,874" selectionPixmap="Pd1loi-HD-night/buttons/sel4.png" font="Regular;33" itemHeight="45" foregroundColor="grey" scrollbarMode="showOnDemand"/>
-	</screen>
+  <panel name="PigTemplate" />
+  <widget name="config" position="780,117" size="1110,402" selectionPixmap="Pd1loi-HD-night/buttons/sel4.png" font="Regular;33" itemHeight="45" foregroundColor="grey" scrollbarMode="showOnDemand" />
+</screen>
         <screen name="TmbdYTTrailerList" position="fill" flags="wfNoBorder" title="YTTrailer List">
-		<panel name="PigTemplate" />
+		  <panel name="SelectionTemplate" />
+  <panel name="KeyMenuTemplate" />
+  <panel name="KeyInfoTemplate" />
 		<widget source="list" render="Listbox" selectionPixmap="Pd1loi-HD-night/buttons/sel80.png" position="780,123" size="1110,874" scrollbarMode="showOnDemand">
 			<convert type="TemplatedMultiContent">
 				{"template": [
@@ -2917,9 +2919,11 @@ n\n\n\n\n\n\t\t\n\t\t\n\t\t\n\n\n\n\n\n
 				"itemHeight": 108}
 			</convert>
 		</widget>
-		<widget name="thumbnail" position="0,0" size="150,108" /> # Thumbnail size in list
-		<eLabel text="'OK'= Play trailer" position="652,1030" size="330,39" font="RegularSmall;33" halign="left" zPosition="1" />
-	</screen>
+		<widget name="thumbnail" position="616,890" size="150,108" /> # Thumbnail size in list
+    <eLabel text="'OK'= Play trailer" position="678,1030" size="370,38" font="RegularSmall;33" halign="left" zPosition="1" />
+	<!--<widget name="key_green" position="678,1030" size="370,38" zPosition="1" transparent="1" font="Regular;34" halign="left" foregroundColor="green" />
+	<ePixmap pixmap="Pd1loi-HD-night/buttons/green.png" position="628,1032" size="34,34" alphatest="blend" /> -->
+</screen>
 
 	<!-- ## WikiPedia# -->
 	<screen name="searchWikipedia" position="fill" flags="wfNoBorder">
