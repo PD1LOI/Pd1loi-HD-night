@@ -29,56 +29,44 @@
   <widget source="CmdText" render="Label" position="30,709" size="719,250" font="Regular; 32" foregroundColor="unffff00" />
 </screen>
 
- <screen name="SDGRadioScreen" position="fill" title="SDG Radio" backgroundColor="background" flags="wfNoBorder">
-   <panel name="PigLessTemplate" />
+<screen name="SDGRadioScreen" position="fill" title="SDG Radio" backgroundColor="black" flags="wfNoBorder" size="1920,1080">
+  <panel name="PigLessTemplate" />
   <panel name="KeyInfoTemplate" />
   <panel name="KeyMenuInfoTemplate" />
-  <eLabel name="" position="140,124" size="200,700" backgroundColor="un64c7" zPosition="0" />
-  <eLabel position="140,224" zPosition="1" size="200,600" backgroundColor="transpBA" transparent="0" />
-  <widget source="global.CurrentTime" render="Label" position="145,264" size="190,35" backgroundColor="un64c7" transparent="1" font="Regular; 32" valign="center" halign="center" foregroundColor="white" zPosition="2">
+  <ePixmap pixmap="Pd1loi-HD-night/infobar/AB.png" position="119,100" size="200,817" alphatest="on" />
+  <widget source="global.CurrentTime" render="Label" position="126,848" size="190,35" backgroundColor="transparent" transparent="1" font="Regular; 24" valign="center" halign="center" foregroundColor="white" zPosition="2">
     <convert type="ClockToText">Format:%d-%m-%Y</convert>
   </widget>
-  <widget source="global.CurrentTime" render="Label" position="145,227" size="190,35" backgroundColor="un64c7" transparent="1" font="Regular; 32" valign="center" halign="center" foregroundColor="white" zPosition="2">
-    <convert type="ClockToText">Format:%A</convert>
-  </widget>
-  <widget source="global.CurrentTime" render="Label" position="146,779" size="110,40" backgroundColor="un64c7" transparent="1" font="Regular; 34" halign="right" valign="center" zPosition="2" foregroundColor="white">
+  <widget source="global.CurrentTime" render="Label" position="126,763" size="110,30" backgroundColor="transparent" transparent="1" font="Regular; 28" halign="right" valign="center" zPosition="2" foregroundColor="white">
     <convert type="ClockToText">Format:%-H:%M</convert>
   </widget>
-  <widget source="global.CurrentTime" render="Label" position="256,783" size="45,30" font="Regular; 24" halign="left" valign="center" transparent="1" backgroundColor="un64c7" foregroundColor="jeaune" zPosition="2">
+  <widget source="global.CurrentTime" render="Label" position="236,763" size="55,30" font="Regular; 24" halign="left" valign="center" transparent="1" backgroundColor="transparent" foregroundColor="white" zPosition="2">
     <convert type="ClockToText">Format: :%S</convert>
   </widget>
-  <ePixmap pixmap="skin_default/buttons/key_video.png" alphatest="blend" position="30,1031" size="52,38" />
-  <ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Extensions/SDGRadio/img/line1.png" position="145,306" size="190,2" scale="1" zPosition="10" alphatest="blend" />
-  <ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Extensions/SDGRadio/img/line1.png" position="145,770" size="190,2" scale="1" zPosition="10" alphatest="blend" />
+  <widget name="mem_0" position="199,348" size="40,25" alphatest="on" zPosition="2" />
+  <widget name="mem_1" position="145,243" size="40,25" alphatest="on" zPosition="2" />
+  <widget name="mem_2" position="199,242" size="40,25" alphatest="on" zPosition="2" />
+  <widget name="mem_3" position="255,241" size="40,25" alphatest="on" zPosition="2" />
+  <widget name="mem_4" position="145,278" size="40,25" alphatest="on" zPosition="2" />
+  <widget name="mem_5" position="199,277" size="40,25" alphatest="on" zPosition="2" />
+  <widget name="mem_6" position="255,276" size="40,25" alphatest="on" zPosition="2" />
+  <widget name="mem_7" position="145,313" size="40,25" alphatest="on" zPosition="2" />
+  <widget name="mem_8" position="199,312" size="40,25" alphatest="on" zPosition="2" />
+  <widget name="mem_9" position="255,312" size="40,25" alphatest="on" zPosition="2" />
   <widget name="key_red" position="242,1030" size="370,38" backgroundColor="transpBA" zPosition="1" transparent="1" font="Regular; 32" halign="left" valign="center" foregroundColor="red" />
   <widget name="key_green" position="678,1030" size="370,38" backgroundColor="transpBA" zPosition="1" transparent="1" font="Regular; 32" halign="left" valign="center" foregroundColor="green" />
   <widget name="key_yellow" position="1114,1030" size="370,38" backgroundColor="transpBA" zPosition="1" transparent="1" font="Regular; 32" halign="left" valign="center" foregroundColor="yellow" />
   <widget name="key_blue" position="1550,1030" size="370,38" backgroundColor="transpBA" zPosition="1" transparent="1" font="Regular;32" halign="left" valign="center" foregroundColor="blue" />
-  <ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Extensions/SDGRadio/img/flecheg.png" position="152,416" size="50,40" alphatest="blend" transparent="1" zPosition="2" />
-  <ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Extensions/SDGRadio/img/fleched.png" position="279,416" size="50,40" alphatest="blend" transparent="1" zPosition="2" />
-  <ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Extensions/SDGRadio/img/flecheh.png" position="215,360" size="50,40" alphatest="blend" transparent="1" zPosition="2" />
-  <ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Extensions/SDGRadio/img/flecheb.png" position="215,471" size="50,40" alphatest="blend" transparent="1" zPosition="2" />
   <ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Extensions/SDGRadio/img/radio-frequency.png" position="783,100" size="1110,460" scale="1" zPosition="0" alphatest="blend" />
-  <widget name="mem_0" position="181,555" size="50,40" alphatest="on" zPosition="2" />
-  <widget name="mem_1" position="253,555" size="50,40" alphatest="on" zPosition="2" />
-  <widget name="mem_2" position="153,612" size="50,40" alphatest="on" zPosition="2" />
-  <widget name="mem_3" position="216,612" size="50,40" alphatest="on" zPosition="2" />
-  <widget name="mem_4" position="278,613" size="50,40" alphatest="on" zPosition="2" />
-  <widget name="mem_5" position="153,663" size="50,40" alphatest="on" zPosition="2" />
-  <widget name="mem_6" position="216,663" size="50,40" alphatest="on" zPosition="2" />
-  <widget name="mem_7" position="278,663" size="50,40" alphatest="on" zPosition="2" />
-  <widget name="mem_8" position="181,718" size="50,40" alphatest="on" zPosition="2" />
-  <widget name="mem_9" position="253,718" size="50,40" alphatest="on" zPosition="2" />
   <widget name="dab_channel" position="783,439" size="200,120" valign="center" halign="center" zPosition="2" foregroundColor="unff1100" font="Digital;120" transparent="1" backgroundColor="unff1100" />
   <widget name="freq" position="1076,439" size="750,120" valign="center" halign="left" zPosition="2" foregroundColor="unff1100" font="Digital;120" transparent="1" backgroundColor="unff1100" />
-  <widget name="prog_type" position="375,322" size="350,40" valign="center" halign="center" zPosition="2" foregroundColor="unff1100" font="Regular;40" transparent="1" backgroundColor="unff1100" />
-  <widget name="radiotext" position="377,371" size="350,110" valign="top" halign="center" zPosition="2" foregroundColor="unff1100" font="Regular; 32" transparent="1" backgroundColor="unff1100" />
+  <widget name="prog_type" position="375,322" size="350,45" valign="center" halign="center" zPosition="2" foregroundColor="myblue" font="Regular;40" transparent="1" backgroundColor="unff1100" />
+  <widget name="radiotext" position="377,591" size="1510,110" valign="top" halign="center" zPosition="2" foregroundColor="unffff00" font="Regular; 42" transparent="1" backgroundColor="black" />
   <widget source="global.CurrentTime" render="Label" position="0,0" size="0,0" halign="center" valign="center" noWrap="1" zPosition="1" foregroundColor="white" font="Digital;120" transparent="1">
     <convert type="ClockToText">WithSeconds</convert>
   </widget>
-  <ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Extensions/SDGRadio/img/key_ok.png" position="215,416" size="50,40" transparent="0" zPosition="10" alphatest="on" />
-  <eLabel name="Select" text="Select" position="163,314" size="155,30" foregroundColor="white" font="Regular; 32" zPosition="5" halign="center" />
-  <widget name="pic" position="452,124" size="200,150" halign="center" alphatest="on" backgroundColor="un20000000" zPosition="20" />
+  <eLabel name="Select" text="Select" position="126,733" size="190,30" transparent="1" foregroundColor="unffff00" font="Regular; 24" zPosition="5" halign="center" backgroundColor="transparent" />
+  <widget name="pic" position="445,124" size="200,150" halign="center" alphatest="on" backgroundColor="un20000000" zPosition="20" />
 </screen>
 
 	<!-- YouTube by Taapat	-->
@@ -2907,9 +2895,7 @@ n\n\n\n\n\n\t\t\n\t\t\n\t\t\n\n\n\n\n\n
   <widget name="config" position="780,117" size="1110,402" selectionPixmap="Pd1loi-HD-night/buttons/sel4.png" font="Regular;33" itemHeight="45" foregroundColor="grey" scrollbarMode="showOnDemand" />
 </screen>
         <screen name="TmbdYTTrailerList" position="fill" flags="wfNoBorder" title="YTTrailer List">
-		  <panel name="SelectionTemplate" />
-  <panel name="KeyMenuTemplate" />
-  <panel name="KeyInfoTemplate" />
+     <panel name="PigTemplate" />
 		<widget source="list" render="Listbox" selectionPixmap="Pd1loi-HD-night/buttons/sel80.png" position="780,123" size="1110,874" scrollbarMode="showOnDemand">
 			<convert type="TemplatedMultiContent">
 				{"template": [
@@ -2920,10 +2906,8 @@ n\n\n\n\n\n\t\t\n\t\t\n\t\t\n\n\n\n\n\n
 			</convert>
 		</widget>
 		<widget name="thumbnail" position="616,890" size="150,108" /> # Thumbnail size in list
-    <eLabel text="'OK'= Play trailer" position="678,1030" size="370,38" font="RegularSmall;33" halign="left" zPosition="1" />
-	<!--<widget name="key_green" position="678,1030" size="370,38" zPosition="1" transparent="1" font="Regular;34" halign="left" foregroundColor="green" />
-	<ePixmap pixmap="Pd1loi-HD-night/buttons/green.png" position="628,1032" size="34,34" alphatest="blend" /> -->
-</screen>
+    <eLabel text="'OK'= Play trailer" backgroundColor="secondBG" font="Regular;34" halign="left" foregroundColor="green" position="678,1030" size="370,38" transparent="1" zPosition="1"/>
+    </screen>
 
 	<!-- ## WikiPedia# -->
 	<screen name="searchWikipedia" position="fill" flags="wfNoBorder">
