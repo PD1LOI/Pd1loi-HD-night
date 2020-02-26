@@ -30,34 +30,36 @@
 </screen>
 
 <!--SDGRadio-->
-<screen name="SDGRadioScreen" position="center,center" size="1920,1080" title="SDG Radio" backgroundColor="transparent" flags="wfNoBorder">
-   <panel name="TopTemplate" />
+ <screen name="SDGRadioScreen" position="fill"  title="SDG Radio" backgroundColor="transparent" flags="wfNoBorder">
+    <panel name="BasicTemplate" />
   <panel name="ButtonTemplate" />
-  <ePixmap pixmap="Pd1loi-HD-night/logos/pd1loi.png" position="30,967" size="320,40" alphatest="on" />
   <ePixmap pixmap="Pd1loi-HD-night/border/smallshadowline.png" position="0,1020" size="1920,3" />
   <ePixmap pixmap="Pd1loi-HD-night/border/bottom_bg -.png" position="0,1022" size="1920,58" />
- <ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Extensions/SDGRadio/img/radio.png" position="0,0" size="1920,1080" zPosition="-1" />
-  <widget source="Title" render="Label" position="0,240" size="1920,60" foregroundColor="unffffff" backgroundColor="un202537" zPosition="5" font="Tiny;55" valign="center" halign="center" transparent="1" />
-    <ePixmap pixmap="Pd1loi-HD-night/infobar/AB1.png" position="1629,264" size="200,699" alphatest="on" />
-   <ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Extensions/SDGRadio/img/key_ok.png" position="1709,731" size="40,30" zPosition="10" alphatest="on" />
-  <ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Extensions/SDGRadio/img/key_menu.png" position="1660,454" size="40,30" alphatest="blend" transparent="1" zPosition="1" />
-  <ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Extensions/SDGRadio/img/key_info.png" position="1709,502" size="40,30" alphatest="blend" transparent="1" zPosition="1" />
-  <ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Extensions/SDGRadio/img/key_pvr.png" position="1710,602" size="40,30" alphatest="blend" transparent="1" zPosition="1" />
-  <widget name="mem_0" position="1709,455" size="40,30" alphatest="on" zPosition="2" />
-  <widget name="mem_1" position="1660,333" size="40,30" alphatest="on" zPosition="2" />
-  <widget name="mem_2" position="1709,333" size="40,30" alphatest="on" zPosition="2" />
-  <widget name="mem_3" position="1758,333" size="40,30" alphatest="on" zPosition="2" />
-  <widget name="mem_4" position="1660,373" size="40,30" alphatest="on" zPosition="2" />
-  <widget name="mem_5" position="1709,373" size="40,30" alphatest="on" zPosition="2" />
-  <widget name="mem_6" position="1758,373" size="40,30" alphatest="on" zPosition="2" />
-  <widget name="mem_7" position="1660,413" size="40,30" alphatest="on" zPosition="2" />
-  <widget name="mem_8" position="1709,413" size="40,30" alphatest="on" zPosition="2" />
-  <widget name="mem_9" position="1758,413" size="40,30" alphatest="on" zPosition="2" />
-  <widget name="mem_0" position="1709,455" size="40,30" alphatest="on" zPosition="2" />
-  <eLabel name="Select" text="Select" position="1657,907" size="146,40" foregroundColor="white" backgroundColor="un202537" font="Tiny;34" zPosition="5" halign="center" transparent="1" />
-  <widget name="freq" position="0,370" size="1920,170" valign="center" halign="center" zPosition="2" foregroundColor="un4fa7ff" font="Digital;150" transparent="1" backgroundColor="un202537" />
-  <widget name="prog_type" position="500,570" size="920,50" valign="center" halign="center" zPosition="2" foregroundColor="unffffff" font="Tiny;46" transparent="1" backgroundColor="un202537" />
-  <widget name="radiotext" position="500,620" size="920,350" valign="center" halign="center" zPosition="2" foregroundColor="unffffff" font="Tiny;40" transparent="1" backgroundColor="un202537" />
+  <ePixmap pixmap="Pd1loi-HD-night/border/smallshadowline.png" position="0,88" size="1920,3" zPosition="2" />
+  <widget source="Title" render="Label" position="30,7" size="1550,75" backgroundColor="secondBG" foregroundColor="orange1" transparent="1" zPosition="1" font="Regular;36" valign="center" halign="left" />
+  <widget source="global.CurrentTime" render="Label" position="1665,22" size="225,37" foregroundColor="orange1" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;36" valign="center" halign="right">
+    <convert type="ClockToText">Format:%-H:%M:%S</convert>
+  </widget>
+  <widget source="global.CurrentTime" render="Label" position="1440,52" size="450,37" foregroundColor="orange1" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;24" valign="center" halign="right">
+    <convert type="ClockToText">Date</convert>
+  </widget>
+  <ePixmap pixmap="Pd1loi-HD-night/img/AB1.png" position="227,190" size="200,699" zPosition="1" alphatest="blend" />
+  <widget name="mem_0" position="308,380" size="40,30" alphatest="on" zPosition="2" />
+  <widget name="mem_1" position="259,259" size="40,30" alphatest="on" zPosition="2" />
+  <widget name="mem_2" position="308,259" size="40,30" alphatest="on" zPosition="2" />
+  <widget name="mem_3" position="356,259" size="40,30" alphatest="on" zPosition="2" />
+  <widget name="mem_4" position="259,300" size="40,30" alphatest="on" zPosition="2" />
+  <widget name="mem_5" position="308,300" size="40,30" alphatest="on" zPosition="2" />
+  <widget name="mem_6" position="356,300" size="40,30" alphatest="on" zPosition="2" />
+  <widget name="mem_7" position="259,340" size="40,30" alphatest="on" zPosition="2" />
+  <widget name="mem_8" position="308,340" size="40,30" alphatest="on" zPosition="2" />
+  <widget name="mem_9" position="356,340" size="40,30" alphatest="on" zPosition="2" />
+  <widget name="freq" position="560,163" size="800,150" valign="center" halign="center" zPosition="2" foregroundColor="white" font="Digital;150" transparent="1" backgroundColor="un31b0810" />
+  <widget name="dab_channel" position="469,163" size="200,150" valign="center" halign="left" zPosition="2" foregroundColor="white" font="Digital;100" transparent="1" backgroundColor="un202537" />
+  <widget name="prog_type" position="510,315" size="900,70" valign="center" halign="center" zPosition="2" foregroundColor="unffff00" font="LiberationSans-Regular; 60" transparent="1" backgroundColor="un31b0810" />
+  <widget name="radiotext" position="510,385" size="900,410" valign="top" halign="center" zPosition="2" foregroundColor="unff1100" font="LiberationSans-Regular; 60" transparent="1" backgroundColor="un31b0810" />
+  <ePixmap pixmap="Pd1loi-HD-night/img/key_ok.png" position="308,656" size="40,32" zPosition="10" alphatest="on" />
+  <eLabel name="Select" text="Select" transparent="1" position="256,837" size="146,22" foregroundColor="white" backgroundColor="transparent" font="Regular; 22" zPosition="5" halign="center" />
 </screen>
 
 	<!-- YouTube by Taapat	-->
