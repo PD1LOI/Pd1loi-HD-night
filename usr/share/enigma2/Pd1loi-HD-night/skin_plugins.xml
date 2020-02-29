@@ -28,7 +28,7 @@
   <widget source="latitude" render="Label" position="445,339" size="500,45" font="Regular; 32" foregroundColor="unf4f4f4" backgroundColor="background" halign="right" transparent="1" />
   <widget source="longitude" render="Label" position="445,384" size="500,45" font="Regular; 32" foregroundColor="unf4f4f4" backgroundColor="background" halign="right" transparent="1" />
   <widget source="observationpoint" render="Label" position="445,474" size="500,45" font="Regular; 32" foregroundColor="unf4f4f4" backgroundColor="background" halign="right" transparent="1" />
-  <widget source="attribution" render="Label" position="677,1029" size="500,35" font="Regular; 25" foregroundColor="unffff00" backgroundColor="background" halign="left" transparent="1" />
+  <widget source="attribution" render="Label" position="677,1033" size="550,35" font="Regular; 28" zPosition="1" foregroundColor="#00f4f4f4" backgroundColor="background" halign="center" transparent="1" />
   <widget source="temperature" render="Label" position="545,545" size="400,45" font="Regular; 32" foregroundColor="unf4f4f4" backgroundColor="background" halign="right" transparent="1" />
   <widget source="feelslike" render="Label" position="545,591" size="400,45" font="Regular; 32" foregroundColor="unf4f4f4" backgroundColor="background" halign="right" transparent="1" />
   <widget source="skytext" render="Label" position="205,725" size="740,45" font="Regular; 32" foregroundColor="unf4f4f4" backgroundColor="background" halign="right" transparent="1" />
@@ -85,7 +85,8 @@
   <widget source="date4" render="Label" position="1497,839" size="400,45" font="Regular; 32" foregroundColor="unf4f4f4" backgroundColor="background" halign="right" transparent="1" />
   <widget source="day4" render="Label" position="1497,794" size="400,45" font="Regular; 32" foregroundColor="unf4f4f4" backgroundColor="background" halign="right" transparent="1" />
   <widget name="pic4" position="982,824" size="160,160" zPosition="2" alphatest="blend" />
-  <ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Extensions/WeatherMSN/buttons/key_epg.png" position="135,1031" size="52,38" alphatest="on" />
+   <ePixmap pixmap="Pd1loi-HD-night/buttons/key_menu.png" position="65,1033" size="60,30" alphatest="on" />
+  <ePixmap pixmap="Pd1loi-HD-night/buttons/key_epg.png" position="125,1033" size="60,30" alphatest="on" />
   <eLabel position="975,280" size="930,3" backgroundColor="un555555" zPosition="1" />
 </screen>
 
@@ -100,7 +101,9 @@
   <panel name="PigTemplate" />
   <panel name="KeyInfoTemplate" />
   <panel name="KeyMenuTemplate" />
-  <widget name="entrylist" position="780,108" size="1110,660" foregroundColor="unf4f4f4" scrollbarMode="showOnDemand" font="Regular; 32" selectionPixmap="Pd1loi-HD-night/buttons/sel4.png" />
+ <widget name="menu" position="780,108" size="1110,660" font="Regular; 32" itemHeight="40
+ +++
+ " selectionPixmap="Pd1loi-HD-night/buttons/sel4.png" scrollbarMode="showOnDemand" transparent="1" />
 </screen>
 
 <screen name="DiseqcTester" position="fill" title="DiSEqC Tester">
