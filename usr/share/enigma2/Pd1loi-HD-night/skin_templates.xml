@@ -52,15 +52,14 @@
 		<widget name="text" position="30,535" size="725,300" foregroundColor="unffff00" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;34" valign="top" halign="left" />
                 </screen>
 
-	<screen name="SelectionTemplate">
-		<panel name="BasicTemplate"/>
-		<widget source="session.VideoPicture" render="Pig" position="30,117" size="719,402" backgroundColor="transparent" zPosition="1"/>
-		<ePixmap pixmap="Pd1loi-HD-night/border/chframe1.png" position="24,110" size="730,415" alphatest="blend" />
-		<widget source="session.CurrentService" render="Label" position="32,120" size="715,30" zPosition="1" foregroundColor="unffff00" transparent="1" font="Regular;28"
-		borderColor="black" borderWidth="2" noWrap="1" valign="center" halign="center">
-			<convert type="ServiceName">Name</convert>
-		</widget>
-	</screen>
+<screen name="SelectionTemplate">
+  <panel name="BasicTemplate" />
+  <widget source="session.VideoPicture" render="Pig" position="31,118" size="720,405" backgroundColor="transparent" zPosition="1" />
+  <ePixmap pixmap="Pd1loi-HD-night/border/chframe1.png" position="24,110" size="734,420" alphatest="blend" />
+  <widget source="session.CurrentService" render="Label" position="32,120" size="715,30" zPosition="1" foregroundColor="unffff00" transparent="1" font="Regular;28" borderColor="black" borderWidth="2" noWrap="1" valign="center" halign="center">
+    <convert type="ServiceName">Name</convert>
+  </widget>
+</screen>
 	
 
 
