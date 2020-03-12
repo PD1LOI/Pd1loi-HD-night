@@ -301,9 +301,9 @@
 	</screen>
 
  <!-- Buffer Indicator -->
-  <screen name="BufferIndicator" title="" position="c-150,45" size="300,53" backgroundColor="transparent" flags="wfNoBorder" zPosition="100">
-    <widget name="status" position="0,0" size="300,53" backgroundColor="transparent" transparent="1" font="Regular;39" borderColor="black" borderWidth="2" valign="center" halign="center"/>
-  </screen>
+<screen name="BufferIndicator" title="" position="800,100" size="320,79" backgroundColor="transparent" flags="wfNoBorder" zPosition="100">
+  <widget name="status" position="0,0" size="320,79" backgroundColor="transparent" transparent="1" font="Regular;39" borderColor="black" borderWidth="2" valign="center" halign="center" />
+</screen>
   
   
 
