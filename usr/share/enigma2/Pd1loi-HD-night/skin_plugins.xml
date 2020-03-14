@@ -2,8 +2,8 @@
 <skin>
 <screen name="WeatherMSN" position="fill" title="WeatherMSN" flags="wfNoBorder">
 <panel name="TopTemplate" />
-  <ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Extensions/WeatherMSN/buttons/key_menu.png" position="82,1031" size="52,38" alphatest="on" />
-  <ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Extensions/WeatherMSN/buttons/key_epg.png" position="135,1031" size="52,38" alphatest="on" />
+<panel name="KeyMenuTemplate" />
+  <ePixmap pixmap="Pd1loi-HD-night/buttons/key_epg.png" position="135,1031" size="52,38" alphatest="on" />
   <ePixmap pixmap="Pd1loi-HD-night/border/bottom_bg40.png" position="959,100" size="2,915" />
   <ePixmap pixmap="Pd1loi-HD-night/border/bottom_bg -.png" position="0,1022" size="1920,58" />
   <ePixmap pixmap="Pd1loi-HD-night/border/logo.png" position="218,117" size="550,130" alphatest="blend" />>
@@ -28,7 +28,7 @@
   <widget source="latitude" render="Label" position="445,339" size="500,45" font="Regular; 32" foregroundColor="unf4f4f4" backgroundColor="background" halign="right" transparent="1" />
   <widget source="longitude" render="Label" position="445,384" size="500,45" font="Regular; 32" foregroundColor="unf4f4f4" backgroundColor="background" halign="right" transparent="1" />
   <widget source="observationpoint" render="Label" position="445,474" size="500,45" font="Regular; 32" foregroundColor="unf4f4f4" backgroundColor="background" halign="right" transparent="1" />
-  <widget source="attribution" render="Label" position="677,1033" size="550,35" font="Regular; 28" zPosition="1" foregroundColor="#00f4f4f4" backgroundColor="background" halign="center" transparent="1" />
+  <widget source="attribution" render="Label" position="677,1033" size="550,35" font="Regular; 28" zPosition="1" foregroundColor="unffff00" backgroundColor="background" halign="center" transparent="1" />
   <widget source="temperature" render="Label" position="545,545" size="400,45" font="Regular; 32" foregroundColor="unf4f4f4" backgroundColor="background" halign="right" transparent="1" />
   <widget source="feelslike" render="Label" position="545,591" size="400,45" font="Regular; 32" foregroundColor="unf4f4f4" backgroundColor="background" halign="right" transparent="1" />
   <widget source="skytext" render="Label" position="205,725" size="740,45" font="Regular; 32" foregroundColor="unf4f4f4" backgroundColor="background" halign="right" transparent="1" />
@@ -101,9 +101,7 @@
   <panel name="PigTemplate" />
   <panel name="KeyInfoTemplate" />
   <panel name="KeyMenuTemplate" />
- <widget name="menu" position="780,108" size="1110,660" font="Regular; 32" itemHeight="40
- +++
- " selectionPixmap="Pd1loi-HD-night/buttons/sel4.png" scrollbarMode="showOnDemand" transparent="1" />
+ <widget name="menu" position="780,108" size="1110,660" font="Regular; 32" itemHeight="40" selectionPixmap="Pd1loi-HD-night/buttons/sel4.png" scrollbarMode="showOnDemand" transparent="1" />
 </screen>
 
 <screen name="DiseqcTester" position="fill" title="DiSEqC Tester">
@@ -1795,7 +1793,7 @@ n\n\n\n\n\n\t\t\n\t\t\n\t\t\n\n\n\n\n\n
 
 	<screen name="HdmiCECSetupScreen" position="fill" title="HDMI-CEC Setup" flags="wfNoBorder">
 		<panel name="PigTemplate"/>
-		<widget name="config" position="780,105" size="1110,874" selectionPixmap="Pd1loi-HD-night/buttons/sel4.png" itemHeight="40" font="Regular;30" scrollbarMode="showOnDemand"/>
+		<widget name="config" position="780,105" size="1110,874" selectionPixmap="Pd1loi-HD-night/buttons/sel4.png" itemHeight="38" font="Regular;28" scrollbarMode="showOnDemand"/>
 		<widget source="current_address" render="Label" position="30,562" size="720,45" zPosition="10" font="Regular;31" halign="left" valign="center"/>
 		<widget source="fixed_address" render="Label" position="30,607" size="720,45" zPosition="10" font="Regular;31" halign="left" valign="center"/>
 	</screen>
@@ -1804,7 +1802,7 @@ n\n\n\n\n\n\t\t\n\t\t\n\t\t\n\n\n\n\n\n
 
 	<screen flags="wfNoBorder" name="CrossEPG_Menu" position="fill" title="CrossEPG Menu">
 		<panel name="PigTemplate"/>
-		<widget source="list" render="Listbox" transparent="0" position="780,100" size="1110,912" scrollbarMode="showOnDemand" >
+		<widget source="list" render="Listbox" selectionPixmap="Pd1loi-HD-night/buttons/sel4.png" transparent="0" position="780,100" size="1110,912" scrollbarMode="showOnDemand" >
 			<convert type="TemplatedMultiContent">
 		{"template": [
 			MultiContentEntryPixmapAlphaTest(pos = (18,6), size = (48,48), png = 0),
@@ -1820,7 +1818,7 @@ n\n\n\n\n\n\t\t\n\t\t\n\t\t\n\n\n\n\n\n
 	<screen flags="wfNoBorder" name="CrossEPG_Setup" position="fill" title="CrossEPG Setup">
 		<panel name="PigTemplate"/>
 		<widget name="information" position="30,450" size="720,450" halign="center" valign="center" font="Regular;33"/>
-		<widget name="config" position="780,100" size="1110,912" itemHeight="38" font="Regular;28" scrollbarMode="showOnDemand" transparent="1"/>
+		<widget name="config" position="780,100" size="1110,912" itemHeight="38" selectionPixmap="Pd1loi-HD-night/buttons/sel4.png" font="Regular;28" scrollbarMode="showOnDemand" transparent="1"/>
 	</screen>
 
 	<screen flags="wfNoBorder" name="CrossEPG_Info" position="fill" title="CrossEPG Info">
