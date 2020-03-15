@@ -2309,27 +2309,33 @@ n\n\n\n\n\n\t\t\n\t\t\n\t\t\n\n\n\n\n\n
 
 	<!-- BitrateViewer -->
 
-	<screen name="BitrateViewer" backgroundColor="transparent" position="1380,510" size="510,285" title="Bitrate viewer" flags="wfNoBorder">
-		<ePixmap alphatest="off" pixmap="Pd1loi-HD-night/infobar/hd.png" position="0,0" size="510,285" zPosition="-1"/>
-		<eLabel text="Video" position="15,15" zPosition="1" size="120,39" font="Regular;33" transparent="1" foregroundColor="secondFG"/>
-		<eLabel text="min" position="15,60" zPosition="1" size="120,39" font="Regular;33" transparent="1" foregroundColor="secondFG"/>
-		<widget name="vmin" position="15,105" size="120,39" font="Regular;33" transparent="1"/>
-		<eLabel text="max" position="120,60" zPosition="1" size="120,39" font="Regular;33" transparent="1" foregroundColor="secondFG"/>
-		<widget name="vmax" position="120,105" size="120,39" font="Regular;33" transparent="1"/>
-		<eLabel text="avg" position="240,60" zPosition="1" size="120,39" font="Regular;33" transparent="1" foregroundColor="secondFG"/>
-		<widget name="vavg" position="240,105" size="120,39" font="Regular;33" transparent="1"/>
-		<eLabel text="current" position="390,60" zPosition="1" size="165,39" font="Regular;33" transparent="1" foregroundColor="secondFG"/>
-		<widget name="vcur" position="390,105" size="120,39" font="Regular;33" transparent="1"/>
-		<eLabel text="Audio" position="15,165" zPosition="1" size="120,39" font="Regular;33" transparent="1" foregroundColor="secondFG"/>
-		<eLabel text="min" position="15,202" zPosition="1" size="120,39" font="Regular;33" transparent="1" foregroundColor="secondFG"/>
-		<widget name="amin" position="15,240" size="120,39" font="Regular;33" transparent="1"/>
-		<eLabel text="max" position="120,202" zPosition="1" size="120,39" font="Regular;33" transparent="1" foregroundColor="secondFG"/>
-		<widget name="amax" position="120,240" size="120,39" font="Regular;33" transparent="1"/>
-		<eLabel text="avg" position="240,202" zPosition="1" size="120,39" font="Regular;33" transparent="1" foregroundColor="secondFG"/>
-		<widget name="aavg" position="240,240" size="120,39" font="Regular;33" transparent="1"/>
-		<eLabel text="current" position="390,202" zPosition="1" size="165,39" font="Regular;33" transparent="1" foregroundColor="secondFG"/>
-		<widget name="acur" position="390,240" size="120,39" font="Regular;33" transparent="1"/>
-	</screen>
+	<screen name="BitrateViewerExtra" backgroundColor="transparent" position="1380,510" size="510,285" title="Bitrate viewer" flags="wfNoBorder">
+  <ePixmap alphatest="off" pixmap="Pd1loi-HD-night/infobar/hd.png" position="0,0" size="510,285" zPosition="-1" />
+  <eLabel text="Video" position="15,15" zPosition="1" size="120,39" font="Regular;33" transparent="1" foregroundColor="myblue" />
+  <eLabel text="min" position="15,60" zPosition="1" size="120,39" font="Regular;33" transparent="1" foregroundColor="orange1" />
+  <widget name="vmin" position="15,105" size="120,39" font="Regular;33" transparent="1" />
+  <eLabel text="max" position="120,60" zPosition="1" size="120,39" font="Regular;33" transparent="1" foregroundColor="red" />
+  <widget name="vmax" position="120,105" size="120,39" font="Regular;33" transparent="1" />
+  <eLabel text="avg" position="240,60" zPosition="1" size="120,39" font="Regular;33" transparent="1" foregroundColor="green" />
+  <widget name="vavg" position="240,105" size="120,39" font="Regular;33" transparent="1" />
+  <eLabel text="current" position="390,60" zPosition="1" size="165,39" font="Regular;33" transparent="1" foregroundColor="unffff00" />
+  <widget name="vcur" position="390,105" size="120,39" font="Regular;33" transparent="1" />
+  <eLabel text="Audio" position="15,165" zPosition="1" size="120,39" font="Regular;33" transparent="1" foregroundColor="myblue" />
+  <eLabel text="min" position="15,202" zPosition="1" size="120,39" font="Regular;33" transparent="1" foregroundColor="orange1" />
+  <widget name="amin" position="15,240" size="120,39" font="Regular;33" transparent="1" />
+  <eLabel text="max" position="120,202" zPosition="1" size="120,39" font="Regular;33" transparent="1" foregroundColor="red" />
+  <widget name="amax" position="120,240" size="120,39" font="Regular;33" transparent="1" />
+  <eLabel text="avg" position="240,202" zPosition="1" size="120,39" font="Regular;33" transparent="1" foregroundColor="green" />
+  <widget name="aavg" position="240,240" size="120,39" font="Regular;33" transparent="1" />
+  <eLabel text="current" position="390,202" zPosition="1" size="165,39" font="Regular;33" transparent="1" foregroundColor="unffff00" />
+  <widget name="acur" position="390,240" size="120,39" font="Regular;33" transparent="1" />
+</screen>
+	
+	<screen name="BitrateViewerSetup" position="fill" title="Bitrate viewer setup">
+  <panel name="PigTemplate"/>
+  <panel name="ButtonTemplate" />
+<widget name="config" position="780,108" selectionPixmap="Pd1loi-HD-night/buttons/sel4.png" size="1110,600" itemHeight="40" font="Regular; 32" />
+</screen>
 
 	<!-- MPHelp -->
 

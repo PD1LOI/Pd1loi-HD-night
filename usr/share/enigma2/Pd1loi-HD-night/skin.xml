@@ -2516,9 +2516,9 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
 
 	<!-- Unhandled key -->
 
-	<screen name="UnhandledKey" title="UnhandledKey" position="1800,20" size="90,90" backgroundColor="transparent" zPosition="100" flags="wfNoBorder">
-		<widget name="UnhandledKeyPixmap" pixmap="Pd1loi-HD-night/icons/unhandled-key.png" position="0,0" size="90,90" alphatest="off"/>
-	</screen>
+<screen name="UnhandledKey" title="UnhandledKey" position="1785,20" size="95,90" backgroundColor="transparent" zPosition="100" flags="wfNoBorder">
+  <widget name="UnhandledKeyPixmap" pixmap="Pd1loi-HD-night/icons/unhandled-key.png" position="0,0" size="95,90" alphatest="off" />
+</screen>
 		
 	<!-- QuitMainloopScreen -->
 	
