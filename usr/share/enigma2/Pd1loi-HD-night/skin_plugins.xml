@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <skin>
+
+<!-- WeatherMSN -->
+
 <screen name="WeatherMSN" position="fill" title="WeatherMSN" flags="wfNoBorder">
 <panel name="TopTemplate" />
 <panel name="KeyMenuTemplate" />
@@ -933,46 +936,6 @@
         <ePixmap pixmap="Pd1loi-HD-night/buttons/red.png" position="192,1032" size="34,34" alphatest="blend" />
         </screen>
 
-        <!--- Gnews -->
-  <screen flags="wfNoBorder" name="GnewsFeedScreenList" position="fill" >
-  <panel name="BasicTemplate"/>
-<panel name="PigTemplate" />
-  <widget name="info" position="794,949" zPosition="4" size="1080,50" font="Regular;22" foregroundColor="unffff00" transparent="1" halign="center" valign="center" />
-  	<ePixmap pixmap="Pd1loi-HD-night/border/top2_bg.png" position="fill" size="1920,88" />
-  <ePixmap position="794,936" size="1080,2" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/GoogleNews/images/slider.png" alphatest="blend" transparent="1" backgroundColor="transparent" />
-  <widget name="mylist" position="794,100" size="1080,800" selectionPixmap="Pd1loi-HD-night/buttons/sel8.png" source="list" scrollbarMode="showOnDemand" transparent="1" zPosition="2" itemHeight="35" />
-  <widget backgroundColor="secondBG" font="Regular;25" foregroundColor="orange1" halign="left" position="15,15" render="Label" size="700,55" source="Title" transparent="1" valign="center" zPosition="1" />
-		<widget source="session.VideoPicture" render="Pig" position="30,120" size="720,405" backgroundColor="transparent" zPosition="1" />
-		<widget source="session.CurrentService" render="Label" position="30,125" size="720,30" zPosition="1" foregroundColor="unffff00" transparent="1" font="Regular;28" borderColor="black" borderWidth="2" noWrap="1" valign="center" halign="center">
-			<convert type="ServiceName">Name</convert>
-		</widget>
-</screen>
-  <screen flags="wfNoBorder" name="GnewsFeedScreenContent" position="fill"  zPosition="2">
-  <panel name="BasicTemplate"/>
-<panel name="PigTemplate" />
-<widget backgroundColor="secondBG" font="Regular;25" foregroundColor="orange1" halign="left" position="15,15" render="Label" size="700,55" source="Title" transparent="1" valign="center" zPosition="1" />                
-	<ePixmap pixmap="Pd1loi-HD-night/border/top2_bg.png" position="fill" size="1920,88" />
-<widget name="info" position="794,956" zPosition="4" size="1080,50" font="Regular;30" foregroundColor="myblue" transparent="1" halign="center" valign="center" />
-
-<widget name="menu" selectionPixmap="Pd1loi-HD-night/buttons/sel4.png" source="list" font="Regular;30" position="794,100" size="1080,817" itemHeight="35" scrollbarMode="showOnDemand" zPosition="4" />               
-<widget name="mylist" selectionPixmap="Pd1loi-HD-night/buttons/sel4.png" source="list" position="794,100" size="1080,817" scrollbarMode="showOnDemand" transparent="1" zPosition="2" />               
- <widget backgroundColor="secondBG" font="Regular;25" foregroundColor="orange1" halign="left" position="15,15" render="Label" size="700,55" source="Title" transparent="1" valign="center" zPosition="1" />
-		<widget source="session.VideoPicture" render="Pig" position="30,120" size="720,405" backgroundColor="transparent" zPosition="1" />
-		<widget source="session.CurrentService" render="Label" position="30,125" size="720,30" zPosition="1" foregroundColor="unffff00" transparent="1" font="Regular;28" borderColor="black" borderWidth="2" noWrap="1" valign="center" halign="center">
-			<convert type="ServiceName">Name</convert>
-		</widget>
-</screen>
-  <screen flags="wfNoBorder" name="GnewsFeedScreenItemviewer" position="fill" >
-  <panel name="BasicTemplate"/>
-<panel name="PigTemplate" />
-	<ePixmap pixmap="Pd1loi-HD-night/border/top2_bg.png" position="fill" size="1920,88" />
-    <widget backgroundColor="secondBG" font="Regular;25" foregroundColor="orange1" halign="left" position="15,15" render="Label" size="700,55" source="Title" transparent="1" valign="center" zPosition="1" />
-<widget name="titel" position="794,100" zPosition="1" size="1080,95" font="Regular; 32" transparent="1" backgroundColor="black" foregroundColor="unffff00" valign="center" halign="center" />        
-<widget name="leagueNumberWidget" position="1416,34" size="100,40" transparent="1" halign="left" font="Regular;28" foregroundColor="unffff00" zPosition="2" />                                       
-<ePixmap position="1351,34" zPosition="4" size="60,40" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/GoogleNews/images/arrows.png" transparent="1" alphatest="on" />        
-<ePixmap position="794,210" size="1080,2" pixmap="Pd1loi-HD-night/border/bottom_bg.png" alphatest="blend" transparent="1" backgroundColor="transparent" />
-<widget name="text" position="794,221" size="1080,780" font="Regular; 30" />                                
-</screen>      
 
 
      
