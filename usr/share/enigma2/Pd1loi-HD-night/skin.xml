@@ -189,8 +189,8 @@
     <color name="unff6600" value="#00ff6600" />
     <color name="unffff00" value="#00ffff00" />
     <color name="unffffff" value="#00ffffff" />
-    <color name="unffffffff" value="#ffffffff" />
-    <color name="white" value="#00f0f0f0" />
+    <color name="unf0f0f0" value="#00f0f0f0" /> 
+    <color name="white" value="#ffffffff" />
     <color name="yellow" value="#00ffc000" />
     <color name="yellowtransparent" value="#084b4b00" />
     <color name="toptemplatecolor" value="#000D0F16"/>
