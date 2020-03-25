@@ -1,5 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <skin>
+<screen name="EPGImportFilterScreen" position="fill" zPosition="2" title="EPGImport Filter">
+<panel name="PigTemplate" />
+  <ePixmap pixmap="skin_default/div-h.png" position="30,539" zPosition="2" size="700,2" />
+   <widget name="list" position="780,110" size="1110,900" selectionPixmap="Pd1loi-HD-night/buttons/sel4.png" itemHeight="40" font="Regular; 28"  scrollbarMode="showOnDemand" />
+  <widget name="statusbar" position="30,554" halign="right" size="680,40" font="Regular; 28" />
+  <widget name="status" position="30,599" halign="right" size="680,40" font="Regular; 28" />
+</screen>
+
+<screen name="EGPMatchByName" position="fill" zPosition="2" size="1920,1080" title="EPGImport Filter">
+  <panel name="PigLessTemplate" />
+  <ePixmap pixmap="Pd1loi-HD-night/border/smallshadowline.png" position="10,879" size="1900,3" />
+  <widget name="list1" position="31,103" size="500,769" scrollbarMode="showOnDemand" selectionPixmap="Pd1loi-HD-night/buttons/sel444.png" font="Regular; 26" />\n\t\t\t
+<widget name="list2" position="530,103" size="1110,402" scrollbarMode="showOnDemand" />\n\t\t\t
+<widget name="text" position="1287,506" halign="left" size="555,340" font="Regular;30" />\t\t\n\t\t\t
+<widget name="text2" position="530,506" halign="left" size="555,340" font="Regular;30" />\t\t\n\t\t\t
+<widget name="statusbar" position="30,926" halign="center" size="1870,40" font="Regular; 32" foregroundColor="unffff00" />\n\t\t\t
+<widget name="status" position="30,890" halign="center" size="1870,40" font="Regular;32" foregroundColor="unffff00" />\n\t\t\t
+\n\t\t
+  <ePixmap pixmap="skin_default/buttons/key_1.png" position="1048,1030" zPosition="2" size="53,38" transparent="1" alphatest="on" />
+<ePixmap pixmap="skin_default/buttons/key_2.png" position="1101,1030" zPosition="2" size="53,38" transparent="1" alphatest="on" />
+<ePixmap pixmap="skin_default/buttons/key_3.png" position="1154,1030" zPosition="2" size="53,38" transparent="1" alphatest="on" />
+<ePixmap pixmap="skin_default/buttons/key_4.png" position="1207,1030" zPosition="2" size="53,38" transparent="1" alphatest="on" />
+<ePixmap pixmap="skin_default/buttons/key_5.png" position="1260,1030" zPosition="2" size="53,38" transparent="1" alphatest="on" />
+<ePixmap pixmap="skin_default/buttons/key_6.png" position="1313,1030" zPosition="2" size="53,38" transparent="1" alphatest="on" />
+</screen>
+
+<screen name="EGPSelectEPGSources" position="fill" zPosition="2" size="1920,1080" title="Select EPG sources">
+  <panel name="PigTemplate" />
+  <widget name="list" position="785,110" size="1110,875" selectionPixmap="Pd1loi-HD-night/buttons/sel4.png" scrollbarMode="showOnDemand" font="Regular; 28" />
+</screen>
+
 
 <!-- WeatherMSN -->
 
@@ -1704,71 +1735,6 @@
 		<widget name="previewo" position="885,570" size="900,450" zPosition="2" alphatest="blend"/>
 	</screen>
 
-      <!-- EPG Import -->
-
-<screen name="EGPMatchByName" position="0,0" zPosition="2" size="1920,1080" title="EPGImport Filter">\n\t\t\t
-<panel name="PigTemplate" />
-<ePixmap pixmap="Pd1loi-HD-night/border/smallshadowline.png" position="-3,881" size="1920,3" />
-<ePixmap pixmap="Pd1loi-HD-night/border/smallshadowline.png" position="0,526" size="1920,3" />
-<widget name="list1" position="30,537" size="737,340" scrollbarMode="showOnDemand" />\n\t\t\t
-<widget name="list2" position="780,114" size="1110,402" scrollbarMode="showOnDemand" />\n\t\t\t
-<widget name="text" position="778,537" halign="left" size="555,340" font="Regular;30" />\t\t\n\t\t\t
-<widget name="text2" position="1337,537" halign="left" size="555,340" font="Regular;30" />\t\t\n\t\t\t
-<widget name="statusbar" position="30,926" halign="center" size="1870,40" font="Regular; 32" foregroundColor="unffff00" />\n\t\t\t
-<widget name="status" position="30,888" halign="center" size="1870,40" font="Regular;32" foregroundColor="unffff00" />\n\t\t\t
-<widget name="videoPicture" position="30,117" size="719,402" zPosition="1" backgroundColor="transparent" />\n\t\t
-  <ePixmap pixmap="skin_default/buttons/key_1.png" position="1048,1030" zPosition="2" size="53,38" transparent="1" alphatest="on" />
-  <ePixmap pixmap="skin_default/buttons/key_2.png" position="1101,1030" zPosition="2" size="53,38" transparent="1" alphatest="on" />
-  <ePixmap pixmap="skin_default/buttons/key_3.png" position="1154,1030" zPosition="2" size="53,38" transparent="1" alphatest="on" />
-  <ePixmap pixmap="skin_default/buttons/key_4.png" position="1207,1030" zPosition="2" size="53,38" transparent="1" alphatest="on" />
-  <ePixmap pixmap="skin_default/buttons/key_5.png" position="1260,1030" zPosition="2" size="53,38" transparent="1" alphatest="on" />
-  <ePixmap pixmap="skin_default/buttons/key_6.png" position="1313,1030" zPosition="2" size="53,38" transparent="1" alphatest="on" />
-  </screen>
-
-<screen name="EPGImportFilterScreen" position="fill" title="EPGImport Filter" flags="wfNoBorder">\n\t\t
-<panel name="PigTemplate" />\n\t\t
-<widget name="list" position="780,110" size="1110,875" selectionPixmap="Pd1loi-HD-night/buttons/sel4.png" itemHeight="38" font="Regular;28" scrollbarMode="showOnDemand" />\n\t\t
-<widget name="statusbar" position="30,558" halign="left" size="700,40" font="Regular; 30" />\n\t\t
-<widget name="status" position="30,603" halign="left" size="700,40" font="Regular; 30" />\t\t\t\t\n\t
-</screen>>        
-        	<!-- EPG Import Configuration -->
-
-	<screen name="EPGImportConfig" position="fill" title="EPG Import Configuration" flags="wfNoBorder">
-		<panel name="PigTemplate"/>
-		<panel name="KeyMenuInfoTemplate"/>
-		<widget name="config" position="780,105" size="1110,900" selectionPixmap="Pd1loi-HD-night/buttons/sel4.png" itemHeight="38" font="Regular;30" scrollbarMode="showOnDemand"/>
-		<widget name="statusbar" position="780,975" size="1110,34" font="Regular;30"/>
-		<widget name="status" position="780,780" size="1110,90" font="Regular;30"/>
-	</screen>
-
-	<!-- EPG Import Profile -->
-
-	<screen name="EPGImportProfile" position="fill" title="EPG Import Profile" flags="wfNoBorder">
-		<panel name="PigTemplate"/>
-		<widget name="config" position="780,105" size="1110,600" selectionPixmap="Pd1loi-HD-night/buttons/sel4.png" itemHeight="38" font="Regular;30" scrollbarMode="showOnDemand"/>
-	</screen>
-
-	<!-- EPG Import Sources -->
-
-<screen name="EPGImportSources" position="fill" title="EPG Import Sources" flags="wfNoBorder">
-		<panel name="PigTemplate"/>
-		<widget name="list" position="800,100" selectionPixmap="Pd1loi-HD-night/buttons/sel4.png" size="1100,912" itemHeight="38" font="Regular;30" scrollbarMode="showOnDemand"/>
-	</screen>
-	
-	<!-- EPGSelectEPGSource -->
-	
-<screen name="EPGSelectEPGSourcesScreen" position="fill" zPosition="2" flags="wfNoBorder" title="Select EPG sources" >\n\t\t
-<panel name="PigTemplate"/>
-<widget name="list" selectionPixmap="Pd1loi-HD-night/buttons/sel4.png" position="800,110" size="1100,875" scrollbarMode="showOnDemand" itemHeight="38"/>\n\t
-</screen>
-
-	
-		<!-- EPG Import Log -->
-
-	<screen name="EPGImportLog" position="fill" title="EPG Import Log" flags="wfNoBorder">
-		<panel name="PigTemplate"/>
-		<widget name="list" position="800,110" size="1100,900" itemHeight="38" font="Regular;30" selectionPixmap="Pd1loi-HD-night/buttons/sel4.png" scrollbarMode="showOnDemand"/>
-	</screen>
 
 	<!-- HDMI-CEC Setup -->
 
