@@ -30,29 +30,7 @@
   <widget name="status" position="30,599" halign="left" size="680,40" font="Regular; 32" />
 </screen>
 
-<screen name="EGPMatchByName" position="fill" zPosition="2" size="1920,1080" title="EPGImport Filter">
-<panel name="PigLessTemplate" />
-<ePixmap pixmap="Pd1loi-HD-night/border/smallshadowline.png" position="30,877" size="1870,3" />
-<eLabel position="1398,102" size="3,765" backgroundColor="un555555" zPosition="1" />
-<eLabel position="30,535" size="1360,3" backgroundColor="un555555" zPosition="1" />
-<eLabel position="760,547" size="2,320" backgroundColor="un555555" zPosition="1" />
-<ePixmap pixmap="Pd1loi-HD-night/border/bottom_bg44.png" position="760,547" size="2,320" />
-<widget name="list1" position="1408,102" size="490,765" scrollbarMode="showOnDemand" selectionPixmap="Pd1loi-HD-night/buttons/sel444.png" font="Regular; 26" />\n\t\t\t
-<widget name="list2" position="771,102" size="620,420" scrollbarMode="showOnDemand" />\n\t\t\t
-<widget name="text" position="771,547" halign="left" size="620,320" font="Regular;30" />\t\t\n\t\t\t
-<widget name="text2" position="30,547" halign="left" size="719,320" font="Regular;30" />\t\t\n\t\t\t
-<widget name="statusbar" position="560,926" halign="center" size="800,40" font="Regular; 32" foregroundColor="unffff00" />\n\t\t\t
-<widget name="status" position="560,885" halign="center" size="800,40" font="Regular;32" foregroundColor="unffff00" />\n\t\t\t
-\n\t\t
-<widget source="session.VideoPicture" render="Pig" position="30,117" size="719,402" backgroundColor="transparent" zPosition="1" />
-<ePixmap pixmap="Pd1loi-HD-night/border/chframe1.png" position="24,110" size="730,415" alphatest="blend" />
-<ePixmap pixmap="skin_default/buttons/key_1.png" position="1048,1030" zPosition="2" size="53,38" transparent="1" alphatest="on" />
-<ePixmap pixmap="skin_default/buttons/key_2.png" position="1101,1030" zPosition="2" size="53,38" transparent="1" alphatest="on" />
-<ePixmap pixmap="skin_default/buttons/key_3.png" position="1154,1030" zPosition="2" size="53,38" transparent="1" alphatest="on" />
-<ePixmap pixmap="skin_default/buttons/key_4.png" position="1207,1030" zPosition="2" size="53,38" transparent="1" alphatest="on" />
-<ePixmap pixmap="skin_default/buttons/key_5.png" position="1260,1030" zPosition="2" size="53,38" transparent="1" alphatest="on" />
-<ePixmap pixmap="skin_default/buttons/key_6.png" position="1313,1030" zPosition="2" size="53,38" transparent="1" alphatest="on" />
-</screen>
+
 
 <screen name="EPGImportSources" position="fill" title="EPG Import Sources">
   <panel name="PigTemplate" />
