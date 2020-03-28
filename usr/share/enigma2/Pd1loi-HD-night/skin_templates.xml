@@ -299,7 +299,7 @@
   <convert type="ConditionalShowHide" />
 </widget>
   <widget render="PDVideoSize" source="session.CurrentService" position="1708,940" size="170,30" backgroundColor="secondBG" font="Regular;29" foregroundColor="yellow" halign="center" transparent="1" zPosition="1" />
-  <widget backgroundColor="transparent" font="LiberationSans-Regular; 20" foregroundColor="unffff00" halign="left" noWrap="1" position="387,859" size="450,26" render="Label" borderWidth="2" source="session.CurrentService" transparent="1" valign="top" zPosition="10">
+  <widget backgroundColor="secondBG" font="LiberationSans-Regular; 20" foregroundColor="unffff00" halign="left" noWrap="1" position="387,859" size="450,26" render="Label" borderWidth="2" source="session.CurrentService" transparent="1" valign="top" zPosition="10">
     <convert type="ServiceName">Provider</convert>
   </widget>
   <eLabel backgroundColor="secondBG" font="OpenSans; 25" foregroundColor="unff0000" halign="center" position="1778,940" size="30,30" text="X" transparent="1" />
