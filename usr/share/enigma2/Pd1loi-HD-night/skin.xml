@@ -611,7 +611,7 @@
   <panel name="SelectionTemplate" />
   <panel name="KeyMenuTemplate" />
   <widget name="epg_description" position="780,100" size="1110,912" transparent="1" font="Regular;36" halign="left" />
-  <widget source="session.CurrentService" render="Label" position="30,525" size="720,35" foregroundColor="unffff00" font="Regular;30" valign="center" halign="center" transparent="1" zPosition="1">
+  <widget source="session.CurrentService" render="Label" position="30,535" size="720,35" foregroundColor="unffff00" font="Regular;30" valign="center" halign="left" transparent="1" zPosition="1">
     <convert type="TransponderInfo" />
   </widget>
   <widget name="channel" position="30,592" size="720,45" transparent="1" font="Regular;33" halign="left" />
@@ -621,13 +621,13 @@
     <convert type="EventTime">Remaining</convert>
     <convert type="RemainingToText">InMinutes</convert>
   </widget>
-  <widget source="session.Event_Now" render="Label" position="30,772" size="720,35" transparent="1" zPosition="1" foregroundColor="blue" font="Regular;32" halign="left">
+  <widget source="session.Event_Now" render="Label" position="30,772" size="720,35" transparent="1" zPosition="1" foregroundColor="white" font="Regular;32" halign="left">
     <convert type="EventName">Genre</convert>
   </widget>
-  <widget source="session.Event_Now" render="Label" position="30,832" size="720,35" transparent="1" zPosition="1" foregroundColor="blue" font="Regular;32" halign="left">
+  <widget source="session.Event_Now" render="Label" position="30,832" size="720,35" transparent="1" zPosition="1" foregroundColor="white" font="Regular;32" halign="left">
     <convert type="EventName">Rating</convert>
   </widget>
-<widget source="Service" render="NextEpgInfo" position="30,943" size="720,64" transparent="1" font="Regular;28" noWrap="1" NumberOfItems="2" noLabel="1" foregroundColor="secondFG" timeColor="grey" numOfSpaces="2" />
+  <widget source="Service" render="NextEpgInfo" position="30,875" size="720,137" transparent="1" font="Regular;28" noWrap="1" NumberOfItems="4" noLabel="1" foregroundColor="unffff00" timeColor="grey" numOfSpaces="2" />
 </screen>
 
 	<screen name="EPGSelectionMulti" title="EPG Selection" position="fill" flags="wfNoBorder">
