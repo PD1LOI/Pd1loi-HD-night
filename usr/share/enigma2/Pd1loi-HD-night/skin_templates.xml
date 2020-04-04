@@ -76,6 +76,23 @@
 	<screen name="MenuTemplate">
 		<panel name="PigTemplate"/>
         <panel name="ButtonTemplate"/>
+         <widget alphatest="blend" render="MSNWeatherPixmap" position="30,735" size="130,130" source="session.MSNWeather" transparent="1" zPosition="5">
+    <convert type="MSNWeather">weathericon,current</convert>
+  </widget>
+<widget noWrap="1" backgroundColor="background" font="Regular; 36" render="Label" position="160,768" size="120,60" source="session.MSNWeather" zPosition="3" halign="center" transparent="1" foregroundColor="unffff00">
+    <convert type="MSNWeather">temperature_current</convert>
+  </widget>
+  <eLabel name="new eLabel" position="30,875" size="80,30" font="Regular; 28" transparent="1" halign="left" text="max." zPosition="3" foregroundColor="grey" />
+  <widget noWrap="1" backgroundColor="background" font="Regular; 28" render="Label" position="104,875" size="80,30" source="session.MSNWeather" zPosition="3" halign="left" transparent="1" foregroundColor="unffffff">
+    <convert type="MSNWeather">temperature_high,day1</convert>
+  </widget>
+  <eLabel name="new eLabel" position="184,875" size="70,30" font="Regular; 28" transparent="1" halign="left" text="min." zPosition="3" foregroundColor="grey" />
+  <widget noWrap="1" backgroundColor="background" font="Regular; 28" render="Label" position="248,875" size="80,30" source="session.MSNWeather" zPosition="3" halign="left" transparent="1" foregroundColor="unffffff">
+    <convert type="MSNWeather">temperature_low,day1</convert>
+  </widget>
+<widget noWrap="1" backgroundColor="background" font="Regular; 32" render="Label" position="30,909" size="700,40" source="session.MSNWeather" zPosition="3" halign="left" transparent="1" foregroundColor="unffff00">
+    <convert type="MSNWeather">temperature_text,current</convert>
+  </widget>
           <widget source="menu" render="Listbox" selectionPixmap="Pd1loi-HD-night/buttons/sel6.png" position="780,105" size="1110,900" font="Regular;36" transparent="1" scrollbarMode="showOnDemand">
 			<convert type="TemplatedMultiContent">
 				{"template": [ MultiContentEntryText(pos = (75,15),size = (1035,45),flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER,text = 0) ],
@@ -294,10 +311,10 @@
 
  <!-- Infobar template -->
 <screen name="InfoBarTemplate" size="1913,1080">
-<widget source="session.CurrentService" render="Pixmap" pixmap="Pd1loi-HD-night/buttons/stream.png" position="1204,902" size="30,30" zPosition="3" alphatest="on">
-  <convert type="ClientsStreaming" />
-  <convert type="ConditionalShowHide" />
-</widget>
+ <widget source="session.CurrentService" render="Pixmap" pixmap="Pd1loi-HD-night/buttons/stream.png" position="1204,902" size="30,30" zPosition="3" alphatest="on">
+    <convert type="ClientsStreaming" />
+    <convert type="ConditionalShowHide" />
+  </widget>
   <widget render="PDVideoSize" source="session.CurrentService" position="1708,940" size="170,30" backgroundColor="secondBG" font="Regular;29" foregroundColor="yellow" halign="center" transparent="1" zPosition="1" />
   <widget backgroundColor="secondBG" font="LiberationSans-Regular; 20" foregroundColor="unffff00" halign="left" noWrap="1" position="387,859" size="450,26" render="Label" borderWidth="2" source="session.CurrentService" transparent="1" valign="top" zPosition="10">
     <convert type="ServiceName">Provider</convert>
@@ -309,7 +326,7 @@
   <widget source="session.Event_Next" render="Label" position="1180,1029" size="300,33" font="Regular;30" halign="right" foregroundColor="darkgrey" backgroundColor="secondBG" transparent="1" zPosition="1">
     <convert type="EventName">SmallRating</convert>
   </widget>
-  <widget backgroundColor="background" font="Regular; 32" foregroundColor="green" halign="right" position="990,855" render="Label" size="370,35" source="session.MSNWeather" transparent="1" zPosition="1">
+  <widget backgroundColor="background" font="Regular; 32" foregroundColor="green" halign="center" position="749,857" render="Label" size="370,35" source="session.MSNWeather" transparent="1" zPosition="1">
     <convert type="MSNWeather">city</convert>
   </widget>
   <ePixmap name="new ePixmap" position="1705,1015" size="180,8" pixmap="Pd1loi-HD-night/infobar/snron11.png" zPosition="1" />
@@ -319,9 +336,17 @@
   <widget font="Regular; 20" halign="left" noWrap="1" position="30,824" render="Label" size="400,26" source="session.CurrentService" transparent="1" zPosition="1" backgroundColor="background" foregroundColor="grey">
     <convert type="pliCamd">Camd</convert>
   </widget>
-  <widget foregroundColor="white" backgroundColor="background" font="Regular2; 20" render="Label" position="1379,839" size="60,55" source="session.MSNWeather" zPosition="1" halign="center" transparent="1">
-    <convert type="MSNWeather">temperature_heigh_low,current</convert>
-  </widget>
+<eLabel name="new eLabel" position="1360,851" size="55,30" font="Regular; 20" transparent="1" halign="left" text="max." zPosition="3" foregroundColor="grey" valign="top" />
+<widget noWrap="1" backgroundColor="background" font="Regular; 22" render="Label" position="1408,851" size="80,30" source="session.MSNWeather" zPosition="3" halign="left" transparent="1" foregroundColor="unffffff" valign="top">
+  <convert type="MSNWeather">temperature_high,day1</convert>
+</widget>
+<eLabel name="new eLabel" position="1360,871" size="55,30" font="Regular; 20" transparent="1" halign="left" text="min." zPosition="3" foregroundColor="grey" valign="bottom" />
+<widget noWrap="1" backgroundColor="background" font="Regular; 22" render="Label" position="1408,871" size="80,30" source="session.MSNWeather" zPosition="3" halign="left" transparent="1" foregroundColor="unffffff" valign="bottom">
+  <convert type="MSNWeather">temperature_low,day1</convert>
+</widget>
+<widget noWrap="1" backgroundColor="background" font="Regular; 32" render="Label" position="1057,857" size="300,35" source="session.MSNWeather" zPosition="3" halign="center" transparent="1" foregroundColor="unffffff">
+  <convert type="MSNWeather">temperature_text,current</convert>
+</widget>
   <widget backgroundColor="background" font="Regular2; 30" foregroundColor="unffff00" halign="center" position="1463,855" render="Label" size="80,35" source="session.MSNWeather" transparent="1" zPosition="1">
     <convert type="MSNWeather">temperature_current</convert>
   </widget>
@@ -341,9 +366,9 @@
   <widget source="global.CurrentTime" render="Label" borderWidth="2" position="30,847" size="360,45" backgroundColor="secondBG" noWrap="1" transparent="1" zPosition="1" foregroundColor="unffff00" font="Regular;26" valign="center" halign="left">
     <convert type="ClockToText">Date</convert>
   </widget>
-<widget source="global.CurrentTime" render="Label" borderWidth="2" position="41,998" size="210,60" backgroundColor="secondBG" noWrap="1" transparent="1" zPosition="1" foregroundColor="myblue" font="Time; 55" valign="center" halign="left">
-  <convert type="ClockToText">Format:%H:%M:%S</convert>
-</widget>
+  <widget source="global.CurrentTime" render="Label" borderWidth="2" position="46,1008" size="210,60" backgroundColor="secondBG" noWrap="1" transparent="1" zPosition="1" foregroundColor="myblue" font="Time; 50" valign="center" halign="left">
+    <convert type="ClockToText">Format:%H:%M:%S</convert>
+  </widget>
   <widget source="session.RecordState" render="Pixmap" pixmap="Pd1loi-HD-night/buttons/rec.png" position="1168,902" size="30,30" zPosition="3" alphatest="on">
     <convert type="ConditionalShowHide">Blink</convert>
   </widget>
@@ -428,6 +453,7 @@
   <widget source="session.CurrentService" render="Label" position="1712,1030" size="165,33" backgroundColor="secondBG" transparent="1" zPosition="1" text="DVB-S" font="Regular;28" halign="center">
     <convert type="ServiceOrbitalPosition" />
   </widget>
+  <!--<ePixmap pixmap="Pd1loi-HD-night/icons/icon_update_off.png" position="90,52" size="30,30" zPosition="0" alphatest="blend"/>-->
 </screen>
 
 `</skin>
