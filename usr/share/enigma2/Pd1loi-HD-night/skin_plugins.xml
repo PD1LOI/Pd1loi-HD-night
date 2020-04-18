@@ -1127,38 +1127,34 @@
 
 	<!-- Merlin Music Player -->
 	
-   <screen name="MerlinMusicPlayerScreen" position="fill" title="Merlin Music Player" flags="wfNoBorder">
-  <panel name="BasicTemplate"/>
-    <ePixmap alphatest="on" pixmap="Pd1loi-HD-night/logos/logoblk.png" position="1283,692" size="390,150" />	
-    <ePixmap pixmap="Pd1loi-HD-night/logos/pd1loi.png" position="30,967" size="320,40" alphatest="on"/>
+<screen name="MerlinMusicPlayerScreen" position="fill" title="Merlin Music Player" flags="wfNoBorder" size="1920,1080">
+  <panel name="BasicTemplate" />
+  <ePixmap alphatest="on" pixmap="Pd1loi-HD-night/logos/logoblk.png" position="1283,692" size="390,150" />
+  <ePixmap pixmap="Pd1loi-HD-night/logos/pd1loi.png" position="30,967" size="320,40" alphatest="on" />
   <widget alphatest="blend" name="coverArt" pixmap="Pd1loi-HD-night/dvr/no_coverArt.png" position="232,134" size="250,250" transparent="1" />
-  <widget backgroundColor="background" font="Regular; 38" foregroundColor="unffff00" name="title" position="86,557" size="800,45" transparent="1" />
-  <widget backgroundColor="background" font="Regular; 32" foregroundColor="unffff00" halign="right" position="872,557" render="Label" size="120,45" source="session.CurrentService" transparent="1">
+  <widget backgroundColor="background" font="Regular; 38" foregroundColor="unffff00" name="title" position="86,605" size="800,45" transparent="1" />
+  <widget backgroundColor="background" font="Regular; 32" foregroundColor="unffff00" halign="right" position="872,605" render="Label" size="120,45" source="session.CurrentService" transparent="1">
     <convert type="ServicePosition">Length</convert>
   </widget>
-  <eLabel backgroundColor="white" position="86,612" size="906,2" />
-  <widget backgroundColor="background" font="Regular; 32" foregroundColor="unc6e0f3" name="album" position="86,680" size="906,40" transparent="1" />
-  <widget backgroundColor="background" font="Regular; 32" foregroundColor="red" name="artist" position="86,728" size="906,40" transparent="1" />
-  <widget backgroundColor="background" font="Regular; 28" foregroundColor="grey" name="genre" position="86,777" size="906,40" transparent="1" />
-  <widget backgroundColor="background" font="Regular; 32" foregroundColor="unc6e0f3" halign="left" position="86,640" render="Label" size="150,40" source="session.CurrentService" transparent="1">
+  <eLabel backgroundColor="white" position="86,516" size="906,2" />
+  <widget backgroundColor="background" font="Regular; 32" foregroundColor="unc6e0f3" name="album" position="86,674" size="906,40" transparent="1" />
+  <widget backgroundColor="background" font="Regular; 32" foregroundColor="red" name="artist" position="86,733" size="906,40" transparent="1" />
+  <widget backgroundColor="background" font="Regular; 28" foregroundColor="grey" name="genre" position="86,797" size="906,40" transparent="1" />
+  <widget backgroundColor="background" font="Regular; 32" foregroundColor="unc6e0f3" halign="left" position="86,545" render="Label" size="150,40" source="session.CurrentService" transparent="1">
     <convert type="ServicePosition">Position</convert>
   </widget>
-  <widget backgroundColor="background" font="Regular; 32" foregroundColor="unc6e0f3" halign="right" position="842,640" render="Label" size="150,40" source="session.CurrentService" transparent="1">
+  <widget backgroundColor="background" font="Regular; 32" foregroundColor="unc6e0f3" halign="right" position="842,545" render="Label" size="150,40" source="session.CurrentService" transparent="1">
     <convert type="ServicePosition">Remaining</convert>
   </widget>
-  <eLabel backgroundColor="black" font="Regular; 32" foregroundColor="yellow" position="86,826" size="110,40" text="next:" transparent="1" />
-  <widget backgroundColor="black" font="Regular; 32" foregroundColor="green" name="nextTitle" position="167,826" size="831,40" transparent="1" />
-  <ePixmap alphatest="on" pixmap="Pd1loi-HD-night/dvr/dvr.png" position="524,485" size="250,33" transparent="1" zPosition="1" />
-  <widget alphatest="on" name="dvrStatus" pixmaps="Pd1loi-HD-night/dvr/dvr_pl.png,Pd1loi-HD-night/dvr/dvr_pau.png" position="524,485" size="250,33" transparent="1" />
-  <widget alphatest="on" name="shuffle" pixmaps="Pd1loi-HD-night/dvr/placeholder1.png,Pd1loi-HD-night/dvr/shuffle.png" position="813,485" size="53,34" />
-  <widget alphatest="on" name="repeat" pixmaps="Pd1loi-HD-night/dvr/placeholder1.png,Pd1loi-HD-night/dvr/repeat.png" position="880,485" size="53,34" />
-  <widget name="PositionGauge" position="86,624" size="906,15" pointer="/usr/share/enigma2/Pd1loi-HD-night/dvr/progressbar1.png:900,0" seek_pointer="/usr/share/enigma2/Pd1loi-HD-night/dvr/progressbar1.png:900,0" transparent="1" />
-  <ePixmap pixmap="Pd1loi-HD-night/images/mmp3p1.png" position="35,564" size="30,30" alphatest="on" />
-  <ePixmap pixmap="Pd1loi-HD-night/images/mmp3p2.png" position="35,729" size="30,30" alphatest="on" />
-  <ePixmap pixmap="Pd1loi-HD-night/images/mmp3p3.png" position="35,680" size="40,40" alphatest="on" />
-  <ePixmap pixmap="Pd1loi-HD-night/images/mmp3p4.png" position="35,778" size="30,30" alphatest="on" />
-  <ePixmap pixmap="Pd1loi-HD-night/images/mmp3p5.png" position="35,835" size="30,30" alphatest="on" />
-</screen>
+  <eLabel backgroundColor="black" font="Regular; 32" foregroundColor="yellow" position="86,863" size="110,40" text="next:" transparent="1" />
+  <widget backgroundColor="black" font="Regular; 32" foregroundColor="green" name="nextTitle" position="167,863" size="831,40" transparent="1" />
+  <ePixmap alphatest="on" pixmap="Pd1loi-HD-night/dvr/dvr.png" position="376,458" size="250,50" transparent="1" zPosition="1" />
+  <widget alphatest="on" name="dvrStatus" pixmaps="Pd1loi-HD-night/dvr/dvr_pl.png,Pd1loi-HD-night/dvr/dvr_pau.png" position="376,458" size="250,50" transparent="1" zPosition="2" />
+  <widget alphatest="on" name="shuffle" pixmaps="Pd1loi-HD-night/dvr/placeholder1.png,Pd1loi-HD-night/dvr/shuffle.png" position="883,464" size="53,34" />
+  <widget alphatest="on" name="repeat" pixmaps="Pd1loi-HD-night/dvr/placeholder1.png,Pd1loi-HD-night/dvr/repeat.png" position="938,464" size="53,34" />
+  <widget name="PositionGauge" position="86,529" size="906,15" pointer="/usr/share/enigma2/Pd1loi-HD-night/dvr/progressbar1.png:900,0" seek_pointer="/usr/share/enigma2/Pd1loi-HD-night/dvr/progressbar1.png:900,0" transparent="1" />
+  <ePixmap alphatest="blend" pixmap="Pd1loi-HD-night/merlin_mp/mmp3p.png" position="24,605" size="60,300" transparent="1" zPosition="1" />
+ </screen>
 
   <screen name="MerlinMusicPlayerFileList" position="fill" title="Merlin Music PlayerList" flags="wfNoBorder">
   <panel name="BasicTemplate"/>
@@ -1191,7 +1187,15 @@
   <widget name="coverArt" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/MerlinMusicPlayer/images/no_coverArt.png" position="60,743" size="238,238" transparent="1" alphatest="blend" />
   <widget name="display" position="60,982" size="1800,40" zPosition="1" transparent="1" font="Regular;28" foregroundColor="unfcc000" />
 </screen>
-
+ <screen name="MerlinMusicPlayerSongList" position="fill" flags="wfNoBorder" backgroundColor="#00000000" title="Songlist">
+ <panel name="BasicTemplate" />
+			<ePixmap alphatest="on" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/MerlinMusicPlayer/images/mmpborderHD.png" position="780,152" size="1110,560" />
+			<eLabel backgroundColor="#999999" position="1179,121" size="313,8" zPosition="1" />
+			<eLabel backgroundColor="#999999" font="Regular;22" foregroundColor="#0f0f0f" halign="center" position="779,103" size="400,40" text="MERLIN  MUSIC  PLAYER" valign="center" zPosition="2" />
+			<eLabel backgroundColor="#999999" font="Regular;16" foregroundColor="#0f0f0f" halign="center" position="1493,103" size="400,40" text="WWW.DREAMBOX-TOOLS.INFO" valign="center" zPosition="2" />
+			<widget name="headertext" position="11,636" zPosition="1" size="700,40" font="Regular; 30" transparent="1" foregroundColor="unffff00" backgroundColor="#00000000" />
+			<widget name="list" selectionPixmap="Pd1loi-HD-night/buttons/sel4.png" position="806,168" zPosition="2" size="1060,825" font="Regular; 32" itemHeight="45" scrollbarMode="showOnDemand" transparent="0" backgroundColor="#00000000" />
+			</screen>
 
 <screen name="iDreamAddToDatabase" position="center,center" size="1920,1080" title="Add music files to iDream database" flags="wfNoBorder">
   <ePixmap pixmap="Pd1loi-HD-night/buttons/red.png" position="192,1032" size="34,34" alphatest="blend" />
