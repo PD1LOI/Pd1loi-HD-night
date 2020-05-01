@@ -2454,12 +2454,12 @@
 
 	<screen name="AutoTimerWizard" position="fill" flags="wfNoBorder">
 		<panel name="PigTemplate"/>
-		<eLabel text="Welcome..." position="30,7" size="1830,75" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;36" valign="center" halign="left"/>
+		<eLabel text="Welcome..." position="30,7" size="1830,75" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;36" foregroundColor="orange1" valign="center" halign="left"/>
 		<widget name="rc" position="1623,148" size="231,750" zPosition="10" pixmaps="skin_default/rc.png,skin_default/rcold.png" alphatest="on"/>
 		<widget name="text" position="780,105" size="830,495" font="Regular;32"/>
 		<ePixmap pixmap="PLi-FullNightHD/buttons/red.png" position="815,485" size="34,34" alphatest="on"/>
 		<widget name="languagetext" position="877,486" size="165,38" font="Regular;34"/>
-		<widget source="list" render="Listbox" position="815,661" size="735,266" scrollbarMode="showOnDemand">
+		<widget source="list" render="Listbox" position="815,661" size="735,266" selectionPixmap="Pd1loi-HD-night/buttons/sel104.png" scrollbarMode="showOnDemand">
 			<convert type="TemplatedMultiContent">
 				{"template": [ MultiContentEntryText(pos = (0,0),size = (735,38),flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER,text = 0) ],
 		"fonts": [gFont("Regular",28)],
@@ -2467,7 +2467,7 @@
 	}
 			</convert>
 		</widget>
-		<widget name="config" position="30,655" size="720,266" itemHeight="38" font="Regular;28" transparent="1" zPosition="1" scrollbarMode="showOnDemand"/>
+		<widget name="config" position="30,655" size="720,266" itemHeight="38" font="Regular;28" selectionPixmap="Pd1loi-HD-night/buttons/sel104.png" transparent="1" zPosition="1" scrollbarMode="showOnDemand"/>
 		<widget name="wizard" pixmap="skin_default/wizard.png" position="811,165" size="165,261" zPosition="10" alphatest="on"/>
 		<widget name="HelpWindow" pixmap="skin_default/buttons/key_text.png" position="810,660" zPosition="1" size="1,1" transparent="1" alphatest="on"/>
 		<panel name="VKeyIconPanel"/>
@@ -2480,29 +2480,29 @@
 
 	<screen name="AutoTimerSettings" title="AutoTimer Settings" position="fill" flags="wfNoBorder">
 		<panel name="PigTemplate"/>
-		<widget name="config" position="780,100" size="1110,912" itemHeight="38" font="Regular;28" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" background="background"/>
+		<widget name="config" position="780,100" size="1110,912" itemHeight="38" selectionPixmap="Pd1loi-HD-night/buttons/sel104.png" font="Regular;28" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" background="background"/>
 		<widget source="help" render="Label" position="30,600" size="720,300" backgroundColor="background" transparent="1" font="Regular;30"/>
 	</screen>
 
 	<screen name="AutoTimerEditor" title="Edit AutoTimer" position="fill" flags="wfNoBorder">
 		<panel name="PigTemplate"/>
-		<widget name="config" position="780,100" size="1110,912" itemHeight="38" font="Regular;28" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand"/>
+		<widget name="config" position="780,100" size="1110,912" itemHeight="38" selectionPixmap="Pd1loi-HD-night/buttons/sel4.png" font="Regular;28" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand"/>
 		<widget source="help" render="Label" position="30,600" size="720,300" backgroundColor="background" transparent="1" font="Regular;30"/>
 	</screen>
 
 	<screen name="AutoTimerFilterEditor" title="Edit AutoTimer Filters" position="fill" flags="wfNoBorder">
 		<panel name="PigTemplate"/>
-		<widget name="config" position="780,100" size="1110,912" itemHeight="38" font="Regular;28" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" background="background"/>
+		<widget name="config" position="780,100" size="1110,912" itemHeight="38" font="Regular;28" selectionPixmap="Pd1loi-HD-night/buttons/sel4.png" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" background="background"/>
 	</screen>
 
 	<screen name="AutoTimerServiceEditor" title="Edit AutoTimer Services" position="fill" flags="wfNoBorder">
 		<panel name="PigTemplate"/>
-		<widget name="config" position="780,100" size="1110,912" itemHeight="38" font="Regular;28" backgroundColor="background" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand"/>
+		<widget name="config" position="780,100" size="1110,912" itemHeight="38" font="Regular;28" selectionPixmap="Pd1loi-HD-night/buttons/sel4.png" backgroundColor="background" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand"/>
 	</screen>
 
 	<screen name="AutoTimerImporter" title="Import AutoTimer" position="fill" flags="wfNoBorder">
 		<panel name="PigTemplate"/>
-		<widget name="list" position="780,100" size="1110,912" itemHeight="45" backgroundColor="background" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand"/>
+		<widget name="list" position="780,100" size="1110,912" itemHeight="45" backgroundColor="background" selectionPixmap="Pd1loi-HD-night/buttons/sel4.png" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand"/>
 	</screen>
 
 	<screen name="AutoTimerOverview" title="AutoTimer Overview" position="fill" flags="wfNoBorder">
@@ -2547,7 +2547,7 @@
 
 <screen name="SystemToolsSc" position="fill" title="System Tools Main Menu" flags="wfNoBorder">
 		<panel name="PigTemplate"/>
-		<widget name="entries" position="780,108" size="1110,900" font="Regular;34" selectionPixmap="Pd1loi-HD-night/buttons/sel14.png" itemHeight="50" scrollbarMode="showOnDemand"/>
+		<widget name="entries" position="780,108" size="1110,900" font="Regular;32" selectionPixmap="Pd1loi-HD-night/buttons/sel14.png" itemHeight="50" scrollbarMode="showOnDemand"/>
 	</screen>
 	<screen name="SystemToolsConfig" position="fill" title="System Tools Config Screen" flags="wfNoBorder">
 		<panel name="PigTemplate"/>
@@ -2555,11 +2555,11 @@
 	</screen>
 	<screen name="SystemToolsInf" position="fill" title="System Tools Info Menu" flags="wfNoBorder">
 		<panel name="PigTemplate"/>
-		<widget name="entries" position="780,108" size="1110,900" font="Regular;34" selectionPixmap="Pd1loi-HD-night/buttons/sel14.png" itemHeight="50" scrollbarMode="showOnDemand"/>
+		<widget name="entries" position="780,108" size="1110,900" font="Regular;32" selectionPixmap="Pd1loi-HD-night/buttons/sel14.png" itemHeight="50" scrollbarMode="showOnDemand"/>
 	</screen>
 	<screen name="SystemToolsSwap" position="fill" title="System Tools Swapfile Menu" flags="wfNoBorder">
 		<panel name="PigTemplate"/>
-		<widget name="entries" position="780,108" size="1110,900" font="Regular;34" selectionPixmap="Pd1loi-HD-night/buttons/sel14.png" itemHeight="50" scrollbarMode="showOnDemand"/>
+		<widget name="entries" position="780,108" size="1110,900" font="Regular;32" selectionPixmap="Pd1loi-HD-night/buttons/sel14.png" itemHeight="50" scrollbarMode="showOnDemand"/>
 	</screen>
 	<screen name="SystemToolsTextBox" position="fill" title="System Tools Text Box" flags="wfNoBorder">
 		<panel name="PigTemplate"/>
