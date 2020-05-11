@@ -2116,11 +2116,11 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
 	<!-- Skin Selector -->
 
 	<screen name="SkinSelector" position="fill" flags="wfNoBorder">
-		<panel name="SelectionTemplate"/>
-		<widget name="Preview" position="165,600" size="420,315" alphatest="on"/>
-		<widget name="SkinList" position="780,100" size="1110,912" itemHeight="45" selectionPixmap="Pd1loi-HD-night/buttons/sel4.png" font="Regular;32" scrollbarMode="showOnDemand"/>
-		<widget source="introduction" render="Label" position="780,975" size="1110,34" zPosition="1" transparent="1" font="Regular;30" halign="center"/>
-	</screen>
+  <panel name="SelectionTemplate" />
+  <widget name="Preview" position="165,600" size="420,315" alphatest="on" />
+  <widget name="SkinList" position="860,100" size="1030,912" itemHeight="55" selectionPixmap="Pd1loi-HD-night/buttons/sel04.png" font="Regular;34" scrollbarMode="showOnDemand" />
+  <widget source="introduction" render="Label" position="860,975" size="1030,34" zPosition="1" transparent="1" font="Regular;30" halign="center" />
+</screen>
 
 	<!-- Nim selection -->
 
