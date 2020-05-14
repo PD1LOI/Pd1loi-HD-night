@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <skin>
-
+<screen name="fmConfiguration" position="fill" flags="wfNoBorder" title="Font Magnifier">
+  <panel name="PigTemplate" />
+  <widget name="config" position="780,110" size="1110,500" selectionPixmap="Pd1loi-HD-night/buttons/sel4.png" itemHeight="45" font="Regular; 30" scrollbarMode="showOnDemand" zPosition="1" />
+</screen>
 <screen name="filtersServicesSetup" position="fill" title="Ignore services list">
 <panel name="PigTemplate" />
 <widget source="list" render="Listbox" selectionPixmap="Pd1loi-HD-night/buttons/sel800.png" position="780,110" size="1110,900" scrollbarMode="showOnDemand">
