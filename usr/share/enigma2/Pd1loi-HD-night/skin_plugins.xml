@@ -199,7 +199,7 @@
 </screen>
 
 <!--SDGRadio-->
- <screen name="SDGRadioScreen" position="fill"  title="SDG Radio" backgroundColor="transparent" flags="wfNoBorder">
+<screen name="SDGRadioScreen" position="fill"  title="SDG Radio" backgroundColor="transparent" flags="wfNoBorder">
    <panel name="TopTemplate" />
   <panel name="ButtonTemplate" />
   <ePixmap pixmap="Pd1loi-HD-night/border/smallshadowline.png" position="0,1020" size="1920,3" />
@@ -226,13 +226,11 @@
   <widget name="mem_7" position="259,340" size="40,30" alphatest="on" zPosition="2" />
   <widget name="mem_8" position="308,340" size="40,30" alphatest="on" zPosition="2" />
   <widget name="mem_9" position="356,340" size="40,30" alphatest="on" zPosition="2" />
-  <widget name="freq" position="560,354" size="800,150" valign="center" halign="center" zPosition="2" foregroundColor="white" font="Digital;150" transparent="1" backgroundColor="un31b0810" />
-  <widget name="dab_channel" position="524,353" size="200,150" valign="center" halign="center" zPosition="2" foregroundColor="white" font="Digital;100" transparent="1" backgroundColor="un202537" />
-   <widget name="prog_type" position="514,517" size="900,70" valign="center" halign="center" zPosition="2" foregroundColor="white" font="LiberationSans-Regular; 60" transparent="1" backgroundColor="un31b0810" />
-   <widget name="prog_type" position="514,594" size="900,70" valign="center" halign="center" zPosition="2" foregroundColor="white" font="LiberationSans-Regular; 60" transparent="1" backgroundColor="un31b0810" />
-  <widget name="radiotext" position="514,677" size="900,308" valign="top" halign="center" zPosition="2" foregroundColor="white" font="LiberationSans-Regular; 50" transparent="1" backgroundColor="un31b0810" />
-  <ePixmap pixmap="Pd1loi-HD-night/img/key_ok.png" position="308,656" size="40,32" zPosition="10" alphatest="on" />
-  <eLabel name="Select" text="Select" transparent="1" position="256,837" size="146,22" foregroundColor="white" backgroundColor="transparent" font="Regular; 22" zPosition="5" halign="center" />
+<eLabel name="Select" text="Select" position="251,832" size="146,40" foregroundColor="white" backgroundColor="#202537" font="Tiny;34" zPosition="5" halign="center" transparent="1"/>
+<widget name="dab_channel" position="550,375" size="250,170" valign="center" halign="left" zPosition="2" foregroundColor="white" font="Tiny;80" transparent="1" backgroundColor="#202537" />
+<widget name="freq" position="0,370" size="1920,170" valign="center" halign="center" zPosition="2" foregroundColor="#4fa7ff" font="Digital;150" transparent="1" backgroundColor="#202537" />
+<widget name="prog_type" position="500,570" size="920,50" valign="center" halign="center" zPosition="2" foregroundColor="white" font="Tiny;46" transparent="1" backgroundColor="#202537" />
+<widget name="radiotext" position="500,620" size="920,350" valign="center" halign="center" zPosition="2" foregroundColor="white" font="Tiny;40" transparent="1" backgroundColor="#202537" />
 </screen>
 
 	<!-- YouTube by Taapat	-->
