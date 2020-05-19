@@ -326,7 +326,7 @@
   <widget source="session.Event_Next" render="Label" position="1180,1029" size="300,33" font="Regular;30" halign="right" foregroundColor="darkgrey" backgroundColor="secondBG" transparent="1" zPosition="1">
     <convert type="EventName">SmallRating</convert>
   </widget>
-  <widget backgroundColor="background" font="Regular; 32" foregroundColor="green" halign="center" position="735,857" render="Label" size="370,35" source="session.MSNWeather" transparent="1" zPosition="1">
+  <widget backgroundColor="background" font="Regular; 32" foregroundColor="green" halign="center" valign="bottom" position="735,825" render="Label" size="370,70" source="session.MSNWeather" transparent="1" zPosition="1">
     <convert type="MSNWeather">city</convert>
   </widget>
   <ePixmap name="new ePixmap" position="1705,1015" size="180,8" pixmap="Pd1loi-HD-night/infobar/snron11.png" zPosition="1" />
