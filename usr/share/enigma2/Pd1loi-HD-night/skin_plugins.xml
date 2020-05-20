@@ -203,7 +203,7 @@
    <panel name="TopTemplate" />
   <panel name="ButtonTemplate" />
   <ePixmap pixmap="Pd1loi-HD-night/img/line1.png" position="260,565" size="135,2" scale="1" zPosition="-100" alphatest="blend" />
-	<ePixmap pixmap="Pd1loi-HD-night/border/smallshadowline.png" position="0,1020" size="1920,3" />
+  <ePixmap pixmap="Pd1loi-HD-night/border/smallshadowline.png" position="0,1020" size="1920,3" />
   <ePixmap pixmap="Pd1loi-HD-night/logos/pd1loi.png" position="30,967" size="320,40" alphatest="on" />
   <ePixmap pixmap="Pd1loi-HD-night/border/bottom_bg -.png" position="0,1022" size="1920,58" />
   <ePixmap pixmap="Pd1loi-HD-night/border/top2_bg.png" position="fill" size="1920,88" />
@@ -213,13 +213,13 @@
   <convert type="ClockToText">Format:%-H:%M:%S</convert>
   </widget>
   <widget source="global.CurrentTime" render="Label" position="1440,52" size="450,37" foregroundColor="orange1" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;24" valign="center" halign="right">
-    <convert type="ClockToText">Date</convert>
+  <convert type="ClockToText">Date</convert>
   </widget>
   <ePixmap pixmap="Pd1loi-HD-night/img/AB1.png" position="227,190" size="200,699" alphatest="on" />
   <ePixmap pixmap="Pd1loi-HD-night/img/radio_u.png" position="0,0" size="1920,1080" scale="1" zPosition="-100" alphatest="blend" />
   <ePixmap pixmap="Pd1loi-HD-night/img/line1.png" position="256,872" size="135,1" scale="1" zPosition="10" alphatest="blend" />
-	<ePixmap pixmap="Pd1loi-HD-night/img/line1.png" position="262,568" size="135,1" scale="1" zPosition="10" alphatest="blend" />
-	<widget name="mem_0" position="308,380" size="40,30" alphatest="on" zPosition="2" />
+  <ePixmap pixmap="Pd1loi-HD-night/img/line1.png" position="262,568" size="135,1" scale="1" zPosition="10" alphatest="blend" />
+  <widget name="mem_0" position="308,380" size="40,30" alphatest="on" zPosition="2" />
   <widget name="mem_1" position="259,259" size="40,30" alphatest="on" zPosition="2" />
   <widget name="mem_2" position="308,259" size="40,30" alphatest="on" zPosition="2" />
   <widget name="mem_3" position="356,259" size="40,30" alphatest="on" zPosition="2" />
@@ -229,11 +229,11 @@
   <widget name="mem_7" position="259,340" size="40,30" alphatest="on" zPosition="2" />
   <widget name="mem_8" position="308,340" size="40,30" alphatest="on" zPosition="2" />
   <widget name="mem_9" position="356,340" size="40,30" alphatest="on" zPosition="2" />
-<eLabel name="Select" text="Select" position="251,832" size="146,40" foregroundColor="white" backgroundColor="#202537" font="OpenSans;34" zPosition="5" halign="center" transparent="1"/>
-<widget name="dab_channel" position="550,375" size="250,170" valign="center" halign="left" zPosition="2" foregroundColor="white" font="OpenSans;80" transparent="1" backgroundColor="unff1100" />
-<widget name="freq" position="0,370" size="1920,170" valign="center" halign="center" zPosition="2" foregroundColor="#4fa7ff" font="Digital;150" transparent="1" backgroundColor="#202537" />
-<widget name="prog_type" position="500,570" size="920,50" valign="center" halign="center" zPosition="2" foregroundColor="white" font="Regular;46" transparent="1" backgroundColor="#202537" />
-<widget name="radiotext" position="500,620" size="920,350" valign="center" halign="center" zPosition="2" foregroundColor="white" font="Regular;40" transparent="1" backgroundColor="#202537" />
+  <eLabel name="Select" text="Select" position="251,832" size="146,40" foregroundColor="white" backgroundColor="#202537" font="OpenSans;34" zPosition="5" halign="center" transparent="1"/>
+  <widget name="dab_channel" position="550,375" size="250,170" valign="center" halign="left" zPosition="2" foregroundColor="white" font="OpenSans;80" transparent="1" backgroundColor="unff1100" />
+  <widget name="freq" position="0,370" size="1920,170" valign="center" halign="center" zPosition="2" foregroundColor="#4fa7ff" font="Digital;150" transparent="1" backgroundColor="#202537" />
+  <widget name="prog_type" position="500,570" size="920,50" valign="center" halign="center" zPosition="2" foregroundColor="white" font="Regular;46" transparent="1" backgroundColor="#202537" />
+  <widget name="radiotext" position="500,620" size="920,350" valign="center" halign="center" zPosition="2" foregroundColor="white" font="Regular;40" transparent="1" backgroundColor="#202537" />
   <widget name="pi" position="625,242" size="170,50" valign="left" halign="center" zPosition="2" foregroundColor="white" font="Regular; 38" transparent="1" backgroundColor="unff1100" />
   <widget name="traffic" position="779,242" size="120,50" valign="center" halign="center" zPosition="2" foregroundColor="white" font="Regular; 38" transparent="1" backgroundColor="unff1100" />
   <widget name="af" position="899,242" size="50,50" valign="center" halign="center" zPosition="2" foregroundColor="white" font="Regular; 38" transparent="1" backgroundColor="unff1100" />
