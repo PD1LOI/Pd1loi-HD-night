@@ -296,7 +296,7 @@
 </screen>
 	
 	
-	<screen name="Mute" title="Mute" position="center,15" size="45,45" backgroundColor="transparent" zPosition="10" flags="wfNoBorder">
+	<screen name="Mute" title="Mute" position="936,20" size="48,48" backgroundColor="transparent" zPosition="10" flags="wfNoBorder">
 	<ePixmap pixmap="Pd1loi-HD-night/infobar/mute.png" position="0,0" size="48,48" alphatest="on" zPosition="0"/>
 	</screen>
 
