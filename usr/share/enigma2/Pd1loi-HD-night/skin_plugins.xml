@@ -280,7 +280,7 @@
 				}
 			</convert>
 		</widget>
-	<widget name="HelpWindow" position="675,536" size="100,100" transparent="1" zPosition="3" alphatest="on" />
+	<widget name="HelpWindow" position="25,710" size="1,1" transparent="1" zPosition="3" alphatest="on" />
 	</screen>
 
 <!--NoIP-->
