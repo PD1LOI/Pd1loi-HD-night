@@ -23,6 +23,7 @@
      <font filename="/usr/share/enigma2/Pd1loi-HD-night/fonts/hdi.ttf" name="Crs" scale="100" />
      <font filename="/usr/share/enigma2/Pd1loi-HD-night/fonts/Time.ttf" name="Time" scale="100" />
      <font filename="/usr/share/enigma2/Pd1loi-HD-night/fonts/lcd.ttf" name="LCD" scale="100" />
+     <font filename="/usr/share/enigma2/Pd1loi-HD-night/fonts/mssdr-digitali.ttf" name="Digital" scale="100" />
      <font filename="/usr/share/enigma2/Pd1loi-HD-night/fonts/nmsbd.ttf" name="FdLcD" scale="100" />
      <font filename="/usr/share/enigma2/Pd1loi-HD-night/fonts/DejaVuSans.ttf" name="DejaVuSans" scale="100" />
      <font filename="/usr/share/enigma2/Pd1loi-HD-night/fonts/tuxtxt.ttf" name="Console" scale="100" />
@@ -254,10 +255,10 @@
 		<parameter name="FcFileListName" value="68,4,1000,34"/>
 	</parameters>
 
-        <switchpixmap>
+    <switchpixmap>
 		<pixmap name="menu_on" filename="Pd1loi-HD-night/icons/menu_on.png" />
 		<pixmap name="menu_off" filename="Pd1loi-HD-night/icons/menu_off.png" />
-	</switchpixmap>
+	  </switchpixmap>
 
 	<!-- Window -->
 
@@ -989,6 +990,31 @@
 	<screen name="SelectImage" title="" position="fill" flags="wfNoBorder">
 		<panel name="ChoiceBox"/>
 	</screen>	
+	
+	<!-- Choose upgrade source -->
+<screen name="OPKGMenu" position="fill" title="Select update source to edit">
+<panel name="PigTemplate" />
+<widget name="filelist" position="780,108" size="1110,640" scrollbarMode="showOnDemand" font="Regular;32" selectionPixmap="Pd1loi-HD-night/buttons/sel4.png" itemHeight="45" halign="left" />
+</screen>
+	<!-- Opkg installer -->
+
+	<screen name="OpkgInstaller" position="fill" flags="wfNoBorder">
+<panel name="PigTemplate" />
+<eLabel text="Install extensions" position="30,7" size="1830,75" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;36" valign="center" halign="left" foregroundColor="orange1" />
+<widget name="list" position="780,100" size="1110,798" itemHeight="38" font="Regular;28" backgroundColor="background" zPosition="3" transparent="1" scrollbarMode="showOnDemand" />
+<widget source="introduction" render="Label" position="780,975" size="1110,37" backgroundColor="background" zPosition="1" transparent="1" foregroundColor="white" font="Regular;33" halign="center" />
+	</screen>
+
+
+
+	<!-- Edit upgrade source -->
+
+	<screen name="OPKGSource" title="OPKG source" position="fill" flags="wfNoBorder">
+		<panel name="PigTemplate" />
+		<widget name="text" position="30,570" size="1860,45" font="Regular;34" zPosition="3" transparent="1" />
+	</screen>
+	
+	
 	
 	
 	<!-- Console -->
