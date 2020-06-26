@@ -30,7 +30,7 @@
     <panel name="KeyInfoTemplate" />
     <panel name="KeyMenuInfoTemplate" />
     <widget name="list" position="778,108" size="1110,900" selectionPixmap="Pd1loi-HD-night/buttons/sel060.png" scrollbarMode="showOnDemand" itemHeight="70" font="Regular; 32" />
-  </screen>
+   </screen>
 
 
 <screen name="filtersServicesSelection" position="fill" title="Channel Selection">
@@ -293,7 +293,7 @@
 				}
 			</convert>
 		</widget>
-	<widget name="HelpWindow" position="675,536" size="100,100" transparent="1" zPosition="3" alphatest="on" />
+	<widget name="HelpWindow" position="25,710" size="1,1" transparent="1" zPosition="3" alphatest="on" />
 	</screen>
 
 <!--NoIP-->
