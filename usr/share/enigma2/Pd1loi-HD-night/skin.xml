@@ -23,7 +23,6 @@
      <font filename="/usr/share/enigma2/Pd1loi-HD-night/fonts/hdi.ttf" name="Crs" scale="100" />
      <font filename="/usr/share/enigma2/Pd1loi-HD-night/fonts/Time.ttf" name="Time" scale="100" />
      <font filename="/usr/share/enigma2/Pd1loi-HD-night/fonts/lcd.ttf" name="LCD" scale="100" />
-     <font filename="/usr/share/enigma2/Pd1loi-HD-night/fonts/mssdr-digitali.ttf" name="Digital" scale="100" />
      <font filename="/usr/share/enigma2/Pd1loi-HD-night/fonts/nmsbd.ttf" name="FdLcD" scale="100" />
      <font filename="/usr/share/enigma2/Pd1loi-HD-night/fonts/DejaVuSans.ttf" name="DejaVuSans" scale="100" />
      <font filename="/usr/share/enigma2/Pd1loi-HD-night/fonts/tuxtxt.ttf" name="Console" scale="100" />
@@ -237,28 +236,18 @@
 	</colors>
 
 	<parameters>
-		<parameter name="ConfigListSlider" value="22,0"/>
+		<parameter name="FallbackReceiverListName" value="8,2,225,38"/>
+		<parameter name="FallbackReceiverListIP" value="300,2,225,38"/>
+		<parameter name="ConfigListSlider" value="22,3"/>
 		<parameter name="ChoicelistName" value="68,3,1000,31"/>
-		<parameter name="ExpandableListIcon" value="0,0,55,38"/>
-		<parameter name="ExpandableListDescr" value="55,2,1000,45"/>
-		<parameter name="VirtualKeyBoard" value="68,68"/>
-		<parameter name="VirtualKeyBoardShiftColors" value="0x00ffffff,0x00ffffff,0x0000ffff,0x00ff00ff"/>
-		<parameter name="AutotimerListIcon" value="2,3,24,25"/>
-		<parameter name="AutotimerListRectypeicon" value="30,7,24,25"/>
-		<parameter name="AutotimerListIcons" value="*skin_default/icons/lock_on.png,*skin_default/icons/lock_off.png,*skin_default/icons/timer_rec.png,*skin_default/icons/timer_zap.png"/>
-		<parameter name="ImsSelectionListDescr" value="46,4,1000,45"/>
-		<parameter name="ImsSelectionListLock" value="0,2,36,36"/>
-		<parameter name="FcFileListIcon" value="10,4,30,30"/>
-		<parameter name="FcFileListMultiIcon" value="45,4,30,30"/>
-		<parameter name="FcFileListMultiLock" value="2,0,30,30"/>
-		<parameter name="FcFileListMultiName" value="90,3,1000,32"/>
-		<parameter name="FcFileListName" value="68,4,1000,34"/>
+		<parameter name="VirtualKeyBoard" value="69,68" />
+		<parameter name="VirtualKeyBoardShiftColors" value="0x00ffffff,0x00ffffff,0x0000ffff,0x00ff00ff" />
 	</parameters>
 
-    <switchpixmap>
+        <switchpixmap>
 		<pixmap name="menu_on" filename="Pd1loi-HD-night/icons/menu_on.png" />
 		<pixmap name="menu_off" filename="Pd1loi-HD-night/icons/menu_off.png" />
-	  </switchpixmap>
+	</switchpixmap>
 
 	<!-- Window -->
 
@@ -990,8 +979,7 @@
 	<screen name="SelectImage" title="" position="fill" flags="wfNoBorder">
 		<panel name="ChoiceBox"/>
 	</screen>	
-	
-	<!-- Choose upgrade source -->
+		<!-- Choose upgrade source -->
 <screen name="OPKGMenu" position="fill" title="Select update source to edit">
 <panel name="PigTemplate" />
 <widget name="filelist" position="780,108" size="1110,640" scrollbarMode="showOnDemand" font="Regular;32" selectionPixmap="Pd1loi-HD-night/buttons/sel4.png" itemHeight="45" halign="left" />
@@ -1016,6 +1004,8 @@
 	
 	
 	
+	
+
 	
 	<!-- Console -->
   
