@@ -304,7 +304,7 @@
     
  	<!-- Volume -->
  
-<screen name="Volume" title="Volume" position="41,253" size="30,325" backgroundColor="background" zPosition="1" flags="wfNoBorder">
+<screen name="Volume" title="Volume" position="31,196" size="30,325" backgroundColor="background" zPosition="1" flags="wfNoBorder">
   <widget name="Volume" pixmap="Pd1loi-HD-night/infobar/volumeslider.png" position="0,0" size="30,300" orientation="orBottomToTop" transparent="1" zPosition="1">
   </widget>
   <ePixmap pixmap="Pd1loi-HD-night/infobar/vol_box.png" position="0,301" size="30,24" alphatest="on" zPosition="4" />
