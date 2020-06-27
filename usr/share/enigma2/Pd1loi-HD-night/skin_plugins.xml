@@ -19,19 +19,27 @@
 			</convert>
   </widget>
 </screen>
-    <screen name="ZapHistoryConfigurator" position="fill" title="ZapHistoryConfig">
-    <panel name="SelectionTemplate" />
-    <panel name="KeyInfoTemplate" />
-    <panel name="KeyMenuInfoTemplate" />
-    <widget name="config" position="778,108" size="1110,500" selectionPixmap="Pd1loi-HD-night/buttons/sel4.png" font="Regular; 32" itemHeight="50" scrollbarMode="showOnDemand" />
-  </screen>
-  <screen name="ZapHistoryBrowser" position="fill" title="ZapHistoryBrowser">
-    <panel name="SelectionTemplate" />
-    <panel name="KeyInfoTemplate" />
-    <panel name="KeyMenuInfoTemplate" />
-    <widget name="list" position="778,108" size="1110,900" selectionPixmap="Pd1loi-HD-night/buttons/sel060.png" scrollbarMode="showOnDemand" itemHeight="70" font="Regular; 32" />
-    </screen>
 
+	<!-- ZapHistoryBrowser -->
+<screen name="ZapHistoryBrowser" position="fill" flags="wfNoBorder">
+		<panel name="PigTemplate"/>
+		<widget source="list" render="Listbox" selectionPixmap="Pd1loi-HD-night/buttons/sel060.png" position="780,105" size="1110,910" scrollbarMode="showOnDemand">
+			<convert type="TemplatedMultiContent" >
+			{
+				"template":[
+						MultiContentEntryText(pos=(10,2), size=(1090,35), font=0, flags=RT_HALIGN_LEFT, text=0),
+						MultiContentEntryText(pos=(50,38), size=(1050,30), font=1, flags=RT_HALIGN_LEFT, text=1),
+				],
+				"fonts": [gFont("Regular",30), gFont("Regular",26)],
+				"itemHeight": 70
+			}
+			</convert>
+		</widget>
+	</screen>
+	<screen name="ZapHistoryConfigurator" position="fill">
+		<panel name="PigTemplate"/>
+		<widget name="config" position="780,100" size="1110,912" itemHeight="38" font="Regular;28" selectionPixmap="Pd1loi-HD-night/buttons/sel4.png" scrollbarMode="showOnDemand"/>
+	</screen>
 
 <screen name="filtersServicesSelection" position="fill" title="Channel Selection">
 <panel name="PigTemplate" />
@@ -46,7 +54,20 @@
   <widget name="status" position="30,599" halign="left" size="680,40" font="Regular; 32" />
 </screen>
 
-
+<!-- FontInfo -->
+<screen name="FontInfo" position="fill" title="FontInfo" backgroundColor="#31000000">
+<panel name="PigTemplate" />
+<widget name="config" position="30,590" size="720,50" font="Regular; 30" selectionPixmap="Pd1loi-HD-night/buttons/sel4.png" />
+<widget name="info" position="29,544" size="720,40" font="Regular; 30" halign="left" transparent="1" />
+<widget name="fontsinfo" position="780,108" size="1110,900" font="Regular; 32" zPosition="1" backgroundColor="#31000000" scrollbarMode="showOnDemand" />
+</screen>
+<screen name="FontInfoTestLength" position="fill" title="FontInfo - Tests screen" backgroundColor="#00000000">
+<panel name="PigTemplate" />
+<widget name="config" position="780,108" size="1110,300" itemHeight="38" font="Regular; 30" backgroundColor="#00000000" />
+<widget name="text" position="780,413" size="1110,200" font="Regular;30" zPosition="1" backgroundColor="#00404040" />
+<widget name="size" position="30,560" size="720,100" font="Regular;30" zPosition="1" backgroundColor="#00000000" />
+<widget name="HelpWindow" position="center,670" size="120,0" />
+</screen>
 
 <screen name="EPGImportSources" position="fill" title="EPG Import Sources">
   <panel name="PigTemplate" />
