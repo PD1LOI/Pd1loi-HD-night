@@ -817,7 +817,8 @@
 	<screen name="Setup" title="Setup" position="fill" flags="wfNoBorder">
 		<panel name="PigTemplate"/>
 		<panel name="KeyInfoTemplate"/>
-	        <widget name="config" position="780,100" size="1110,912" itemHeight="38" font="Regular;34" selectionPixmap="Pd1loi-HD-night/buttons/sel4.png" scrollbarMode="showOnDemand"/>
+		<widget name="HelpWindow" position="25,710" size="80,0"/>
+    <widget name="config" position="780,100" size="1110,912" itemHeight="38" font="Regular;30" selectionPixmap="Pd1loi-HD-night/buttons/sel4.png" scrollbarMode="showOnDemand"/>
 		<widget name="description" position="30,570" size="720,300" itemHeight="38" font="Regular;32" valign="top"/>
 	</screen>
 
@@ -941,16 +942,6 @@
 		<ePixmap pixmap="Pd1loi-HD-night/icons/za.png" position="1838,336" zPosition="2" size="52,30" transparent="1" alphatest="blend"/>
 		<ePixmap pixmap="Pd1loi-HD-night/icons/fza.png" position="1838,374" zPosition="2" size="52,30" transparent="1" alphatest="blend"/>
 	</screen>
-	
-		<!-- Extensions Menu -->
-
-	<screen name="ExtensionsList" title="" position="fill" flags="wfNoBorder">
-		<panel name="PigTemplate"/>
-		<panel name="TextTemplate"/>
-		<ePixmap pixmap="buttons/key_prev.png" alphatest="blend" position="30,1031" size="52,38"/>
-		<ePixmap pixmap="buttons/key_next.png" alphatest="blend" position="82,1031" size="52,38"/>
-		<widget name="list" position="780,100" size="1110,912" scrollbarMode="showOnDemand"/>
-	</screen>
 
 	<!-- MovieoffChoiceBox -->
 
@@ -1004,9 +995,7 @@
 	<screen name="SelectImage" title="" position="fill" flags="wfNoBorder">
 		<panel name="ChoiceBox"/>
 	</screen>	
-	
 		<!-- Choose upgrade source -->
-		
 <screen name="OPKGMenu" position="fill" title="Select update source to edit">
 <panel name="PigTemplate" />
 <widget name="filelist" position="780,108" size="1110,640" scrollbarMode="showOnDemand" font="Regular;32" selectionPixmap="Pd1loi-HD-night/buttons/sel4.png" itemHeight="45" halign="left" />
@@ -1034,6 +1023,11 @@
 		<panel name="PigTemplate" />
 		<widget name="text" position="30,570" size="1860,45" font="Regular;34" zPosition="3" transparent="1" />
 	</screen>
+	
+	
+	
+	
+
 	
 	<!-- Console -->
   
@@ -1220,27 +1214,26 @@
 
 	<!-- NumercalTextInputHelpDialog -->
 
-	<screen name="NumericalTextInputHelpDialog" position="center,675" size="846,246" backgroundColor="background" zPosition="2" flags="wfNoBorder">
-		<eLabel position="0,0" size="846,246" backgroundColor="yellowtransparent" zPosition="-1"/>
-		<widget name="key1" position="3,3" size="280,60" font="Regular;30" valign="center" halign="center"/>
-		<widget name="key2" position="283,3" size="280,60" font="Regular;30" valign="center" halign="center"/>
-		<widget name="key3" position="563,3" size="280,60" font="Regular;30" valign="center" halign="center"/>
-		<widget name="key4" position="3,63" size="280,60" font="Regular;30" valign="center" halign="center"/>
-		<widget name="key5" position="283,63" size="280,60" font="Regular;30" valign="center" halign="center"/>
-		<widget name="key6" position="563,63" size="280,60" font="Regular;30" valign="center" halign="center"/>
-		<widget name="key7" position="3,123" size="280,60" font="Regular;30" valign="center" halign="center"/>
-		<widget name="key8" position="283,123" size="280,60" font="Regular;30" valign="center" halign="center"/>
-		<widget name="key9" position="563,123" size="280,60" font="Regular;30" valign="center" halign="center"/>
-		<widget name="help1" position="3,183" size="280,60" font="Regular;30" valign="center" halign="center"/>
-		<widget name="key0" position="283,183" size="280,60" font="Regular;30" valign="center" halign="center"/>
-		<widget name="help2" position="563,183" size="280,60" font="Regular;30" valign="center" halign="center"/>
-		<eLabel backgroundColor="yellowtransparent" position="3,63" size="840,1" zPosition="1"/>
-		<eLabel backgroundColor="yellowtransparent" position="3,123" size="840,1" zPosition="1"/>
-		<eLabel backgroundColor="yellowtransparent" position="3,183" size="840,1" zPosition="1"/>
-		<eLabel backgroundColor="yellowtransparent" position="283,3" size="1,240" zPosition="1"/>
-		<eLabel backgroundColor="yellowtransparent" position="563,3" size="1,240" zPosition="1"/>
-	</screen>
-
+  <screen name="NumericalTextInputHelpDialog" position="center,675" size="846,246" backgroundColor="background" zPosition="2" flags="wfNoBorder">
+    <eLabel position="0,0" size="846,246" backgroundColor="yellowtransparent" zPosition="-1" />
+    <widget name="key1" position="3,3" size="280,60" font="Regular;30" valign="center" halign="center" />
+    <widget name="key2" position="283,3" size="280,60" font="Regular;30" valign="center" halign="center" />
+    <widget name="key3" position="563,3" size="280,60" font="Regular;30" valign="center" halign="center" />
+    <widget name="key4" position="3,63" size="280,60" font="Regular;30" valign="center" halign="center" />
+    <widget name="key5" position="283,63" size="280,60" font="Regular;30" valign="center" halign="center" />
+    <widget name="key6" position="563,63" size="280,60" font="Regular;30" valign="center" halign="center" />
+    <widget name="key7" position="3,123" size="280,60" font="Regular;30" valign="center" halign="center" />
+    <widget name="key8" position="283,123" size="280,60" font="Regular;30" valign="center" halign="center" />
+    <widget name="key9" position="563,123" size="280,60" font="Regular;30" valign="center" halign="center" />
+    <widget name="help1" position="3,183" size="280,60" font="Regular;30" valign="center" halign="center" />
+    <widget name="key0" position="283,183" size="280,60" font="Regular;30" valign="center" halign="center" />
+    <widget name="help2" position="563,183" size="280,60" font="Regular;30" valign="center" halign="center" />
+    <eLabel backgroundColor="yellowtransparent" position="3,63" size="840,1" zPosition="1" />
+    <eLabel backgroundColor="yellowtransparent" position="3,123" size="840,1" zPosition="1" />
+    <eLabel backgroundColor="yellowtransparent" position="3,183" size="840,1" zPosition="1" />
+    <eLabel backgroundColor="yellowtransparent" position="283,3" size="1,240" zPosition="1" />
+    <eLabel backgroundColor="yellowtransparent" position="563,3" size="1,240" zPosition="1" />
+  </screen>
 	<!-- Audio and subtitle selection -->
 
 	<screen flags="wfNoBorder" name="AudioSelection" position="fill" title="Audio">
