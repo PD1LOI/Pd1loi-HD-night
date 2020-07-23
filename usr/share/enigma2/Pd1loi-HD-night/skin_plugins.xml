@@ -285,8 +285,8 @@
 		<widget source="list" render="Listbox" transparent="0" selectionPixmap="Pd1loi-HD-night/buttons/sel81.png" position="780,100" size="1110,914" scrollbarMode="showOnDemand" >
 			<convert type="TemplatedMultiContent" >
 				{"template": [
-				MultiContentEntryPixmapAlphaTest(pos=(0,0), size=(150,108), png=2), # Thumbnail
-				MultiContentEntryText(pos=(165,1), size=(862,78), font=0, flags=RT_HALIGN_LEFT|RT_VALIGN_CENTER|RT_WRAP, text=3), # Title
+        MultiContentEntryPixmapAlphaTest(pos=(0,0), size=(150,108), png=2), # Thumbnail
+        MultiContentEntryText(pos=(165,1), size=(862,78), font=0, flags=RT_HALIGN_LEFT|RT_VALIGN_CENTER|RT_WRAP, text=3), # Title
 				MultiContentEntryText(pos=(180, 75), size=(300,33), font=1, flags=RT_HALIGN_LEFT, text=4), # Views
 				MultiContentEntryText(pos=(540,75), size=(300,33), font=1, flags=RT_HALIGN_LEFT, text=5), # Duration
 				],
@@ -297,8 +297,43 @@
 		</widget>
 		<widget name="thumbnail" position="0,0" size="150,108" /> # Thumbnail size in list
 	</screen>
+
+  <!-- YouTubeDownloadList -->
+ 	<screen name="YouTubeDownloadList" position="fill" flags="wfNoBorder">
+  <panel name="PigTemplate" />
+  <panel name="KeyMenuInfoTemplate" />
+  <widget source="list" render="Listbox" selectionPixmap="Pd1loi-HD-night/buttons/sel4.png" position="780,105" size="1110,270" scrollbarMode="showOnDemand">
+    <convert type="TemplatedMultiContent" >
+{"template": [
+ MultiContentEntryText(pos=(15,1), size=(465,33), font=0, flags=RT_HALIGN_LEFT, text=1), # Title
+ MultiContentEntryText(pos=(345,1), size=(225,33), font=0, flags=RT_HALIGN_RIGHT, text=2), # State
+ MultiContentEntryProgress(pos=(585,6), size=(150,33), percent=-3), # Progress
+ MultiContentEntryText(pos=(750,1), size=(120,33), font=0, flags=RT_HALIGN_LEFT, text=4), # Percentage
+ ],
+ "fonts": [gFont("Regular",30)],"itemHeight": 45}
+</convert>
+</widget>
+  </screen>
   
+  	<!-- YouTube Info -->
 	
+ <screen name="YouTubeInfo" position="fill" Title="YouTubeInfo" flags="wfNoBorder" >
+  <panel name="BasicTemplate" />
+<panel name="KeyMenuInfoTemplate" />
+  <widget name="title" position="780,770" size="1110,90" halign="center" font="Regular;36" foregroundColor="unffff00" />
+ <widget name="pic" position="31,118" size="720,405" backgroundColor="transparent" zPosition="1" />
+ <ePixmap pixmap="Pd1loi-HD-night/border/chframe1.png" position="24,110" size="734,420" alphatest="blend" />  
+ <ePixmap pixmap="Pd1loi-HD-night/logos/pd1loi.png" position="30,967" size="320,40" alphatest="on" />
+  <widget name="description" position="780,105" size="1110,650" font="Regular; 32" />
+  <widget name="views" position="25,556" size="700,50" font="Regular;32" />
+  <widget name="duration" position="25,609" size="700,50" font="Regular;32" />
+  <widget name="likes" position="25,662" size="700,50" font="Regular;32" />
+  <widget name="dislikes" position="25,715" size="700,50" font="Regular;32" />
+  <widget name="published" position="25,768" size="700,50" font="Regular;32" />
+  <widget objectTypes="key_red,StaticText" source="key_red" render="Label" position="242,1030" size="370,38" backgroundColor="black" zPosition="2" transparent="1" font="Regular;34" foregroundColor="red" halign="left" />
+</screen>
+
+
 	<!-- Search box -->
 	<screen name="YouTubeSearch" position="fill" flags="wfNoBorder">
 		<panel name="PigTemplate"/>
