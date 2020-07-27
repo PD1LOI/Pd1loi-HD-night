@@ -2047,7 +2047,7 @@
 
 	<screen flags="wfNoBorder" name="File" position="fill" title="PPanel File">
 		<panel name="PigTemplate"/>
-		<widget name="progress" position="30,1024" size="1860,6" pixmap="Pd1loi-HD-night/window/slider100.png" transparent="1"/>
+		<widget name="progress" position="0,1025" size="1920,6" pixmap="Pd1loi-HD-night/window/slider100.png" transparent="1"/>
 	</screen>
 
 	<screen flags="wfNoBorder" name="Tarball" position="fill" title="PPanel Entry">
