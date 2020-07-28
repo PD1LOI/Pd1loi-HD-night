@@ -1172,12 +1172,12 @@
 		<panel name="SelectionTemplate"/>
 		<panel name="KeyInfoTemplate"/>
 		<panel name="KeyMenuInfoTemplate"/>
-                <ePixmap pixmap="Pd1loi-HD-night/dvr/scale1024.png" position="30,538" size="720,12" zPosition="1"/>
-		<widget source="session.CurrentService" render="PositionGauge" position="30,535" size="720,18" transparent="1" zPosition="4" pointer="Pd1loi-HD-night/dvr/position_pointer1.png:720,4">
-			<convert type="ServicePosition">Gauge</convert>
-		</widget>
+    <ePixmap pixmap="Pd1loi-HD-night/dvr/scale1024.png" position="30,538" size="720,12" zPosition="1"/>
+    <widget source="session.CurrentService" render="PositionGauge" position="30,537" size="720,13" transparent="1" zPosition="4" pointer="Pd1loi-HD-night/dvr/position_pointer1.png:720,4">
+    <convert type="ServicePosition">Gauge</convert>
+    </widget>
 		<widget source="session.CurrentService" render="Label" position="37,494" size="135,30" backgroundColor="transparent" transparent="1" zPosition="4" foregroundColor="grey" borderWidth="2" font="Regular;27" borderColor="black" valign="center" halign="left">
-			<convert type="ServicePosition">Position,ShowHours</convert>
+		<convert type="ServicePosition">Position,ShowHours</convert>
 		</widget>
 		<widget source="session.CurrentService" render="Label" position="502,494" size="240,30" backgroundColor="transparent" transparent="1" zPosition="4" foregroundColor="grey" borderWidth="2" font="Regular;27" borderColor="black" valign="center" halign="right">
 			<convert type="ServicePosition">Remaining,Plus,ShowHours</convert>
@@ -1209,9 +1209,10 @@
 			<convert type="MovieInfo">FileSize</convert>
 		</widget>
 		<widget name="freeDiskSpace" position="195,975" size="555,34" foregroundColor="cyan" font="Regular;30" transparent="1" halign="right"/>
-
-                <widget name="DescriptionBorder" position="0,0" size="0,0"/>
-	</screen>
+   <widget name="movie_sort" pixmaps="icons/az.png,icons/newtop.png,icons/shuffle.png,icons/za.png,icons/oldtop.png,icons/faz.png,icons/fza.png,icons/default.png" position="1282,52" zPosition="1" size="52,30" transparent="1" alphatest="on"/>
+		<widget name="movie_off" pixmaps="icons/ask.png,icons/movielist.png,icons/quit.png,icons/pause.png,icons/playlist.png,icons/playlistquit.png,icons/loop.png,icons/rep.png" position="1335,52" zPosition="1" size="52,30" transparent="1" alphatest="on"/>
+	  <widget name="DescriptionBorder" position="0,0" size="0,0"/>
+	  </screen>
 
 	<!-- NumercalTextInputHelpDialog -->
 
