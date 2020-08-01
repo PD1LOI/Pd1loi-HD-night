@@ -1004,12 +1004,12 @@
 			<eLabel font="Regular;34" foregroundColor="yellow" halign="left" backgroundColor="transparent" position="1114,1030" size="370,38" text="Plugins" />
 		</screen> 
    
-       <screen name="AddPlug" position="fill" title="Add plugin to EasyMedia" flags="wfNoBorder" >
+        <screen name="AddPlug" position="fill" title="Add plugin to EasyMedia" flags="wfNoBorder" >
         <panel name="PigTemplate"/>
         <panel name="KeyInfoTemplate"/>
-                <panel name="KeyMenuTemplate" />
+        <panel name="KeyMenuTemplate" />
         <widget font="Regular;30" name="list" position="765,90" scrollbarMode="showOnDemand" selectionPixmap="Pd1loi-HD-night/buttons/sel6.png" size="1110,900" transparent="1" />
-                </screen> 
+        </screen> 
 
         <!--Weerinfo -->
 
@@ -1019,7 +1019,7 @@
         <panel name="KeyInfoTemplate"/>
         <widget name="titles" position="30,7" size="1860,75" foregroundColor="orange1" transparent="1" zPosition="1" font="Regular;36" valign="center" halign="left"/>
         <ePixmap pixmap="Pd1loi-HD-night/buttons/red.png" position="192,1032" size="34,34" alphatest="blend" />
-        <widget name="list" position="860,101" size="1000,465" scrollbarMode="showOnDemand" font="Regular;34" itemHeight="45" selectionPixmap="Pd1loi-HD-night/buttons/sel6.png" />\n
+        <widget name="list" position="860,101" size="1040,465" scrollbarMode="showOnDemand" font="Regular;34" itemHeight="45" selectionPixmap="Pd1loi-HD-night/buttons/sel4.png" />
         <widget name="mess1" position="30,570" size="720,40" foregroundColor="green" font="Console;28" />
         <ePixmap pixmap="Pd1loi-HD-night/Images/lo/lokaalsd.png" position="794,104" size="47,32" alphatest="on" />
         <ePixmap pixmap="Pd1loi-HD-night/Images/lo/nlflagsd.png" position="794,150" size="47,32" alphatest="on" />
@@ -1027,12 +1027,12 @@
         <ePixmap pixmap="Pd1loi-HD-night/Images/lo/euflagsd.png" position="794,240" size="47,32" alphatest="on" />
         </screen>
 
-        <screen name="weatherMenuSub" position="fill" title="WeerInfo" flags="wfNoBorder" >
-        <panel name="PigTemplate"/>
-        <panel name="KeyInfoTemplate"/>
-        <ePixmap pixmap="Pd1loi-HD-night/buttons/red.png" position="192,1032" size="34,34" alphatest="blend" />	
-        <widget name="list" position="800,101" size="1000,865" scrollbarMode="showOnDemand" font="Regular;34" itemHeight="45" selectionPixmap="Pd1loi-HD-night/buttons/sel6.png"  />\n
-        <widget name="mess1" position="center,center" size="500,30" foregroundColor="green" font="Console;24" />\n
+        <screen name="weatherMenuSub" position="fill" title="WeerInfo" flags="wfNoBorder">
+        <panel name="PigTemplate" />
+        <panel name="KeyInfoTemplate" />
+        <ePixmap pixmap="Pd1loi-HD-night/buttons/red.png" position="192,1032" size="34,34" alphatest="blend" />
+        <widget name="list" position="780,104" size="1110,900" scrollbarMode="showOnDemand" font="Regular;34" itemHeight="45" selectionPixmap="Pd1loi-HD-night/buttons/sel4.png" />\n
+        <widget name="mess1" position="30,547" size="720,35" foregroundColor="green" font="Console; 28" />\n
         </screen>
                
         <screen name="localcityscreen" position="fill" title="Favoriete Locatie" flags="wfNoBorder" >

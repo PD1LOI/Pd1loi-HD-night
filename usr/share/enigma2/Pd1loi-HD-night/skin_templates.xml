@@ -56,7 +56,7 @@
   <panel name="BasicTemplate" />
   <widget source="session.VideoPicture" render="Pig" position="31,118" size="720,405" backgroundColor="transparent" zPosition="1" />
   <ePixmap pixmap="Pd1loi-HD-night/border/chframe1.png" position="24,110" size="734,420" alphatest="blend" />
-  <widget source="session.CurrentService" render="Label" position="34,118" size="715,30" zPosition="1" foregroundColor="unffff00" transparent="1" font="army-digital; 28" borderColor="black" borderWidth="4" noWrap="1" valign="center" halign="center">
+  <widget source="session.CurrentService" render="Label" position="34,118" size="715,30" zPosition="1" foregroundColor="unffff00" transparent="1" font="army-digital; 28" borderColor="black" borderWidth="1" noWrap="1" valign="center" halign="center">
   <convert type="ServiceName">Name</convert>
   </widget>
 </screen>
