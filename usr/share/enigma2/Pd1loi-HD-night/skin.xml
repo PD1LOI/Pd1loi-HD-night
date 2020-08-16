@@ -23,6 +23,7 @@
      <font filename="/usr/share/enigma2/Pd1loi-HD-night/fonts/NotoSans_Regular.ttf" name="Regular2" scale="100" />
      <font filename="/usr/share/enigma2/Pd1loi-HD-night/fonts/LiberationSans-Italic.ttf" name="Crs2" scale="100" />
      <font filename="/usr/share/enigma2/Pd1loi-HD-night/fonts/LiberationSans-Regular.ttf" name="Regular" scale="100" />
+     <font filename="/usr/share/enigma2/Pd1loi-HD-night/fonts/LiberationSans-Regular.ttf" name="LiberationSans-Regular" scale="100" />
      <font filename="/usr/share/enigma2/Pd1loi-HD-night/fonts/hdi.ttf" name="Crs3" scale="100" />
      <font filename="/usr/share/enigma2/Pd1loi-HD-night/fonts/mssdr-digitali.ttf" name="Digital" scale="100" />
      <font filename="/usr/share/enigma2/Pd1loi-HD-night/fonts/Time.ttf" name="Time" scale="100" />
@@ -568,7 +569,7 @@
   </widget>
   <ePixmap pixmap="Pd1loi-HD-night/border/bottom_bg5.png" position="30,595" size="720,3" />
   <ePixmap pixmap="Pd1loi-HD-night/border/bottom_bg5.png" position="30,835" size="720,3" />
-  <widget source="ServiceEvent" render="PDRunningText" position="30,606" size="720,220" transparent="1" font="SegoeUI;32" halign="left" foregroundColor="unc6e0f3" options="movetype=running,startpoint=0,direction=top,steptime=60,repeat=5,startdelay=7000,wrap">
+  <widget source="ServiceEvent" render="PDRunningText" position="30,606" size="720,220" transparent="1" font="Regular;32" halign="left" foregroundColor="unc6e0f3" options="movetype=running,startpoint=0,direction=top,steptime=60,repeat=5,startdelay=7000,wrap">
     <convert type="EventName">FullDescription</convert>
   </widget>
   <widget source="ServiceEvent" render="PDNextEvents" position="30,883" size="720,130" foregroundColor="unffff00" noWrap="1" font="Regular;29" backgroundColor="black" transparent="1" zPosition="5">
@@ -603,7 +604,7 @@
     <widget source="Event" render="Label" position="30,605" size="720,35" foregroundColor="secondFG" font="Regular;32" transparent="1">
       <convert type="EventName">Name</convert>
     </widget>
-      <widget source="Event" render="PDRunningText" position="30,650" size="720,315" transparent="1" font="SegoeUI;33" halign="left" foregroundColor="white" options="movetype=running,startpoint=0,direction=top,steptime=60,repeat=5,startdelay=9000,wrap">
+      <widget source="Event" render="PDRunningText" position="30,650" size="720,315" transparent="1" font="Regular;32" halign="left" foregroundColor="white" options="movetype=running,startpoint=0,direction=top,steptime=60,repeat=5,startdelay=9000,wrap">
     <convert type="EventName">FullDescription</convert>
   </widget>
     <widget source="Event" render="Label" position="30,979" size="330,34" backgroundColor="background" transparent="1" foregroundColor="secondFG" font="Regular;30">
@@ -629,37 +630,35 @@
   </screen>
 
 	<screen name="EventView" title="Eventview" position="fill" flags="wfNoBorder">
-  <panel name="SelectionTemplate" />
-  <panel name="KeyMenuTemplate" />
-  <ePixmap pixmap="Pd1loi-HD-night/border/bottom_bg5.png" position="30,590" size="720,3" />
-  <widget name="epg_description" position="780,100" size="1110,912" transparent="1" font="SegoeUI;36" halign="left" />
-  <widget source="session.CurrentService" render="Label" position="30,532" size="720,30" foregroundColor="unffff00" font="Regular;26" valign="center" halign="center" transparent="1" zPosition="1">
-    <convert type="TransponderInfo" />
-  </widget>
-  <widget name="channel" position="30,592" size="720,45" transparent="1" font="Regular;33" halign="left" />
-  <widget name="datetime" position="30,652" size="720,45" transparent="1" font="Regular;33" halign="left" foregroundColor="unffff00" />
-  <widget name="duration" position="30,712" size="720,45" transparent="1" font="Regular;33" halign="left" foregroundColor="cyan1" />
-  <widget source="session.Event_Now" render="Label" position="135,712" size="285,45" transparent="1" zPosition="1" foregroundColor="foreground" font="Regular;32" halign="right">
-    <convert type="EventTime">Remaining</convert>
-    <convert type="RemainingToText">InMinutes</convert>
-  </widget>
-  <widget source="session.Event_Now" render="Label" position="30,772" size="720,35" transparent="1" zPosition="1" foregroundColor="blue" font="Regular;32" halign="left">
-    <convert type="EventName">Genre</convert>
-  </widget>
-  <widget source="session.Event_Now" render="Label" position="30,832" size="720,35" transparent="1" zPosition="1" foregroundColor="blue" font="Regular;32" halign="left">
-    <convert type="EventName">Rating</convert>
-  </widget>
- 		<widget source="session.Event_Next" render="Label" position="30,975" size="720,35" font="Regular;30" halign="left" foregroundColor="unffff00" transparent="1">
-			<convert type="EventName">NameNext</convert>
-		</widget>
-    </screen>
+   <panel name="SelectionTemplate" />
+    <panel name="KeyMenuTemplate" />
+    <ePixmap pixmap="Pd1loi-HD-night/border/bottom_bg5.png" position="30,590" size="720,3" />
+    <widget name="epg_description" position="780,100" size="1110,912" transparent="1" font="Regular;36" halign="left" />
+    <widget source="session.CurrentService" render="Label" position="30,532" size="720,30" foregroundColor="unffff00" font="Regular;26" valign="center" halign="center" transparent="1" zPosition="1">
+      <convert type="TransponderInfo" />
+    </widget>
+    <widget name="channel" position="30,592" size="720,45" transparent="1" font="Regular;33" halign="left" />
+    <widget name="datetime" position="30,652" size="720,45" transparent="1" font="Regular;33" halign="left" />
+    <widget name="duration" position="30,712" size="720,45" transparent="1" font="Regular;33" halign="left" />
+    <widget source="session.Event_Now" render="Label" position="135,712" size="285,45" transparent="1" zPosition="1" foregroundColor="foreground" font="Regular;32" halign="right">
+      <convert type="EventTime">Remaining</convert>
+      <convert type="RemainingToText">InMinutes</convert>
+    </widget>
+    <widget source="session.Event_Now" render="Label" position="30,772" size="720,35" transparent="1" zPosition="1" foregroundColor="blue" font="Regular;32" halign="left">
+      <convert type="EventName">Genre</convert>
+    </widget>
+    <widget source="session.Event_Now" render="Label" position="30,832" size="720,35" transparent="1" zPosition="1" foregroundColor="blue" font="Regular;32" halign="left">
+      <convert type="EventName">Rating</convert>
+    </widget>
+    <widget source="Service" render="NextEpgInfo" position="30,943" size="720,64" transparent="1" font="Regular;28" noWrap="1" NumberOfItems="3" noLabel="1" foregroundColor="secondFG" timeColor="grey" numOfSpaces="2" />
+  </screen>
 
 	<screen name="EPGSelectionMulti" title="EPG Selection" position="fill" flags="wfNoBorder">
 		<panel name="SelectionTemplate"/>
 		<panel name="KeyMenuInfoTemplate"/>
 		<widget name="date" position="780,100" size="1110,38" font="Regular;34" transparent="1" valign="center" halign="center"/>
                 <widget name="list" position="780,210" size="1110,798" itemHeight="38" selectionPixmap="Pd1loi-HD-night/buttons/sel4.png" setEventItemFont="Regular;32" setEventTimeFont="Regular;28" setColWidths="350,150" setColGap="20" setTimeWidth="135" setIconDistance="10" backgroundColor="background" transparent="1" scrollbarMode="showOnDemand" />
-                <widget source="Event" render="PDRunningText" position="30,562" size="720,450" transparent="1" font="SegoeUI;30" halign="block" foregroundColor="unc6e0f3" options="movetype=running,startpoint=0,direction=top,steptime=60,repeat=5,startdelay=7000,wrap">
+                <widget source="Event" render="PDRunningText" position="30,562" size="720,450" transparent="1" font="Regular;30" halign="block" foregroundColor="unc6e0f3" options="movetype=running,startpoint=0,direction=top,steptime=60,repeat=5,startdelay=7000,wrap">
                 <convert type="EventName">ExtendedDescription</convert>
                 </widget>
 		<widget name="now_button" pixmap="Pd1loi-HD-night/border/epg_off.png" position="810,145" zPosition="2" size="225,50" alphatest="blend"/>
@@ -679,13 +678,13 @@
 		<panel name="SelectionTemplate"/>
 		<panel name="KeyMenuTemplate"/>
 		<panel name="KeyInfoTemplate"/>
-		<widget name="list" position="780,100" size="1110,912" selectionPixmap="Pd1loi-HD-night/buttons/sel4.png" itemHeight="35" setEventItemFont="SegoeUI;32" setEventTimeFont="Regular;32"
+		<widget name="list" position="780,100" size="1110,912" selectionPixmap="Pd1loi-HD-night/buttons/sel4.png" itemHeight="38" setEventItemFont="Regular;32" setEventTimeFont="Regular;32"
 		setColWidths="120,220" setColGap="40" setIconDistance="-5" setPiconSize="50,30" setPiconDistance="0" setPboxDistance="80"
 		backgroundColor="background" transparent="1" scrollbarMode="showOnDemand"/>
 		<widget source="Service" render="Label" position="600,525" size="150,32" backgroundColor="secondBG" transparent="1" zPosition="1" foregroundColor="secondFG" font="Regular;28" halign="right">
 			<convert type="ServiceOrbitalPosition"/>
 		</widget>
-		<widget source="Event" render="Label" position="30,650" size="720,315" transparent="1" font="SegoeUI;33" halign="left">
+		<widget source="Event" render="Label" position="30,650" size="720,315" transparent="1" font="Regular;30" halign="block">
 			<convert type="EventName">FullDescription</convert>
 		</widget>
 	</screen>
@@ -723,10 +722,10 @@
 		<widget source="Event" render="Progress" pixmap="Pd1loi-HD-night/infobar/pbar.png" position="780,147" size="1110,12" transparent="0" borderWidth="0" backgroundColor="un33333a">
 			<convert type="EventTime">Progress</convert>
 		</widget>
-		<widget source="Event" render="PDRunningText" options="movetype=running,startpoint=0,direction=top,steptime=60,repeat=5,startdelay=10000,wrap" position="780,165" size="1110,320" backgroundColor="background" transparent="1" font="SegoeUI;35" halign="block">
+		<widget source="Event" render="PDRunningText" options="movetype=running,startpoint=0,direction=top,steptime=60,repeat=5,startdelay=10000,wrap" position="780,165" size="1110,320" backgroundColor="background" transparent="1" font="Regular;35" halign="block">
 			<convert type="EventName">ExtendedDescription</convert>
 		</widget>
-		<widget source="Event" render="Label" position="780,510" size="1110,30" foregroundColor="blue" backgroundColor="background" transparent="1" font="SegoeUI;26" halign="left">
+		<widget source="Event" render="Label" position="780,510" size="1110,30" foregroundColor="blue" backgroundColor="background" transparent="1" font="Regular;27" halign="left">
 			<convert type="EventName">Genre</convert>
 		</widget>
 		<widget source="Event" render="Label" position="1590,510" size="300,30" foregroundColor="blue" backgroundColor="background" transparent="1" font="Regular;27" halign="right">
