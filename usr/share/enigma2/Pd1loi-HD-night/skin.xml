@@ -15,7 +15,7 @@
 	<fonts>
      <font filename="/usr/share/fonts/nmsbd.ttf" name="Emu" replacement="0" scale="100" />
      <font filename="/usr/share/fonts/nmsbd.ttf" name="Menu" replacement="0" scale="102" />
-		 <font filename="/usr/share/enigma2/Pd1loi-HD-night/fonts/Segoe UI.ttf" name="Regular1" scale="100"/>
+		 <font filename="/usr/share/enigma2/Pd1loi-HD-night/fonts/Segoe UI.ttf" name="SegoeUI" scale="100"/>
 		 <font filename="/usr/share/enigma2/Pd1loi-HD-night/fonts/segoeuil.ttf" name="Regular0" scale="100"/>
 		 <font filename="/usr/share/enigma2/Pd1loi-HD-night/fonts/Segoe UI Italic.ttf" name="Crs" scale="100"/>
 		 <font filename="/usr/share/enigma2/Pd1loi-HD-night/fonts/ks.ttf" name="OLED" scale="100"/>
@@ -23,7 +23,6 @@
      <font filename="/usr/share/enigma2/Pd1loi-HD-night/fonts/NotoSans_Regular.ttf" name="Regular2" scale="100" />
      <font filename="/usr/share/enigma2/Pd1loi-HD-night/fonts/LiberationSans-Italic.ttf" name="Crs2" scale="100" />
      <font filename="/usr/share/enigma2/Pd1loi-HD-night/fonts/LiberationSans-Regular.ttf" name="Regular" scale="100" />
-     <font filename="/usr/share/enigma2/Pd1loi-HD-night/fonts/LiberationSans-Regular.ttf" name="LiberationSans-Regular" scale="100" />
      <font filename="/usr/share/enigma2/Pd1loi-HD-night/fonts/hdi.ttf" name="Crs3" scale="100" />
      <font filename="/usr/share/enigma2/Pd1loi-HD-night/fonts/mssdr-digitali.ttf" name="Digital" scale="100" />
      <font filename="/usr/share/enigma2/Pd1loi-HD-night/fonts/Time.ttf" name="Time" scale="100" />
@@ -569,7 +568,7 @@
   </widget>
   <ePixmap pixmap="Pd1loi-HD-night/border/bottom_bg5.png" position="30,595" size="720,3" />
   <ePixmap pixmap="Pd1loi-HD-night/border/bottom_bg5.png" position="30,835" size="720,3" />
-  <widget source="ServiceEvent" render="PDRunningText" position="30,606" size="720,220" transparent="1" font="Regular1;32" halign="left" foregroundColor="unc6e0f3" options="movetype=running,startpoint=0,direction=top,steptime=60,repeat=5,startdelay=7000,wrap">
+  <widget source="ServiceEvent" render="PDRunningText" position="30,606" size="720,220" transparent="1" font="SegoeUI;32" halign="left" foregroundColor="unc6e0f3" options="movetype=running,startpoint=0,direction=top,steptime=60,repeat=5,startdelay=7000,wrap">
     <convert type="EventName">FullDescription</convert>
   </widget>
   <widget source="ServiceEvent" render="PDNextEvents" position="30,883" size="720,130" foregroundColor="unffff00" noWrap="1" font="Regular;29" backgroundColor="black" transparent="1" zPosition="5">
@@ -604,7 +603,7 @@
     <widget source="Event" render="Label" position="30,605" size="720,35" foregroundColor="secondFG" font="Regular;32" transparent="1">
       <convert type="EventName">Name</convert>
     </widget>
-      <widget source="Event" render="PDRunningText" position="30,650" size="720,315" transparent="1" font="Regular1;33" halign="left" foregroundColor="white" options="movetype=running,startpoint=0,direction=top,steptime=60,repeat=5,startdelay=9000,wrap">
+      <widget source="Event" render="PDRunningText" position="30,650" size="720,315" transparent="1" font="SegoeUI;33" halign="left" foregroundColor="white" options="movetype=running,startpoint=0,direction=top,steptime=60,repeat=5,startdelay=9000,wrap">
     <convert type="EventName">FullDescription</convert>
   </widget>
     <widget source="Event" render="Label" position="30,979" size="330,34" backgroundColor="background" transparent="1" foregroundColor="secondFG" font="Regular;30">
@@ -633,7 +632,7 @@
   <panel name="SelectionTemplate" />
   <panel name="KeyMenuTemplate" />
   <ePixmap pixmap="Pd1loi-HD-night/border/bottom_bg5.png" position="30,590" size="720,3" />
-  <widget name="epg_description" position="780,100" size="1110,912" transparent="1" font="Regular1;36" halign="left" />
+  <widget name="epg_description" position="780,100" size="1110,912" transparent="1" font="SegoeUI;36" halign="left" />
   <widget source="session.CurrentService" render="Label" position="30,532" size="720,30" foregroundColor="unffff00" font="Regular;26" valign="center" halign="center" transparent="1" zPosition="1">
     <convert type="TransponderInfo" />
   </widget>
@@ -660,7 +659,7 @@
 		<panel name="KeyMenuInfoTemplate"/>
 		<widget name="date" position="780,100" size="1110,38" font="Regular;34" transparent="1" valign="center" halign="center"/>
                 <widget name="list" position="780,210" size="1110,798" itemHeight="38" selectionPixmap="Pd1loi-HD-night/buttons/sel4.png" setEventItemFont="Regular;32" setEventTimeFont="Regular;28" setColWidths="350,150" setColGap="20" setTimeWidth="135" setIconDistance="10" backgroundColor="background" transparent="1" scrollbarMode="showOnDemand" />
-                <widget source="Event" render="PDRunningText" position="30,562" size="720,450" transparent="1" font="Regular1;30" halign="block" foregroundColor="unc6e0f3" options="movetype=running,startpoint=0,direction=top,steptime=60,repeat=5,startdelay=7000,wrap">
+                <widget source="Event" render="PDRunningText" position="30,562" size="720,450" transparent="1" font="SegoeUI;30" halign="block" foregroundColor="unc6e0f3" options="movetype=running,startpoint=0,direction=top,steptime=60,repeat=5,startdelay=7000,wrap">
                 <convert type="EventName">ExtendedDescription</convert>
                 </widget>
 		<widget name="now_button" pixmap="Pd1loi-HD-night/border/epg_off.png" position="810,145" zPosition="2" size="225,50" alphatest="blend"/>
@@ -680,13 +679,13 @@
 		<panel name="SelectionTemplate"/>
 		<panel name="KeyMenuTemplate"/>
 		<panel name="KeyInfoTemplate"/>
-		<widget name="list" position="780,100" size="1110,912" selectionPixmap="Pd1loi-HD-night/buttons/sel4.png" itemHeight="35" setEventItemFont="Regular1;32" setEventTimeFont="Regular;32"
+		<widget name="list" position="780,100" size="1110,912" selectionPixmap="Pd1loi-HD-night/buttons/sel4.png" itemHeight="35" setEventItemFont="SegoeUI;32" setEventTimeFont="Regular;32"
 		setColWidths="120,220" setColGap="40" setIconDistance="-5" setPiconSize="50,30" setPiconDistance="0" setPboxDistance="80"
 		backgroundColor="background" transparent="1" scrollbarMode="showOnDemand"/>
 		<widget source="Service" render="Label" position="600,525" size="150,32" backgroundColor="secondBG" transparent="1" zPosition="1" foregroundColor="secondFG" font="Regular;28" halign="right">
 			<convert type="ServiceOrbitalPosition"/>
 		</widget>
-		<widget source="Event" render="Label" position="30,650" size="720,315" transparent="1" font="Regular1;33" halign="left">
+		<widget source="Event" render="Label" position="30,650" size="720,315" transparent="1" font="SegoeUI;33" halign="left">
 			<convert type="EventName">FullDescription</convert>
 		</widget>
 	</screen>
@@ -724,10 +723,10 @@
 		<widget source="Event" render="Progress" pixmap="Pd1loi-HD-night/infobar/pbar.png" position="780,147" size="1110,12" transparent="0" borderWidth="0" backgroundColor="un33333a">
 			<convert type="EventTime">Progress</convert>
 		</widget>
-		<widget source="Event" render="PDRunningText" options="movetype=running,startpoint=0,direction=top,steptime=60,repeat=5,startdelay=10000,wrap" position="780,165" size="1110,320" backgroundColor="background" transparent="1" font="Regular1;35" halign="block">
+		<widget source="Event" render="PDRunningText" options="movetype=running,startpoint=0,direction=top,steptime=60,repeat=5,startdelay=10000,wrap" position="780,165" size="1110,320" backgroundColor="background" transparent="1" font="SegoeUI;35" halign="block">
 			<convert type="EventName">ExtendedDescription</convert>
 		</widget>
-		<widget source="Event" render="Label" position="780,510" size="1110,30" foregroundColor="blue" backgroundColor="background" transparent="1" font="Regular1;26" halign="left">
+		<widget source="Event" render="Label" position="780,510" size="1110,30" foregroundColor="blue" backgroundColor="background" transparent="1" font="SegoeUI;26" halign="left">
 			<convert type="EventName">Genre</convert>
 		</widget>
 		<widget source="Event" render="Label" position="1590,510" size="300,30" foregroundColor="blue" backgroundColor="background" transparent="1" font="Regular;27" halign="right">
