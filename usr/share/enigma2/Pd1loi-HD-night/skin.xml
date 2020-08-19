@@ -15,7 +15,7 @@
 	<fonts>
      <font filename="/usr/share/fonts/nmsbd.ttf" name="Emu" replacement="0" scale="100" />
      <font filename="/usr/share/fonts/nmsbd.ttf" name="Menu" replacement="0" scale="102" />
-		 <font filename="/usr/share/enigma2/Pd1loi-HD-night/fonts/Segoe UI.ttf" name="SegoeUI" scale="100"/>
+		 <font filename="/usr/share/enigma2/Pd1loi-HD-night/fonts/Segoe UI.ttf" name="Regular1" scale="100"/>
 		 <font filename="/usr/share/enigma2/Pd1loi-HD-night/fonts/segoeuil.ttf" name="Regular0" scale="100"/>
 		 <font filename="/usr/share/enigma2/Pd1loi-HD-night/fonts/Segoe UI Italic.ttf" name="Crs" scale="100"/>
 		 <font filename="/usr/share/enigma2/Pd1loi-HD-night/fonts/ks.ttf" name="OLED" scale="100"/>
@@ -552,7 +552,7 @@
   <panel name="SelectionTemplate" />
   <panel name="KeyInfoTemplate" />
   <panel name="KeyMenuInfoTemplate" />
-  <widget name="list" position="780,108" size="1110,900" selectionPixmap="Pd1loi-HD-night/buttons/sel4.png" itemHeight="50" transparent="1" serviceNumberFont="Regular;36" scrollbarMode="showOnDemand" serviceInfoFont="Crs;34" serviceNameFont="Regular;36" serviceItemHeight="50" picServiceEventProgressbar="PLi-FullNightHD/window/progress.png" progressbarHeight="15" progressBarWidth="70" progressPercentWidth="80" colorEventProgressbarBorder="un33333a" fieldMargins="15" nonplayableMargins="15" colorEventProgressbarBorderSelected="darkgrey" colorServiceDescription="#4FFF86" progressbarBorderWidth="3" foregroundColorServiceNotAvail="#656565" backgroundColorMarked="#656565" colorServiceDescriptionFallback="#4FFF86" colorServiceDescriptionSelectedFallback="#4FFF86" colorFallbackItem="#aaaaaa" colorServiceSelectedFallback="#4FFF86" />
+  <widget name="list" position="780,108" size="1110,900" selectionPixmap="Pd1loi-HD-night/buttons/sel4.png" itemHeight="50" transparent="1" serviceNumberFont="Regular;36" scrollbarMode="showOnDemand" serviceInfoFont="Crs;35" serviceNameFont="Regular;36" serviceItemHeight="50" picServiceEventProgressbar="PLi-FullNightHD/window/progress.png" progressbarHeight="15" progressBarWidth="70" progressPercentWidth="80" colorEventProgressbarBorder="un33333a" fieldMargins="15" nonplayableMargins="15" colorEventProgressbarBorderSelected="darkgrey" colorServiceDescription="#4FFF86" progressbarBorderWidth="3" foregroundColorServiceNotAvail="#656565" backgroundColorMarked="#656565" colorServiceDescriptionFallback="#4FFF86" colorServiceDescriptionSelectedFallback="#4FFF86" colorFallbackItem="#aaaaaa" colorServiceSelectedFallback="#4FFF86" />
   <widget source="ServiceEvent" render="Label" position="30,532" size="720,30" foregroundColor="unffff00" font="Regular;26" valign="center" halign="center" transparent="1" zPosition="1">
     <convert type="TransponderInfo">NoRoot</convert>
   </widget>
