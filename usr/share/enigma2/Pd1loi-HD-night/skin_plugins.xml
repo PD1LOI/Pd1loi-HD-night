@@ -23,7 +23,7 @@
 	<!-- ZapHistoryBrowser -->
 <screen name="ZapHistoryBrowser" position="fill" flags="wfNoBorder">
 		<panel name="PigTemplate"/>
-		<widget source="list" render="Listbox" selectionPixmap="Pd1loi-HD-night/buttons/sel060.png" position="780,105" size="1110,910" scrollbarMode="showOnDemand">
+		<widget source="list" render="Listbox" selectionPixmap="Pd1loi-HD-night/buttons/sel060.png" position="780,105" size="1110,900" scrollbarMode="showOnDemand">
 			<convert type="TemplatedMultiContent" >
 			{
 				"template":[
@@ -36,15 +36,42 @@
 			</convert>
 		</widget>
 	</screen>
-	<screen name="ZapHistoryConfigurator" position="fill">
+	
+	
+	<screen name="ZapHistoryConfigurator" position="fill" title="ZapHistoryConfigurator">
 		<panel name="PigTemplate"/>
-		<widget name="config" position="780,100" size="1110,912" itemHeight="38" font="Regular;28" selectionPixmap="Pd1loi-HD-night/buttons/sel4.png" scrollbarMode="showOnDemand"/>
+		<widget name="config" position="780,100" size="1110,912" itemHeight="40" font="Regular; 30" selectionPixmap="Pd1loi-HD-night/buttons/sel4.png" scrollbarMode="showOnDemand"/>
 	</screen>
+
+<screen name="ZapStatisticScreen" position="fill"  title="ZapStatisticScreen">
+<panel name="PigTemplate" />
+<panel name="KeyInfoTemplate" />
+<panel name="KeyMenuTemplate" />
+<widget name="list" selectionPixmap="Pd1loi-HD-night/buttons/sel4.png" position="780,105" size="1110,900" scrollbarMode="showOnDemand" />
+</screen>
+
+
+	
+	<screen name="ZapStatisticDurationScreen" position="fill" title="ZapStatisticDurationScreen">
+    <panel name="PigTemplate" />
+    <panel name="KeyInfoTemplate" />
+    <panel name="KeyMenuTemplate" />
+<widget name="list" position="780,111" size="1110,900" selectionPixmap="Pd1loi-HD-night/buttons/sel4.png" scrollbarMode="showOnDemand" />
+</screen>
+
+<screen name="ZapStatisticCombinedScreen" position="fill" title="ZapStatisticCombinedScreen">
+    <panel name="PigTemplate" />
+    <panel name="KeyInfoTemplate" />
+    <panel name="KeyMenuTemplate" />
+<widget name="list" position="780,111" size="1110,900" selectionPixmap="Pd1loi-HD-night/buttons/sel4.png" scrollbarMode="showOnDemand" />
+</screen>
+
 
 <screen name="filtersServicesSelection" position="fill" title="Channel Selection">
 <panel name="PigTemplate" />
 <widget name="list" position="780,110" selectionPixmap="Pd1loi-HD-night/buttons/sel4.png" scrollbarMode="showOnDemand" size="1110,900" />
 </screen>
+
 
 <screen name="EPGImportFilterScreen" position="fill" zPosition="2" title="EPGImport Filter">
 <panel name="PigTemplate" />
@@ -997,12 +1024,11 @@
         <screen name="ConfigEasyMedia" position="fill" size="1920,1080" title="EasyMedia settings...">        
                  <panel name="PigTemplate"/>
                  <panel name="KeyInfoTemplate"/>
-                <panel name="KeyMenuTemplate" />
 			<widget name="config" position="820,90" itemHeight="35" scrollbarMode="showOnDemand" selectionPixmap="Pd1loi-HD-night/buttons/sel4.png" size="1050,600" font="Regular; 32" />
-		<eLabel font="Regular;34" foregroundColor="red" halign="left" backgroundColor="transparent" position="242,1030" size="370,38" text="Cancel" />
-			<eLabel font="Regular;34" foregroundColor="green" halign="left" backgroundColor="transparent" position="678,1030" size="370,38" text="Save" />
-			<eLabel font="Regular;34" foregroundColor="yellow" halign="left" backgroundColor="transparent" position="1114,1030" size="370,38" text="Plugins" />
-		</screen> 
+  <eLabel font="Regular;34" foregroundColor="red" halign="left" transparent="1" position="242,1030" size="370,38" text="Cancel" />
+  <eLabel font="Regular;34" foregroundColor="green" halign="left" transparent="1" position="678,1030" size="370,38" text="Save" />
+  <eLabel font="Regular;34" foregroundColor="yellow" halign="left" transparent="1" position="1114,1030" size="370,38" text="Plugins" />
+</screen> 
    
         <screen name="AddPlug" position="fill" title="Add plugin to EasyMedia" flags="wfNoBorder" >
         <panel name="PigTemplate"/>
@@ -2466,8 +2492,8 @@
 		<panel name="PigTemplate"/>
 		<panel name="KeyMenuInfoTemplate"/>
 		<panel name="KeyOkTemplate"/>
-    <widget source="Titel2" render="Label" position="30,600" zPosition="3" size="720,150" font="Regular;32" valign="center" halign="center" transparent="1" foregroundColor="unffff00"/>
-		<widget source="Titel3" render="Label" position="30,600" zPosition="2" size="720,150" font="Regular;32" valign="center" halign="center" transparent="1" foregroundColor="unffff00"/>
+	  <widget source="Titel2" render="Label" position="30,600" zPosition="3" size="720,150" font="Regular;32" valign="center" halign="center" transparent="1" foregroundColor="unffff00" />
+    <widget source="Titel3" render="Label" position="30,600" zPosition="3" size="720,150" font="Regular;32" valign="center" halign="center" transparent="1" foregroundColor="unffff00" />
 		<widget name="MainList" position="780,109" size="1110,896" itemHeight="128" font0="Regular;26" font1="Regular;36" font2="Regular;22" font3="Regular;28"
 						setTime="40,49,90,30" setPict="155,24,70,70" setPictScale="1" setTemp="270,22,120,30" setTempUnits="270,68,120,30"
 						setWindPict="410,43,42,42" setWindPictScale="1" setWind="470,22,150,30" setWindUnits="470,68,150,30"
