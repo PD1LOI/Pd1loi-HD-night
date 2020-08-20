@@ -436,7 +436,7 @@
   <widget source="session.Event_Now" render="Label" position="645,68" size="300,33" font="Regular;30" halign="right" foregroundColor="blue" backgroundColor="secondBG" transparent="1" zPosition="1">
     <convert type="EventName">SmallRating</convert>
   </widget>
-  <widget source="session.Event_Now" render="Label" position="30,110" size="915,710" font="Regular;38" halign="block" zPosition="1" transparent="1" foregroundColor="unffffff">
+  <widget source="session.Event_Now" render="Label" position="30,110" size="915,710" font="Regular;38" halign="left" zPosition="1" transparent="1" foregroundColor="unffffff">
     <convert type="EventName">FullDescription</convert>
   </widget>
   <widget source="session.Event_Next" render="Label" position="975,20" size="915,39" backgroundColor="secondBG" transparent="1" zPosition="1" foregroundColor="secondFG" noWrap="1" font="Regular;33" halign="left">
@@ -448,7 +448,7 @@
   <widget source="session.Event_Next" render="Label" position="1590,68" size="300,33" font="Regular;30" halign="right" foregroundColor="blue" backgroundColor="secondBG" transparent="1" zPosition="1">
     <convert type="EventName">SmallRating</convert>
   </widget>
-  <widget source="session.Event_Next" render="Label" position="975,110" size="915,710" font="Regular;38" halign="block" zPosition="1" transparent="1" foregroundColor="unffffff">
+  <widget source="session.Event_Next" render="Label" position="975,110" size="915,710" font="Regular;38" halign="left" zPosition="1" transparent="1" foregroundColor="unffffff">
     <convert type="EventName">FullDescription</convert>
   </widget>
   <panel name="InfoBarTemplate" />
@@ -487,7 +487,7 @@
   <widget source="session.Event_Now" render="Label" position="645,210" size="300,33" font="Regular;30" halign="right" foregroundColor="orange" backgroundColor="secondBG" transparent="1" zPosition="1">
     <convert type="EventName">SmallRating</convert>
   </widget>
-  <widget source="session.Event_Now" render="Label" position="30,250" size="915,570" font="Regular;38" halign="block" zPosition="1" transparent="1" foregroundColor="unc6e0f3">
+  <widget source="session.Event_Now" render="Label" position="30,250" size="915,570" font="Regular;38" halign="left" zPosition="1" transparent="1" foregroundColor="unc6e0f3">
     <convert type="EventName">FullDescription</convert>
   </widget>
   <widget source="session.Event_Next" render="Label" position="975,162" size="915,39" backgroundColor="secondBG" transparent="1" zPosition="1" foregroundColor="secondFG" noWrap="1" font="Regular;33" halign="left">
@@ -499,7 +499,7 @@
   <widget source="session.Event_Next" render="Label" position="1590,210" size="300,33" font="Regular;30" halign="right" foregroundColor="orange" backgroundColor="secondBG" transparent="1" zPosition="1">
     <convert type="EventName">SmallRating</convert>
   </widget>
-  <widget source="session.Event_Next" render="Label" position="975,250" size="915,570" font="Regular;38" halign="block" zPosition="1" transparent="1" foregroundColor="unc6e0f3">
+  <widget source="session.Event_Next" render="Label" position="975,250" size="915,570" font="Regular;38" halign="left" zPosition="1" transparent="1" foregroundColor="unc6e0f3">
     <convert type="EventName">FullDescription</convert>
 	<panel name="InfoBarTemplate" />
   </widget>
@@ -555,7 +555,7 @@
   <panel name="SelectionTemplate" />
   <panel name="KeyInfoTemplate" />
   <panel name="KeyMenuInfoTemplate" />
-  <widget name="list" position="780,108" size="1110,900" selectionPixmap="Pd1loi-HD-night/buttons/sel4.png" itemHeight="50" transparent="1" serviceNumberFont="Regular;36" scrollbarMode="showOnDemand" serviceInfoFont="Crs2;36" serviceNameFont="Regular;36" serviceItemHeight="50" picServiceEventProgressbar="PLi-FullNightHD/window/progress.png" progressbarHeight="15" progressBarWidth="70" progressPercentWidth="80" colorEventProgressbarBorder="un33333a" fieldMargins="15" nonplayableMargins="15" colorEventProgressbarBorderSelected="darkgrey" colorServiceDescription="#4FFF86" progressbarBorderWidth="3" foregroundColorServiceNotAvail="#656565" backgroundColorMarked="#656565" colorServiceDescriptionFallback="#4FFF86" colorServiceDescriptionSelectedFallback="#4FFF86" colorFallbackItem="#aaaaaa" colorServiceSelectedFallback="#4FFF86" />
+  <widget name="list" position="780,108" size="1110,900" selectionPixmap="Pd1loi-HD-night/buttons/sel4.png" itemHeight="50" transparent="1" serviceNumberFont="Regular;37" scrollbarMode="showOnDemand" serviceInfoFont="Crs;37" serviceNameFont="Regular;37" serviceItemHeight="50" picServiceEventProgressbar="PLi-FullNightHD/window/progress.png" progressbarHeight="15" progressBarWidth="70" progressPercentWidth="80" colorEventProgressbarBorder="un33333a" fieldMargins="15" nonplayableMargins="15" colorEventProgressbarBorderSelected="darkgrey" colorServiceDescription="#4FFF86" progressbarBorderWidth="3" foregroundColorServiceNotAvail="#656565" backgroundColorMarked="#656565" colorServiceDescriptionFallback="#4FFF86" colorServiceDescriptionSelectedFallback="#4FFF86" colorFallbackItem="#aaaaaa" colorServiceSelectedFallback="#4FFF86" />
   <widget source="ServiceEvent" render="Label" position="30,532" size="720,30" foregroundColor="unffff00" font="Regular;26" valign="center" halign="center" transparent="1" zPosition="1">
     <convert type="TransponderInfo">NoRoot</convert>
   </widget>
@@ -661,7 +661,7 @@
 		<panel name="KeyMenuInfoTemplate"/>
 		<widget name="date" position="780,100" size="1110,38" font="Regular;34" transparent="1" valign="center" halign="center"/>
                 <widget name="list" position="780,210" size="1110,798" itemHeight="38" selectionPixmap="Pd1loi-HD-night/buttons/sel4.png" setEventItemFont="Regular;32" setEventTimeFont="Regular;28" setColWidths="350,150" setColGap="20" setTimeWidth="135" setIconDistance="10" backgroundColor="background" transparent="1" scrollbarMode="showOnDemand" />
-                <widget source="Event" render="PDRunningText" position="30,562" size="720,450" transparent="1" font="Regular;30" halign="block" foregroundColor="unc6e0f3" options="movetype=running,startpoint=0,direction=top,steptime=60,repeat=5,startdelay=7000,wrap">
+                <widget source="Event" render="PDRunningText" position="30,562" size="720,450" transparent="1" font="Regular;30" halign="left" foregroundColor="unc6e0f3" options="movetype=running,startpoint=0,direction=top,steptime=60,repeat=5,startdelay=7000,wrap">
                 <convert type="EventName">ExtendedDescription</convert>
                 </widget>
 		<widget name="now_button" pixmap="Pd1loi-HD-night/border/epg_off.png" position="810,145" zPosition="2" size="225,50" alphatest="blend"/>
@@ -687,7 +687,7 @@
 		<widget source="Service" render="Label" position="600,525" size="150,32" backgroundColor="secondBG" transparent="1" zPosition="1" foregroundColor="secondFG" font="Regular;28" halign="right">
 			<convert type="ServiceOrbitalPosition"/>
 		</widget>
-		<widget source="Event" render="Label" position="30,650" size="720,315" transparent="1" font="Regular;30" halign="block">
+		<widget source="Event" render="Label" position="30,650" size="720,315" transparent="1" font="Regular;30" halign="left">
 			<convert type="EventName">FullDescription</convert>
 		</widget>
 	</screen>
@@ -725,7 +725,7 @@
 		<widget source="Event" render="Progress" pixmap="Pd1loi-HD-night/infobar/pbar.png" position="780,147" size="1110,12" transparent="0" borderWidth="0" backgroundColor="un33333a">
 			<convert type="EventTime">Progress</convert>
 		</widget>
-		<widget source="Event" render="PDRunningText" options="movetype=running,startpoint=0,direction=top,steptime=60,repeat=5,startdelay=10000,wrap" position="780,165" size="1110,320" backgroundColor="background" transparent="1" font="Regular;35" halign="block">
+		<widget source="Event" render="PDRunningText" options="movetype=running,startpoint=0,direction=top,steptime=60,repeat=5,startdelay=10000,wrap" position="780,165" size="1110,320" backgroundColor="background" transparent="1" font="Regular;35" halign="left">
 			<convert type="EventName">ExtendedDescription</convert>
 		</widget>
 		<widget source="Event" render="Label" position="780,510" size="1110,30" foregroundColor="blue" backgroundColor="background" transparent="1" font="Regular;27" halign="left">
@@ -1108,7 +1108,7 @@
 		<widget source="ServiceEvent" render="Label" position="600,183" size="150,33" backgroundColor="secondBG" transparent="1" zPosition="1" foregroundColor="secondFG" font="Regular;28" halign="right">
 			<convert type="ServiceOrbitalPosition"/>
 		</widget>
-		<widget source="session.Event_Now" render="Label" position="30,222" size="720,450" transparent="1" foregroundColor="grey" font="Regular;30" halign="block">
+		<widget source="session.Event_Now" render="Label" position="30,222" size="720,450" transparent="1" foregroundColor="grey" font="Regular;30" halign="left">
 			<convert type="EventName">ExtendedDescription</convert>
 		</widget>
 	</screen>
@@ -1208,7 +1208,7 @@
 		<widget source="Service" render="Label" position="30,600" size="720,72" foregroundColor="secondFG" font="Regular;30" transparent="1">
 			<convert type="MovieInfo">ShortDescription</convert>
 		</widget>
-		<widget source="Service" render="Label" position="30,675" size="720,288" font="Regular;31" valign="center" halign="block">
+		<widget source="Service" render="Label" position="30,675" size="720,288" font="Regular;31" valign="center" halign="left">
 			<convert type="MovieInfo">MetaDescription</convert>
 		</widget>
 		<widget source="Service" render="Label" position="30,975" size="180,34" transparent="1" foregroundColor="unffff00" font="Regular;30">
@@ -1335,7 +1335,7 @@
 		<panel name="KeyInfoTemplate"/>
 		<panel name="KeyInfoTemplate"/>
 		<widget name="timerlist" position="780,100" size="1110,912" selectionPixmap="Pd1loi-HD-night/buttons/sel4.png" scrollbarMode="showOnDemand" itemHeight="76" rowSplit="42" setEventNameFont="Regular;32" setServiceNameFont="Regular;28" setFont="Regular;28" satPosLeft="250"/>
-		<widget name="description" position="30,528" size="720,481" transparent="1" font="Regular;30" halign="block"/>
+		<widget name="description" position="30,528" size="720,481" transparent="1" font="Regular;30" halign="left"/>
 	</screen>
 
 	<screen name="TimerLog" position="fill" title="Timer log" flags="wfNoBorder">

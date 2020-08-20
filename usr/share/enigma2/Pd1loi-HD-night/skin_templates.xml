@@ -24,7 +24,7 @@
 		<widget source="session.CurrentService" render="Label" position="c-109,105" size="219,31" zPosition="2" backgroundColor="transparent" foregroundColor="foreground" font="Regular;30" borderWidth="2" valign="top" halign="center">
 			<convert type="PliExtraInfo">ResolutionString</convert>
 		</widget>
-		<eLabel position="0,0" size="225,195" backgroundColor="transparent" borderWidth="2" font="Regular;37" borderColor="black" halign="left" text=">" zPosition="1" />
+		<eLabel position="0,0" size="225,195" backgroundColor="transparent" borderWidth="2" font="Regular;37" borderColor="black" halign="left" text="&gt;" zPosition="1" />
 	</screen>
 
 	<screen name="TopTemplate">

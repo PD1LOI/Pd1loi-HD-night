@@ -3403,14 +3403,14 @@
 		<panel name="KeyChannelTemplate"/>
 		<panel name="KeyMenuTemplate"/>
 		<ePixmap pixmap="skin_default/buttons/key_help.png" alphatest="blend" position="135,1031" size="52,38"/>
-		<widget name="description" position="30,550" size="720,64" zPosition="1" font="Regular;28" halign="block"/>
+		<widget name="description" position="30,550" size="720,64" zPosition="1" font="Regular;28" halign="left"/>
 		<widget name="config" selectionPixmap="Pd1loi-HD-night/buttons/sel4.png" position="780,100" size="1110,874" itemHeight="38" scrollbarMode="showOnDemand"/>
 		<widget name="size" position="30,630" size="720,30" zPosition="1" foregroundColor="green" font="Regular;28" halign="right" transparent="1"/>
 		<widget name="number" position="30,630" size="720,30" zPosition="1" foregroundColor="green" font="Regular;28" transparent="1"/>
 		<widget source="Service" render="Label" position="30,680" size="720,64" foregroundColor="secondFG" font="Regular;28" transparent="1">
 			<convert type="MovieInfo">ShortDescription</convert>
 		</widget>
-		<widget source="Service" render="Label" position="30,755" size="720,256"  font="Regular;28" valign="center" halign="block">
+		<widget source="Service" render="Label" position="30,755" size="720,256"  font="Regular;28" valign="center" halign="left">
 			<convert type="MovieInfo">MetaDescription</convert>
 		</widget>
 		<widget name="number" position="30,982" size="720,30" zPosition="1" foregroundColor="green" font="Regular;28" transparent="1"/>
@@ -3431,7 +3431,7 @@
 	<screen name="MovieManagerCfg" title="Options" position="fill" flags="wfNoBorder">
 		<panel name="PigTemplate"/>
 		<widget name="config" selectionPixmap="Pd1loi-HD-night/buttons/sel4.png" position="780,100" size="1110,912" itemHeight="38" font="Regular;28" scrollbarMode="showOnDemand"/>
-		<widget name="description" position="30,550" size="720,300" itemHeight="38" font="Regular;28" halign="block" valign="top"/>
+		<widget name="description" position="30,550" size="720,300" itemHeight="38" font="Regular;28" halign="left" valign="top"/>
 	</screen>
 
 	<!-- AutoBouquetsMaker (ABM) -->
