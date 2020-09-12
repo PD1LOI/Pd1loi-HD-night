@@ -315,8 +315,8 @@
     <convert type="ClientsStreaming" />
     <convert type="ConditionalShowHide" />
   </widget>
-  <widget render="VideoSize" source="session.CurrentService" position="1708,940" size="170,30" backgroundColor="secondBG" font="Regular;30" foregroundColor="unffff00" halign="center" transparent="1" zPosition="1" />
-  <widget backgroundColor="secondBG" font="LiberationSans-Regular; 20" foregroundColor="unffff00" halign="left" noWrap="1" position="387,859" size="450,26" render="Label" borderWidth="2" source="session.CurrentService" transparent="1" valign="top" zPosition="10">
+  <widget render="VideoSize" source="session.CurrentService" position="1710,940" size="170,30" backgroundColor="secondBG" font="Regular;30" foregroundColor="unffff00" halign="center" transparent="1" zPosition="1" />
+  <widget backgroundColor="secondBG" font="LiberationSans-Regular; 20" foregroundColor="unc6e0f3" halign="left" noWrap="1" position="390,858" size="450,26" render="Label" borderWidth="2" source="session.CurrentService" transparent="1" valign="top" zPosition="10">
     <convert type="ServiceName">Provider</convert>
   </widget>
   <widget source="session.Event_Now" render="Label" position="1180,984" size="300,33" font="Regular;30" halign="right" foregroundColor="darkgrey" backgroundColor="secondBG" transparent="1" zPosition="1">
@@ -443,13 +443,13 @@
     <convert type="ClientsStreaming" />
     <convert type="ConditionalShowHide" />
   </widget>
-  <widget source="session.FrontendStatus" render="Label" position="1735,976" size="112,33" backgroundColor="secondBG" transparent="1" zPosition="1" foregroundColor="foreground" font="Regular;28" halign="center">
+  <widget source="session.FrontendStatus" render="Label" position="1710,976" size="170,33" backgroundColor="secondBG" transparent="1" zPosition="1" foregroundColor="foreground" font="Regular;28" halign="center">
     <convert type="FrontendInfo">SNRdB</convert>
   </widget>
-  <widget source="session.FrontendInfo" render="Label" position="1670,901" size="200,30" borderWidth="1" borderColor="black" zPosition="1" backgroundColor="transpBlack" transparent="1" halign="left" font="Regular;30">
+  <widget source="session.FrontendInfo" render="Label" position="1648,904" size="200,30" borderWidth="1" borderColor="black" zPosition="1" backgroundColor="transpBlack" transparent="1" halign="left" font="Regular;30">
     <convert type="FrontendInfo">STRING</convert>
   </widget>
-  <widget source="session.CurrentService" render="Label" position="1712,1030" size="165,33" backgroundColor="secondBG" transparent="1" zPosition="1" text="DVB-S" font="Regular;28" halign="center">
+  <widget source="session.CurrentService" render="Label" position="1710,1030" size="170,33" backgroundColor="secondBG" transparent="1" zPosition="1" text="DVB-S" font="Regular;28" halign="center">
     <convert type="ServiceOrbitalPosition" />
   </widget>
   <!--<ePixmap pixmap="Pd1loi-HD-night/icons/icon_update_off.png" position="90,52" size="30,30" zPosition="0" alphatest="blend"/>-->
