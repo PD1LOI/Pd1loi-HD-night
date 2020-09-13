@@ -66,6 +66,13 @@
 <widget name="list" position="780,111" size="1110,900" selectionPixmap="Pd1loi-HD-night/buttons/sel4.png" scrollbarMode="showOnDemand" />
 </screen>
 
+<screen name="FullEntryNumber" position="fill" title=" " zPosition="-1">
+  <panel name="BasicTemplate" />
+  <panel name="ButtonTemplate" />
+  <widget name="text" font="Regular;30" position="781,109" size="338,600" zPosition="2" halign="left" backgroundColor="#31000000" transparent="1" />
+  <widget name="text1" font="Regular;30" position="1133,109" size="338,600" zPosition="2" halign="left" backgroundColor="#31000000" transparent="1" />
+  <widget name="text2" font="Regular;30" position="1486,109" size="338,600" zPosition="2" halign="left" backgroundColor="#31000000" transparent="1" />
+</screen>
 
 <screen name="filtersServicesSelection" position="fill" title="Channel Selection">
 <panel name="PigTemplate" />

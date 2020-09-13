@@ -575,13 +575,11 @@
   <widget source="ServiceEvent" render="PDRunningText" position="30,606" size="720,220" transparent="1" font="Regular;32" halign="left" foregroundColor="unc6e0f3" options="movetype=running,startpoint=0,direction=top,steptime=60,repeat=5,startdelay=7000,wrap">
     <convert type="EventName">FullDescription</convert>
   </widget>
-  <widget source="ServiceEvent" render="PDNextEvents" position="30,883" size="720,130" foregroundColor="unffff00" noWrap="1" font="Regular;29" backgroundColor="black" transparent="1" zPosition="5">
-    <convert type="ServiceName">Reference</convert>
-  </widget>
+  <widget source="ServiceEvent" render="NextEpgInfo" position="30,883" size="720,130" transparent="1" font="Regular;29" noWrap="1" NumberOfItems="4" noLabel="1" foregroundColor="unffff00" timeColor="grey" numOfSpaces="2" />
   <widget source="ServiceEvent" render="PDEmptyEpg" emptyText="Event data unavailable." position="30,846" size="720,37" font="Regular;29" foregroundColor="cyan1" backgroundColor="black" halign="left" valign="center" transparent="1" zPosition="1">
-  <convert type="EventName">Name</convert>
-</widget>
-</screen>		
+  <convert type="EventName">Name</convert> 
+  </widget>
+  </screen>		
 
 
 	<!-- Simple channelselection -->
@@ -653,7 +651,7 @@
     <widget source="session.Event_Now" render="Label" position="30,832" size="720,35" transparent="1" zPosition="1" foregroundColor="blue" font="Regular;32" halign="left">
       <convert type="EventName">Rating</convert>
     </widget>
-    <widget source="Service" render="NextEpgInfo" position="30,943" size="720,64" transparent="1" font="Regular;28" noWrap="1" NumberOfItems="3" noLabel="1" foregroundColor="secondFG" timeColor="grey" numOfSpaces="2" />
+    <widget source="Service" render="NextEpgInfo" position="30,943" size="720,64" transparent="1" font="Regular;29" noWrap="1" NumberOfItems="2" noLabel="1" foregroundColor="unffff00" timeColor="grey" numOfSpaces="2" />
   </screen>
 
 	<screen name="EPGSelectionMulti" title="EPG Selection" position="fill" flags="wfNoBorder">
