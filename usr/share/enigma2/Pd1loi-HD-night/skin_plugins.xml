@@ -66,13 +66,6 @@
 <widget name="list" position="780,111" size="1110,900" selectionPixmap="Pd1loi-HD-night/buttons/sel4.png" scrollbarMode="showOnDemand" />
 </screen>
 
-<screen name="FullEntryNumber" position="fill" title=" " zPosition="-1">
-  <panel name="BasicTemplate" />
-  <panel name="ButtonTemplate" />
-  <widget name="text" font="Regular;30" position="781,109" size="338,600" zPosition="2" halign="left" backgroundColor="#31000000" transparent="1" />
-  <widget name="text1" font="Regular;30" position="1133,109" size="338,600" zPosition="2" halign="left" backgroundColor="#31000000" transparent="1" />
-  <widget name="text2" font="Regular;30" position="1486,109" size="338,600" zPosition="2" halign="left" backgroundColor="#31000000" transparent="1" />
-</screen>
 
 <screen name="filtersServicesSelection" position="fill" title="Channel Selection">
 <panel name="PigTemplate" />
@@ -2885,7 +2878,17 @@
 		<widget name="config" position="780,105" size="1110,380" selectionPixmap="Pd1loi-HD-night/buttons/sel4.png" itemHeight="38" font="Regular;33" scrollbarMode="showOnDemand"/>
 	</screen>
 	
-
+	<!-- ## History ZAP ## -->
+<screen name="SetupZapSelectorScreen" position="fill" flags="wfNoBorder" title="LED Brightness Setup">
+		<panel name="PigTemplate" />
+		<panel name="ButtonRed" />
+		<widget name="cancel" position="242,1030" size="370,38" backgroundColor="black" zPosition="1" transparent="1" font="Regular;34" halign="left" foregroundColor="red" />
+		<panel name="ButtonGreen" />
+		<widget name="ok" position="678,1030" size="370,38" backgroundColor="black" zPosition="1" transparent="1" font="Regular;34" halign="left" foregroundColor="green" />
+		<panel name="ButtonBlue" />
+		<widget name="clear" position="1550,1030" size="370,38" backgroundColor="black" zPosition="1" transparent="1" font="Regular;34" halign="left" foregroundColor="blue" />
+		<widget name="config" position="780,123" size="1132,855" font="Regular;33" selectionPixmap="Pd1loi-HD-night/buttons/sel4.png" itemHeight="45" scrollbarMode="showOnDemand" />
+	</screen>
  <!-- RefreshBouquet -->
 
   <screen name="refreshBouquet" position="fill" title="RefreshBouquet">
@@ -3076,12 +3079,12 @@
 	<!-- ## History ZAP ## -->
 	<screen name="SetupZapSelectorScreen" position="fill" flags="wfNoBorder" title="LED Brightness Setup">
 		<panel name="PigTemplate"/>
-		<panel name="ButtonRed" />
-		<widget name="cancel" position="242,1030" size="370,38" backgroundColor="black" zPosition="1" transparent="1" font="Regular;34" halign="left" foregroundColor="red" />
-		<panel name="ButtonGreen" />
-		<widget name="ok" position="678,1030" size="370,38" backgroundColor="black" zPosition="1" transparent="1" font="Regular;34" halign="left" foregroundColor="green" />
-		<panel name="ButtonBlue" />
-		<widget name="clear" position="1550,1030" size="370,38" backgroundColor="black" zPosition="1" transparent="1" font="Regular;34" halign="left" foregroundColor="blue" />
+		<panel name="ButtonRed"/>
+		<widget name="cancel" position="242,1030" size="370,38" backgroundColor="black" zPosition="1" transparent="1" font="Regular;34" halign="left"/>
+		<panel name="ButtonGreen"/>
+		<widget name="ok" position="678,1030" size="370,38" backgroundColor="black" zPosition="1" transparent="1" font="Regular;34" halign="left"/>
+		<panel name="ButtonBlue"/>
+		<widget name="clear" position="1550,1030" size="370,38" backgroundColor="black" zPosition="1" transparent="1" font="Regular;34" halign="left"/>
 		<widget name="config" selectionPixmap="Pd1loi-HD-night/buttons/sel4.png" position="780,123" size="1132,855" font="Regular;33" itemHeight="45" scrollbarMode="showOnDemand"/>
 	</screen>
 
@@ -3118,8 +3121,8 @@
 		<widget name="voteslabel" position="30,730" size="715,36" font="Regular;30" foregroundColor="grey" halign="center" />
 		<widget name="statusbar" position="30,783" size="715,45" font="Regular;30" halign="center" valign="center" foregroundColor="unffff00" />
 		<widget name="poster" position="780,188" size="165,270" alphatest="blend" />
-		<widget name="detailslabel" position="980,117" size="907,45" font="Regular;30" halign="center" foregroundColor="secondFG" />
-		<widget name="menu" position="980,161" size="907,405" selectionPixmap="Pd1loi-HD-night/buttons/sel3.png" font="Regular;33" itemHeight="45" scrollbarMode="showOnDemand" zPosition="3" enableWrapAround="1" foregroundColor="grey" />
+		<widget name="detailslabel" position="980,117" size="907,40" font="Regular;30" halign="center" foregroundColor="secondFG" />
+		<widget name="menu" position="980,161" size="907,405" selectionPixmap="Pd1loi-HD-night/buttons/sel4.png" font="Regular;33" itemHeight="45" scrollbarMode="showOnDemand" zPosition="3" enableWrapAround="1" foregroundColor="grey" />
 		<widget name="castlabel" position="780,580" size="1110,395" font="Regular;33" foregroundColor="grey" />
 		<widget name="extralabel" position="980,117" size="905,450" font="Regular;30" foregroundColor="grey" />
 	<ePixmap pixmap="Pd1loi-HD-night/logos/pd1loi.png" position="30,967" size="320,40" alphatest="on" />
