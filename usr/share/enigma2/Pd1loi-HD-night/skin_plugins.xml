@@ -21,58 +21,37 @@
 </screen>
 
 	<!-- ZapHistoryBrowser -->
-<screen name="ZapHistoryBrowser" position="fill" flags="wfNoBorder">
-		<panel name="PigTemplate"/>
-		<widget source="list" render="Listbox" selectionPixmap="Pd1loi-HD-night/buttons/sel060.png" position="780,105" size="1110,900" scrollbarMode="showOnDemand">
-			<convert type="TemplatedMultiContent" >
-			{
-				"template":[
-						MultiContentEntryText(pos=(10,2), size=(1090,35), font=0, flags=RT_HALIGN_LEFT, text=0),
-						MultiContentEntryText(pos=(50,38), size=(1050,30), font=1, flags=RT_HALIGN_LEFT, text=1),
-				],
-				"fonts": [gFont("Regular",30), gFont("Regular",26)],
-				"itemHeight": 70
-			}
-			</convert>
-		</widget>
-	</screen>
-	
-	
+  <screen name="ZapHistoryBrowser" position="fill" title="ZapHistoryBrowser">
+  <panel name="PigTemplate" />
+   <widget name="list" selectionPixmap="Pd1loi-HD-night/buttons/sel060.png" position="780,105" size="1110,900" scrollbarMode="showOnDemand" />
+  </screen>
 	<screen name="ZapHistoryConfigurator" position="fill" title="ZapHistoryConfigurator">
 		<panel name="PigTemplate"/>
 		<widget name="config" position="780,100" size="1110,912" itemHeight="40" font="Regular; 30" selectionPixmap="Pd1loi-HD-night/buttons/sel4.png" scrollbarMode="showOnDemand"/>
 	</screen>
-
 <screen name="ZapStatisticScreen" position="fill"  title="ZapStatisticScreen">
 <panel name="PigTemplate" />
 <panel name="KeyInfoTemplate" />
 <panel name="KeyMenuTemplate" />
 <widget name="list" selectionPixmap="Pd1loi-HD-night/buttons/sel4.png" position="780,105" size="1110,900" scrollbarMode="showOnDemand" />
 </screen>
-
-
-	
 	<screen name="ZapStatisticDurationScreen" position="fill" title="ZapStatisticDurationScreen">
     <panel name="PigTemplate" />
     <panel name="KeyInfoTemplate" />
     <panel name="KeyMenuTemplate" />
 <widget name="list" position="780,111" size="1110,900" selectionPixmap="Pd1loi-HD-night/buttons/sel4.png" scrollbarMode="showOnDemand" />
 </screen>
-
 <screen name="ZapStatisticCombinedScreen" position="fill" title="ZapStatisticCombinedScreen">
     <panel name="PigTemplate" />
     <panel name="KeyInfoTemplate" />
     <panel name="KeyMenuTemplate" />
 <widget name="list" position="780,111" size="1110,900" selectionPixmap="Pd1loi-HD-night/buttons/sel4.png" scrollbarMode="showOnDemand" />
 </screen>
-
-
+ <!-- EPGImportFilter -->
 <screen name="filtersServicesSelection" position="fill" title="Channel Selection">
 <panel name="PigTemplate" />
 <widget name="list" position="780,110" selectionPixmap="Pd1loi-HD-night/buttons/sel4.png" scrollbarMode="showOnDemand" size="1110,900" />
 </screen>
-
-
 <screen name="EPGImportFilterScreen" position="fill" zPosition="2" title="EPGImport Filter">
 <panel name="PigTemplate" />
   <ePixmap pixmap="skin_default/div-h.png" position="30,539" zPosition="2" size="700,2" />
@@ -2879,15 +2858,15 @@
 	</screen>
 	
 	<!-- ## History ZAP ## -->
-<screen name="SetupZapSelectorScreen" position="fill" flags="wfNoBorder" title="LED Brightness Setup">
-		<panel name="PigTemplate" />
-		<panel name="ButtonRed" />
-		<widget name="cancel" position="242,1030" size="370,38" backgroundColor="black" zPosition="1" transparent="1" font="Regular;34" halign="left" foregroundColor="red" />
-		<panel name="ButtonGreen" />
-		<widget name="ok" position="678,1030" size="370,38" backgroundColor="black" zPosition="1" transparent="1" font="Regular;34" halign="left" foregroundColor="green" />
-		<panel name="ButtonBlue" />
-		<widget name="clear" position="1550,1030" size="370,38" backgroundColor="black" zPosition="1" transparent="1" font="Regular;34" halign="left" foregroundColor="blue" />
-		<widget name="config" position="780,123" size="1132,855" font="Regular;33" selectionPixmap="Pd1loi-HD-night/buttons/sel4.png" itemHeight="45" scrollbarMode="showOnDemand" />
+	<screen name="SetupZapSelectorScreen" position="fill" flags="wfNoBorder" title="History ZAP Setup">
+		<panel name="PigTemplate"/>
+		<ePixmap pixmap="buttons/red.png" position="192,1032" size="34,34" zPosition="1" alphatest="blend"/>
+    <widget name="cancel" position="242,1030" size="370,38" backgroundColor="black" zPosition="1" transparent="1" font="Regular;34" halign="left"/>
+    <ePixmap pixmap="buttons/green.png" position="628,1032" size="34,34" zPosition="1" alphatest="blend"/>
+		<widget name="ok" position="678,1030" size="370,38" backgroundColor="black" zPosition="1" transparent="1" font="Regular;34" halign="left"/>
+	  <ePixmap pixmap="buttons/blue.png" position="1500,1032" size="34,34" zPosition="1" alphatest="blend"/>
+		<widget name="clear" position="1550,1030" size="370,38" backgroundColor="black" zPosition="1" transparent="1" font="Regular;34" halign="left"/>
+		<widget name="config" position="780,123" size="1132,855" font="Regular;33" itemHeight="45" scrollbarMode="showOnDemand"/>
 	</screen>
  <!-- RefreshBouquet -->
 
@@ -3119,7 +3098,7 @@
 		<widget name="stars" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/TMBD/starsbar_filled.png" position="273,627" size="315,31" transparent="1" zPosition="3" />
 		<widget name="ratinglabel" position="30,675" size="715,36" font="Regular;30" foregroundColor="grey" halign="center" />
 		<widget name="voteslabel" position="30,730" size="715,36" font="Regular;30" foregroundColor="grey" halign="center" />
-		<widget name="statusbar" position="30,783" size="715,45" font="Regular;30" halign="center" valign="center" foregroundColor="unffff00" />
+		<widget name="statusbar" position="30,783" size="715,90" font="Regular;30" halign="center" valign="center" foregroundColor="unffff00" />
 		<widget name="poster" position="780,188" size="165,270" alphatest="blend" />
 		<widget name="detailslabel" position="980,117" size="907,40" font="Regular;30" halign="center" foregroundColor="secondFG" />
 		<widget name="menu" position="980,161" size="907,405" selectionPixmap="Pd1loi-HD-night/buttons/sel4.png" font="Regular;33" itemHeight="45" scrollbarMode="showOnDemand" zPosition="3" enableWrapAround="1" foregroundColor="grey" />
