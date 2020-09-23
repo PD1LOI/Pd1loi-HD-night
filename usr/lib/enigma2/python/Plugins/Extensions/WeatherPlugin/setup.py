@@ -41,7 +41,7 @@ def initWeatherPluginEntryConfig():
 	s = ConfigSubsection()
 	s.city = ConfigText(default = "Almere Haven", visible_width = 100, fixed_size = False)
 	s.degreetype = ConfigSelection(choices = [("C", _("metric system")), ("F", _("imperial system"))], default = "C")
-	s.weatherlocationcode = ConfigText(default = "", visible_width = 100, fixed_size = False)
+	s.weatherlocationcode = ConfigText(default = "NLXX2134", visible_width = 100, fixed_size = False)
 	config.plugins.WeatherPlugin.Entry.append(s)
 	return s
 
