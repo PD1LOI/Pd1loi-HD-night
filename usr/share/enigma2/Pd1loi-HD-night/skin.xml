@@ -2172,11 +2172,22 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
 
 	<!-- Skin Selector -->
 
-	<screen name="SkinSelector" position="fill" flags="wfNoBorder">
+<screen name="SkinSelector" position="fill" flags="wfNoBorder">
   <panel name="SelectionTemplate" />
-  <widget name="Preview" position="165,600" size="420,315" alphatest="on" />
-  <widget name="SkinList" position="860,100" size="1030,912" itemHeight="55" selectionPixmap="Pd1loi-HD-night/buttons/sel04.png" font="Regular;34" scrollbarMode="showOnDemand" />
-  <widget source="introduction" render="Label" position="860,975" size="1030,34" zPosition="1" transparent="1" font="Regular;30" halign="center" />
+<panel name="MenuTemplate" />
+  <widget name="preview" position="1172,699" size="420,315" alphatest="on" />
+  <widget source="skins" render="Listbox" position="780,100" size="1110,912" selectionPixmap="Pd1loi-HD-night/buttons/sel4.png" enableWrapAround="1" scrollbarMode="showOnDemand">
+    <convert type="TemplatedMultiContent">
+				{
+				"template": [
+					MultiContentEntryText(pos = (15, 0), size = (725, 45), font = 0, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 7)
+				],
+				"fonts": [gFont("Regular",38)],
+				"itemHeight": 45
+				}
+			</convert>
+  </widget>
+  <widget source="description" render="Label" position="30,570" size="720,170" zPosition="1" transparent="1" font="Regular;30" halign="center" foregroundColor="unffff00" />
 </screen>
 
 	<!-- Nim selection -->
