@@ -2368,22 +2368,20 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
 	<screen name="About" position="fill" flags="wfNoBorder">
 		<panel name="PigTemplate"/>
 	        <widget name="AboutScrollLabel" font="Regular;30" position="780,100" size="1110,912" zPosition="2" split="1" dividechar=":" colposition="0"/>
-	  <widget alphatest="blend" render="MSNWeatherPixmap" position="30,735" size="130,130" source="session.MSNWeather" transparent="1" zPosition="5">
-    <convert type="MSNWeather">weathericon,current</convert>
+  <widget backgroundColor="darkgrey" font="Regular;39" halign="center" render="Label" position="65,821" size="79,45" source="global.CurrentTime" transparent="1" valign="center" zPosition="1" foregroundColor="darkgrey">
+    <convert type="ClockToText">Format:%H</convert>
   </widget>
-<widget noWrap="1" backgroundColor="background" font="Regular; 36" render="Label" position="160,768" size="120,60" source="session.MSNWeather" zPosition="3" halign="center" transparent="1" foregroundColor="unffff00">
+  <widget backgroundColor="darkgrey" font="Regular;39" halign="center" render="Label" position="134,819" size="79,45" source="global.CurrentTime" transparent="1" valign="center" zPosition="1" foregroundColor="darkgrey">
+    <convert type="ClockToText">Format:%M</convert>
+  </widget>
+  <widget backgroundColor="background" font="Regular; 26" foregroundColor="unffff00" halign="center" position="41,919" size="300,45" render="Label" source="global.CurrentTime" transparent="1" valign="top" zPosition="1">
+    <convert type="ClockToText">Format:%A, %d.%m.%Y</convert>
+  </widget>
+  <widget alphatest="blend" position="41,734" size="300,183" render="MSNWeatherPixmap" source="session.MSNWeather" transparent="0">
+    <convert type="MSNWeather">weathericon,current,/usr/share/enigma2/Pd1loi-HD-night/clock/,png</convert>
+  </widget>
+  <widget backgroundColor="background" font="Regular2; 30" foregroundColor="darkgrey" halign="center" position="180,863" render="Label" size="150,37" source="session.MSNWeather" transparent="1" zPosition="1" valign="top">
     <convert type="MSNWeather">temperature_current</convert>
-  </widget>
-  <eLabel name="new eLabel" position="30,875" size="80,30" font="Regular; 28" transparent="1" halign="left" text="max." zPosition="3" foregroundColor="grey" />
-  <widget noWrap="1" backgroundColor="background" font="Regular; 28" render="Label" position="104,875" size="80,30" source="session.MSNWeather" zPosition="3" halign="left" transparent="1" foregroundColor="unffffff">
-    <convert type="MSNWeather">temperature_high,day1</convert>
-  </widget>
-  <eLabel name="new eLabel" position="184,875" size="70,30" font="Regular; 28" transparent="1" halign="left" text="min." zPosition="3" foregroundColor="grey" />
-  <widget noWrap="1" backgroundColor="background" font="Regular; 28" render="Label" position="248,875" size="80,30" source="session.MSNWeather" zPosition="3" halign="left" transparent="1" foregroundColor="unffffff">
-    <convert type="MSNWeather">temperature_low,day1</convert>
-  </widget>
-<widget noWrap="1" backgroundColor="background" font="Regular; 32" render="Label" position="30,909" size="700,40" source="session.MSNWeather" zPosition="3" halign="left" transparent="1" foregroundColor="unffff00">
-    <convert type="MSNWeather">temperature_text,current</convert>
   </widget>
 	</screen>
 	
