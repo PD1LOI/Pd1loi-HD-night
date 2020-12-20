@@ -415,7 +415,6 @@
   </widget>
 </screen>
 
-
 	<!-- InfoBars -->
 
 	<screen name="InfoBar" title="InfoBar" position="fill" backgroundColor="transparent" flags="wfNoBorder">
@@ -533,16 +532,16 @@
 
 	<!-- DVD Player Infobar -->
 
-	<screen name="DVDPlayer" title="InfoBar" position="150,67" size="1620,352" backgroundColor="transparent" flags="wfNoBorder">
-		<panel name="PlayerTemplate"/>
-		<widget name="chapterLabel" position="270,150" size="570,52" font="Regular;30" halign="left" valign="center" noWrap="1" borderColor="black" borderWidth="2" backgroundColor="transparent" zPosition="3"/>
-		<eLabel text="Audio:	" position="270,202" size="135,52" backgroundColor="secondBG" transparent="1" font="Regular;30" borderColor="black" borderWidth="2" valign="center" halign="left"/>
-		<widget name="audioLabel" position="405,202" size="435,52" font="Regular;30" halign="left" valign="center" noWrap="1" borderColor="black" borderWidth="2" backgroundColor="transparent" zPosition="3"/>
-		<eLabel text="Subtitle:	" position="270,255" size="135,52" backgroundColor="secondBG" transparent="1" borderColor="black" borderWidth="2" font="Regular;30" valign="center" halign="left"/>
-		<widget name="subtitleLabel" position="405,255" size="435,52" font="Regular;30" halign="left" valign="center" noWrap="1" borderColor="black" borderWidth="2" backgroundColor="transparent" zPosition="3"/>
-		<widget name="anglePix" position="960,192" size="39,24" pixmap="skin_default/icons/icon_view.png" zPosition="3" alphatest="on"/>
-		<widget name="angleLabel" position="1020,183" size="300,33" font="Regular;31" backgroundColor="black" zPosition="3" transparent="1"/>
-	</screen>
+<screen name="DVDPlayer" title="InfoBar" position="148,750" size="1620,352" backgroundColor="transparent" flags="wfNoBorder">
+  <panel name="PlayerTemplate" />
+  <widget name="chapterLabel" position="270,150" size="570,52" font="Regular;30" halign="left" valign="center" noWrap="1" borderColor="black" borderWidth="2" backgroundColor="transparent" zPosition="3" />
+  <eLabel text="Audio:	" position="270,202" size="135,52" backgroundColor="secondBG" transparent="1" font="Regular;30" borderColor="black" borderWidth="2" valign="center" halign="left" />
+  <widget name="audioLabel" position="405,202" size="435,52" font="Regular;30" halign="left" valign="center" noWrap="1" borderColor="black" borderWidth="2" backgroundColor="transparent" zPosition="3" />
+  <eLabel text="Subtitle:	" position="270,255" size="135,52" backgroundColor="secondBG" transparent="1" borderColor="black" borderWidth="2" font="Regular;30" valign="center" halign="left" />
+  <widget name="subtitleLabel" position="405,255" size="435,52" font="Regular;30" halign="left" valign="center" noWrap="1" borderColor="black" borderWidth="2" backgroundColor="transparent" zPosition="3" />
+  <widget name="anglePix" position="960,192" size="39,24" pixmap="skin_default/icons/icon_view.png" zPosition="3" alphatest="on" />
+  <widget name="angleLabel" position="1020,183" size="300,33" font="Regular;31" backgroundColor="black" zPosition="3" transparent="1" />
+</screen>
 
 	<screen name="ChapterZap" position="center,center" size="360,82" title="Chapter" flags="wfNoBorder">
 		<ePixmap alphatest="off" pixmap="Pd1loi-HD-night/infobar/bl80.png" position="0,0" size="360,82" zPosition="-1"/>
