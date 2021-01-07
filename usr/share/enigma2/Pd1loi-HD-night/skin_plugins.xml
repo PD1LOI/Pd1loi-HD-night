@@ -20,6 +20,47 @@
   </widget>
 </screen>
 
+ <!--RSS NewsReader-->
+  
+ <screen flags="wfNoBorder" name="FeedScreenList" position="fill"  title="PLi RSS Reader">
+  <panel name="BasicTemplate" />
+ <widget name="menu" position="30,100" scrollbarMode="showOnDemand" selectionPixmap="Pd1loi-HD-night/buttons/sel4.png" size="1860,912" font="Regular;32" itemHeight="47" transparent="1" />
+ <ePixmap pixmap="skin_default/buttons/key_ok.png" alphatest="blend" position="30,1031" size="52,38"/>
+ </screen>
+ 
+<screen name= "FeedreaderMenuMain" position="fill"  title="PLi RSS Reader Menu Main" >
+  <panel name="PigTemplate" />
+  <ePixmap pixmap="skin_default/buttons/key_ok.png" alphatest="blend" position="30,1031" size="52,38"/>
+   <widget backgroundColor="darkgrey" font="Regular;39" halign="center" render="Label" position="65,821" size="79,45" source="global.CurrentTime" transparent="1" valign="center" zPosition="1" foregroundColor="darkgrey">
+    <convert type="ClockToText">Format:%H</convert>
+  </widget>
+  <widget backgroundColor="darkgrey" font="Regular;39" halign="center" render="Label" position="134,819" size="79,45" source="global.CurrentTime" transparent="1" valign="center" zPosition="1" foregroundColor="darkgrey">
+    <convert type="ClockToText">Format:%M</convert>
+  </widget>
+  <widget backgroundColor="background" font="Regular; 28" foregroundColor="unffff00" halign="center" position="41,919" size="300,45" render="Label" source="global.CurrentTime" transparent="1" valign="top" zPosition="1">
+    <convert type="ClockToText">Format:%A, %d.%m.%Y</convert>
+  </widget>
+  <widget alphatest="blend" position="41,734" size="300,183" render="MSNWeatherPixmap" source="session.MSNWeather" transparent="0">
+    <convert type="MSNWeather">weathericon,current,/usr/share/enigma2/Pd1loi-HD-night/clock/,png</convert>
+  </widget>
+  <widget backgroundColor="background" font="Regular2; 30" foregroundColor="darkgrey" halign="center" position="180,863" render="Label" size="150,37" source="session.MSNWeather" transparent="1" zPosition="1" valign="top">
+    <convert type="MSNWeather">temperature_current</convert>
+  </widget> 
+  <widget name="menu" position="780,105" scrollbarMode="showOnDemand" selectionPixmap="Pd1loi-HD-night/buttons/sel4.png" size="1110,910" font="Regular;32" itemHeight="47" transparent="1" />
+ </screen> 
+ 
+ <screen name= "FeedScreenContent" position="fill"  title="PLi RSS Reader Content" >
+    <panel name="BasicTemplate" />
+    <ePixmap pixmap="skin_default/buttons/key_ok.png" alphatest="blend" position="30,1031" size="52,38"/>
+  <widget name="menu" position="30,100" scrollbarMode="showOnDemand" selectionPixmap="Pd1loi-HD-night/buttons/sel4.png" size="1860,912" font="Regular;32" itemHeight="47" transparent="1" />
+ </screen> 
+  
+ <screen name= "FeedScreenItemviewer" position="fill"  title="PLi RSS ItemViewer" >
+    <panel name="BasicTemplate" />
+    <ePixmap pixmap="skin_default/buttons/key_ok.png" alphatest="blend" position="30,1031" size="52,38"/>
+   <widget name="text" position="30,100" size="1860,912" font="Regular;32" itemHeight="47" />
+ </screen>
+  
   
 	<!-- ZapHistoryBrowser -->
   <screen name="ZapHistoryBrowser" position="fill" title="ZapHistoryBrowser">
@@ -3079,7 +3120,7 @@
 		<widget name="statusbar" position="7,900" size="765,110" font="Regular;27" halign="center" valign="bottom"/>
 		<widget name="poster" position="780,123" size="165,270" alphatest="blend"/>
 		<widget name="detailslabel" position="960,123" size="945,270" font="Regular;30" halign="center"/>
-		<widget name="menu" position="780,213" size="1132,765" font="Regular;33" itemHeight="45" scrollbarMode="showOnDemand" zPosition="3" enableWrapAround="1" foregroundColor="grey"/>
+		<widget name="menu" position="780,213" size="1132,765" font="Regular;33" itemHeight="45" selectionPixmap="Pd1loi-HD-night/buttons/sel4.png" scrollbarMode="showOnDemand" zPosition="3" enableWrapAround="1" foregroundColor="grey"/>
 		<widget name="castlabel" position="780,397" size="1132,610" font="Regular;33" foregroundColor="grey"/>
 		<widget name="extralabel" position="735,123" size="1177,855" font="Regular;33" foregroundColor="grey"/>
 	</screen>
