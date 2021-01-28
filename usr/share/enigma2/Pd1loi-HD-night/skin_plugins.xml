@@ -1315,15 +1315,15 @@
   <widget name="coverArt" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/MerlinMusicPlayer/images/no_coverArt.png" position="60,743" size="238,238" transparent="1" alphatest="blend" />
   <widget name="display" position="60,982" size="1800,40" zPosition="1" transparent="1" font="Regular;28" foregroundColor="unfcc000" />
 </screen>
- <screen name="MerlinMusicPlayerSongList" position="fill" flags="wfNoBorder" backgroundColor="#00000000" title="Songlist">
+
+ <screen name="MerlinMusicPlayerSongList" position="fill" flags="wfNoBorder" title="Songlist">
 <panel name="BasicTemplate" />
 <panel name="PigTemplate"/>
-<ePixmap alphatest="on" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/MerlinMusicPlayer/images/mmpborderHD.png" position="780,150" size="1110,576" />
 <eLabel backgroundColor="#999999" position="1130,120" size="410,6" zPosition="1" />
 <eLabel backgroundColor="#999999" font="Regular; 20" foregroundColor="#0f0f0f" halign="center" position="779,108" size="350,30" text="MERLIN  MUSIC  PLAYER" valign="center" zPosition="2" />
 <eLabel backgroundColor="#999999" font="Regular; 20" foregroundColor="#0f0f0f" halign="center" position="1541,108" size="350,30" text="WWW.DREAMBOX-TOOLS.INFO" valign="center" zPosition="2" />
 <widget name="headertext" position="30,535" zPosition="1" size="700,40" font="Regular; 32" transparent="1" foregroundColor="unffff00" backgroundColor="#00000000" />
-<widget name="list" position="808,173" zPosition="2" size="1051,535" selectionPixmap="Pd1loi-HD-night/buttons/sel4.png" font="Regular; 30" scrollbarMode="showOnDemand" transparent="0" backgroundColor="#00000000" itemHeight="35" />
+<widget name="list" position="780,150" zPosition="2" size="1110,860" selectionPixmap="Pd1loi-HD-night/buttons/sel4.png" font="Regular; 30" scrollbarMode="showOnDemand" transparent="1" itemHeight="35" />
 </screen>
 
 <screen name="iDreamAddToDatabase" position="center,center" size="1920,1080" title="Add music files to iDream database" flags="wfNoBorder">
