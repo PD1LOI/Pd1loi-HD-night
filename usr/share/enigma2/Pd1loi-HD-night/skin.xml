@@ -307,8 +307,8 @@
 
 	<include filename="skin_templates.xml"/>
 	<include filename="skin_plugins.xml"/>
-  
-
+       
+    
  	<!-- Volume -->
  
 <screen name="Volume" title="Volume" position="31,196" size="30,325" backgroundColor="background" zPosition="1" flags="wfNoBorder">
@@ -437,9 +437,12 @@
   <widget source="session.Event_Now" render="Label" position="645,68" size="300,33" font="Regular;30" halign="right" foregroundColor="blue" backgroundColor="secondBG" transparent="1" zPosition="1">
     <convert type="EventName">SmallRating</convert>
   </widget>
-  <widget source="session.Event_Now" render="Label" position="30,110" size="915,710" font="Regular;38" halign="left" zPosition="1" transparent="1" foregroundColor="unffffff">
-    <convert type="EventName">FullDescription</convert>
-  </widget>
+<widget source="session.Event_Now" render="PDRunningText" position="30,110" size="915,710" font="Regular;38" halign="left" zPosition="1" transparent="1" foregroundColor="unffffff" options="movetype=running,startpoint=0,direction=top,steptime=60,repeat=5,startdelay=7000,wrap">
+  <convert type="EventName">FullDescription</convert>
+</widget>
+<widget source="session.Event_Next" render="PDRunningText" position="975,110" size="915,710" font="Regular;38" halign="left" zPosition="1" transparent="1" foregroundColor="unffffff" options="movetype=running,startpoint=0,direction=top,steptime=60,repeat=5,startdelay=7000,wrap">
+  <convert type="EventName">FullDescription</convert>
+</widget>
   <widget source="session.Event_Next" render="Label" position="975,20" size="915,39" backgroundColor="secondBG" transparent="1" zPosition="1" foregroundColor="secondFG" noWrap="1" font="Regular;33" halign="left">
     <convert type="EventName">NameNext</convert>
   </widget>
@@ -449,10 +452,7 @@
   <widget source="session.Event_Next" render="Label" position="1590,68" size="300,33" font="Regular;30" halign="right" foregroundColor="blue" backgroundColor="secondBG" transparent="1" zPosition="1">
     <convert type="EventName">SmallRating</convert>
   </widget>
-  <widget source="session.Event_Next" render="Label" position="975,110" size="915,710" font="Regular;38" halign="left" zPosition="1" transparent="1" foregroundColor="unffffff">
-    <convert type="EventName">FullDescription</convert>
-  </widget>
-  <panel name="InfoBarTemplate" />
+  <panel name="InfoBarTemplate"/>
 </screen>
 
 <!--SecondInfoBar-->
@@ -488,9 +488,13 @@
   <widget source="session.Event_Now" render="Label" position="645,210" size="300,33" font="Regular;30" halign="right" foregroundColor="orange" backgroundColor="secondBG" transparent="1" zPosition="1">
     <convert type="EventName">SmallRating</convert>
   </widget>
-  <widget source="session.Event_Now" render="Label" position="30,250" size="915,570" font="Regular;38" halign="left" zPosition="1" transparent="1" foregroundColor="unc6e0f3">
-    <convert type="EventName">FullDescription</convert>
-  </widget>
+<widget source="session.Event_Now" render="PDRunningText" position="30,250" size="915,570" font="Regular;38" halign="left" zPosition="1" transparent="1" foregroundColor="unc6e0f3" options="movetype=running,startpoint=0,direction=top,steptime=60,repeat=5,startdelay=7000,wrap">
+  <convert type="EventName">FullDescription</convert>
+</widget>
+<widget source="session.Event_Next" render="PDRunningText" position="975,250" size="915,570" font="Regular;38" halign="left" zPosition="1" transparent="1" foregroundColor="unc6e0f3" options="movetype=running,startpoint=0,direction=top,steptime=60,repeat=5,startdelay=7000,wrap">
+  <convert type="EventName">FullDescription</convert>
+  <panel name="InfoBarTemplate" />
+</widget>
   <widget source="session.Event_Next" render="Label" position="975,162" size="915,39" backgroundColor="secondBG" transparent="1" zPosition="1" foregroundColor="secondFG" noWrap="1" font="Regular;33" halign="left">
     <convert type="EventName">NameNext</convert>
   </widget>
@@ -499,10 +503,6 @@
   </widget>
   <widget source="session.Event_Next" render="Label" position="1590,210" size="300,33" font="Regular;30" halign="right" foregroundColor="orange" backgroundColor="secondBG" transparent="1" zPosition="1">
     <convert type="EventName">SmallRating</convert>
-  </widget>
-  <widget source="session.Event_Next" render="Label" position="975,250" size="915,570" font="Regular;38" halign="left" zPosition="1" transparent="1" foregroundColor="unc6e0f3">
-    <convert type="EventName">FullDescription</convert>
-	<panel name="InfoBarTemplate" />
   </widget>
  <panel name="InfoBarTemplate" /> 
 </screen>
