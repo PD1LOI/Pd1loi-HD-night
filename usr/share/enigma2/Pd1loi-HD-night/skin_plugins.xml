@@ -1316,17 +1316,17 @@
   <widget name="display" position="60,982" size="1800,40" zPosition="1" transparent="1" font="Regular;28" foregroundColor="unfcc000" />
 </screen>
 
- <screen name="MerlinMusicPlayerSongList" position="fill" flags="wfNoBorder" title="Songlist">
+<screen flags="wfNoBorder" name="MerlinMusicPlayerSongList" position="fill" title="Songlist">
 <panel name="BasicTemplate" />
 <panel name="PigTemplate"/>
 <eLabel backgroundColor="#999999" position="1130,120" size="410,6" zPosition="1" />
 <eLabel backgroundColor="#999999" font="Regular; 20" foregroundColor="#0f0f0f" halign="center" position="779,108" size="350,30" text="MERLIN  MUSIC  PLAYER" valign="center" zPosition="2" />
 <eLabel backgroundColor="#999999" font="Regular; 20" foregroundColor="#0f0f0f" halign="center" position="1541,108" size="350,30" text="WWW.DREAMBOX-TOOLS.INFO" valign="center" zPosition="2" />
 <widget name="headertext" position="30,535" zPosition="1" size="700,40" font="Regular; 32" transparent="1" foregroundColor="unffff00" backgroundColor="#00000000" />
-<widget name="list" position="780,150" zPosition="2" size="1110,860" selectionPixmap="Pd1loi-HD-night/buttons/sel4.png" font="Regular; 30" scrollbarMode="showOnDemand" transparent="1" itemHeight="35" />
+<widget name="list" position="780,150" zPosition="1" size="1110,860" selectionPixmap="Pd1loi-HD-night/buttons/sel4.png" font="Regular; 30" scrollbarMode="showOnDemand" transparent="1" itemHeight="35" />
 </screen>
 
-<screen name="iDreamAddToDatabase" position="center,center" size="1920,1080" title="Add music files to iDream database" flags="wfNoBorder">
+<screen name="iDreamAddToDatabase" position="fill" size="1920,1080" title="Add music files to iDream database" flags="wfNoBorder">
   <ePixmap pixmap="Pd1loi-HD-night/buttons/red.png" position="192,1032" size="34,34" alphatest="blend" />
   <ePixmap pixmap="Pd1loi-HD-night/buttons/green.png" position="628,1032" size="34,34" alphatest="blend" />
   <ePixmap pixmap="Pd1loi-HD-night/buttons/yellow.png" position="1064,1032" size="34,34" alphatest="blend" />
@@ -2417,7 +2417,7 @@
 
 	<screen name="CacheFlushSetupMenu" position="fill" flags="wfNoBorder">
 		<panel name="PigTemplate"/>
-		<widget name="config" position="780,105" size="1110,375" itemHeight="38" font="Regular;28" zPosition="1" scrollbarMode="showOnDemand"/>
+		<widget name="config" position="780,105" size="1110,375" itemHeight="38" font="Regular;28" selectionPixmap="Pd1loi-HD-night/buttons/sel4.png" zPosition="1" scrollbarMode="showOnDemand"/>
 		<widget name="min_free_kb" position="795,712" size="900,37" font="Regular;27" zPosition="1" valign="center" transparent="1"/>
 		<widget name="slide" position="1755,765" size="27,150" zPosition="1" borderWidth="1" backgroundColor="secondBG" orientation="orBottomToTop"/>
 		<widget name="memory" position="795,885" size="900,37" zPosition="1" valign="center" halign="left" font="Regular;33" transparent="1"/>
