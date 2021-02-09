@@ -308,7 +308,7 @@
 	</screen>
 
  <!-- Infobar template -->
-<screen name="InfoBarTemplate" size="1913,1080">
+<screen name="InfoBarTemplate" size="fill">
  <widget source="session.CurrentService" render="Pixmap" pixmap="Pd1loi-HD-night/buttons/stream.png" position="1204,902" size="30,30" zPosition="3" alphatest="on">
     <convert type="ClientsStreaming" />
     <convert type="ConditionalShowHide" />
