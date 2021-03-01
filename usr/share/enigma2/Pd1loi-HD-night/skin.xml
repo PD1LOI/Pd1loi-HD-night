@@ -15,11 +15,11 @@
 	<fonts>
      <font filename="/usr/share/fonts/nmsbd.ttf" name="Emu" replacement="0" scale="100" />
      <font filename="/usr/share/fonts/nmsbd.ttf" name="Menu" replacement="0" scale="102" />
-		 <font filename="/usr/share/enigma2/Pd1loi-HD-night/fonts/Segoe UI.ttf" name="Regular1" scale="100"/>
-		 <font filename="/usr/share/enigma2/Pd1loi-HD-night/fonts/segoeuil.ttf" name="Regular0" scale="100"/>
-		 <font filename="/usr/share/enigma2/Pd1loi-HD-night/fonts/Segoe UI Italic.ttf" name="Crs" scale="100"/>
-		 <font filename="/usr/share/enigma2/Pd1loi-HD-night/fonts/ks.ttf" name="OLED" scale="100"/>
-		 <font filename="/usr/share/enigma2/Pd1loi-HD-night/fonts/ae_sindibad.ttf" name="ae_sindibad" scale="100" />
+	 <font filename="/usr/share/enigma2/Pd1loi-HD-night/fonts/Segoe UI.ttf" name="Regular1" scale="100"/>
+	 <font filename="/usr/share/enigma2/Pd1loi-HD-night/fonts/segoeuil.ttf" name="Regular0" scale="100"/>
+	 <font filename="/usr/share/enigma2/Pd1loi-HD-night/fonts/Segoe UI Italic.ttf" name="Crs" scale="100"/>
+	 <font filename="/usr/share/enigma2/Pd1loi-HD-night/fonts/ks.ttf" name="OLED" scale="100"/>
+	 <font filename="/usr/share/enigma2/Pd1loi-HD-night/fonts/ae_sindibad.ttf" name="ae_sindibad" scale="100" />
      <font filename="/usr/share/enigma2/Pd1loi-HD-night/fonts/NotoSans_Regular.ttf" name="Regular2" scale="100" />
      <font filename="/usr/share/enigma2/Pd1loi-HD-night/fonts/LiberationSans-Italic.ttf" name="Crs2" scale="100" />
      <font filename="/usr/share/enigma2/Pd1loi-HD-night/fonts/LiberationSans-Regular.ttf" name="Regular" scale="100" />
@@ -76,7 +76,9 @@
     <color name="background90" value="#90000000" />             
     <color name="background" value="#00000000" />
     <color name="backtop" value="#00080808" />
-    <color name="backtopt" value="#00080808" />
+    <color name="backtopt" value="#00080808" />   
+	<color name="ltbluette" value="#007fcfff" />
+    <color name="ltbluette2" value="#00229eff" />
     <color name="black" value="#00000000" />
     <color name="blue" value="#00879ce1" />
     <color name="bluesoft" value="#00b0c2f2" />
@@ -98,8 +100,6 @@
     <color name="orange" value="#00ffc000" />
     <color name="orange1" value="#00ff6600" />
     <color name="rds_text_bg" value="#00003258" />
-    <color name="ltbluette" value="#007fcfff" />
-    <color name="ltbluette2" value="#00229eff" />
     <color name="red" value="#00ff4a3c" />
     <color name="redtransparent" value="#084c0000" />
     <color name="rssviewtop" value="#00005050" />
@@ -2635,8 +2635,8 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
 	<!-- RDS InfoDisplay -->
 
 <screen name="RdsInfoDisplay" position="0,780" size="1920,300" backgroundColor="transparent" zPosition="-2" flags="wfNoBorder">
-  <widget position="22,80" size="1875,100" backgroundColor="transparent" transparent="1" zPosition="1" foregroundColor="white" borderWidth="1" font="Regular; 46" borderColor="black" valign="center" halign="center" name="RadioText" />
-  <widget position="22,180" size="1875,100" backgroundColor="transparent" transparent="1" zPosition="1" foregroundColor="white" borderWidth="1" font="Regular; 46" borderColor="black" valign="center" halign="center" name="RtpText" />
+   <widget position="22,53" size="1875,100" backgroundColor="transparent" transparent="1" zPosition="1" foregroundColor="white" borderWidth="4" font="Regular; 46" borderColor="black" valign="center" halign="center" name="RadioText" />
+  <widget position="22,157" size="1875,100" backgroundColor="transparent" transparent="1" zPosition="1" foregroundColor="white" borderWidth="4" font="Regular; 46" borderColor="black" valign="center" halign="center" name="RtpText" />
   <widget position="0,0" size="0,0" name="RassLogo" />
 </screen>
 	
