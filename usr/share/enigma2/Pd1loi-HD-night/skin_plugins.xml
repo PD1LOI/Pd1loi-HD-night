@@ -30,12 +30,13 @@
     <panel name="BasicTemplate" />
     <widget render="Label" source="title" position="30,7" size="870,75" valign="center" zPosition="5" transparent="1" foregroundColor="orange1" font="Regular;36" />
     <ePixmap position="920,10" size="80,80" pixmap="Pd1loi-HD-night/icons/oscam.png" alphatest="blend" scale="1" zPosition="1" />
-    <widget render="Label" source="label0" position=" 65,110" size="250,40" font="Regular;28" valign="center" zPosition="5" transparent="0" foregroundColor="unffff00" backgroundColor="background" />
-    <widget render="Label" source="label1" position="375,110" size="350,40" font="Regular;28" valign="center" zPosition="5" transparent="0" foregroundColor="unffff00" backgroundColor="background" />
-    <widget render="Label" source="label2" position="725,110" size=" 50,40" font="Regular;28" valign="center" zPosition="5" transparent="0" foregroundColor="unffff00" backgroundColor="background" />
-    <widget render="Label" source="label3" position="830,110" size="200,40" font="Regular;28" valign="center" zPosition="5" transparent="0" foregroundColor="unffff00" backgroundColor="background" />
-    <widget render="Label" source="label4" position="1025,110" size="850,40" font="Regular;28" valign="center" zPosition="5" transparent="0" foregroundColor="unffff00" backgroundColor="background" />
-    <widget source="data" render="Listbox" position="60,160" size="1820,800" scrollbarMode="showOnDemand" scrollbarWidth="10" transparent="1" zPosition="5" selectionPixmap="Pd1loi-HD-night/buttons/sel7.png">
+  <widget render="Label" source="label0" position="62,108" size="250,40" font="Regular;28" valign="center" zPosition="5" transparent="0" foregroundColor="unffff00" backgroundColor="background" />
+  <widget render="Label" source="label1" position="372,108" size="300,40" font="Regular;28" valign="center" zPosition="5" transparent="0" foregroundColor="unffff00" backgroundColor="background" />
+  <widget render="Label" source="label2" position="726,108" size=" 50,40" font="Regular;28" valign="center" zPosition="5" transparent="0" foregroundColor="unffff00" backgroundColor="background" />
+  <widget render="Label" source="label3" position="820,108" size="100,40" font="Regular;28" valign="center" zPosition="5" transparent="0" foregroundColor="unffff00" backgroundColor="background" />
+  <widget render="Label" source="label4" position="1025,108" size="250,40" font="Regular;28" valign="center" zPosition="5" transparent="0" foregroundColor="unffff00" backgroundColor="background" />
+  <widget render="Label" source="label5" position="1278,108" size="250,40" font="Regular;28" valign="center" zPosition="5" transparent="0" foregroundColor="unffff00" backgroundColor="background" />
+        <widget source="data" render="Listbox" position="60,160" size="1820,800" scrollbarMode="showOnDemand" scrollbarWidth="10" transparent="1" zPosition="5" selectionPixmap="Pd1loi-HD-night/buttons/sel7.png">
       <convert type="TemplatedMultiContent">
 				{"template": [
 					MultiContentEntryText(pos = (  5, 5), size = (250, 40), font=0, flags = RT_HALIGN_LEFT, text = 0),
@@ -98,13 +99,11 @@
     <panel name="PigTemplate" />
     <widget render="Label" source="title" position="30,7" size="870,75" valign="center" zPosition="5" transparent="1" foregroundColor="orange1" font="Regular;36" />
     <ePixmap position="920,10" size="80,80" pixmap="Pd1loi-HD-night/icons/oscam.png" alphatest="blend" scale="1" zPosition="5" />
-    <widget source="label0" render="Label" position="781,109" size="275,50" font="Regular;28" valign="center" foregroundColor="yellow" transparent="0" zPosition="5" />
-    <widget source="label1" render="Label" position="1057,109" size="275,50" font="Regular;28" valign="center" foregroundColor="yellow" transparent="0" zPosition="5" />
-    <widget source="label2" render="Label" position="1335,109" size="275,50" font="Regular;28" valign="center" foregroundColor="yellow" transparent="0" zPosition="5" />
-    <widget source="label3" render="Label" position="1609,108" size="275,50" font="Regular;28" valign="center" foregroundColor="yellow" transparent="0" zPosition="5" />
-    <eLabel position="780,162" size="1110,3" backgroundColor="#303030" zPosition="1" />
-    <widget source="data" render="Listbox" position="780,160" size="1110,720" scrollbarMode="showOnDemand" scrollbarWidth="10" enableWrapAround="1" transparent="1" zPosition="5" selectionPixmap="Pd1loi-HD-night/buttons/sel4.png">
-      <convert type="TemplatedMultiContent">
+  <widget render="Label" source="label0" position="817,102" size="220,30" valign="center" zPosition="5" transparent="0" foregroundColor="unffff00" backgroundColor="background" font="Regular;27" />
+  <widget render="Label" source="label1" position="1079,102" size="220,30" valign="center" zPosition="5" transparent="0" foregroundColor="unffff00" backgroundColor="background" font="Regular;27" />
+  <widget render="Label" source="label2" position="1347,102" size="235,30" valign="center" zPosition="5" transparent="0" foregroundColor="unffff00" backgroundColor="background" font="Regular;27" halign="left" />
+  <widget render="Label" source="label3" position="1729,102" size="200,30" valign="center" zPosition="5" transparent="0" foregroundColor="unffff00" backgroundColor="background" font="Regular;27" halign="center" />
+      <widget source="data" render="Listbox" position="780,140" size="1110,775" scrollbarMode="showOnDemand" scrollbarWidth="10" enableWrapAround="1" transparent="1" zPosition="5" selectionPixmap="Pd1loi-HD-night/buttons/sel4.png"><convert type="TemplatedMultiContent">
 				{"template": [
 					MultiContentEntryPixmapAlphaTest(pos = (8, 14), size = (25, 25), png = 0),
 					MultiContentEntryText(pos = ( 40, 5), size = (260, 40), font=0, flags = RT_HALIGN_LEFT, text = 1),
@@ -168,10 +167,10 @@
     <panel name="KeyMenuTemplate" />
     <widget render="Label" source="title" position="30,7" size="870,75" valign="center" zPosition="5" transparent="1" foregroundColor="orange1" font="Regular;36" />
     <ePixmap position="920,10" size="80,80" pixmap="Pd1loi-HD-night/icons/oscam.png" alphatest="blend" scale="1" zPosition="5" />
-    <widget render="Label" source="label0" position="780,108" size="500,40" halign="left" valign="center" zPosition="5" foregroundColor="yellow" backgroundColor="background" font="Regular;28" transparent="0" />
-    <widget render="Label" source="label1" position="1280,108" size="500,40" halign="left" valign="center" zPosition="5" foregroundColor="yellow" backgroundColor="background" font="Regular;28" transparent="0" />
-    <widget render="Label" source="label2" position="1781,108" size="108,40" halign="left" valign="center" zPosition="5" foregroundColor="yellow" backgroundColor="background" font="Regular;28" transparent="0" />
-    <widget source="data" render="Listbox" position="780,156" size="1110,720" scrollbarMode="showOnDemand" scrollbarWidth="10" enableWrapAround="1" transparent="1" zPosition="5" selectionPixmap="Pd1loi-HD-night/buttons/sel4.png">
+  <widget render="Label" source="label0" position="826,102" size="300,40" halign="left" valign="center" zPosition="5" foregroundColor="yellow" backgroundColor="background" font="Regular;28" transparent="0" />
+  <widget render="Label" source="label1" position="1262,102" size="250,40" halign="left" valign="center" zPosition="5" foregroundColor="yellow" backgroundColor="background" font="Regular;28" transparent="0" />
+  <widget render="Label" source="label2" position="1522,102" size="108,40" halign="left" valign="center" zPosition="5" foregroundColor="yellow" backgroundColor="background" font="Regular;28" transparent="0" />
+   <widget source="data" render="Listbox" position="780,156" size="1110,720" scrollbarMode="showOnDemand" scrollbarWidth="10" enableWrapAround="1" transparent="1" zPosition="5" selectionPixmap="Pd1loi-HD-night/buttons/sel4.png">
       <convert type="TemplatedMultiContent">
 				{"template": [
 					MultiContentEntryPixmapAlphaTest(pos = (10, 15), size = (30, 30), png = 0),
