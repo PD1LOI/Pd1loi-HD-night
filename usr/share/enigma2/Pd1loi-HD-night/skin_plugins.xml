@@ -33,8 +33,7 @@
   <widget render="Label" source="label0" position="62,108" size="250,40" font="Regular;28" valign="center" zPosition="5" transparent="0" foregroundColor="unffff00" backgroundColor="background" />
   <widget render="Label" source="label1" position="372,108" size="300,40" font="Regular;28" valign="center" zPosition="5" transparent="0" foregroundColor="unffff00" backgroundColor="background" />
   <widget render="Label" source="label2" position="726,108" size=" 50,40" font="Regular;28" valign="center" zPosition="5" transparent="0" foregroundColor="unffff00" backgroundColor="background" />
-  <widget render="Label" source="label3" position="820,108" size="100,40" font="Regular;28" valign="center" zPosition="5" transparent="0" foregroundColor="unffff00" backgroundColor="background" />
-  <widget render="Label" source="label4" position="1025,108" size="250,40" font="Regular;28" valign="center" zPosition="5" transparent="0" foregroundColor="unffff00" backgroundColor="background" />
+  <widget render="Label" source="label3" position="760,108" size="231,40" font="Regular;28" valign="center" zPosition="5" transparent="0" foregroundColor="unffff00" backgroundColor="background" halign="center" />  <widget render="Label" source="label4" position="1025,108" size="300,40" font="Regular;26" valign="center" zPosition="5" transparent="0" foregroundColor="unffff00" backgroundColor="background" />
   <widget render="Label" source="label5" position="1278,108" size="250,40" font="Regular;28" valign="center" zPosition="5" transparent="0" foregroundColor="unffff00" backgroundColor="background" />
         <widget source="data" render="Listbox" position="60,160" size="1820,800" scrollbarMode="showOnDemand" scrollbarWidth="10" transparent="1" zPosition="5" selectionPixmap="Pd1loi-HD-night/buttons/sel7.png">
       <convert type="TemplatedMultiContent">
@@ -181,25 +180,23 @@
 				"fonts": [gFont("Regular", 30)],
 				"itemHeight": 40
 				}
-			</convert>
+		</convert>
     </widget>
     <widget name="ButtonRed" position="192,1032" pixmap="Pd1loi-HD-night/buttons/red.png" size="34,34" alphatest="blend" zPosition="5" />
     <widget name="ButtonRedtext" position="242,1030" size="300,38" font="Regular;32" halign="left" valign="center" transparent="1" foregroundColor="red" backgroundColor="background" zPosition="5" />
     <widget name="ButtonGreen" position="628,1032" pixmap="Pd1loi-HD-night/buttons/green.png" size="34,34" alphatest="blend" zPosition="5" />
     <widget name="ButtonGreentext" position="678,1030" size="300,38" font="Regular;32" halign="left" valign="center" transparent="1" foregroundColor="green" backgroundColor="background" zPosition="5" />
-  </screen>
-  <!-- LogData -->
-  <screen name="LogDataScreen" position="fill" title="LogDataScreen" flags="wfNoBorder">
+    </screen>
+    <!-- LogData -->
+    <screen name="LogDataScreen" position="fill" title="LogDataScreen" flags="wfNoBorder">
     <panel name="BasicTemplate" />
-    <panel name="KeyInfoTemplate" />
-    <panel name="KeyMenuTemplate" />
     <widget render="Label" source="title" position="30,7" size="870,75" valign="center" zPosition="5" transparent="1" foregroundColor="orange1" font="Regular;36" />
     <ePixmap position="920,10" size="80,80" pixmap="Pd1loi-HD-night/icons/oscam.png" alphatest="blend" scale="1" zPosition="5" />
-    <eLabel position="0,120" size="1920,3" backgroundColor="background" />
-    <widget name="data" position="30,110" size="1860,898" scrollbarMode="showOnDemand" scrollbarWidth="10" itemHeight="35" transparent="1" zPosition="5" foregroundColor="#a0a0a0" foregroundColorSelected="#ffffff" backgroundColor="background" backgroundColorSelected="barColor" font="Regular; 25" />
-  </screen>
+    <eLabel position="0,130" size="1920,3" backgroundColor="#202020" />
+    <widget name="data" position="40,140" size="1860,850" scrollbarMode="showOnDemand" scrollbarWidth="10" itemHeight="25" transparent="1" zPosition="5" foregroundColor="#a0a0a0" foregroundColorSelected="#ffffff" backgroundColor="#000000" backgroundColorSelected="barColor" />
+    </screen>
     <!-- OSCAM OscamDataScreen 014/13 -->
-  <screen name="OscamDataScreen" position="fill" title="OscamDataScreen" flags="wfNoBorder">
+    <screen name="OscamDataScreen" position="fill" title="OscamDataScreen" flags="wfNoBorder">
     <panel name="PigTemplate" />
     <panel name="KeyInfoTemplate" />
     <panel name="KeyMenuTemplate" />
