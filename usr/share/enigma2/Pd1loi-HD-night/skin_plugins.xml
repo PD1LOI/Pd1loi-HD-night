@@ -95,9 +95,9 @@
   </screen>
  
   <screen name="UserstatsScreen" position="fill" title="UserstatsScreen" flags="wfNoBorder">
-    <panel name="PigTemplate" />
-    <widget render="Label" source="title" position="30,7" size="870,75" valign="center" zPosition="5" transparent="1" foregroundColor="orange1" font="Regular;36" />
-    <ePixmap position="920,10" size="80,80" pixmap="Pd1loi-HD-night/icons/oscam.png" alphatest="blend" scale="1" zPosition="5" />
+  <panel name="PigTemplate" />
+  <widget render="Label" source="title" position="30,7" size="870,75" valign="center" zPosition="5" transparent="1" foregroundColor="orange1" font="Regular;36" />
+  <ePixmap position="920,10" size="80,80" pixmap="Pd1loi-HD-night/icons/oscam.png" alphatest="blend" scale="1" zPosition="5" />
   <widget render="Label" source="label0" position="817,102" size="220,30" valign="center" zPosition="5" transparent="0" foregroundColor="unffff00" backgroundColor="background" font="Regular;27" />
   <widget render="Label" source="label1" position="1079,102" size="220,30" valign="center" zPosition="5" transparent="0" foregroundColor="unffff00" backgroundColor="background" font="Regular;27" />
   <widget render="Label" source="label2" position="1347,102" size="235,30" valign="center" zPosition="5" transparent="0" foregroundColor="unffff00" backgroundColor="background" font="Regular;27" halign="left" />
