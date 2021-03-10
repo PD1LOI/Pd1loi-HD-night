@@ -95,9 +95,9 @@
   </screen>
  
   <screen name="UserstatsScreen" position="fill" title="UserstatsScreen" flags="wfNoBorder">
-  <panel name="PigTemplate" />
-  <widget render="Label" source="title" position="30,7" size="870,75" valign="center" zPosition="5" transparent="1" foregroundColor="orange1" font="Regular;36" />
-  <ePixmap position="920,10" size="80,80" pixmap="Pd1loi-HD-night/icons/oscam.png" alphatest="blend" scale="1" zPosition="5" />
+    <panel name="PigTemplate" />
+    <widget render="Label" source="title" position="30,7" size="870,75" valign="center" zPosition="5" transparent="1" foregroundColor="orange1" font="Regular;36" />
+    <ePixmap position="920,10" size="80,80" pixmap="Pd1loi-HD-night/icons/oscam.png" alphatest="blend" scale="1" zPosition="5" />
   <widget render="Label" source="label0" position="817,102" size="220,30" valign="center" zPosition="5" transparent="0" foregroundColor="unffff00" backgroundColor="background" font="Regular;27" />
   <widget render="Label" source="label1" position="1079,102" size="220,30" valign="center" zPosition="5" transparent="0" foregroundColor="unffff00" backgroundColor="background" font="Regular;27" />
   <widget render="Label" source="label2" position="1347,102" size="235,30" valign="center" zPosition="5" transparent="0" foregroundColor="unffff00" backgroundColor="background" font="Regular;27" halign="left" />
@@ -241,7 +241,7 @@
     <panel name="KeyInfoTemplate" />
     <panel name="KeyMenuTemplate" />
     <ePixmap position="920,10" size="80,80" pixmap="Pd1loi-HD-night/icons/oscam.png" alphatest="blend" scale="1" zPosition="5" />
-    <widget name="list" position="778,108" size="1110,750" font="Regular;30" scrollbarMode="showOnDemand" scrollbarWidth="10" itemHeight="50" transparent="1" zPosition="5" foregroundColor="#a0a0a0" foregroundColorSelected="#ffffff" backgroundColor="#000000" selectionPixmap="Pd1loi-HD-night/buttons/sel4.png" />
+    <widget name="list" position="778,108" size="1110,750" font="Regular;32" scrollbarMode="showOnDemand" scrollbarWidth="10" itemHeight="50" transparent="1" zPosition="5" foregroundColor="#a0a0a0" foregroundColorSelected="#ffffff" backgroundColor="#000000" selectionPixmap="Pd1loi-HD-night/buttons/sel4.png" />
     <eLabel position="780,867" size="1110,3" backgroundColor="#303030" zPosition="1" />
     <ePixmap name="ButtonGreen" position="628,1032" pixmap="Pd1loi-HD-night/buttons/green.png" size="34,34" alphatest="blend" zPosition="5" />
     <widget source="ButtonGreentext" render="Label" position="678,1030" size="250,38" font="Regular;32" halign="left" valign="center" transparent="1" foregroundColor="green" backgroundColor="bluette" zPosition="5" />
@@ -255,7 +255,7 @@
     <panel name="PigTemplate" />
     <panel name="KeyInfoTemplate" />
     <panel name="KeyMenuTemplate" />
-    <widget name="config" position="780,108" size="1110,750" font="Regular;30" scrollbarMode="showOnDemand" scrollbarWidth="10" itemHeight="50" transparent="1" zPosition="5" foregroundColor="#a0a0a0" foregroundColorSelected="#ffffff" backgroundColor="#000000" selectionPixmap="Pd1loi-HD-night/buttons/sel4.png" />
+    <widget name="config" position="780,108" size="1110,750" font="Regular;32" scrollbarMode="showOnDemand" scrollbarWidth="10" itemHeight="50" transparent="1" zPosition="5" foregroundColor="#a0a0a0" foregroundColorSelected="#ffffff" backgroundColor="#000000" selectionPixmap="Pd1loi-HD-night/buttons/sel4.png" />
     <ePixmap name="ButtonRed" position="192,1032" pixmap="Pd1loi-HD-night/buttons/red.png" size="34,34" alphatest="blend" zPosition="5" />
     <widget source="ButtonRedtext" render="Label" position="242,1030" size="300,38" font="Regular;32" halign="left" valign="center" transparent="1" foregroundColor="red" backgroundColor="#000000" zPosition="5" />
     <ePixmap name="ButtonGreen" position="628,1032" pixmap="Pd1loi-HD-night/buttons/green.png" size="34,34" alphatest="blend" zPosition="5" />
