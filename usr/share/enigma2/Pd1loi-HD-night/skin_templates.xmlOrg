@@ -309,7 +309,7 @@
 
  <!-- Infobar template -->
 <screen name="InfoBarTemplate" size="fill">
-  <widget source="session.CurrentService" render="Pixmap" pixmap="Pd1loi-HD-night/buttons/stream.png" position="1204,902" size="30,30" zPosition="3" alphatest="on">
+ <widget source="session.CurrentService" render="Pixmap" pixmap="Pd1loi-HD-night/buttons/stream.png" position="1204,902" size="30,30" zPosition="3" alphatest="on">
     <convert type="ClientsStreaming" />
     <convert type="ConditionalShowHide" />
   </widget>
@@ -323,7 +323,7 @@
   <widget source="session.Event_Next" render="Label" position="1180,1029" size="300,33" font="Regular;30" halign="right" foregroundColor="darkgrey" backgroundColor="secondBG" transparent="1" zPosition="1">
     <convert type="EventName">SmallRating</convert>
   </widget>
-  <widget backgroundColor="background" font="Regular; 32" foregroundColor="green" halign="center" valign="bottom" position="679,824" render="Label" size="370,71" source="session.MSNWeather" transparent="1" zPosition="1">
+  <widget backgroundColor="background" font="Regular; 32" foregroundColor="green" halign="center" valign="bottom" position="735,825" render="Label" size="370,70" source="session.MSNWeather" transparent="1" zPosition="1">
     <convert type="MSNWeather">city</convert>
   </widget>
   <ePixmap name="new ePixmap" position="1705,1015" size="180,8" pixmap="Pd1loi-HD-night/infobar/snron11.png" zPosition="1" />
@@ -333,17 +333,17 @@
   <widget font="Regular; 20" halign="left" noWrap="1" position="30,824" render="Label" size="400,26" source="session.CurrentService" transparent="1" zPosition="1" backgroundColor="background" foregroundColor="grey">
     <convert type="pliCamd">Camd</convert>
   </widget>
-  <eLabel name="new eLabel" position="1360,851" size="55,30" font="Regular; 20" transparent="1" halign="left" text="max." zPosition="3" foregroundColor="grey" valign="top" />
-  <widget noWrap="1" backgroundColor="background" font="Regular; 22" render="Label" position="1408,851" size="80,30" source="session.MSNWeather" zPosition="3" halign="left" transparent="1" foregroundColor="unffffff" valign="top">
-    <convert type="MSNWeather">temperature_high,day1</convert>
-  </widget>
-  <eLabel name="new eLabel" position="1360,871" size="55,30" font="Regular; 20" transparent="1" halign="left" text="min." zPosition="3" foregroundColor="grey" valign="bottom" />
-  <widget noWrap="1" backgroundColor="background" font="Regular; 22" render="Label" position="1408,871" size="80,30" source="session.MSNWeather" zPosition="3" halign="left" transparent="1" foregroundColor="unffffff" valign="bottom">
-    <convert type="MSNWeather">temperature_low,day1</convert>
-  </widget>
-  <widget noWrap="1" backgroundColor="background" font="Regular; 32" render="Label" position="1051,860" size="300,35" source="session.MSNWeather" zPosition="3" halign="center" transparent="1" foregroundColor="unffffff">
-    <convert type="MSNWeather">temperature_text,current</convert>
-  </widget>
+<eLabel name="new eLabel" position="1360,851" size="55,30" font="Regular; 20" transparent="1" halign="left" text="max." zPosition="3" foregroundColor="grey" valign="top" />
+<widget noWrap="1" backgroundColor="background" font="Regular; 22" render="Label" position="1408,851" size="80,30" source="session.MSNWeather" zPosition="3" halign="left" transparent="1" foregroundColor="unffffff" valign="top">
+  <convert type="MSNWeather">temperature_high,day1</convert>
+</widget>
+<eLabel name="new eLabel" position="1360,871" size="55,30" font="Regular; 20" transparent="1" halign="left" text="min." zPosition="3" foregroundColor="grey" valign="bottom" />
+<widget noWrap="1" backgroundColor="background" font="Regular; 22" render="Label" position="1408,871" size="80,30" source="session.MSNWeather" zPosition="3" halign="left" transparent="1" foregroundColor="unffffff" valign="bottom">
+  <convert type="MSNWeather">temperature_low,day1</convert>
+</widget>
+<widget noWrap="1" backgroundColor="background" font="Regular; 32" render="Label" position="1057,857" size="300,35" source="session.MSNWeather" zPosition="3" halign="center" transparent="1" foregroundColor="unffffff">
+  <convert type="MSNWeather">temperature_text,current</convert>
+</widget>
   <widget backgroundColor="background" font="Regular2; 30" foregroundColor="unffff00" halign="center" position="1463,855" render="Label" size="80,35" source="session.MSNWeather" transparent="1" zPosition="1">
     <convert type="MSNWeather">temperature_current</convert>
   </widget>
@@ -369,7 +369,7 @@
   <widget source="session.RecordState" render="Pixmap" pixmap="Pd1loi-HD-night/buttons/rec.png" position="1168,902" size="30,30" zPosition="3" alphatest="on">
     <convert type="ConditionalShowHide">Blink</convert>
   </widget>
-  <widget source="session.CurrentService" render="Label" borderWidth="2" position="390,824" size="440,26" backgroundColor="secondBG" transparent="1" zPosition="1" foregroundColor="grey" font="Regular; 20" valign="center" halign="left">
+  <widget source="session.CurrentService" render="Label" borderWidth="2" position="390,824" size="740,26" backgroundColor="secondBG" transparent="1" zPosition="1" foregroundColor="grey" font="Regular; 20" valign="center" halign="left">
     <convert type="CryptoInfo">VerboseInfo</convert>
   </widget>
   <widget source="session.Event_Now" render="Label" position="260,978" size="105,45" backgroundColor="secondBG" transparent="1" zPosition="1" foregroundColor="green" font="Regular;36" halign="left">
