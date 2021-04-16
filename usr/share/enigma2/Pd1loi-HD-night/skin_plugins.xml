@@ -352,7 +352,7 @@
 </screen>
  <!-- EPGImportFilter -->
 <screen name="filtersServicesSelection" position="fill" title="Channel Selection">
-<panel name="PigTemplate" />
+<panel name="PigTemplate" />		
 <widget name="list" position="780,110" selectionPixmap="Pd1loi-HD-night/buttons/sel4.png" scrollbarMode="showOnDemand" size="1110,900" />
 </screen>
 <screen name="EPGImportFilterScreen" position="fill" zPosition="2" title="EPGImport Filter">

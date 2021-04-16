@@ -42,7 +42,7 @@
 	</screen>
 
 	<screen name="BasicTemplate">
-		<panel name="TopTemplate"/>
+			<panel name="TopTemplate"/>
 		<panel name="ButtonTemplate"/>
 		<ePixmap pixmap="Pd1loi-HD-night/border/smallshadowline.png" position="0,1020" size="1920,3"/>
 		<ePixmap pixmap="Pd1loi-HD-night/border/bottom_bg -.png" position="0,1022" size="1920,58" />
@@ -50,63 +50,71 @@
 
 	<screen name="TextTemplate">
 		<widget name="text" position="30,535" size="725,300" foregroundColor="unffff00" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;34" valign="top" halign="left" />
-                </screen>
+  </screen>
 
-<screen name="SelectionTemplate">
+  <screen name="SelectionTemplate">
   <panel name="BasicTemplate" />
   <widget source="session.VideoPicture" render="Pig" position="31,118" size="720,405" backgroundColor="transparent" zPosition="1" />
   <ePixmap pixmap="Pd1loi-HD-night/border/chframe1.png" position="24,110" size="734,420" alphatest="blend" />
   <widget source="session.CurrentService" render="Label" position="32,119" size="718,30" zPosition="1" foregroundColor="unffff00" transparent="1" font="Regular0; 27" borderColor="black" borderWidth="2" noWrap="1" valign="center" halign="center">
   <convert type="ServiceName">Name</convert>
   </widget>
-</screen>
+  </screen>
 	
 
 
 	<screen name="PigTemplate">
-		<panel name="SelectionTemplate"/>
-		<ePixmap pixmap="Pd1loi-HD-night/logos/pd1loi.png" position="30,967" size="320,40" alphatest="on"/>
+	<panel name="SelectionTemplate"/>
+  <ePixmap pixmap="Pd1loi-HD-night/logos/pd1loi.png" position="30,967" size="320,40" alphatest="on"/>
 	</screen>
 
 	<screen name="PigLessTemplate">
-		<panel name="BasicTemplate"/>
-		<ePixmap pixmap="Pd1loi-HD-night/logos/pd1loi.png" position="30,967" size="320,40" alphatest="on"/>
+	<panel name="BasicTemplate"/>
+	<ePixmap pixmap="Pd1loi-HD-night/logos/pd1loi.png" position="30,967" size="320,40" alphatest="on"/>
 	</screen>
 
 	<screen name="MenuTemplate">
-		<panel name="PigTemplate"/>
-        <panel name="ButtonTemplate"/>
-  <widget backgroundColor="darkgrey" font="Regular;39" halign="center" render="Label" position="65,821" size="79,45" source="global.CurrentTime" transparent="1" valign="center" zPosition="1" foregroundColor="darkgrey">
-    <convert type="ClockToText">Format:%H</convert>
-  </widget>
-  <widget backgroundColor="darkgrey" font="Regular;39" halign="center" render="Label" position="134,819" size="79,45" source="global.CurrentTime" transparent="1" valign="center" zPosition="1" foregroundColor="darkgrey">
-    <convert type="ClockToText">Format:%M</convert>
-  </widget>
-  <widget backgroundColor="background" font="Regular; 26" foregroundColor="unffff00" halign="center" position="41,919" size="300,45" render="Label" source="global.CurrentTime" transparent="1" valign="top" zPosition="1">
-    <convert type="ClockToText">Format:%A, %d.%m.%Y</convert>
-  </widget>
-  <widget alphatest="blend" position="41,734" size="300,183" render="MSNWeatherPixmap" source="session.MSNWeather" transparent="0">
-    <convert type="MSNWeather">weathericon,current,/usr/share/enigma2/Pd1loi-HD-night/clock/,png</convert>
-  </widget>
-  <widget backgroundColor="background" font="Regular2; 30" foregroundColor="darkgrey" halign="center" position="180,863" render="Label" size="150,37" source="session.MSNWeather" transparent="1" zPosition="1" valign="top">
-    <convert type="MSNWeather">temperature_current</convert>
-  </widget>
-          <widget source="menu" render="Listbox" selectionPixmap="Pd1loi-HD-night/buttons/sel6.png" position="780,105" size="1110,900" font="Regular;36" transparent="1" scrollbarMode="showOnDemand">
-			<convert type="TemplatedMultiContent">
+	<panel name="PigTemplate"/>
+	<panel name="WeerTemplate"/>
+  <panel name="ButtonTemplate"/>
+  <widget source="menu" render="Listbox" selectionPixmap="Pd1loi-HD-night/buttons/sel6.png" position="780,105" size="1110,900" font="Regular;36" transparent="1" scrollbarMode="showOnDemand">
+  <convert type="TemplatedMultiContent">
 				{"template": [ MultiContentEntryText(pos = (75,15),size = (1035,45),flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER,text = 0) ],
 		"fonts": [gFont("Regular",36)],
 		"itemHeight": 75
 	}
-			</convert>
-		</widget>
+	</convert>
+	</widget>
 	</screen>
+	
+	<!-- WeerTemplate -->
+	
+  <screen name="WeerTemplate">
+  <panel name="BasicTemplate"/>
+  <widget backgroundColor="darkgrey" font="Regular;39" halign="center" render="Label" position="65,821" size="79,45" source="global.CurrentTime" transparent="1" valign="center" zPosition="1" foregroundColor="darkgrey">
+  <convert type="ClockToText">Format:%H</convert>
+  </widget>
+  <widget backgroundColor="darkgrey" font="Regular;39" halign="center" render="Label" position="134,819" size="79,45" source="global.CurrentTime" transparent="1" valign="center" zPosition="1" foregroundColor="darkgrey">
+  <convert type="ClockToText">Format:%M</convert>
+  </widget>
+  <widget backgroundColor="background" font="Regular; 26" foregroundColor="unffff00" halign="center" position="41,919" size="300,45" render="Label" source="global.CurrentTime" transparent="1" valign="top" zPosition="1">
+  <convert type="ClockToText">Format:%A, %d.%m.%Y</convert>
+  </widget>
+  <widget alphatest="blend" position="41,734" size="300,183" render="MSNWeatherPixmap" source="session.MSNWeather" transparent="0">
+  <convert type="MSNWeather">weathericon,current,/usr/share/enigma2/Pd1loi-HD-night/clock/,png</convert>
+  </widget>
+  <widget backgroundColor="background" font="Regular2; 30" foregroundColor="darkgrey" halign="center" position="180,863" render="Label" size="150,37" source="session.MSNWeather" transparent="1" zPosition="1" valign="top">
+  <convert type="MSNWeather">temperature_current</convert>
+  </widget>
+ 	</screen>       
+
 
 	<!-- VKeyIconPanel -->
 	<!--This conditionally shows "Text" to indicate that the virtual keyboard can be activated by pressing the "Subtitle/Text" button-->
 	<screen name="VKeyIconPanel">
-		<widget source="VKeyIcon" conditional="VKeyIcon" render="Pixmap" pixmap="skin_default/buttons/key_text.png" alphatest="blend" position="30,1032" size="52,38">
-			<convert type="ConditionalShowHide"/>
-		</widget>
+	<widget source="VKeyIcon" conditional="VKeyIcon" render="Pixmap" pixmap="skin_default/buttons/key_text.png" alphatest="blend" position="30,1032" size="52,38">
+	<convert type="ConditionalShowHide"/>
+	</widget>
 	</screen>
 
 		<!-- Button Graphic Templates -->
