@@ -28,7 +28,7 @@
 	</screen>
 
 	<screen name="TopTemplate">
-		<eLabel position="0,0" size="1920,87" backgroundColor="toptemplatecolor"/>
+		<eLabel position="0,0" size="1920,87" backgroundColor="transparent"/>
 		<ePixmap pixmap="Pd1loi-HD-night/border/top2_bg.png" position="0,0" size="1920,88" />
 		<ePixmap pixmap="Pd1loi-HD-night/border/smallshadowline.png" position="0,88" size="1920,3" zPosition="2"/>
                 <widget source="screen_path" render="Label" position="30,5" size="1860,20" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;20" valign="center" halign="left"/>
