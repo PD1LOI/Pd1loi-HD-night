@@ -1067,7 +1067,12 @@
 
 	<screen name="PVRState" position="192,172" size="225,45" backgroundColor="transparent" zPosition="2" flags="wfNoBorder">
 		<widget name="state" position="0,0" size="225,45" foregroundColor="unffff00" backgroundColor="transparent" borderWidth="2" font="Regular;37" borderColor="black" halign="left"/>
-	</screen>
+	 <widget name="stateicon" position="160,915" size="90,90" alphatest="blend" zPosition="10"/>
+   <widget name="statespeedtext" foregroundColor="white" halign="left" position="260,960" size="90,45" font="Bold; 40" transparent="1"/> 
+   <widget name="statetext"  foregroundColor="white" halign="left" position="260,960" size="90,45" font="Bold; 40" transparent="1"/>
+   <widget name="statespeed" foregroundColor="white" halign="left" position="260,960" size="90,45" font="Bold; 40" transparent="1"/> 
+   <widget name="stateicon"  position="260,960" size="90,45" alphatest="blend" pixmaps="icons/pvr/ff.svg,icons/pvr/rew.svg,icons/pvr/play.svg,icons/pvr/pause.svg"/>  
+   </screen>
 
 	<!-- Timeshift state -->
 
