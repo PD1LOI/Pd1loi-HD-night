@@ -1051,11 +1051,11 @@
 
 	<!-- NumberZap -->
 
-        <screen name="NumberZap" title="Channel" position="120,100" size="651,163" backgroundColor="transparent" flags="wfNoBorder">
-         <widget name="channel" position="0,0" size="180,90" backgroundColor="transparent" foregroundColor="unffff00" transparent="1" font="Regular;40" borderColor="black" borderWidth="5" valign="center" halign="left" />
-        <widget name="number" position="180,0" size="150,90" backgroundColor="transparent" foregroundColor="unffff00" transparent="1" font="Regular;40" borderColor="black" borderWidth="5" valign="center" halign="left" />
-        <widget name="servicename" position="0,67" size="651,90" backgroundColor="transparent" foregroundColor="unffff00" transparent="1" font="Regular;40" borderColor="black" borderWidth="5" valign="center" halign="left" />
-        </screen>
+<screen name="NumberZap" title="Channel" position="87,33" size="651,163" backgroundColor="transparent" flags="wfNoBorder">
+  <widget name="channel" position="0,0" size="180,90" backgroundColor="transparent" foregroundColor="unffff00" transparent="1" font="Regular;40" borderColor="black" borderWidth="5" valign="center" halign="left" />
+  <widget name="number" position="180,0" size="150,90" backgroundColor="transparent" foregroundColor="unffff00" transparent="1" font="Regular;40" borderColor="black" borderWidth="5" valign="center" halign="left" />
+  <widget name="servicename" position="0,67" size="651,90" backgroundColor="transparent" foregroundColor="unffff00" transparent="1" font="Regular;40" borderColor="black" borderWidth="5" valign="center" halign="left" />
+</screen>
 
 	<!-- VideoMode -->
 
@@ -1067,12 +1067,9 @@
 
 	<screen name="PVRState" position="192,172" size="225,45" backgroundColor="transparent" zPosition="2" flags="wfNoBorder">
 		<widget name="state" position="0,0" size="225,45" foregroundColor="unffff00" backgroundColor="transparent" borderWidth="2" font="Regular;37" borderColor="black" halign="left"/>
-	 <widget name="stateicon" position="160,915" size="90,90" alphatest="blend" zPosition="10"/>
-   <widget name="statespeedtext" foregroundColor="white" halign="left" position="260,960" size="90,45" font="Bold; 40" transparent="1"/> 
-   <widget name="statetext"  foregroundColor="white" halign="left" position="260,960" size="90,45" font="Bold; 40" transparent="1"/>
-   <widget name="statespeed" foregroundColor="white" halign="left" position="260,960" size="90,45" font="Bold; 40" transparent="1"/> 
-   <widget name="stateicon"  position="260,960" size="90,45" alphatest="blend" pixmaps="icons/pvr/ff.svg,icons/pvr/rew.svg,icons/pvr/play.svg,icons/pvr/pause.svg"/>  
-   </screen>
+	<widget name="statespeed" foregroundColor="white" halign="left" position="260,960" size="90,45" font="Bold; 40" transparent="1"/> 
+  <widget name="stateicon"  position="260,960" size="90,45" alphatest="blend" pixmaps="icons/pvr/ff.svg,icons/pvr/rew.svg,icons/pvr/play.svg,icons/pvr/pause.svg"/> 
+</screen>
 
 	<!-- Timeshift state -->
 
