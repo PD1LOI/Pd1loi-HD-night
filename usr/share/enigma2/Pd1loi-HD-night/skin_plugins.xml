@@ -1,17 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <skin>
+ <!-- Automatic System Cleanup -->
+<screen name="AutomaticCleanupSetup" position="fill" title="Automatic System Cleanup Setup">
+  <panel name="PigTemplate" />
+  <panel name="KeyInfoTemplate" />
+  <panel name="KeyMenuTemplate" />
+  <widget name="config" position="780,105" size="1110,280" selectionPixmap="Pd1loi-HD-night/buttons/sel6.png" itemHeight="38" font="Regular; 33" scrollbarMode="showOnDemand" />
+  <ePixmap pixmap="skin_default/div-h.png" position="780,390" zPosition="1" size="1110,2" />
+  <widget source="help" render="Label" position="780,404" size="1110,120" font="Regular; 33" foregroundColor="unffff00" />
+</screen>
    <!-- OscamStatus -->
   <screen name="OscamStatus" position="fill" title="Oscam Status" flags="wfNoBorder">
-  <panel name="PigTemplate" />
-  <widget source="menu" render="Listbox" position="780,108" size="1110,700" scrollbarMode="showOnDemand" selectionPixmap="Pd1loi-HD-night/buttons/sel4.png" itemHeight="40" transparent="1" zPosition="5">
-  <convert type="TemplatedMultiContent">
-  {"template": [
-	MultiContentEntryPixmapAlphaTest(pos = (5, 5), size = (0, 0), png = 0),
-	MultiContentEntryText(pos = (10, 0), size = (800, 50), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 1),
-	],
-	"fonts": [gFont("Regular", 32)],
-	"itemHeight": 50
-	}
+    <panel name="PigTemplate" />
+    <widget source="menu" render="Listbox" position="780,108" size="1110,700" scrollbarMode="showOnDemand" selectionPixmap="Pd1loi-HD-night/buttons/sel4.png" itemHeight="40" transparent="1" zPosition="5">
+      <convert type="TemplatedMultiContent">
+				{"template": [
+					MultiContentEntryPixmapAlphaTest(pos = (5, 5), size = (0, 0), png = 0),
+					MultiContentEntryText(pos = (10, 0), size = (800, 50), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 1),
+				],
+				"fonts": [gFont("Regular", 32)],
+				"itemHeight": 50
+				}
 </convert>
     </widget>
     <ePixmap position="920,10" size="80,80" pixmap="Pd1loi-HD-night/icons/oscam.png" alphatest="blend" scale="1" zPosition="5" />
@@ -377,6 +386,34 @@
 <widget name="size" position="30,560" size="720,100" font="Regular;30" zPosition="1" backgroundColor="#00000000" />
 <widget name="HelpWindow" position="center,670" size="120,0" />
 </screen>
+
+<screen name="EPGImportSources" position="fill" title="EPG Import Sources">
+  <panel name="PigTemplate" />
+  <widget name="list" position="780,110" size="1110,900" font="Regular; 32" itemHeight="38" selectionPixmap="Pd1loi-HD-night/buttons/sel4.png" scrollbarMode="showOnDemand" />
+</screen>
+
+<screen name="EPGImportLog" position="fill" title="EPG Import Log">
+  <panel name="PigTemplate" />
+  <widget name="list" font="Regular; 32" itemHeight="38" selectionPixmap="Pd1loi-HD-night/buttons/sel4.png" position="782,110" size="1110,900" />
+</screen>
+
+<screen name="EPGImportConfig" position="fill" title="EPG Import Configuration">
+  <panel name="PigTemplate" />
+  <widget name="config" position="780,110" size="1110,700" selectionPixmap="Pd1loi-HD-night/buttons/sel4.png" scrollbarMode="showOnDemand" font="Regular; 32" itemHeight="38" />
+  <widget name="statusbar" position="30,547" size="700,40" font="Regular;32" />
+  <widget name="status" position="30,604" size="700,40" font="Regular; 32" />
+</screen>
+
+<screen name="EPGImportSources" position="fill" title="EPG Import Sources">
+  <panel name="PigTemplate" />
+  <widget name="list" position="780,110" size="1110,900" font="Regular; 32" itemHeight="38" selectionPixmap="Pd1loi-HD-night/buttons/sel4.png" scrollbarMode="showOnDemand" />
+</screen>
+
+<screen name="EPGImportProfile" position="fill" title="EPGImportProfile">
+ <panel name="PigTemplate" />
+  <widget name="config" font="Regular; 32" itemHeight="38" selectionPixmap="Pd1loi-HD-night/buttons/sel4.png" position="780,110" size="1110,900" scrollbarMode="showOnDemand" />
+ </screen>
+
 
 <!-- WeatherMSN -->
 
@@ -2146,7 +2183,6 @@
 		<widget name="config" position="780,105" size="1110,600" itemHeight="38" selectionPixmap="Pd1loi-HD-night/buttons/sel4.png" font="Regular;30" scrollbarMode="showOnDemand"/>
 		<widget name="statusbar" position="780,975" size="1110,34" font="Regular;30"/>
 		<widget name="status" position="780,780" size="1110,90" font="Regular;30"/>
-		<widget name="description" position="30,570" size="720,300" itemHeight="38" font="Regular;32" valign="top"/>
 	</screen>
 
 	<!-- EPG Import Profile -->

@@ -28,7 +28,7 @@
 	</screen>
 
 	<screen name="TopTemplate">
-		<eLabel position="0,0" size="1920,87" backgroundColor="transparent"/>
+		<eLabel position="0,0" size="1920,87" backgroundColor="toptemplatecolor"/>
 		<ePixmap pixmap="Pd1loi-HD-night/border/top2_bg.png" position="0,0" size="1920,88" />
 		<ePixmap pixmap="Pd1loi-HD-night/border/smallshadowline.png" position="0,88" size="1920,3" zPosition="2"/>
                 <widget source="screen_path" render="Label" position="30,5" size="1860,20" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;20" valign="center" halign="left"/>
@@ -56,7 +56,7 @@
   <panel name="BasicTemplate" />
   <widget source="session.VideoPicture" render="Pig" position="31,118" size="720,405" backgroundColor="transparent" zPosition="1" />
   <ePixmap pixmap="Pd1loi-HD-night/border/chframe1.png" position="24,110" size="734,420" alphatest="blend" />
-  <widget source="session.CurrentService" render="Label" position="32,119" size="718,30" zPosition="1" foregroundColor="unffff00" transparent="1" font="Regular0; 27" borderColor="black" borderWidth="2" noWrap="1" valign="center" halign="center">
+  <widget source="session.CurrentService" render="Label" position="35,120" size="710,30" zPosition="1" foregroundColor="unffff00" transparent="1" font="Regular0; 27" borderColor="black" borderWidth="2" noWrap="1" valign="center" halign="center">
   <convert type="ServiceName">Name</convert>
   </widget>
   </screen>
