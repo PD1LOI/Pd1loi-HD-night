@@ -1333,6 +1333,7 @@
     
         <screen name="startScreen" position="fill" title="HetWeer" flags="wfNoBorder" >
         <panel name="PigTemplate"/>
+        <panel name="WeerTemplate" />
         <panel name="KeyInfoTemplate"/>
         <widget name="titles" position="30,7" size="1860,75" foregroundColor="orange1" transparent="1" zPosition="1" font="Regular;36" valign="center" halign="left"/>
         <ePixmap pixmap="Pd1loi-HD-night/buttons/red.png" position="192,1032" size="34,34" alphatest="blend" />
@@ -1346,6 +1347,7 @@
 
         <screen name="weatherMenuSub" position="fill" title="WeerInfo" flags="wfNoBorder">
         <panel name="PigTemplate" />
+        <panel name="WeerTemplate" />
         <panel name="KeyInfoTemplate" />
         <ePixmap pixmap="Pd1loi-HD-night/buttons/red.png" position="192,1032" size="34,34" alphatest="blend" />
         <widget name="list" position="780,104" size="1110,900" scrollbarMode="showOnDemand" font="Regular;34" itemHeight="45" selectionPixmap="Pd1loi-HD-night/buttons/sel4.png" />\n
@@ -1354,6 +1356,7 @@
                
         <screen name="localcityscreen" position="fill" title="Favoriete Locatie" flags="wfNoBorder" >
         <panel name="PigTemplate"/>
+        <panel name="WeerTemplate" />
         <panel name="KeyInfoTemplate"/>
         <panel name="KeyMenuTemplate"/>
         <widget name="list" position="800,170" size="1000,600" scrollbarMode="showOnDemand" font="Regular;38" itemHeight="45" selectionPixmap="Pd1loi-HD-night/buttons/sel6.png" />\n
@@ -1362,6 +1365,7 @@
         
         <screen name="lokaalTemp" position="fill" title="LokaalTemp" flags="wfNoBorder">
         <panel name="KeyInfoTemplate"/>
+        <panel name="WeerTemplate" />
         <panel name="KeyMenuTemplate"/>
         <widget name="label0" position="19,889" size="700,78" font="menulist;37" foregroundColor="grey" valign="bottom" zPosition="1" />
         <ePixmap pixmap="Pd1loi-HD-night/border/top2_bg.png" position="fill" size="1920,88" />
@@ -1383,6 +1387,7 @@
         
         <screen name="weathertalk" title="Weerbericht" position="fill" flags="wfNoBorder">
         <panel name="PigTemplate"/>
+        <panel name="WeerTemplate" />
         <widget name="label0" position="19,889" size="700,78" font="menulist;37" foregroundColor="grey" valign="bottom" zPosition="1" />
         <panel name="KeyInfoTemplate"/>
         <panel name="KeyMenuTemplate"/>
