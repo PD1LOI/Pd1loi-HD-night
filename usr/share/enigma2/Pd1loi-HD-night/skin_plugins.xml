@@ -3081,6 +3081,16 @@
 <widget name="introduction" position="30,535" size="725,300" font="Regular;32" halign="top" foregroundColor="unffff00" />
 </screen>
 
+<screen name="BlindscanState" position="fill" size="1920,1110" title="Satellite Blindscan">
+  <panel name="PigTemplate" />
+  <panel name="KeyMenuInfoTemplate" />
+  <widget name="progress" position="780,108" size="800,85" font="Regular; 29" />
+  <eLabel position="780,194" size="800,10" backgroundColor="grey" />
+  <widget name="config" position="780,202" size="800,425" font="Regular; 28" />
+  <eLabel position="1583,107" size="1,518" backgroundColor="grey" />
+  <widget name="post_action" position="1587,109" size="256,518" font="Regular; 29" halign="center" foregroundColor="orange" />
+</screen>
+
 <screen name="SatBlindscanState" position="fill" title="Satellite Blindscan" flags="wfNoBorder">
   <panel name="PigTemplate" />
   <panel name="KeyMenuInfoTemplate" />
@@ -3095,17 +3105,16 @@
 				}
 			</convert>
 		</widget>
-		
 		<widget name="post_action" position="30,550" size="700,140" foregroundColor="unffff00" font="Regular;32" halign="center" />
 </screen>
 
 
-<screen name="Blindscan" position="fill" title="Blind scan" flags="wfNoBorder">
+<screen name="Blindscan" position="fill" title="Blindscan" flags="wfNoBorder">
   <panel name="PigTemplate" />
   <panel name="KeyMenuInfoTemplate" />
   <widget name="rotorstatus" position="30,609" size="719,40" font="Regular;30" foregroundColor="orange" />
-  <widget name="config" position="780,108" size="1110,500" selectionPixmap="Pd1loi-HD-night/buttons/sel4.png" scrollbarMode="showOnDemand" />
-  <widget name="description" position="780,626" size="1110,380" font="Regular;30" foregroundColor="orange" />
+  <widget name="config" position="780,108" size="1110,594" selectionPixmap="Pd1loi-HD-night/buttons/sel4.png" scrollbarMode="showOnDemand" font="Regular; 30"  itemHeight="40" />
+  <widget name="description" position="780,717" size="1110,594" font="Regular;30" foregroundColor="orange" />
   <widget name="introduction" position="30,547" size="719,40" font="Regular;30" foregroundColor="green" halign="center" />
   <widget text="LOCK" source="Frontend" render="FixedLabel" position="617,972" zPosition="2" size="160,35" font="Regular;30" foregroundColor="green" transparent="1">
     <convert type="FrontendInfo">LOCK</convert>
