@@ -1390,6 +1390,7 @@
 
 	<screen name="ServiceInfo" position="fill" flags="wfNoBorder">
 		<panel name="ServiceInfoSimple"/>
+		<panel name="WeerTemplate"/>
 		<panel name="KeyInfoTemplate"/>
 		<widget source="session.CurrentService" render="Label" position="780,975" size="1110,37" transparent="1" zPosition="1" foregroundColor="foreground" font="Regular;33" valign="top" halign="center">
 				<convert type="ServiceInfo">HasHBBTV</convert>
