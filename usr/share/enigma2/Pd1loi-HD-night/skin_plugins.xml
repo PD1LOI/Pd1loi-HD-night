@@ -2191,14 +2191,14 @@
 		<widget name="favoritemenu" scrollbarMode="showOnDemand" font="Regular;33" position="127,165" size="1650,750" transparent="1"/>
 	</screen>
 
-	<screen flags="wfNoBorder" name="playingscrn" position="fill" title="NetRadio Classic Playing">
-		<panel name="BasicTemplate"/>
-		<ePixmap pixmap="Pd1loi-HD-night/buttons/red.png" alphatest="on" position="172,1030" size="34,34"/>
-		<eLabel text="Exit" backgroundColor="secondBG" font="Regular;34" halign="left" position="222,1030" size="370,42" foregroundColor="grey" transparent="1" zPosition="1"/>
-		<widget name="titel" font="Regular;39" position="150,225" foregroundColor="yellow" valign="center" halign="center" size="1650,450" transparent="1"/>
-		<eLabel text="Favorite" backgroundColor="secondBG" font="Regular;34" halign="right" position="1125,967" size="370,42" foregroundColor="grey" transparent="1" zPosition="1"/>
-		<widget name="leagueNumberWidget" position="1455,967" size="90,45" transparent="1" foregroundColor="grey" halign="center" font="Regular;36"/>
-	</screen>
+<screen flags="wfNoBorder" name="playingscrn" position="fill" title="NetRadio Classic Playing">
+  <panel name="BasicTemplate" />
+  <ePixmap pixmap="Pd1loi-HD-night/buttons/red.png" alphatest="on" position="172,1030" size="34,34" />
+  <eLabel text="Exit" backgroundColor="secondBG" font="Regular;34" halign="left" position="242,1030" size="370,42" foregroundColor="red" transparent="1" zPosition="1" />
+  <widget name="titel" font="Regular;39" position="150,225" foregroundColor="yellow" valign="center" halign="center" size="1650,450" transparent="1" />
+  <eLabel text="Favorite" backgroundColor="secondBG" font="Regular;34" halign="left" position="1114,1028" size="370,42" foregroundColor="yellow" transparent="1" zPosition="1" />
+  <widget name="leagueNumberWidget" position="150,674" size="90,45" transparent="1" foregroundColor="grey" halign="center" font="Regular;36" />
+</screen>
 
 	<screen flags="wfNoBorder" name="StationsScreen" position="fill" title="Add to Favorites">
 		<panel name="BasicTemplate"/>
