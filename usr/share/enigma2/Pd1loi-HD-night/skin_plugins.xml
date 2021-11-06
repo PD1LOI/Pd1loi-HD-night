@@ -1600,10 +1600,10 @@
 <screen name="MerlinMusicPlayerScreen" position="fill" title="Merlin Music Player" flags="wfNoBorder">
   <panel name="BasicTemplate" />
  <ePixmap pixmap="Pd1loi-HD-night/buttons/line.png" position="86,513" size="906,2" />
-  <ePixmap alphatest="on" pixmap="Pd1loi-HD-night/logos/logoblk.png" position="1311,567" size="390,150" />
+  <ePixmap alphatest="on" pixmap="Pd1loi-HD-night/logos/logoblk.png" position="329,183" size="390,150" />
   <ePixmap pixmap="Pd1loi-HD-night/logos/pd1loi.png" position="30,967" size="320,40" alphatest="on" />
-  <widget alphatest="blend" name="coverArt" pixmap="Pd1loi-HD-night/dvr/no_coverArt.png" position="232,134" size="250,250" transparent="1" />
-  <widget backgroundColor="background" font="Regular; 38" foregroundColor="unffff00" name="title" position="86,605" size="800,45" transparent="1" />
+  <widget alphatest="blend" name="coverArt" pixmap="Pd1loi-HD-night/dvr/no_coverArt.png" position="1269,363" size="400,400" transparent="1" />
+  <widget backgroundColor="background" font="Regular; 40" foregroundColor="unffff00" name="title" position="86,605" size="800,45" transparent="1" halign="center" />
   <widget backgroundColor="background" font="Regular; 32" foregroundColor="unffff00" halign="right" position="872,605" render="Label" size="120,45" source="session.CurrentService" transparent="1">
     <convert type="ServicePosition">Length</convert>
   </widget>
