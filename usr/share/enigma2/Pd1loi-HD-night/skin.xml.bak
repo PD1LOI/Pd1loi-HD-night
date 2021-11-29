@@ -387,11 +387,11 @@
         
         <!-- JobView -->
 
-<screen name="JobView" title="Job View" flags="wfNoBorder" position="fill" backgroundColor="transparent">
-  <widget source="job_name" render="Label" position="1270,20" size="610,70" font="Regular; 30" foregroundColor="unffff00" />
+<screen name="JobView" size="1920,1080" title="Job View" flags="wfNoBorder" position="0,0" backgroundColor="transparent">
+  <widget source="job_name" render="Label" position="1270,19" size="610,70" font="Regular; 28" foregroundColor="unffff00" />
   <widget source="job_task" render="Label" position="1270,88" size="610,36" font="Regular;26" />
-  <widget source="job_progress" render="Progress" position="1270,126" size="610,50" borderWidth="2" backgroundColor="un254f7497" />
-  <widget source="job_progress" render="Label" position="1270,125" size="610,50" font="Regular;32" foregroundColor="black" zPosition="2" halign="center" transparent="1">
+  <widget source="job_progress" render="Progress" position="1270,126" size="610,48" borderWidth="2" backgroundColor="un254f7497" />
+  <widget source="job_progress" render="Label" position="1270,125" size="610,49" font="Regular;32" foregroundColor="black" zPosition="2" halign="center" transparent="1">
     <convert type="ProgressToText" />
   </widget>
   <widget source="job_status" render="Label" position="1270,175" size="610,36" font="Regular; 26" />
