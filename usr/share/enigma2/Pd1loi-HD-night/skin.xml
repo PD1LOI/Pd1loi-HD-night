@@ -388,14 +388,14 @@
         <!-- JobView -->
 
 <screen name="JobView" title="Job View" flags="wfNoBorder" position="fill" backgroundColor="transparent">
-  <widget source="job_name" render="Label" position="1270,19" size="610,70" font="Regular; 30" foregroundColor="unffff00" />
+  <widget source="job_name" render="Label" position="1270,20" size="610,70" font="Regular; 30" foregroundColor="unffff00" />
   <widget source="job_task" render="Label" position="1270,88" size="610,36" font="Regular;26" />
-  <widget source="job_progress" render="Progress" position="1270,125" size="610,51" borderWidth="2" backgroundColor="grey" />
-  <widget source="job_progress" render="Label" position="1270,125" size="610,51" font="Regular;40" foregroundColor="black" zPosition="2" halign="center" transparent="1" backgroundColor="secondFG">
+  <widget source="job_progress" render="Progress" position="1270,125" size="610,51" borderWidth="2" backgroundColor="un27b5b9bd" />
+  <widget source="job_progress" render="Label" position="1271,133" size="610,52" font="Regular;38" foregroundColor="black" zPosition="2" halign="center" transparent="1" backgroundColor="white">
     <convert type="ProgressToText" />
   </widget>
-  <widget source="job_status" render="Label" position="1270,176" size="610,36" font="Regular; 26" />
-  <widget name="config" position="1270,211" size="610,36" itemHeight="38" font="Regular;26" selectionPixmap="Pd1loi-HD-night/buttons/sel4.png" />
+  <widget source="job_status" render="Label" position="1270,175" size="610,36" font="Regular; 26" />
+  <widget name="config" position="1270,211" size="610,36" itemHeight="38" font="Regular; 26" selectionPixmap="Pd1loi-HD-night/buttons/sel4.png" />
   <widget source="cancelable" render="Pixmap" pixmap="Pd1loi-HD-night/buttons/red.png" position="192,1030" size="34,34" alphatest="on" zPosition="2">
     <convert type="ConditionalShowHide" />
   </widget>
