@@ -1330,7 +1330,7 @@
 		<panel name="PigTemplate"/>
 		<panel name="KeyInfoTemplate"/>
 		<panel name="KeyInfoTemplate"/>
-		<widget name="timerlist" position="780,100" size="1110,912" selectionPixmap="Pd1loi-HD-night/buttons/sel4.png" scrollbarMode="showOnDemand" itemHeight="76" rowSplit="42" setEventNameFont="Regular;32" setServiceNameFont="Regular;28" setFont="Regular;28" satPosLeft="250"/>
+		<widget name="timerlist" position="780,100" size="1110,912" selectionPixmap="Pd1loi-HD-night/buttons/sel800.png" scrollbarMode="showOnDemand" itemHeight="76" rowSplit="42" setEventNameFont="Regular;32" setServiceNameFont="Regular;28" setFont="Regular;28" satPosLeft="250"/>
 		<widget name="description" position="30,528" size="720,481" transparent="1" font="Regular;30" halign="left"/>
 	</screen>
 
@@ -1363,12 +1363,12 @@
 
 	<screen name="PluginBrowser" position="fill" flags="wfNoBorder">
 		<panel name="PigTemplate"/>
-			<panel name="WeerTemplate"/>
+		<panel name="WeerTemplate"/>
 		<panel name="KeyInfoTemplate"/>
 		<ePixmap pixmap="skin_default/buttons/key_prev.png" alphatest="blend" position="30,1031" size="52,38"/>
 		<ePixmap pixmap="skin_default/buttons/key_next.png" alphatest="blend" position="82,1031" size="52,38"/>
 		<ePixmap pixmap="skin_default/buttons/key_0.png" alphatest="blend" position="135,1031" size="52,38"/>
-		<widget name="list" position="780,100" size="1110,912" selectionPixmap="Pd1loi-HD-night/buttons/sel2.png" scrollbarMode="showOnDemand"/>
+		<widget name="list" position="780,100" size="1110,912" selectionPixmap="Pd1loi-HD-night/buttons/sel4.png" scrollbarMode="showOnDemand"/>
   </screen>
 
 	<screen name="PluginDownloadBrowser"  position="fill" flags="wfNoBorder">
