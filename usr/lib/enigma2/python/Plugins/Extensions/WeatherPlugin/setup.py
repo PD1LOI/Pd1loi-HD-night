@@ -204,9 +204,8 @@ class MSNWeatherPluginEntryConfigScreen(ConfigListScreen, Screen):
 			getConfigListEntry(_("Location code"), self.current.weatherlocationcode),
 			getConfigListEntry(_("System"), self.current.degreetype)
 		]
-
 		ConfigListScreen.__init__(self, cfglist, session)
-		
+
 	def searchLocation(self):
 		if self.current.city.value != "":
 			language = config.osd.language.value.replace("_","-")
@@ -255,32 +254,30 @@ class MSNWeatherPluginEntryConfigScreen(ConfigListScreen, Screen):
 		config.plugins.WeatherPlugin.save()
 		configfile.save()
 		self.close()
-		
-		
+
 	def xmlCallback(self, xmlstring):
 		if xmlstring:
 			errormessage = ""
 			root = cet_fromstring(xmlstring)
 			for childs in root:
-				if childs.tag == "weather" and childs.attrib.has_key("errormessage"):
-					errormessage = childs.attrib.get("errormessage").encode("utf-8", 'ignore')
+				if childs.tag == "weather" and "errormessage" in childs.attrib:
+					errormessage = childs.attrib.get("errormessage")
 					break
 			if len(errormessage) !=0:
-				self.session.open(MessageBox, errormessage, MessageBox.TYPE_ERROR)					
+				self.session.open(MessageBox, errormessage, MessageBox.TYPE_ERROR)
 			else:
 				self.session.openWithCallback(self.searchCallback, MSNWeatherPluginSearch, xmlstring)
-			
+
 	def error(self, error = None):
 		if error is not None:
 			print(error)
-		
+
 	def searchCallback(self, result):
 		if result:
 			self.current.weatherlocationcode.value = result[0]
 			self.current.city.value = result[1]
-	
-		
-		
+
+
 class MSNWeatherPluginSearch(Screen):
 	skin = """
 		<screen name="MSNWeatherPluginSearch" position="center,center" size="550,400">
@@ -319,7 +316,7 @@ class MSNWeatherPluginSearch(Screen):
 		try:sel = self["entrylist"].l.getCurrentSelection()[0]
 		except: sel = None
 		self.close(sel)
-		
+
 
 class MSNWeatherPluginSearchResultList(MenuList):
 	def __init__(self, list, enableWrapAround = True):
@@ -342,9 +339,14 @@ class MSNWeatherPluginSearchResultList(MenuList):
 		list = []
 		for childs in root:
 			if childs.tag == "weather":
-				searchlocation = childs.attrib.get("weatherlocationname").encode("utf-8", 'ignore')
-				searchresult = childs.attrib.get("weatherfullname").encode("utf-8", 'ignore')
-				weatherlocationcode = childs.attrib.get("weatherlocationcode").encode("utf-8", 'ignore')
+				if six.PY2:
+					searchlocation = childs.attrib.get("weatherlocationname").encode("utf-8", 'ignore')
+					searchresult = childs.attrib.get("weatherfullname").encode("utf-8", 'ignore')
+					weatherlocationcode = childs.attrib.get("weatherlocationcode").encode("utf-8", 'ignore')
+				else:
+					searchlocation = childs.attrib.get("weatherlocationname")
+					searchresult = childs.attrib.get("weatherfullname")
+					weatherlocationcode = childs.attrib.get("weatherlocationcode")
 				res = [
 					(weatherlocationcode, searchlocation),
 					(eListboxPythonMultiContent.TYPE_TEXT, 5, 0, 500, 50, 1, RT_HALIGN_LEFT|RT_VALIGN_CENTER, searchlocation),

@@ -110,7 +110,7 @@ class MSNWeatherPlugin(Screen):
 		self["observationtime"] = StaticText()
 		self["observationpoint"] = StaticText()
 		self["feelsliketemp"] = StaticText()
-		
+
 		i = 1
 		while i <= 5:
 			self["weekday%s" % i] = StaticText()
@@ -118,7 +118,6 @@ class MSNWeatherPlugin(Screen):
 			self["weekday%s_temp" % i] = StaticText()
 			i += 1
 		del i
-		
 
 		self.weatherPluginEntryIndex = -1
 		self.weatherPluginEntryCount = config.plugins.WeatherPlugin.entrycount.value
@@ -128,13 +127,12 @@ class MSNWeatherPlugin(Screen):
 		else:
 			self.weatherPluginEntry = None
 
-
 		self.webSite = ""
 		
 		self.weatherData = None
 		self.onLayoutFinish.append(self.startRun)
 		self.onClose.append(self.__onClose)
-		
+
 	def __onClose(self):
 		if self.weatherData is not None:
 			self.weatherData.cancel()
@@ -231,6 +229,7 @@ class MSNWeatherPlugin(Screen):
 
 	def showsetup(self):
 		self.session.openWithCallback(self.setupFinished, MSNWeatherPluginEntriesListConfigScreen)
+
 	def setupFinished(self, index, entry = None):
 		self.weatherPluginEntryCount = config.plugins.WeatherPlugin.entrycount.value
 		if self.weatherPluginEntryCount >= 1:
@@ -294,10 +293,9 @@ class WeatherIcon(Pixmap):
 			self.instance.setPixmap(ptr)
 		else:
 			self.instance.setPixmap(None)
-		
+
 	def updateIcon(self, filename):
 		new_IconFileName = filename
 		if (self.IconFileName != new_IconFileName):
 			self.IconFileName = new_IconFileName
 			self.picload.startDecode(self.IconFileName)
-
