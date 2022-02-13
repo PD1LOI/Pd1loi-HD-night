@@ -33,8 +33,8 @@ from Components.Pixmap import Pixmap
 from enigma import ePicLoad, eRect, eSize, gPixmapPtr
 from Components.AVSwitch import AVSwitch
 from Components.config import ConfigSubsection, ConfigSubList, ConfigInteger, config
-from setup import initConfig, MSNWeatherPluginEntriesListConfigScreen
-from MSNWeather import MSNWeather
+from .setup import initConfig, MSNWeatherPluginEntriesListConfigScreen
+from .MSNWeather import MSNWeather
 import time
 
 try:
@@ -190,7 +190,7 @@ class MSNWeatherPlugin(Screen):
 			i += 1
 
 	def showIcon(self,index, filename):
-		if index <> -1:
+		if index != -1:
 			self["weekday%s_icon" % index].updateIcon(filename)
 			self["weekday%s_icon" % index].show()
 		else:
@@ -228,8 +228,9 @@ class MSNWeatherPlugin(Screen):
 
 	def config(self):
 		self.session.openWithCallback(self.setupFinished, MSNWeatherPluginEntriesListConfigScreen)
-        def showsetup(self):
-                self.session.openWithCallback(self.setupFinished, MSNWeatherPluginEntriesListConfigScreen)
+
+	def showsetup(self):
+		self.session.openWithCallback(self.setupFinished, MSNWeatherPluginEntriesListConfigScreen)
 	def setupFinished(self, index, entry = None):
 		self.weatherPluginEntryCount = config.plugins.WeatherPlugin.entrycount.value
 		if self.weatherPluginEntryCount >= 1:

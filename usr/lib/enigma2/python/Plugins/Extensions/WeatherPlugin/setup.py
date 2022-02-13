@@ -21,6 +21,7 @@
 #
 
 # for localized messages
+from __future__ import print_function
 from . import _
 
 from enigma import eListboxPythonMultiContent, gFont, RT_HALIGN_LEFT, \
@@ -35,7 +36,11 @@ from Components.config import ConfigSubsection, ConfigText, ConfigSelection, \
 	getConfigListEntry, config, configfile
 from xml.etree.cElementTree import fromstring as cet_fromstring
 from twisted.web.client import getPage
-from urllib import quote as urllib_quote
+import six
+if six.PY2:
+	from urllib import quote as urllib_quote
+else:
+	from urllib.parse import quote as urllib_quote
 
 def initWeatherPluginEntryConfig():
 	s = ConfigSubsection()
@@ -75,7 +80,7 @@ class MSNWeatherPluginEntriesListConfigScreen(Screen):
 		self["city"] = StaticText(_("City"))
 		self["degreetype"] = StaticText(_("System"))
 		self["key_red"] = StaticText(_("Back"))
-		self["key_green"] = StaticText(_("Add"))		
+		self["key_green"] = StaticText(_("Add"))
 		self["key_yellow"] = StaticText(_("Edit"))
 		self["key_blue"] = StaticText(_("Delete"))
 		self["entrylist"] = WeatherPluginEntryList([])
@@ -84,7 +89,7 @@ class MSNWeatherPluginEntriesListConfigScreen(Screen):
 			 "ok"	:	self.keyOK,
 			 "back"	:	self.keyClose,
 			 "red"	:	self.keyClose,
-			 "green":	self.keyGreen,			 
+			 "green":	self.keyGreen,
 			 "yellow":	self.keyYellow,
 			 "blue": 	self.keyDelete,
 			 }, -1)
@@ -267,7 +272,7 @@ class MSNWeatherPluginEntryConfigScreen(ConfigListScreen, Screen):
 			
 	def error(self, error = None):
 		if error is not None:
-			print error
+			print(error)
 		
 	def searchCallback(self, result):
 		if result:
