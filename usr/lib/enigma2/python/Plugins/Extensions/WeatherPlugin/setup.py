@@ -214,7 +214,7 @@ class MSNWeatherPluginEntryConfigScreen(ConfigListScreen, Screen):
 			elif language == "no-NO": # hack
 				language = "nn-NO"
 			url = "http://weather.service.msn.com/find.aspx?src=vista&outputview=search&weasearchstr=%s&culture=%s" % (urllib_quote(self.current.city.value), language)
-			getPage(url).addCallback(self.xmlCallback).addErrback(self.error)
+			getPage(six.ensure_binary(url)).addCallback(self.xmlCallback).addErrback(self.error)
 		else:
 			self.session.open(MessageBox, _("You need to enter a valid city name before you can search for the location code."), MessageBox.TYPE_ERROR)
 
@@ -241,7 +241,7 @@ class MSNWeatherPluginEntryConfigScreen(ConfigListScreen, Screen):
 	def keyDelete(self):
 		if self.newmode == 1:
 			self.keyCancel()
-		else:		
+		else:
 			self.session.openWithCallback(self.deleteConfirm, MessageBox, _("Really delete this WeatherPlugin Entry?"))
 
 	def deleteConfirm(self, result):
