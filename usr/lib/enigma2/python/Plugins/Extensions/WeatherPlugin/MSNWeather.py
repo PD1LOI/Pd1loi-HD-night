@@ -30,7 +30,11 @@ from enigma import eEnv
 from os import path as os_path, mkdir as os_mkdir, remove as os_remove, listdir as os_listdir
 from Components.config import config
 from Tools.Directories import resolveFilename, SCOPE_SKIN
-from urllib import quote as urllib_quote
+import six
+if six.PY2:
+	from urllib import quote as urllib_quote
+else:
+	from urllib.parse import quote as urllib_quote
 
 class WeatherIconItem:
 	def __init__(self, url = "", filename = "", index = -1, error = False):
@@ -90,7 +94,7 @@ class MSNWeather:
 				extension = os_path.splitext(filename)[1].lower()
 			except: pass
 		return extension
-		
+
 	def initialize(self):
 		self.city = ""
 		self.degreetype = ""
@@ -100,19 +104,19 @@ class MSNWeather:
 		self.callback = None
 		self.callbackShowIcon = None
 		self.callbackAllIconsDownloaded = None
-		
+
 	def cancel(self):
 		self.callback = None
 		self.callbackShowIcon = None
-		
+
 	def setIconPath(self, iconpath):
 		if not os_path.exists(iconpath):
 			os_mkdir(iconpath)
 		self.iconpath = iconpath
-		
+
 	def setIconExtension(self, iconextension):
 		self.iconextension = iconextension
-		
+
 	def getWeatherData(self, degreetype, locationcode, city, callback, callbackShowIcon, callbackAllIconsDownloaded = None ):
 		self.initialize()
 		language = config.osd.language.value.replace("_","-")
@@ -125,8 +129,8 @@ class MSNWeather:
 		self.callbackShowIcon  = callbackShowIcon
 		self.callbackAllIconsDownloaded = callbackAllIconsDownloaded
 		url = "http://weather.service.msn.com/data.aspx?src=vista&weadegreetype=%s&culture=%s&wealocations=%s" % (degreetype, language, urllib_quote(locationcode))
-		getPage(url).addCallback(self.xmlCallback).addErrback(self.error)
-		
+		getPage(six.ensure_binary(url)).addCallback(self.xmlCallback).addErrback(self.error)
+
 	def getDefaultWeatherData(self, callback = None, callbackAllIconsDownloaded = None):
 		self.initialize()
 		weatherPluginEntryCount = config.plugins.WeatherPlugin.entrycount.value
@@ -136,15 +140,14 @@ class MSNWeather:
 			return 1
 		else:
 			return 0
-		
+
 	def error(self, error = None):
 		errormessage = ""
 		if error is not None:
 			errormessage = str(error.getErrorMessage())
 		if self.callback is not None:
 			self.callback(self.ERROR, errormessage)
-			
-	
+
 	def errorIconDownload(self, error = None, item = None):
 		item.error = True
 		if os_path.exists(item.filename): # delete 0 kb file
@@ -153,15 +156,15 @@ class MSNWeather:
 	def finishedIconDownload(self, result, item):
 		if not item.error:
 			self.showIcon(item.index,item.filename)
-		
+
 	def showIcon(self, index, filename):
 		if self.callbackShowIcon is not None:
 				self.callbackShowIcon(index, filename)
-				
+
 	def finishedAllDownloadFiles(self, result):
 		if self.callbackAllIconsDownloaded is not None:
 			self.callbackAllIconsDownloaded()
-		
+
 	def xmlCallback(self, xmlstring):
 		IconDownloadList = []
 		root = cet_fromstring(xmlstring)
@@ -170,26 +173,48 @@ class MSNWeather:
 		errormessage = ""
 		for childs in root:
 			if childs.tag == "weather":
-				errormessage = childs.attrib.get("errormessage")
+				if six.PY2:
+					errormessage = childs.attrib.get("errormessage").encode("utf-8", 'ignore')
+				else:
+					errormessage = childs.attrib.get("errormessage")
 				if errormessage:
 					if self.callback is not None:
-						self.callback(self.ERROR, errormessage.encode("utf-8", 'ignore'))
+						if six.PY2:
+							self.callback(self.ERROR, errormessage.encode("utf-8", 'ignore'))
+						else:
+							self.callback(self.ERROR, errormessage)
 					break
-				self.degreetype = childs.attrib.get("degreetype").encode("utf-8", 'ignore')
-				self.imagerelativeurl = "%slaw/" % childs.attrib.get("imagerelativeurl").encode("utf-8", 'ignore')
-				self.url = childs.attrib.get("url").encode("utf-8", 'ignore')
+				if six.PY2:
+					self.degreetype = childs.attrib.get("degreetype").encode("utf-8", 'ignore')
+					self.imagerelativeurl = "%slaw/" % childs.attrib.get("imagerelativeurl").encode("utf-8", 'ignore')
+					self.url = childs.attrib.get("url").encode("utf-8", 'ignore')
+				else:
+					self.degreetype = childs.attrib.get("degreetype")
+					self.imagerelativeurl = "%slaw/" % childs.attrib.get("imagerelativeurl")
+					self.url = childs.attrib.get("url")
 			for items in childs:
 				if items.tag == "current":
 					currentWeather = MSNWeatherItem()
-					currentWeather.temperature = items.attrib.get("temperature").encode("utf-8", 'ignore')
-					currentWeather.skytext = items.attrib.get("skytext").encode("utf-8", 'ignore')
-					currentWeather.humidity = items.attrib.get("humidity").encode("utf-8", 'ignore')
-					currentWeather.winddisplay = items.attrib.get("winddisplay").encode("utf-8", 'ignore')
-					currentWeather.observationtime = items.attrib.get("observationtime").encode("utf-8", 'ignore')
-					currentWeather.observationpoint = items.attrib.get("observationpoint").encode("utf-8", 'ignore')
-					currentWeather.feelslike = items.attrib.get("feelslike").encode("utf-8", 'ignore')
-					currentWeather.skycode = "%s%s" % (items.attrib.get("skycode").encode("utf-8", 'ignore'), self.iconextension)
-					currentWeather.code = items.attrib.get("skycode").encode("utf-8", 'ignore')
+					if six.PY2:
+						currentWeather.temperature = items.attrib.get("temperature").encode("utf-8", 'ignore')
+						currentWeather.skytext = items.attrib.get("skytext").encode("utf-8", 'ignore')
+						currentWeather.humidity = items.attrib.get("humidity").encode("utf-8", 'ignore')
+						currentWeather.winddisplay = items.attrib.get("winddisplay").encode("utf-8", 'ignore')
+						currentWeather.observationtime = items.attrib.get("observationtime").encode("utf-8", 'ignore')
+						currentWeather.observationpoint = items.attrib.get("observationpoint").encode("utf-8", 'ignore')
+						currentWeather.feelslike = items.attrib.get("feelslike").encode("utf-8", 'ignore')
+						currentWeather.skycode = "%s%s" % (items.attrib.get("skycode").encode("utf-8", 'ignore'), self.iconextension)
+						currentWeather.code = items.attrib.get("skycode").encode("utf-8", 'ignore')
+					else:
+						currentWeather.temperature = items.attrib.get("temperature")
+						currentWeather.skytext = items.attrib.get("skytext")
+						currentWeather.humidity = items.attrib.get("humidity")
+						currentWeather.winddisplay = items.attrib.get("winddisplay")
+						currentWeather.observationtime = items.attrib.get("observationtime")
+						currentWeather.observationpoint = items.attrib.get("observationpoint")
+						currentWeather.feelslike = items.attrib.get("feelslike")
+						currentWeather.skycode = "%s%s" % (items.attrib.get("skycode"), self.iconextension)
+						currentWeather.code = items.attrib.get("skycode")
 					filename = "%s%s"  % (self.iconpath, currentWeather.skycode)
 					currentWeather.iconFilename = filename
 					if not os_path.exists(filename):
@@ -201,14 +226,24 @@ class MSNWeather:
 				elif items.tag == "forecast" and index <= 4:
 					index +=1
 					weather = MSNWeatherItem()
-					weather.date = items.attrib.get("date").encode("utf-8", 'ignore')
-					weather.day = items.attrib.get("day").encode("utf-8", 'ignore')
-					weather.shortday = items.attrib.get("shortday").encode("utf-8", 'ignore')
-					weather.low = items.attrib.get("low").encode("utf-8", 'ignore')
-					weather.high = items.attrib.get("high").encode("utf-8", 'ignore')
-					weather.skytextday = items.attrib.get("skytextday").encode("utf-8", 'ignore')
-					weather.skycodeday = "%s%s" % (items.attrib.get("skycodeday").encode("utf-8", 'ignore'), self.iconextension)
-					weather.code = items.attrib.get("skycodeday").encode("utf-8", 'ignore')
+					if six.PY2:
+						weather.date = items.attrib.get("date").encode("utf-8", 'ignore')
+						weather.day = items.attrib.get("day").encode("utf-8", 'ignore')
+						weather.shortday = items.attrib.get("shortday").encode("utf-8", 'ignore')
+						weather.low = items.attrib.get("low").encode("utf-8", 'ignore')
+						weather.high = items.attrib.get("high").encode("utf-8", 'ignore')
+						weather.skytextday = items.attrib.get("skytextday").encode("utf-8", 'ignore')
+						weather.skycodeday = "%s%s" % (items.attrib.get("skycodeday").encode("utf-8", 'ignore'), self.iconextension)
+						weather.code = items.attrib.get("skycodeday").encode("utf-8", 'ignore')
+					else:
+						weather.date = items.attrib.get("date")
+						weather.day = items.attrib.get("day")
+						weather.shortday = items.attrib.get("shortday")
+						weather.low = items.attrib.get("low")
+						weather.high = items.attrib.get("high")
+						weather.skytextday = items.attrib.get("skytextday")
+						weather.skycodeday = "%s%s" % (items.attrib.get("skycodeday"), self.iconextension)
+						weather.code = items.attrib.get("skycodeday")
 					filename = "%s%s"  % (self.iconpath, weather.skycodeday)
 					weather.iconFilename = filename
 					if not os_path.exists(filename):
@@ -217,16 +252,16 @@ class MSNWeather:
 					else:
 						self.showIcon(index,filename)
 					self.weatherItems[str(index)] = weather
-		
+
 		if len(IconDownloadList) != 0:
 			ds = defer.DeferredSemaphore(tokens=len(IconDownloadList))
 			downloads = [ds.run(download,item ).addErrback(self.errorIconDownload, item).addCallback(self.finishedIconDownload,item) for item in IconDownloadList]
 			finished = defer.DeferredList(downloads).addErrback(self.error).addCallback(self.finishedAllDownloadFiles)
 		else:
 			self.finishedAllDownloadFiles(None)
-			
+
 		if self.callback is not None:
 			self.callback(self.OK, None)
-		
+
 def download(item):
 	return downloadPage(item.url, file(item.filename, 'wb'))
