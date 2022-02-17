@@ -173,10 +173,7 @@ class MSNWeather:
 		errormessage = ""
 		for childs in root:
 			if childs.tag == "weather":
-				if six.PY2:
-					errormessage = childs.attrib.get("errormessage").encode("utf-8", 'ignore')
-				else:
-					errormessage = childs.attrib.get("errormessage")
+				errormessage = childs.attrib.get("errormessage")
 				if errormessage:
 					if self.callback is not None:
 						if six.PY2:
