@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <skin>
   <!-- BlindScan -->
   <screen name="DmmBlindscan" position="fill" title="Satellite Blindscan">
@@ -634,24 +634,34 @@
     <widget objectTypes="key_green,StaticText" source="key_green" render="Label" position="678,1030" size="370,38" backgroundColor="black" zPosition="2" transparent="1" font="Regular;34" foregroundColor="green" halign="left" />
   </screen>
   <!--VPN-->
-  <screen name="VpnScreen" backgroundColor="#00000000" position="fill" title="Vpn Menu" flags="wfNoBorder">
-    <panel name="PigTemplate" />
-    <widget name="countryPng" position="34,556" alphatest="blend" size="50,33" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/VpnChanger/icon/default.png" zPosition="2" />
-    <widget name="list" position="870,108" size="1000,900" backgroundColor="un0" selectionPixmap="Pd1loi-HD-night/buttons/sel4.png" scrollbarMode="showOnDemand" zPosition="2" transparent="1" />
-    <widget name="vpnLoad" position="870,108" size="1000,900" backgroundColor="un0" foregroundColor="unb8b8b8" font="Regular; 32" valign="top" halign="left" zPosition="2" transparent="1" />
-    <widget name="ipLabel" position="91,556" size="725,39" backgroundColor="un0" foregroundColor="unffff00" font="Regular; 32" valign="top" halign="left" zPosition="2" transparent="1" />
-    <eLabel text="Start/Stop OpenVpn" position="75,677" size="333,43" backgroundColor="un0" transparent="1" foregroundColor="white" zPosition="2" font="Regular; 32" valign="top" halign="left" />
-    <widget name="vpnStatus" position="406,677" size="333,43" backgroundColor="un0" foregroundColor="white" font="Regular; 32" valign="top" halign="left" zPosition="2" transparent="1" />
-    <widget name="vpnInfo" position="406,729" size="333,43" backgroundColor="un0" foregroundColor="white" font="Regular; 32" valign="top" halign="left" zPosition="2" transparent="1" />
-    <widget name="vpnDir" position="75,729" size="333,43" backgroundColor="un0" foregroundColor="white" font="Regular; 32" valign="top" halign="left" zPosition="2" transparent="1" />
-    <widget name="check" position="75,781" size="333,43" backgroundColor="un0" foregroundColor="white" font="Regular; 32" valign="top" halign="left" zPosition="2" transparent="1" />
-    <widget name="checkLabel" position="406,781" size="333,43" backgroundColor="un0" foregroundColor="white" font="Regular; 32" valign="top" halign="left" zPosition="2" transparent="1" />
-    <widget name="network" position="75,832" size="333,43" backgroundColor="un0" foregroundColor="white" font="Regular; 32" valign="top" halign="left" zPosition="2" transparent="1" />
-    <eLabel position="57,682" size="5,33" zPosition="2" backgroundColor="#00ff0000" />
-    <eLabel position="57,733" size="5,33" zPosition="2" backgroundColor="#0000ff00" />
-    <eLabel position="57,786" size="5,33" zPosition="2" backgroundColor="#00ebff00" />
-    <eLabel position="57,837" size="5,33" zPosition="2" backgroundColor="#003000ff" />
-  </screen>
+<screen name="VpnScreen" backgroundColor="#00000000" position="fill" title="Vpn Menu" flags="wfNoBorder">
+  <panel name="PigTemplate" />
+  <widget name="countryPng" position="54,629" alphatest="blend" size="50,33" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/VpnChanger/icon/default.png" zPosition="2" />
+  <widget name="list" position="57,708" size="570,152" backgroundColor="#00000000" scrollbarMode="showOnDemand" zPosition="2" transparent="1" />
+  <widget name="vpnLoad" position="56,707" size="570,160" backgroundColor="#00000000" foregroundColor="#00B8B8B8" font="Regular; 24" valign="top" halign="left" zPosition="2" transparent="1" />
+  <eLabel text="IP E2 Box" position="54,576" size="600,37" font="Regular; 32" valign="center" halign="left" zPosition="2" foregroundColor="unff0000" backgroundColor="#40000000" />
+  <widget name="VpnipLabel" position="114,627" size="500,37" backgroundColor="#00000000" foregroundColor="unffff00" font="Regular; 28" valign="center" halign="left" zPosition="2" transparent="1" />
+  <eLabel text="IP Router Extern" position="794,110" size="233,38" font="Regular; 28" valign="center" halign="left" zPosition="2" foregroundColor="unff0000" backgroundColor="#40000000" />
+  <widget name="ExternalipLabel" position="1027,110" size="400,38" backgroundColor="#00000000" foregroundColor="#00B8B8B8" font="Regular; 28" valign="top" halign="left" zPosition="2" transparent="1" />
+  <eLabel text="Start/Stop OpenVpn" position="242,1030" size="333,38" backgroundColor="#00000000" transparent="1" foregroundColor="red" zPosition="2" font="Regular; 34" valign="top" halign="left" />
+  <eLabel text="OpenVpn Status:" position="794,148" size="233,36" backgroundColor="#00000000" transparent="1" foregroundColor="unff0000" zPosition="2" font="Regular; 28" valign="top" halign="left" />
+  <widget name="vpnStatus" position="1027,148" size="537,36" backgroundColor="#00000000" foregroundColor="#00B8B8B8" font="Regular; 26" valign="top" halign="left" zPosition="2" transparent="1" />
+  <eLabel text="Active Config:" position="794,184" size="233,36" backgroundColor="#00000000" transparent="1" foregroundColor="unff0000" zPosition="2" font="Regular; 28" valign="top" halign="left" />
+  <widget name="vpnInfo" position="1027,184" size="537,36" backgroundColor="#00000000" foregroundColor="#00B8B8B8" font="Regular; 24" valign="top" halign="left" zPosition="2" transparent="1" />
+  <eLabel text="Vpn Check:" position="794,220" size="233,36" backgroundColor="#00000000" transparent="1" foregroundColor="unff0000" zPosition="2" font="Regular; 28" valign="top" halign="left" />
+  <widget name="checkLabel" position="1027,220" size="537,36" backgroundColor="#00000000" foregroundColor="#00B8B8B8" font="Regular; 24" valign="top" halign="left" zPosition="2" transparent="1" />
+  <eLabel text="Script:" position="794,256" size="233,36" backgroundColor="#00000000" transparent="1" foregroundColor="unff0000" zPosition="2" font="Regular; 28" valign="top" halign="left" />
+  <widget name="scriptLabel" position="1027,256" size="537,36" backgroundColor="#00000000" foregroundColor="#00B8B8B8" font="Regular; 24" valign="top" halign="left" zPosition="2" transparent="1" />
+  <widget name="startMyScript" position="1114,1030" size="300,38" backgroundColor="#00000000" transparent="1" foregroundColor="yellow" zPosition="2" font="Regular; 34" valign="top" halign="left" />
+  <widget name="network" position="1550,1030" size="300,38" backgroundColor="#00000000" foregroundColor="blue" font="Regular; 34" valign="top" halign="left" zPosition="2" transparent="1" />
+  <eLabel text="Press Menu" position="678,1030" size="300,38" backgroundColor="#00000000" transparent="1" foregroundColor="green" zPosition="2" font="Regular; 34" valign="center" halign="left" />
+  <ePixmap name="ButtonRed" position="192,1032" pixmap="Pd1loi-HD-night/buttons/red.png" size="34,34" alphatest="blend" zPosition="5" />
+  <ePixmap name="ButtonGreen" position="628,1032" pixmap="Pd1loi-HD-night/buttons/green.png" size="34,34" alphatest="blend" zPosition="5" />
+  <ePixmap name="ButtonYellow" position="1064,1032" pixmap="Pd1loi-HD-night/buttons/yellow.png" size="34,34" alphatest="blend" zPosition="5" />
+  <ePixmap name="ButtonBlue" position="1500,1032" pixmap="Pd1loi-HD-night/buttons/blue.png" size="34,34" alphatest="blend" zPosition="5" />
+</screen>
+
+  
   <screen name="FolderScreen" position="fill" title="Sicherungs Ordner">
     <panel name="PigTemplate" />
     <widget name="media" position="870,108" size="1000,40" valign="top" font="Regular; 35" />
