@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <skin>
   <!-- BlindScan -->
+  <screen name="Blindscan" position="fill" title="Blind scan">
+  <panel name="PigTemplate" />
+  <panel name="KeyMenuInfoTemplate" />
+  <widget name="rotorstatus" position="30,120" size="720,405" font="Regular;60" zPosition="1" transparent="1" foregroundColor="secondFG" valign="center" halign="center" />
+  <widget name="config" position="780,105" size="1110,836" itemHeight="38" font="Regular;28" scrollbarMode="showOnDemand" />
+  <widget name="description" position="30,560" size="720,210" font="Regular;30" foregroundColor="foreground" halign="left" />
+  <widget name="introduction" position="780,975" size="1100,37" font="Regular;32" foregroundColor="foreground" halign="center" />
+</screen>
   <screen name="DmmBlindscan" position="fill" title="Satellite Blindscan">
     <panel name="PigTemplate" />
     <panel name="KeyMenuInfoTemplate" />
@@ -8,15 +16,15 @@
     <eLabel position="780,550" size="1110,1" backgroundColor="green" />
     <widget name="introduction" position="30,535" size="725,300" font="Regular;32" halign="top" foregroundColor="unffff00" />
   </screen>
-  <screen name="BlindscanState" position="fill" title="Satellite Blindscan">
-    <panel name="PigTemplate" />
-    <panel name="KeyMenuInfoTemplate" />
-    <widget name="progress" position="780,108" size="800,85" font="Regular;29" />
-    <eLabel position="780,194" size="800,10" backgroundColor="grey" />
-    <widget name="config" position="780,202" size="800,425" font="Regular;28" />
-    <eLabel position="1583,107" size="1,518" backgroundColor="grey" />
-    <widget name="post_action" position="1587,109" size="256,518" font="Regular;30" halign="center" foregroundColor="orange" />
-  </screen>
+<screen name="BlindscanState" position="fill" title="Satellite Blindscan">
+  <panel name="PigTemplate" />
+  <panel name="KeyMenuInfoTemplate" />
+  <widget name="progress" position="780,108" size="800,130" font="Regular;29" />
+  <eLabel position="780,240" size="800,10" backgroundColor="grey" />
+  <widget name="config" position="780,252" size="800,425" font="Regular;28" />
+  <eLabel position="1583,107" size="1,569" backgroundColor="grey" />
+  <widget name="post_action" position="1587,109" size="256,569" font="Regular;30" halign="center" foregroundColor="orange" />
+</screen>
   <screen name="SatBlindscanState" position="fill" title="Satellite Blindscan">
     <panel name="PigTemplate" />
     <panel name="KeyMenuInfoTemplate" />
