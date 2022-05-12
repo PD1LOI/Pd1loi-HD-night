@@ -1,14 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <skin>
   <!-- BlindScan -->
-  <screen name="Blindscan" position="fill" title="Blind scan">
-  <panel name="PigTemplate" />
-  <panel name="KeyMenuInfoTemplate" />
-  <widget name="rotorstatus" position="30,120" size="720,405" font="Regular;60" zPosition="1" transparent="1" foregroundColor="secondFG" valign="center" halign="center" />
-  <widget name="config" position="780,105" size="1110,836" itemHeight="38" font="Regular;28" scrollbarMode="showOnDemand" />
-  <widget name="description" position="30,560" size="720,210" font="Regular;30" foregroundColor="foreground" halign="left" />
-  <widget name="introduction" position="780,975" size="1100,37" font="Regular;32" foregroundColor="foreground" halign="center" />
-</screen>
   <screen name="DmmBlindscan" position="fill" title="Satellite Blindscan">
     <panel name="PigTemplate" />
     <panel name="KeyMenuInfoTemplate" />
@@ -16,15 +8,15 @@
     <eLabel position="780,550" size="1110,1" backgroundColor="green" />
     <widget name="introduction" position="30,535" size="725,300" font="Regular;32" halign="top" foregroundColor="unffff00" />
   </screen>
-<screen name="BlindscanState" position="fill" title="Satellite Blindscan">
-  <panel name="PigTemplate" />
-  <panel name="KeyMenuInfoTemplate" />
-  <widget name="progress" position="780,108" size="800,130" font="Regular;29" />
-  <eLabel position="780,240" size="800,10" backgroundColor="grey" />
-  <widget name="config" position="780,252" size="800,425" font="Regular;28" />
-  <eLabel position="1583,107" size="1,569" backgroundColor="grey" />
-  <widget name="post_action" position="1587,109" size="256,569" font="Regular;30" halign="center" foregroundColor="orange" />
-</screen>
+  <screen name="BlindscanState" position="fill" title="Satellite Blindscan">
+    <panel name="PigTemplate" />
+    <panel name="KeyMenuInfoTemplate" />
+    <widget name="progress" position="780,108" size="800,85" font="Regular;29" />
+    <eLabel position="780,194" size="800,10" backgroundColor="grey" />
+    <widget name="config" position="780,202" size="800,425" font="Regular;28" />
+    <eLabel position="1583,107" size="1,518" backgroundColor="grey" />
+    <widget name="post_action" position="1587,109" size="256,518" font="Regular;30" halign="center" foregroundColor="orange" />
+  </screen>
   <screen name="SatBlindscanState" position="fill" title="Satellite Blindscan">
     <panel name="PigTemplate" />
     <panel name="KeyMenuInfoTemplate" />
@@ -520,48 +512,48 @@
   </screen>
   <!--SDGRadio-->
   <screen name="SDGRadioScreen" position="fill" title="SDG Radio" backgroundColor="transparent" flags="wfNoBorder">
-    <panel name="TopTemplate" />
-    <panel name="ButtonTemplate" />
-    <ePixmap pixmap="Pd1loi-HD-night/img/line1.png" position="260,565" size="135,2" scale="1" zPosition="-100" alphatest="blend" />
-    <ePixmap pixmap="Pd1loi-HD-night/border/smallshadowline.png" position="0,1020" size="1920,3" />
-    <ePixmap pixmap="Pd1loi-HD-night/logos/pd1loi.png" position="30,967" size="320,40" alphatest="on" />
-    <ePixmap pixmap="Pd1loi-HD-night/border/bottom_bg -.png" position="0,1022" size="1920,58" />
-    <ePixmap pixmap="Pd1loi-HD-night/border/top2_bg.png" position="fill" size="1920,88" />
-    <ePixmap pixmap="Pd1loi-HD-night/border/smallshadowline.png" position="0,88" size="1920,3" zPosition="2" />
-    <widget source="Title" render="Label" position="30,7" size="1550,75" backgroundColor="secondBG" foregroundColor="orange1" transparent="1" zPosition="1" font="Regular;36" valign="center" halign="left" />
-    <widget source="global.CurrentTime" render="Label" position="1665,22" size="225,37" foregroundColor="orange1" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;36" valign="center" halign="right">
-      <convert type="ClockToText">Format:%-H:%M:%S</convert>
-    </widget>
-    <widget source="global.CurrentTime" render="Label" position="1440,52" size="450,37" foregroundColor="orange1" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;24" valign="center" halign="right">
-      <convert type="ClockToText">Date</convert>
-    </widget>
-    <ePixmap pixmap="Pd1loi-HD-night/img/AB1.png" position="227,190" size="200,699" alphatest="on" />
-    <ePixmap pixmap="Pd1loi-HD-night/img/radio_u.png" position="0,0" size="1920,1080" scale="1" zPosition="-100" alphatest="blend" />
-    <ePixmap pixmap="Pd1loi-HD-night/img/line1.png" position="256,872" size="135,1" scale="1" zPosition="10" alphatest="blend" />
-    <ePixmap pixmap="Pd1loi-HD-night/img/line1.png" position="262,568" size="135,1" scale="1" zPosition="10" alphatest="blend" />
-    <widget name="mem_0" position="308,380" size="40,30" alphatest="on" zPosition="2" />
-    <widget name="mem_1" position="259,259" size="40,30" alphatest="on" zPosition="2" />
-    <widget name="mem_2" position="308,259" size="40,30" alphatest="on" zPosition="2" />
-    <widget name="mem_3" position="356,259" size="40,30" alphatest="on" zPosition="2" />
-    <widget name="mem_4" position="259,300" size="40,30" alphatest="on" zPosition="2" />
-    <widget name="mem_5" position="308,300" size="40,30" alphatest="on" zPosition="2" />
-    <widget name="mem_6" position="356,300" size="40,30" alphatest="on" zPosition="2" />
-    <widget name="mem_7" position="259,340" size="40,30" alphatest="on" zPosition="2" />
-    <widget name="mem_8" position="308,340" size="40,30" alphatest="on" zPosition="2" />
-    <widget name="mem_9" position="356,340" size="40,30" alphatest="on" zPosition="2" />
-    <eLabel name="Select" text="Select" position="251,832" size="146,40" foregroundColor="white" backgroundColor="#202537" font="Regular;30" zPosition="5" halign="center" transparent="1" />
-    <widget name="dab_channel" position="550,375" size="250,170" valign="center" halign="left" zPosition="2" foregroundColor="white" font="OpenSans;80" transparent="1" backgroundColor="unff1100" />
-    <widget name="freq" position="0,370" size="1920,170" valign="center" halign="center" zPosition="2" foregroundColor="#4fa7ff" font="Digital;150" transparent="1" backgroundColor="#202537" />
-    <widget name="prog_type" position="500,570" size="920,50" valign="center" halign="center" zPosition="2" foregroundColor="white" font="Regular;46" transparent="1" backgroundColor="#202537" />
-    <widget name="radiotext" position="500,620" size="920,350" valign="center" halign="center" zPosition="2" foregroundColor="white" font="Regular;40" transparent="1" backgroundColor="#202537" />
-    <widget name="pi" position="625,192" size="170,50" valign="left" halign="center" zPosition="2" foregroundColor="white" font="OpenSans; 38" transparent="1" backgroundColor="unff1100" />
-    <widget name="traffic" position="779,192" size="120,50" valign="center" halign="center" zPosition="2" foregroundColor="white" font="OpenSans; 40" transparent="1" backgroundColor="unff1100" />
-    <widget name="af" position="899,192" size="50,50" valign="center" halign="center" zPosition="2" foregroundColor="white" font="OpenSans; 40" transparent="1" backgroundColor="unff1100" />
-    <widget name="eon" position="949,192" size="90,50" valign="center" halign="center" zPosition="2" foregroundColor="white" font="OpenSans; 40" transparent="1" backgroundColor="unff1100" />
-    <widget name="ct" position="1039,192" size="50,50" valign="center" halign="center" zPosition="2" foregroundColor="white" font="OpenSans; 40" transparent="1" backgroundColor="unff1100" />
-    <widget name="rt+" position="1089,192" size="50,50" valign="center" halign="center" zPosition="2" foregroundColor="white" font="OpenSans; 40" transparent="1" backgroundColor="unff1100" />
-    <widget name="pic" position="1542,636" size="200,150" halign="center" alphatest="on" backgroundColor="un20000000" zPosition="20" />
-  </screen>
+  <panel name="TopTemplate" />
+  <panel name="ButtonTemplate" />
+  <ePixmap pixmap="Pd1loi-HD-night/img/line1.png" position="260,565" size="135,2" scale="1" zPosition="-100" alphatest="blend" />
+  <ePixmap pixmap="Pd1loi-HD-night/border/smallshadowline.png" position="0,1020" size="1920,3" />
+  <ePixmap pixmap="Pd1loi-HD-night/logos/pd1loi.png" position="30,967" size="320,40" alphatest="on" />
+  <ePixmap pixmap="Pd1loi-HD-night/border/bottom_bg -.png" position="0,1022" size="1920,58" />
+  <ePixmap pixmap="Pd1loi-HD-night/border/top2_bg.png" position="0,0" size="1920,88" />
+  <ePixmap pixmap="Pd1loi-HD-night/border/smallshadowline.png" position="0,88" size="1920,3" zPosition="2" />
+  <widget source="Title" render="Label" position="30,7" size="1550,75" backgroundColor="secondBG" foregroundColor="orange1" transparent="1" zPosition="1" font="Regular;36" valign="center" halign="left" />
+  <widget source="global.CurrentTime" render="Label" position="1665,22" size="225,37" foregroundColor="orange1" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;36" valign="center" halign="right">
+    <convert type="ClockToText">Format:%-H:%M:%S</convert>
+  </widget>
+  <widget source="global.CurrentTime" render="Label" position="1440,52" size="450,37" foregroundColor="orange1" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;24" valign="center" halign="right">
+    <convert type="ClockToText">Date</convert>
+  </widget>
+  <ePixmap pixmap="Pd1loi-HD-night/img/Mutant3.png" position="227,115" size="200,699" alphatest="on" />
+  <ePixmap pixmap="Pd1loi-HD-night/img/radio_u.png" position="0,0" size="1920,1080" scale="1" zPosition="-100" alphatest="blend" />
+  <ePixmap pixmap="Pd1loi-HD-night/img/line1.png" position="264,793" size="135,1" scale="1" zPosition="10" alphatest="blend" />
+  <ePixmap pixmap="Pd1loi-HD-night/img/line1.png" position="265,755" size="135,1" scale="1" zPosition="10" alphatest="blend" />
+  <widget name="mem_0" position="303,361" size="40,30" pixmap="Pd1loi-HD-night/toetsab/0.png" alphatest="on" zPosition="2" />
+  <widget name="mem_1" position="250,258" size="40,30" pixmap="Pd1loi-HD-night/toetsab/1.png" alphatest="on" zPosition="2" />
+  <widget name="mem_2" position="304,256" size="40,30" pixmap="Pd1loi-HD-night/toetsab/2.png" alphatest="on" zPosition="2" />
+  <widget name="mem_3" position="360,256" size="40,30" pixmap="Pd1loi-HD-night/toetsab/3.png" alphatest="on" zPosition="2" />
+  <widget name="mem_4" position="250,292" size="40,30" pixmap="Pd1loi-HD-night/toetsab/4.png" alphatest="on" zPosition="2" />
+  <widget name="mem_5" position="304,292" size="40,30" pixmap="Pd1loi-HD-night/toetsab/5.png" alphatest="on" zPosition="2" />
+  <widget name="mem_6" position="359,291" size="40,30" pixmap="Pd1loi-HD-night/toetsab/6.png" alphatest="on" zPosition="2" />
+  <widget name="mem_7" position="250,327" size="40,30" pixmap="Pd1loi-HD-night/toetsab/7.png" alphatest="on" zPosition="2" />
+  <widget name="mem_8" position="304,325" size="40,30" pixmap="Pd1loi-HD-night/toetsab/8.png" alphatest="on" zPosition="2" />
+  <widget name="mem_9" position="360,326" size="40,30" pixmap="Pd1loi-HD-night/toetsab/9.png" alphatest="on" zPosition="2" />
+  <eLabel name="Select" text="Select" position="258,759" size="146,30" foregroundColor="white" backgroundColor="#202537" font="Regular;30" zPosition="5" halign="center" transparent="1" />
+  <widget name="dab_channel" position="550,375" size="250,170" valign="center" halign="left" zPosition="2" foregroundColor="white" font="OpenSans;80" transparent="1" backgroundColor="unff1100" />
+  <widget name="freq" position="1,361" size="1920,170" valign="center" halign="center" zPosition="2" foregroundColor="#4fa7ff" font="Digital;150" transparent="1" backgroundColor="#202537" />
+  <widget name="prog_type" position="500,570" size="920,50" valign="center" halign="center" zPosition="2" foregroundColor="white" font="Regular;46" transparent="1" backgroundColor="#202537" />
+  <widget name="radiotext" position="500,620" size="920,350" valign="center" halign="center" zPosition="2" foregroundColor="white" font="Regular;40" transparent="1" backgroundColor="#202537" />
+  <widget name="pi" position="625,192" size="170,50" valign="left" halign="center" zPosition="2" foregroundColor="white" font="OpenSans; 38" transparent="1" backgroundColor="unff1100" />
+  <widget name="traffic" position="779,192" size="120,50" valign="center" halign="center" zPosition="2" foregroundColor="white" font="OpenSans; 40" transparent="1" backgroundColor="unff1100" />
+  <widget name="af" position="899,192" size="50,50" valign="center" halign="center" zPosition="2" foregroundColor="white" font="OpenSans; 40" transparent="1" backgroundColor="unff1100" />
+  <widget name="eon" position="949,192" size="90,50" valign="center" halign="center" zPosition="2" foregroundColor="white" font="OpenSans; 40" transparent="1" backgroundColor="unff1100" />
+  <widget name="ct" position="1039,192" size="50,50" valign="center" halign="center" zPosition="2" foregroundColor="white" font="OpenSans; 40" transparent="1" backgroundColor="unff1100" />
+  <widget name="rt+" position="1089,192" size="50,50" valign="center" halign="center" zPosition="2" foregroundColor="white" font="OpenSans; 40" transparent="1" backgroundColor="unff1100" />
+  <widget name="pic" position="1542,636" size="200,150" halign="center" alphatest="on" backgroundColor="un20000000" zPosition="20" />
+</screen>
   <!-- YouTube by Taapat	-->
   <screen name="YouTubeMain" position="fill" flags="wfNoBorder">
     <panel name="PigTemplate" />
