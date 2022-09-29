@@ -391,7 +391,7 @@
   <widget source="job_name" render="Label" position="1270,20" size="610,70" font="Regular; 30" foregroundColor="unffff00" />
   <widget source="job_task" render="Label" position="1270,88" size="610,36" font="Regular;26" />
   <widget source="job_progress" render="Progress" position="1270,125" size="610,51" borderWidth="2" backgroundColor="un27b5b9bd" />
-  <widget source="job_progress" render="Label" position="1270,128" size="610,52" font="Regular;38" foregroundColor="black" zPosition="2" halign="center" transparent="1" backgroundColor="white" borderWidth="1" >
+  <widget source="job_progress" render="Label" position="1271,133" size="610,52" font="Regular;38" foregroundColor="black" zPosition="2" halign="center" transparent="1" backgroundColor="white">
     <convert type="ProgressToText" />
   </widget>
   <widget source="job_status" render="Label" position="1270,175" size="610,36" font="Regular; 26" />
@@ -1363,7 +1363,6 @@
 
 	<screen name="PluginBrowser" position="fill" flags="wfNoBorder">
 		<panel name="PigTemplate"/>
-		<panel name="WeerTemplate"/>
 		<panel name="KeyInfoTemplate"/>
 		<ePixmap pixmap="skin_default/buttons/key_prev.png" alphatest="blend" position="30,1031" size="52,38"/>
 		<ePixmap pixmap="skin_default/buttons/key_next.png" alphatest="blend" position="82,1031" size="52,38"/>
@@ -1373,7 +1372,6 @@
 
 	<screen name="PluginDownloadBrowser"  position="fill" flags="wfNoBorder">
 		<panel name="PigTemplate"/>
-			<panel name="WeerTemplate"/>
 		<widget name="text" position="780,105" size="1110,75" zPosition="-1" transparent="1" font="Regular;32" valign="center" halign="center"/>
 		<widget name="list" position="780,100" size="1110,912" zPosition="3" transparent="0" selectionPixmap="Pd1loi-HD-night/buttons/sel2.png" scrollbarMode="showOnDemand"/>
 	</screen>
@@ -1390,7 +1388,6 @@
 
 	<screen name="ServiceInfo" position="fill" flags="wfNoBorder">
 		<panel name="ServiceInfoSimple"/>
-		<panel name="WeerTemplate"/>
 		<panel name="KeyInfoTemplate"/>
 		<widget source="session.CurrentService" render="Label" position="780,975" size="1110,37" transparent="1" zPosition="1" foregroundColor="foreground" font="Regular;33" valign="top" halign="center">
 				<convert type="ServiceInfo">HasHBBTV</convert>
@@ -1481,7 +1478,6 @@
 
 	<screen name="UpdatePluginMenu" title="Softwaremanager" position="fill" flags="wfNoBorder">
 		<panel name="PigTemplate"/>
-		<panel name="WeerTemplate"/>
 		<panel name="KeyMenuTemplate"/>
 		<panel name="KeyInfoTemplate"/>
 		<widget source="menu" render="Listbox" position="780,105" selectionPixmap="Pd1loi-HD-night/buttons/sel2.png" size="1110,900" zPosition="3" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand">
@@ -2369,7 +2365,6 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth) // 2, orgpos.y() + 
 
 	<screen name="About" position="fill" flags="wfNoBorder">
 		<panel name="PigTemplate"/>
-		<panel name="WeerTemplate"/>
   <widget name="AboutScrollLabel" font="Regular;30" position="780,100" size="1110,912" zPosition="2" split="1" dividechar=":" colposition="0"/>
 	</screen>
 	

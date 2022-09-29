@@ -78,7 +78,8 @@
     </widget>
   </screen>
   <!-- WeerTemplate -->
-  <screen name="WeerTemplate">
+  
+<!-- <screen name="WeerTemplate">
     <panel name="BasicTemplate" />
     <ePixmap pixmap="Pd1loi-HD-night/border/top2_bg.png" position="0,0" size="1920,88" />
     <widget backgroundColor="darkgrey" font="Regular;39" halign="center" render="Label" position="65,821" size="79,45" source="global.CurrentTime" transparent="1" valign="center" zPosition="1" foregroundColor="darkgrey">
@@ -96,7 +97,8 @@
     <widget backgroundColor="background" font="Regular2; 30" foregroundColor="darkgrey" halign="center" position="180,863" render="Label" size="150,37" source="session.MSNWeather" transparent="1" zPosition="1" valign="top">
       <convert type="MSNWeather">temperature_current</convert>
     </widget>
-  </screen>
+  </screen> -->
+  
   <!-- VKeyIconPanel -->
   <!--This conditionally shows "Text" to indicate that the virtual keyboard can be activated by pressing the "Subtitle/Text" button-->
   <screen name="VKeyIconPanel">
@@ -269,7 +271,7 @@
   </screen>
   <!-- Infobar template -->
 
-<screen name="InfoBarTemplate" size="fill">
+   <screen name="InfoBarTemplate" size="fill">
   <widget source="session.CurrentService" render="Pixmap" pixmap="Pd1loi-HD-night/buttons/stream.png" position="1204,902" size="30,30" zPosition="3" alphatest="on">
     <convert type="ClientsStreaming" />
     <convert type="ConditionalShowHide" />
@@ -287,9 +289,6 @@
   <ePixmap name="new ePixmap" position="1705,1015" size="180,8" pixmap="Pd1loi-HD-night/infobar/snron11.png" zPosition="1" />
   <widget source="session.FrontendStatus" render="Progress" position="1705,1015" size="180,8" zPosition="3" pixmap="Pd1loi-HD-night/infobar/snron0.png" transparent="1">
     <convert type="FrontendInfo">SNR</convert>
-  </widget>
-  <widget alphatest="blend" position="1800,831" size="100,100" render="MSNWeatherPixmap" source="session.MSNWeather" zPosition="5" transparent="0">
-    <convert type="MSNWeather">weathericon,current,/usr/share/enigma2/Pd1loi-HD-night/weather_icons/,png</convert>
   </widget>
   <widget source="session.CurrentService" render="Picon" position="69,902" size="150,90" alphatest="blend" backgroundColor="secondBG" transparent="1" zPosition="1">
     <convert type="ServiceName">Reference</convert>
@@ -391,4 +390,4 @@
   <!--<ePixmap pixmap="Pd1loi-HD-night/icons/icon_update_off.png" position="90,52" size="30,30" zPosition="0" alphatest="blend"/>-->
 </screen>
 
-`</skin>
+</skin>
