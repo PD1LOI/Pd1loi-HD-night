@@ -66,8 +66,7 @@
   </screen>
   <screen name="MenuTemplate">
     <panel name="PigTemplate" />
-    <panel name="WeerTemplate" />
-    <panel name="ButtonTemplate" />
+      <panel name="ButtonTemplate" />
     <widget source="menu" render="Listbox" selectionPixmap="Pd1loi-HD-night/buttons/sel6.png" position="780,105" size="1110,900" font="Regular;36" transparent="1" scrollbarMode="showOnDemand">
       <convert type="TemplatedMultiContent">
 				{"template": [ MultiContentEntryText(pos = (75,15),size = (1035,45),flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER,text = 0) ],
@@ -77,30 +76,9 @@
 	</convert>
     </widget>
   </screen>
-  <!-- WeerTemplate -->
-  
-<!-- <screen name="WeerTemplate">
-    <panel name="BasicTemplate" />
-    <ePixmap pixmap="Pd1loi-HD-night/border/top2_bg.png" position="0,0" size="1920,88" />
-    <widget backgroundColor="darkgrey" font="Regular;39" halign="center" render="Label" position="65,821" size="79,45" source="global.CurrentTime" transparent="1" valign="center" zPosition="1" foregroundColor="darkgrey">
-      <convert type="ClockToText">Format:%H</convert>
-    </widget>
-    <widget backgroundColor="darkgrey" font="Regular;39" halign="center" render="Label" position="134,819" size="79,45" source="global.CurrentTime" transparent="1" valign="center" zPosition="1" foregroundColor="darkgrey">
-      <convert type="ClockToText">Format:%M</convert>
-    </widget>
-    <widget backgroundColor="background" font="Regular; 26" foregroundColor="unffff00" halign="center" position="41,919" size="300,45" render="Label" source="global.CurrentTime" transparent="1" valign="top" zPosition="1">
-      <convert type="ClockToText">Format:%A, %d.%m.%Y</convert>
-    </widget>
-    <widget alphatest="blend" position="41,734" size="300,183" render="MSNWeatherPixmap" source="session.MSNWeather" transparent="0">
-      <convert type="MSNWeather">weathericon,current,/usr/share/enigma2/Pd1loi-HD-night/clock/,png</convert>
-    </widget>
-    <widget backgroundColor="background" font="Regular2; 30" foregroundColor="darkgrey" halign="center" position="180,863" render="Label" size="150,37" source="session.MSNWeather" transparent="1" zPosition="1" valign="top">
-      <convert type="MSNWeather">temperature_current</convert>
-    </widget>
-  </screen> -->
-  
+
   <!-- VKeyIconPanel -->
-  <!--This conditionally shows "Text" to indicate that the virtual keyboard can be activated by pressing the "Subtitle/Text" button-->
+  
   <screen name="VKeyIconPanel">
     <widget source="VKeyIcon" conditional="VKeyIcon" render="Pixmap" pixmap="skin_default/buttons/key_text.png" alphatest="blend" position="30,1032" size="52,38">
       <convert type="ConditionalShowHide" />
@@ -271,7 +249,7 @@
   </screen>
   <!-- Infobar template -->
 
-   <screen name="InfoBarTemplate" size="fill">
+<screen name="InfoBarTemplate" size="fill">
   <widget source="session.CurrentService" render="Pixmap" pixmap="Pd1loi-HD-night/buttons/stream.png" position="1204,902" size="30,30" zPosition="3" alphatest="on">
     <convert type="ClientsStreaming" />
     <convert type="ConditionalShowHide" />
@@ -289,6 +267,9 @@
   <ePixmap name="new ePixmap" position="1705,1015" size="180,8" pixmap="Pd1loi-HD-night/infobar/snron11.png" zPosition="1" />
   <widget source="session.FrontendStatus" render="Progress" position="1705,1015" size="180,8" zPosition="3" pixmap="Pd1loi-HD-night/infobar/snron0.png" transparent="1">
     <convert type="FrontendInfo">SNR</convert>
+  </widget>
+  <widget alphatest="blend" position="1800,831" size="100,100" render="MSNWeatherPixmap" source="session.MSNWeather" zPosition="5" transparent="0">
+    <convert type="MSNWeather">weathericon,current,/usr/share/enigma2/Pd1loi-HD-night/weather_icons/,png</convert>
   </widget>
   <widget source="session.CurrentService" render="Picon" position="69,902" size="150,90" alphatest="blend" backgroundColor="secondBG" transparent="1" zPosition="1">
     <convert type="ServiceName">Reference</convert>
@@ -390,4 +371,4 @@
   <!--<ePixmap pixmap="Pd1loi-HD-night/icons/icon_update_off.png" position="90,52" size="30,30" zPosition="0" alphatest="blend"/>-->
 </screen>
 
-</skin>
+`</skin>
