@@ -15,10 +15,6 @@
 	<fonts>
      <font filename="/usr/share/fonts/nmsbd.ttf" name="Emu" replacement="0" scale="100" />
      <font filename="/usr/share/fonts/nmsbd.ttf" name="Menu" replacement="0" scale="102" />
-	 <font filename="/usr/share/enigma2/Pd1loi-HD-night/fonts/Segoe UI.ttf" name="Regular1" scale="100"/>
-	 <font filename="/usr/share/enigma2/Pd1loi-HD-night/fonts/segoeuil.ttf" name="Regular0" scale="100"/>
-	 <font filename="/usr/share/enigma2/Pd1loi-HD-night/fonts/Segoe UI Italic.ttf" name="Crs" scale="100"/>
-	 <font filename="/usr/share/enigma2/Pd1loi-HD-night/fonts/ks.ttf" name="OLED" scale="100"/>
 	 <font filename="/usr/share/enigma2/Pd1loi-HD-night/fonts/ae_sindibad.ttf" name="ae_sindibad" scale="100" />
      <font filename="/usr/share/enigma2/Pd1loi-HD-night/fonts/NotoSans_Regular.ttf" name="Regular2" scale="100" />
      <font filename="/usr/share/enigma2/Pd1loi-HD-night/fonts/LiberationSans-Italic.ttf" name="Crs2" scale="100" />
@@ -32,7 +28,7 @@
      <font filename="/usr/share/enigma2/Pd1loi-HD-night/fonts/tuxtxt.ttf" name="Console" scale="100" />
      <font filename="/usr/share/enigma2/Pd1loi-HD-night/fonts/andale.ttf" name="Fixed" scale="100" />
      <font filename="/usr/share/enigma2/Pd1loi-HD-night/fonts/army-digital.ttf" name="army-digital" scale="100" />
-		 <font filename="/usr/share/enigma2/Pd1loi-HD-night/fonts/OpenSans-Regular.ttf" name="OpenSans" scale="100" />
+	 <font filename="/usr/share/enigma2/Pd1loi-HD-night/fonts/OpenSans-Regular.ttf" name="OpenSans" scale="100" />
 		<alias name="ChoiceList" font="Regular" size="28" height="38"/>
 		<alias name="TextNormal" font="Regular" size="28" height="38"/>
 		<alias name="ChoiceBoxDescription" font="Regular" size="22" height="25"/>
