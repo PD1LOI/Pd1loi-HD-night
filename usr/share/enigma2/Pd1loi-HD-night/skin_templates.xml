@@ -272,7 +272,7 @@
     <widget source="session.CurrentService" render="Label" borderWidth="2" position="387,895" size="774,45" backgroundColor="secondBG" transparent="1" zPosition="1" foregroundColor="foreground" font="OpenSans;40" valign="center" halign="left">
       <convert type="ServiceName">Name</convert>
     </widget>
-    <widget source="global.CurrentTime" render="Label" borderWidth="2" position="30,847" size="360,45" backgroundColor="secondBG" noWrap="1" transparent="1" zPosition="1" foregroundColor="unffff00" font="Regular;26" valign="center" halign="left">
+    <widget source="global.CurrentTime" render="Label" borderWidth="2" position="38,850" size="360,45" backgroundColor="secondBG" noWrap="1" transparent="1" zPosition="1" foregroundColor="unffff00" font="Regular;26" valign="center" halign="left">
       <convert type="ClockToText">Date</convert>
     </widget>
     <widget source="global.CurrentTime" render="Label" borderWidth="2" position="44,996" size="220,60" backgroundColor="secondBG" noWrap="1" transparent="1" zPosition="1" foregroundColor="myblue" font="Time; 54" valign="top" halign="left">
@@ -281,7 +281,7 @@
     <widget source="session.RecordState" render="Pixmap" pixmap="Pd1loi-HD-night/buttons/rec.png" position="1168,902" size="30,30" zPosition="3" alphatest="on">
       <convert type="ConditionalShowHide">Blink</convert>
     </widget>
-    <widget source="session.CurrentService" render="Label" borderWidth="2" position="30,821" size="440,26" backgroundColor="secondBG" transparent="1" zPosition="1" foregroundColor="grey" font="Regular; 20" valign="center" halign="left">
+    <widget source="session.CurrentService" render="Label" borderWidth="2" position="38,821" size="440,26" backgroundColor="secondBG" transparent="1" zPosition="1" foregroundColor="grey" font="Regular; 20" valign="center" halign="left">
       <convert type="CryptoInfo">VerboseInfo</convert>
     </widget>
     <widget source="session.Event_Now" render="Label" position="260,978" size="105,45" backgroundColor="secondBG" transparent="1" zPosition="1" foregroundColor="green" font="Regular;36" halign="left">

@@ -273,12 +273,12 @@
     <ePixmap position="920,10" size="80,80" pixmap="Pd1loi-HD-night/icons/oscam.png" alphatest="blend" scale="1" zPosition="5" />
     <widget render="Label" source="lversion" position="780,108" size="200,40" font="Regular;30" foregroundColor="yellow" backgroundColor="#000000" transparent="1" zPosition="5" />
     <widget render="Label" source="version" position="968,108" size="550,40" font="Regular;30" foregroundColor="white" backgroundColor="#000000" transparent="1" zPosition="5" />
-    <widget render="Label" source="lrevision" position="780,162" size="200,40" font="Regular;30" foregroundColor="yellow" backgroundColor="#000000" transparent="1" zPosition="5" />
-    <widget render="Label" source="revision" position="968,162" size="550,40" font="Regular;30" foregroundColor="white" backgroundColor="#000000" transparent="1" zPosition="5" />
-    <widget render="Label" source="lstarttime" position="780,213" size="200,40" font="Regular;30" foregroundColor="yellow" backgroundColor="#000000" transparent="1" zPosition="5" />
-    <widget render="Label" source="starttime" position="968,213" size="550,40" font="Regular;30" foregroundColor="white" backgroundColor="#000000" transparent="1" zPosition="5" />
-    <widget render="Label" source="luptime" position="780,265" size="200,80" font="Regular;30" foregroundColor="yellow" backgroundColor="#000000" transparent="1" zPosition="5" />
-    <widget render="Label" source="uptime" position="968,265" size="550,80" font="Regular;30" foregroundColor="white" backgroundColor="#000000" transparent="1" zPosition="5" />
+    <widget render="Label" source="lrevision" position="780,154" size="200,40" font="Regular;30" foregroundColor="yellow" backgroundColor="#000000" transparent="1" zPosition="5" />
+    <widget render="Label" source="revision" position="968,154" size="550,40" font="Regular;30" foregroundColor="white" backgroundColor="#000000" transparent="1" zPosition="5" />
+    <widget render="Label" source="lstarttime" position="780,200" size="200,40" font="Regular;30" foregroundColor="yellow" backgroundColor="#000000" transparent="1" zPosition="5" />
+    <widget render="Label" source="starttime" position="968,200" size="550,40" font="Regular;30" foregroundColor="white" backgroundColor="#000000" transparent="1" zPosition="5" />
+    <widget render="Label" source="luptime" position="780,256" size="200,80" font="Regular;30" foregroundColor="yellow" backgroundColor="#000000" transparent="1" zPosition="5" />
+    <widget render="Label" source="uptime" position="968,256" size="550,80" font="Regular;30" foregroundColor="white" backgroundColor="#000000" transparent="1" zPosition="5" />
     <widget render="Label" source="lreadonly" position="780,356" size="200,40" font="Regular;30" foregroundColor="yellow" backgroundColor="#000000" transparent="1" zPosition="5" />
     <widget render="Label" source="readonly" position="968,356" size="550,40" font="Regular;30" foregroundColor="white" backgroundColor="#000000" transparent="1" zPosition="5" />
   </screen>
@@ -290,15 +290,15 @@
     <widget render="Label" source="title" position="30,7" size="870,75" valign="center" zPosition="5" transparent="1" foregroundColor="orange1" font="Regular;36" />
     <ePixmap position="920,10" size="80,80" pixmap="Pd1loi-HD-night/icons/oscam.png" alphatest="blend" scale="1" zPosition="5" />
     <widget render="Label" source="lversion" position="780,108" size="200,40" font="Regular;30" foregroundColor="yellow" backgroundColor="#000000" transparent="1" zPosition="5" />
-    <widget render="Label" source="version" position="968,108" size="550,40" font="Regular;30" foregroundColor="white" backgroundColor="#000000" transparent="1" zPosition="5" />
+    <widget render="Label" source="version" position="970,108" size="550,40" font="Regular;30" foregroundColor="white" backgroundColor="#000000" transparent="1" zPosition="5" />
     <widget render="Label" source="lrevision" position="780,162" size="200,40" font="Regular;30" foregroundColor="yellow" backgroundColor="#000000" transparent="1" zPosition="5" />
-    <widget render="Label" source="revision" position="968,162" size="550,40" font="Regular;30" foregroundColor="white" backgroundColor="#000000" transparent="1" zPosition="5" />
+    <widget render="Label" source="revision" position="970,162" size="550,40" font="Regular;30" foregroundColor="white" backgroundColor="#000000" transparent="1" zPosition="5" />
     <widget render="Label" source="lstarttime" position="780,213" size="200,40" font="Regular;30" foregroundColor="yellow" backgroundColor="#000000" transparent="1" zPosition="5" />
-    <widget render="Label" source="starttime" position="968,213" size="550,40" font="Regular;30" foregroundColor="white" backgroundColor="#000000" transparent="1" zPosition="5" />
+    <widget render="Label" source="starttime" position="970,213" size="550,40" font="Regular;30" foregroundColor="white" backgroundColor="#000000" transparent="1" zPosition="5" />
     <widget render="Label" source="luptime" position="780,265" size="200,80" font="Regular;30" foregroundColor="yellow" backgroundColor="#000000" transparent="1" zPosition="5" />
-    <widget render="Label" source="uptime" position="968,265" size="550,80" font="Regular;30" foregroundColor="white" backgroundColor="#000000" transparent="1" zPosition="5" />
+    <widget render="Label" source="uptime" position="970,265" size="550,80" font="Regular;30" foregroundColor="white" backgroundColor="#000000" transparent="1" zPosition="5" />
     <widget render="Label" source="lreadonly" position="780,355" size="200,40" font="Regular;30" foregroundColor="yellow" backgroundColor="#000000" transparent="1" zPosition="5" />
-    <widget render="Label" source="readonly" position="968,355" size="550,40" font="Regular;30" foregroundColor="white" backgroundColor="#000000" transparent="1" zPosition="5" />
+    <widget render="Label" source="readonly" position="970,355" size="550,40" font="Regular;30" foregroundColor="white" backgroundColor="#000000" transparent="1" zPosition="5" />
     <widget name="ButtonYellow" position="1064,1032" pixmap="Pd1loi-HD-night/buttons/yellow.png" size="34,34" alphatest="blend" zPosition="5" />
     <widget name="ButtonYellowtext" position="1114,1030" size="300,38" font="Regular;32" halign="left" valign="center" transparent="1" foregroundColor="yellow" backgroundColor="bluette" zPosition="5" />
     <widget name="ButtonBlue" position="1503,1035" pixmap="Pd1loi-HD-night/buttons/blue.png" size="30,30" alphatest="blend" zPosition="5" />
