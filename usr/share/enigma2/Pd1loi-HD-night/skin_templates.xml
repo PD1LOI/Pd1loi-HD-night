@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <skin>
   <!-- Templates -->
   <screen name="PlayerTemplate">
@@ -266,8 +266,8 @@
       <convert type="FrontendInfo">SNR</convert>
     </widget>
     <widget source="session.CurrentService" render="Picon" position="65,896" size="170,100" alphatest="blend" backgroundColor="secondBG" transparent="1" zPosition="1">
-  <convert type="ServiceName">Reference</convert>
-</widget>
+      <convert type="ServiceName">Reference</convert>
+    </widget>
     <widget source="session.CurrentService" render="ChannelNumber" borderWidth="2" position="237,893" size="150,50" backgroundColor="secondBG" transparent="1" zPosition="1" foregroundColor="foreground" font="Regular;40" valign="center" halign="center" />
     <widget source="session.CurrentService" render="Label" borderWidth="2" position="387,895" size="774,45" backgroundColor="secondBG" transparent="1" zPosition="1" foregroundColor="foreground" font="OpenSans;40" valign="center" halign="left">
       <convert type="ServiceName">Name</convert>
@@ -276,8 +276,8 @@
       <convert type="ClockToText">Date</convert>
     </widget>
     <widget source="global.CurrentTime" render="Label" borderWidth="2" position="44,996" size="220,60" backgroundColor="secondBG" noWrap="1" transparent="1" zPosition="1" foregroundColor="myblue" font="Time; 54" valign="top" halign="left">
-  <convert type="ClockToText">Format:%H:%M:%S</convert>
-</widget>
+      <convert type="ClockToText">Format:%H:%M:%S</convert>
+    </widget>
     <widget source="session.RecordState" render="Pixmap" pixmap="Pd1loi-HD-night/buttons/rec.png" position="1168,902" size="30,30" zPosition="3" alphatest="on">
       <convert type="ConditionalShowHide">Blink</convert>
     </widget>
