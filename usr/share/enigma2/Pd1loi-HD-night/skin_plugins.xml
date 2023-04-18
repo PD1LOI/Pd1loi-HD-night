@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <skin>
   <!-- BlindScan -->
   <screen name="DmmBlindscan" position="fill" title="Satellite Blindscan">
@@ -85,20 +85,20 @@
 				}
 </convert>
     </widget>
-    <ePixmap position="920,10" size="80,80" pixmap="Pd1loi-HD-night/icons/oscam.png" alphatest="blend" scale="1" zPosition="5" />
+    <ePixmap position="920,6" size="80,80" pixmap="Pd1loi-HD-night/icons/oscam.png" alphatest="blend" scale="1" zPosition="5" />
   </screen>
   <screen name="globalsConfigScreen" position="fill" title="Oscam Config" flags="wfNoBorder">
     <panel name="PigTemplate" />
     <panel name="KeyInfoTemplate" />
     <panel name="KeyMenuTemplate" />
-    <ePixmap position="920,10" size="80,80" pixmap="Pd1loi-HD-night/icons/oscam.png" alphatest="blend" scale="1" zPosition="5" />
+    <ePixmap position="920,6" size="80,80" pixmap="Pd1loi-HD-night/icons/oscam.png" alphatest="blend" scale="1" zPosition="5" />
     <widget name="status" position="230,1150" size="810,50" font="Regular; 30" halign="center" valign="center" backgroundColor="#101010" transparent="0" zPosition="5" />
     <widget name="config" position="780,108" size="1110,700" font="Regular; 30" itemHeight="50" scrollbarMode="showOnDemand" scrollbarWidth="10" enableWrapAround="1" selectionPixmap="Pd1loi-HD-night/buttons/sel4.png" transparent="1" zPosition="5" />
   </screen>
   <screen name="StatusDataScreen" Title="StatusDataScreen" position="fill" flags="wfNoBorder">
     <panel name="BasicTemplate" />
     <widget render="Label" source="title" position="30,7" size="870,75" valign="center" zPosition="5" transparent="1" foregroundColor="orange1" font="Regular;36" />
-    <ePixmap position="920,10" size="80,80" pixmap="Pd1loi-HD-night/icons/oscam.png" alphatest="blend" scale="1" zPosition="1" />
+    <ePixmap position="920,6" size="80,80" pixmap="Pd1loi-HD-night/icons/oscam.png" alphatest="blend" scale="1" zPosition="1" />
     <widget render="Label" source="label0" position="62,108" size="250,40" font="Regular;28" valign="center" zPosition="5" transparent="0" foregroundColor="unffff00" backgroundColor="background" />
     <widget render="Label" source="label1" position="372,108" size="300,40" font="Regular;28" valign="center" zPosition="5" transparent="0" foregroundColor="unffff00" backgroundColor="background" />
     <widget render="Label" source="label2" position="726,108" size=" 50,40" font="Regular;28" valign="center" zPosition="5" transparent="0" foregroundColor="unffff00" backgroundColor="background" />
@@ -129,7 +129,7 @@
     <panel name="PigTemplate" />
     <panel name="KeyInfoTemplate" />
     <panel name="KeyMenuTemplate" />
-    <ePixmap position="920,10" size="80,80" pixmap="Pd1loi-HD-night/icons/oscam.png" alphatest="blend" scale="1" zPosition="5" />
+    <ePixmap position="920,6" size="80,80" pixmap="Pd1loi-HD-night/icons/oscam.png" alphatest="blend" scale="1" zPosition="5" />
     <widget name="progress" zPosition="4" position="240,554" size="15,117" transparent="1" borderColor="#404040" borderWidth="1" orientation="orBottomToTop" />
     <widget render="Label" source="lprotocol" position="882,108" size="300,40" font="Regular;32" foregroundColor="ltbluette" backgroundColor="#000000" transparent="1" zPosition="5" />
     <widget render="Label" source="protocol" position="1203,108" size="690,40" font="Regular;32" foregroundColor="white" backgroundColor="#000000" transparent="1" zPosition="5" />
@@ -166,7 +166,7 @@
   <screen name="UserstatsScreen" position="fill" title="UserstatsScreen" flags="wfNoBorder">
     <panel name="PigTemplate" />
     <widget render="Label" source="title" position="30,7" size="870,75" valign="center" zPosition="5" transparent="1" foregroundColor="orange1" font="Regular;36" />
-    <ePixmap position="920,10" size="80,80" pixmap="Pd1loi-HD-night/icons/oscam.png" alphatest="blend" scale="1" zPosition="5" />
+    <ePixmap position="920,6" size="80,80" pixmap="Pd1loi-HD-night/icons/oscam.png" alphatest="blend" scale="1" zPosition="5" />
     <widget render="Label" source="label0" position="817,102" size="220,30" valign="center" zPosition="5" transparent="0" foregroundColor="unffff00" backgroundColor="background" font="Regular;27" />
     <widget render="Label" source="label1" position="1079,102" size="220,30" valign="center" zPosition="5" transparent="0" foregroundColor="unffff00" backgroundColor="background" font="Regular;27" />
     <widget render="Label" source="label2" position="1347,102" size="235,30" valign="center" zPosition="5" transparent="0" foregroundColor="unffff00" backgroundColor="background" font="Regular;27" halign="left" />
@@ -197,7 +197,7 @@
     <panel name="KeyMenuTemplate" />
     <widget render="Label" source="title" position="30,7" size="870,75" valign="center" zPosition="5" transparent="1" foregroundColor="orange1" font="Regular;36" />
     <eLabel position="0,30" size="1920,70" backgroundColor="background" />
-    <ePixmap position="920,10" size="80,80" pixmap="Pd1loi-HD-night/icons/oscam.png" alphatest="blend" scale="1" zPosition="1" />
+    <ePixmap position="920,6" size="80,80" pixmap="Pd1loi-HD-night/icons/oscam.png" alphatest="blend" scale="1" zPosition="1" />
     <widget source="label0" render="Label" position=" 65,110" size="120,50" font="Regular;30" valign="center" foregroundColor="ltbluette" backgroundColor="background" transparent="1" zPosition="5" />
     <widget source="label1" render="Label" position="180,110" size="700,50" font="Regular;30" valign="center" foregroundColor="ltbluette" backgroundColor="background" transparent="1" zPosition="5" />
     <widget source="label2" render="Label" position="910,110" size="230,50" font="Regular;30" valign="center" foregroundColor="ltbluette" backgroundColor="background" transparent="1" zPosition="5" />
@@ -234,7 +234,7 @@
     <panel name="KeyInfoTemplate" />
     <panel name="KeyMenuTemplate" />
     <widget render="Label" source="title" position="30,7" size="870,75" valign="center" zPosition="5" transparent="1" foregroundColor="orange1" font="Regular;36" />
-    <ePixmap position="920,10" size="80,80" pixmap="Pd1loi-HD-night/icons/oscam.png" alphatest="blend" scale="1" zPosition="5" />
+    <ePixmap position="920,6" size="80,80" pixmap="Pd1loi-HD-night/icons/oscam.png" alphatest="blend" scale="1" zPosition="5" />
     <widget render="Label" source="label0" position="826,102" size="300,40" halign="left" valign="center" zPosition="5" foregroundColor="yellow" backgroundColor="background" font="Regular;28" transparent="0" />
     <widget render="Label" source="label1" position="1260,102" size="250,40" halign="left" valign="center" zPosition="5" foregroundColor="yellow" backgroundColor="background" font="Regular;28" transparent="0" />
     <widget render="Label" source="label2" position="1522,102" size="108,40" halign="left" valign="center" zPosition="5" foregroundColor="yellow" backgroundColor="background" font="Regular;28" transparent="0" />
@@ -260,7 +260,7 @@
   <screen name="LogDataScreen" position="fill" title="LogDataScreen" flags="wfNoBorder">
     <panel name="BasicTemplate" />
     <widget render="Label" source="title" position="30,7" size="870,75" valign="center" zPosition="5" transparent="1" foregroundColor="orange1" font="Regular;36" />
-    <ePixmap position="920,10" size="80,80" pixmap="Pd1loi-HD-night/icons/oscam.png" alphatest="blend" scale="1" zPosition="5" />
+    <ePixmap position="920,6" size="80,80" pixmap="Pd1loi-HD-night/icons/oscam.png" alphatest="blend" scale="1" zPosition="5" />
     <eLabel position="0,130" size="1920,3" backgroundColor="#202020" />
     <widget name="data" position="40,140" size="1860,850" scrollbarMode="showOnDemand" scrollbarWidth="10" itemHeight="25" transparent="1" zPosition="5" foregroundColor="#a0a0a0" foregroundColorSelected="#ffffff" backgroundColor="#000000" backgroundColorSelected="barColor" />
   </screen>
@@ -270,7 +270,7 @@
     <panel name="KeyInfoTemplate" />
     <panel name="KeyMenuTemplate" />
     <widget render="Label" source="title" position="30,7" size="870,75" valign="center" zPosition="5" transparent="1" foregroundColor="orange1" font="Regular;36" />
-    <ePixmap position="920,10" size="80,80" pixmap="Pd1loi-HD-night/icons/oscam.png" alphatest="blend" scale="1" zPosition="5" />
+    <ePixmap position="920,6" size="80,80" pixmap="Pd1loi-HD-night/icons/oscam.png" alphatest="blend" scale="1" zPosition="5" />
     <widget render="Label" source="lversion" position="780,108" size="200,40" font="Regular;30" foregroundColor="yellow" backgroundColor="#000000" transparent="1" zPosition="5" />
     <widget render="Label" source="version" position="968,108" size="550,40" font="Regular;30" foregroundColor="white" backgroundColor="#000000" transparent="1" zPosition="5" />
     <widget render="Label" source="lrevision" position="780,154" size="200,40" font="Regular;30" foregroundColor="yellow" backgroundColor="#000000" transparent="1" zPosition="5" />
@@ -288,7 +288,7 @@
     <panel name="KeyInfoTemplate" />
     <panel name="KeyMenuTemplate" />
     <widget render="Label" source="title" position="30,7" size="870,75" valign="center" zPosition="5" transparent="1" foregroundColor="orange1" font="Regular;36" />
-    <ePixmap position="920,10" size="80,80" pixmap="Pd1loi-HD-night/icons/oscam.png" alphatest="blend" scale="1" zPosition="5" />
+    <ePixmap position="920,6" size="80,80" pixmap="Pd1loi-HD-night/icons/oscam.png" alphatest="blend" scale="1" zPosition="5" />
     <widget render="Label" source="lversion" position="780,108" size="200,40" font="Regular;30" foregroundColor="yellow" backgroundColor="#000000" transparent="1" zPosition="5" />
     <widget render="Label" source="version" position="970,108" size="550,40" font="Regular;30" foregroundColor="white" backgroundColor="#000000" transparent="1" zPosition="5" />
     <widget render="Label" source="lrevision" position="780,162" size="200,40" font="Regular;30" foregroundColor="yellow" backgroundColor="#000000" transparent="1" zPosition="5" />
@@ -309,7 +309,7 @@
     <panel name="PigTemplate" />
     <panel name="KeyInfoTemplate" />
     <panel name="KeyMenuTemplate" />
-    <ePixmap position="920,10" size="80,80" pixmap="Pd1loi-HD-night/icons/oscam.png" alphatest="blend" scale="1" zPosition="5" />
+    <ePixmap position="920,6" size="80,80" pixmap="Pd1loi-HD-night/icons/oscam.png" alphatest="blend" scale="1" zPosition="5" />
     <widget name="list" position="778,108" size="1110,750" font="Regular;32" scrollbarMode="showOnDemand" scrollbarWidth="10" itemHeight="50" transparent="1" zPosition="5" foregroundColor="#a0a0a0" foregroundColorSelected="#ffffff" backgroundColor="#000000" selectionPixmap="Pd1loi-HD-night/buttons/sel4.png" />
     <eLabel position="780,867" size="1110,3" backgroundColor="#303030" zPosition="1" />
     <ePixmap name="ButtonGreen" position="628,1032" pixmap="Pd1loi-HD-night/buttons/green.png" size="34,34" alphatest="blend" zPosition="5" />

@@ -1,16 +1,9 @@
 #!/bin/sh
 rm -rf /usr/lib/enigma2/python/Plugins/Extensions/WeatherPlugin
-rm -rf /usr/lib/enigma2/python/Components/Converter/MSNWeather.py*
-rm -rf /usr/lib/enigma2/python/Components/Renderer/MSNWeatherPixmap.py*
 rm -rf /usr/lib/enigma2/python/Components/Renderer/PDEmptyEpg.py*
 rm -rf /usr/lib/enigma2/python/Components/Renderer/PDNextEvents.py*
 rm -rf /usr/lib/enigma2/python/Components/Renderer/PDVideoSize.py*
 rm -rf /usr/lib/enigma2/python/Components/Renderer/PDRunningText.py*
-rm -rf /usr/lib/enigma2/python/Components/WeatherMSN.py*
-rm -rf /usr/lib/enigma2/python/Components/Sources/MSNWeather.py*
-rm -rf /usr/lib/enigma2/python/Plugins/Extensions/WeatherPlugin
-rm -rf /usr/lib/enigma2/python/Plugins/SkinComponents/WeatherComponent/README.*
-rm -rf /usr/lib/enigma2/python/Plugins/SystemPlugins/WeatherComponentHandler/*.*
 rm -rf /usr/share/enigma2/Pd1loi-HD-night/*.*
 echo        "                               "
 echo        "  ...Skin successful removed.  "
