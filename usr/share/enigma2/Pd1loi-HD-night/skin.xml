@@ -1502,7 +1502,7 @@
   <widget source="DNS2" render="Label" position="1640,720" size="300,37" transparent="1" zPosition="1" font="Regular;31" valign="center" halign="left" />
   <widget source="Adaptertext" render="Label" position="780,825" size="400,34" transparent="1" zPosition="10" foregroundColor="red" font="Regular;30" halign="left" />
   <widget source="Adapter" render="Label" position="1020,825" size="600,34" transparent="1" zPosition="10" font="Regular;30" halign="left" />
-  <widget source="introduction2" render="Label" position="780,975" size="1110,34" transparent="1" zPosition="10" font="Regular;30" valign="center" halign="center" />
+  <widget source="introduction2" render="Label" position="780,975" size="1110,34" transparent="1" zPosition="10" font="Regular;30" valign="center" halign="center" foregroundColor="unffff00" />
   <widget name="HelpWindow" position="75,615" size="1,1" transparent="1" zPosition="1" alphatest="on" />
 </screen>
   <screen name="NameserverSetup" position="fill" flags="wfNoBorder">
