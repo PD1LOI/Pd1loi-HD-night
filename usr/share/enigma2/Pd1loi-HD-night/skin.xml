@@ -1160,7 +1160,7 @@
     <ePixmap pixmap="buttons/key_prev.png" alphatest="blend" position="30,1031" size="52,38" />
     <ePixmap pixmap="buttons/key_next.png" alphatest="blend" position="82,1031" size="52,38" />
     <ePixmap pixmap="buttons/key_0.png" alphatest="blend" position="135,1031" size="52,38" />
-    <widget name="list" selectionPixmap="Pd1loi-HD-night/buttons/sel4.png" position="780,100" size="1110,912" scrollbarMode="showOnDemand" />
+    <widget name="list" selectionPixmap="Pd1loi-HD-night/buttons/sel2.png" position="780,100" size="1110,912" scrollbarMode="showOnDemand" />
   </screen>
   <screen name="PluginDownloadBrowser" title="Downloadable plugins" position="fill" flags="wfNoBorder">
     <panel name="PigTemplate" />
