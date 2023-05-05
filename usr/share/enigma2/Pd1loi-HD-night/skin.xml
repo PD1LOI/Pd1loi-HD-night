@@ -471,41 +471,45 @@
     <panel name="ChannelSelection" />
   </screen>
   <!-- EPG Stuff -->
-  <screen name="EPGSelection" position="fill" flags="wfNoBorder">
-    <panel name="SelectionTemplate" />
-    <panel name="KeyMenuTemplate" />
-    <panel name="KeyInfoTemplate" />
-    <widget name="list" position="780,100" size="1110,912" itemHeight="38" setEventItemFont="Regular;32" setColWidths="120,220" setColGap="40" setIconDistance="10" transparent="1" scrollbarMode="showOnDemand" />
-    <widget source="Service" render="Label" position="30,525" size="720,30" foregroundColor="transponderinfo" font="Regular;26" valign="center" halign="center" transparent="1" zPosition="1">
-      <convert type="TransponderInfo" />
-    </widget>
-    <widget source="Event" render="Label" position="30,605" size="720,35" foregroundColor="secondFG" font="Regular;32" transparent="1">
-      <convert type="EventName">Name</convert>
-    </widget>
-    <widget source="Event" render="Label" position="30,650" size="720,315" transparent="1" font="Regular;30" halign="block">
-      <convert type="EventName">FullDescription</convert>
-    </widget>
-    <widget source="Event" render="Label" position="30,975" size="330,34" backgroundColor="background" transparent="1" foregroundColor="secondFG" font="Regular;30">
-      <convert type="EventTime">StartTime</convert>
-      <convert type="ClockToText">ShortDate</convert>
-    </widget>
-    <widget source="Event" render="Label" position="202,975" size="120,34" backgroundColor="background" transparent="1" foregroundColor="secondFG" font="Regular;30" halign="right">
-      <convert type="EventTime">StartTime</convert>
-      <convert type="ClockToText">Format:%H:%M</convert>
-    </widget>
-    <widget source="Event" render="Label" position="330,975" size="120,34" backgroundColor="background" transparent="1" foregroundColor="secondFG" font="Regular;30" halign="left">
-      <convert type="EventTime">EndTime</convert>
-      <convert type="ClockToText">Format:- %H:%M</convert>
-    </widget>
-    <widget source="Event" render="Label" position="520,975" size="165,34" backgroundColor="background" transparent="1" foregroundColor="secondFG" font="Regular;30" halign="left">
-      <convert type="EventTime">Duration</convert>
-      <convert type="ClockToText">InMinutes</convert>
-    </widget>
-    <widget source="Event" render="Label" position="590,975" size="160,34" backgroundColor="background" transparent="1" foregroundColor="secondFG" font="Regular;30" halign="right">
-      <convert type="EventTime">Duration</convert>
-      <convert type="ClockToText">AsLengthHours</convert>
-    </widget>
-  </screen>
+<screen name="EPGSelection" position="fill" title="EPGSelection" flags="wfNoBorder">
+  <panel name="SelectionTemplate" />
+  <panel name="KeyMenuTemplate" />
+  <panel name="KeyInfoTemplate" />
+  <eLabel position="200,975" size="2,40" zPosition="2" backgroundColor="white" />
+  <eLabel position="470,975" size="2,40" zPosition="2" backgroundColor="white" />
+  <ePixmap pixmap="Pd1loi-HD-night/border/bottom_bg5.png" position="30,595" size="720,3" />
+  <ePixmap pixmap="Pd1loi-HD-night/border/bottom_bg5.png" position="30,969" size="720,3" />
+  <widget name="list" position="780,100" size="1110,912" selectionPixmap="Pd1loi-HD-night/buttons/sel4.png" itemHeight="40" setEventItemFont="Regular;32" setColWidths="120,220" setColGap="40" setIconDistance="10" transparent="1" scrollbarMode="showOnDemand" />
+  <widget source="Service" render="Label" position="30,532" size="720,30" foregroundColor="unffff00" font="Regular;26" valign="center" halign="center" transparent="1" zPosition="1">
+    <convert type="TransponderInfo" />
+  </widget>
+  <widget source="Event" render="Label" position="30,605" size="720,35" foregroundColor="secondFG" font="Regular;32" transparent="1">
+    <convert type="EventName">Name</convert>
+  </widget>
+  <widget source="Event" render="PDRunningText" position="30,650" size="720,315" transparent="1" font="Regular;32" halign="left" foregroundColor="white" options="movetype=running,startpoint=0,direction=top,steptime=60,repeat=5,startdelay=9000,wrap">
+    <convert type="EventName">FullDescription</convert>
+  </widget>
+  <widget source="Event" render="Label" position="30,979" size="330,34" backgroundColor="background" transparent="1" foregroundColor="secondFG" font="Regular;30">
+    <convert type="EventTime">StartTime</convert>
+    <convert type="ClockToText">ShortDate</convert>
+  </widget>
+  <widget source="Event" render="Label" position="202,979" size="120,34" backgroundColor="background" transparent="1" foregroundColor="secondFG" font="Regular;30" halign="right">
+    <convert type="EventTime">StartTime</convert>
+    <convert type="ClockToText">Format:%H:%M</convert>
+  </widget>
+  <widget source="Event" render="Label" position="330,979" size="120,34" backgroundColor="background" transparent="1" foregroundColor="secondFG" font="Regular;30" halign="left">
+    <convert type="EventTime">EndTime</convert>
+    <convert type="ClockToText">Format:- %H:%M</convert>
+  </widget>
+  <widget source="Event" render="Label" position="520,979" size="165,34" backgroundColor="background" transparent="1" foregroundColor="secondFG" font="Regular;30" halign="left">
+    <convert type="EventTime">Duration</convert>
+    <convert type="ClockToText">InMinutes</convert>
+  </widget>
+  <widget source="Event" render="Label" position="590,979" size="160,34" backgroundColor="background" transparent="1" foregroundColor="secondFG" font="Regular;30" halign="right">
+    <convert type="EventTime">Duration</convert>
+    <convert type="ClockToText">AsLengthHours</convert>
+  </widget>
+</screen>
   <screen name="EventView" title="Eventview" position="fill" flags="wfNoBorder">
     <panel name="SelectionTemplate" />
     <panel name="KeyMenuTemplate" />
