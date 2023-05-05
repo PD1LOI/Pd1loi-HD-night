@@ -1165,7 +1165,7 @@
   <screen name="PluginDownloadBrowser" title="Downloadable plugins" position="fill" flags="wfNoBorder">
     <panel name="PigTemplate" />
     <widget name="text" position="780,105" size="1110,75" zPosition="-1" transparent="1" font="Regular;32" valign="center" halign="center" />
-    <widget name="list" selectionPixmap="Pd1loi-HD-night/buttons/sel4.png" position="780,100" size="1110,912" zPosition="3" transparent="0" scrollbarMode="showOnDemand" />
+    <widget name="list" selectionPixmap="Pd1loi-HD-night/buttons/sel2.png" position="780,100" size="1110,912" zPosition="3" transparent="0" scrollbarMode="showOnDemand" />
   </screen>
   <screen name="FileBrowser" title="DVD File Browser" position="fill" flags="wfNoBorder">
     <panel name="PigTemplate" />
@@ -1269,7 +1269,7 @@
   </screen>
   <screen name="PluginManager" title="Plugin manager" position="fill" flags="wfNoBorder">
     <panel name="PigTemplate" />
-    <widget source="list" selectionPixmap="Pd1loi-HD-night/buttons/sel4.png" render="Listbox" position="780,105" size="1110,825" transparent="1" scrollbarMode="showOnDemand">
+    <widget source="list" selectionPixmap="Pd1loi-HD-night/buttons/sel2.png" render="Listbox" position="780,105" size="1110,825" transparent="1" scrollbarMode="showOnDemand">
       <convert type="TemplatedMultiContent">
 				{"templates":
 				{"default": (82,[
@@ -1293,7 +1293,7 @@
   </screen>
   <screen name="PluginManagerInfo" title="Plugin manager activity" position="fill" flags="wfNoBorder">
     <panel name="PigTemplate" />
-    <widget source="list" selectionPixmap="Pd1loi-HD-night/buttons/sel4.png" render="Listbox" position="780,105" size="1110,787" transparent="1" scrollbarMode="showOnDemand">
+    <widget source="list" selectionPixmap="Pd1loi-HD-night/buttons/sel2.png" render="Listbox" position="780,105" size="1110,787" transparent="1" scrollbarMode="showOnDemand">
       <convert type="TemplatedMultiContent">
 				{"template": [
 						MultiContentEntryPixmapAlphaTest(pos = (27,21),size = (72,72),png = 2),# index 2 is the status pixmap
@@ -1484,25 +1484,27 @@
     <widget source="Statustext" render="Label" position="742,880" size="300,34" transparent="1" zPosition="10" font="Regular;30" valign="center" halign="right" />
     <widget name="statuspic" position="1055,877" size="52,37" transparent="1" zPosition="10" pixmaps="icons/lock_on.png,icons/lock_off.png" alphatest="on" />
   </screen>
-  <screen name="AdapterSetup" position="fill" flags="wfNoBorder">
-    <panel name="PigTemplate" />
-    <widget name="config" selectionPixmap="Pd1loi-HD-night/buttons/sel4.png" position="780,105" size="1110,418" itemHeight="38" font="Regular;28" scrollbarMode="showOnDemand" />
-    <widget source="introduction" render="Label" position="780,619" size="1110,40" font="Regular;33" halign="center" />
-    <widget source="IPtext" render="Label" position="780,675" size="225,37" zPosition="1" foregroundColor="grey" font="Regular;31" halign="left" />
-    <widget source="Netmasktext" render="Label" position="780,720" size="225,37" zPosition="1" foregroundColor="grey" font="Regular;31" halign="left" />
-    <widget source="Gatewaytext" render="Label" position="780,765" size="225,37" zPosition="1" foregroundColor="grey" font="Regular;31" halign="left" />
-    <widget source="IP" render="Label" position="1020,675" size="300,37" zPosition="1" font="Regular;28" />
-    <widget source="Mask" render="Label" position="1020,720" size="300,37" zPosition="1" font="Regular;28" />
-    <widget source="Gateway" render="Label" position="1020,765" size="300,37" zPosition="1" font="Regular;28" />
-    <widget source="DNS1text" render="Label" position="1400,675" size="225,37" transparent="1" zPosition="1" foregroundColor="grey" font="Regular;31" valign="left" halign="left" />
-    <widget source="DNS2text" render="Label" position="1400,720" size="225,37" transparent="1" zPosition="1" foregroundColor="grey" font="Regular;31" valign="left" halign="left" />
-    <widget source="DNS1" render="Label" position="1640,675" size="300,37" transparent="1" zPosition="1" font="Regular;31" valign="center" halign="left" />
-    <widget source="DNS2" render="Label" position="1640,720" size="300,37" transparent="1" zPosition="1" font="Regular;31" valign="center" halign="left" />
-    <widget source="Adaptertext" render="Label" position="780,825" size="400,34" transparent="1" zPosition="10" foregroundColor="grey" font="Regular;30" halign="left" />
-    <widget source="Adapter" render="Label" position="1020,825" size="600,34" transparent="1" zPosition="10" font="Regular;30" halign="left" />
-    <widget source="introduction2" render="Label" position="780,975" size="1110,34" transparent="1" zPosition="10" font="Regular;30" valign="center" halign="center" />
-    <widget name="HelpWindow" position="75,615" size="1,1" transparent="1" zPosition="1" alphatest="on" />
-  </screen>
+<screen name="AdapterSetup" position="fill" flags="wfNoBorder">
+  <panel name="PigTemplate" />
+  <panel name="KeyInfoTemplate" />
+  <panel name="KeyTextTemplate" />
+  <widget name="config" position="780,105" size="1110,418" itemHeight="38" font="Regular;28" selectionPixmap="Pd1loi-HD-night/buttons/sel4.png" scrollbarMode="showOnDemand" />
+  <widget source="introduction" render="Label" position="780,619" size="1110,40" font="Regular;33" halign="center" foregroundColor="unffff00" />
+  <widget source="IPtext" render="Label" position="780,675" size="225,37" zPosition="1" foregroundColor="red" font="Regular;31" halign="left" />
+  <widget source="Netmasktext" render="Label" position="780,720" size="225,37" zPosition="1" foregroundColor="red" font="Regular;31" halign="left" />
+  <widget source="Gatewaytext" render="Label" position="780,765" size="225,37" zPosition="1" foregroundColor="red" font="Regular;31" halign="left" />
+  <widget source="IP" render="Label" position="1020,675" size="300,37" zPosition="1" font="Regular;28" />
+  <widget source="Mask" render="Label" position="1020,720" size="300,37" zPosition="1" font="Regular;28" />
+  <widget source="Gateway" render="Label" position="1020,765" size="300,37" zPosition="1" font="Regular;28" />
+  <widget source="DNS1text" render="Label" position="1400,675" size="225,37" transparent="1" zPosition="1" foregroundColor="red" font="Regular;31" valign="left" halign="left" />
+  <widget source="DNS2text" render="Label" position="1400,720" size="225,37" transparent="1" zPosition="1" foregroundColor="red" font="Regular;31" valign="left" halign="left" />
+  <widget source="DNS1" render="Label" position="1640,675" size="300,37" transparent="1" zPosition="1" font="Regular;31" valign="center" halign="left" />
+  <widget source="DNS2" render="Label" position="1640,720" size="300,37" transparent="1" zPosition="1" font="Regular;31" valign="center" halign="left" />
+  <widget source="Adaptertext" render="Label" position="780,825" size="400,34" transparent="1" zPosition="10" foregroundColor="red" font="Regular;30" halign="left" />
+  <widget source="Adapter" render="Label" position="1020,825" size="600,34" transparent="1" zPosition="10" font="Regular;30" halign="left" />
+  <widget source="introduction2" render="Label" position="780,975" size="1110,34" transparent="1" zPosition="10" font="Regular;30" valign="center" halign="center" />
+  <widget name="HelpWindow" position="75,615" size="1,1" transparent="1" zPosition="1" alphatest="on" />
+</screen>
   <screen name="NameserverSetup" position="fill" flags="wfNoBorder">
     <panel name="PigTemplate" />
     <widget name="config" selectionPixmap="Pd1loi-HD-night/buttons/sel4.png" position="780,105" size="1110,646" itemHeight="38" font="Regular;28" scrollbarMode="showOnDemand" />
@@ -2019,18 +2021,18 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth) // 2, orgpos.y() + 
     <widget name="AboutScrollLabel" font="Regular;28" position="780,100" size="1110,912" zPosition="2" split="1" dividechar=":" colposition="0" />
   </screen>
   <!-- Memory Info -->
-  <screen name="MemoryInfo" position="fill" flags="wfNoBorder">
-    <panel name="PigTemplate" />
-    <widget name="lmemtext" font="Regular;30" position="780,100" size="450,910" zPosition="1" halign="left" backgroundColor="secondBG" transparent="1" />
-    <widget name="lmemvalue" font="Regular;30" position="780,100" size="450,910" zPosition="2" halign="right" backgroundColor="secondBG" transparent="1" />
-    <widget name="rmemtext" font="Regular;30" position="1440,100" size="450,910" zPosition="1" halign="left" backgroundColor="secondBG" transparent="1" />
-    <widget name="rmemvalue" font="Regular;30" position="1440,100" size="450,910" zPosition="2" halign="right" backgroundColor="secondBG" transparent="1" />
-    <widget name="pfree" position="1214,303" size="105,30" font="Regular;21" zPosition="1" halign="right" backgroundColor="secondBG" transparent="1" />
-    <widget name="pused" position="1214,787" size="105,30" font="Regular;21" zPosition="1" halign="right" backgroundColor="secondBG" transparent="1" />
-    <widget name="slide" position="1327,105" size="20,900" render="Progress" zPosition="1" borderWidth="1" foregroundColor="cyan1" orientation="orBottomToTop" />
-    <widget name="info" position="30,600" size="720,225" font="Regular;30" zPosition="1" halign="left" backgroundColor="secondBG" transparent="1" />
-    <widget name="params" rowsincolumn="26" />
-  </screen>
+<screen name="MemoryInfo" position="fill" flags="wfNoBorder">
+  <panel name="PigTemplate" />
+  <widget name="lmemtext" font="Regular;30" position="780,100" size="450,910" zPosition="1" halign="left" backgroundColor="secondBG" transparent="1" />
+  <widget name="lmemvalue" font="Regular;30" position="780,100" size="450,910" zPosition="2" halign="right" backgroundColor="secondBG" transparent="1" />
+  <widget name="rmemtext" font="Regular;30" position="1440,100" size="450,910" zPosition="1" halign="left" backgroundColor="secondBG" transparent="1" />
+  <widget name="rmemvalue" font="Regular;30" position="1440,100" size="450,910" zPosition="2" halign="right" backgroundColor="secondBG" transparent="1" />
+  <widget name="pfree" position="1214,303" size="105,30" font="Regular;21" zPosition="1" halign="right" backgroundColor="secondBG" transparent="1" foregroundColor="orange1" />
+  <widget name="pused" position="1214,787" size="105,30" font="Regular;21" zPosition="1" halign="right" backgroundColor="secondBG" transparent="1" foregroundColor="green" />
+  <widget name="slide" position="1327,105" size="20,900" render="Progress" zPosition="1" borderWidth="1" foregroundColor="cyan1" orientation="orBottomToTop" />
+  <widget name="info" position="30,600" size="720,225" font="Regular;30" zPosition="1" halign="left" backgroundColor="secondBG" transparent="1" />
+  <widget name="params" rowsincolumn="26" />
+</screen>
   <!-- Commit Info -->
   <screen name="CommitInfo" position="fill" flags="wfNoBorder">
     <panel name="BasicTemplate" />
