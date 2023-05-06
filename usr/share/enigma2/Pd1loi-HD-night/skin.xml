@@ -8,7 +8,7 @@
   <!-- PD1LOI-HD-NIGHT-Skin Mod by PD1LOI -->
   <!-- Head -->
   <output id="0">
-  <resolution bpp="32" xres="1920" yres="1080" />
+    <resolution bpp="32" xres="1920" yres="1080" />
   </output>
   <fonts>
     <font filename="/usr/share/fonts/nmsbd.ttf" name="Emu" replacement="0" scale="100" />
@@ -70,7 +70,7 @@
     <color name="background" value="#00000000" />
     <color name="backtop" value="#00080808" />
     <color name="backtopt" value="#00080808" />   
-	<color name="ltbluette" value="#007fcfff" />
+	  <color name="ltbluette" value="#007fcfff" />
     <color name="ltbluette2" value="#00229eff" />
     <color name="black" value="#00000000" />
     <color name="blue" value="#00879ce1" />
@@ -180,6 +180,7 @@
     <color name="undddddd" value="#00dddddd" />
     <color name="une5b243" value="#00e5b243" />
     <color name="unf0b400" value="#00f0b400" />
+    <color name="unf0f0f0" value="#00f0f0f0" />
     <color name="unf23d21" value="#00f23d21" />
     <color name="unf2e000" value="#00f2e000" />
     <color name="unf47d19" value="#00f47d19" />
@@ -190,6 +191,7 @@
     <color name="unff6600" value="#00ff6600" />
     <color name="unffff00" value="#00ffff00" />
     <color name="unffffff" value="#00ffffff" />
+    <color name="unf0f0f0" value="#00f0f0f0" /> 
     <color name="white" value="#ffffffff" />
     <color name="yellow" value="#00ffc000" />
     <color name="yellowtransparent" value="#084b4b00" />
@@ -469,48 +471,51 @@
     <panel name="ChannelSelection" />
   </screen>
   <!-- EPG Stuff -->
-  <screen name="EPGSelection" position="fill" flags="wfNoBorder">
-    <panel name="SelectionTemplate" />
-    <panel name="KeyMenuTemplate" />
-    <panel name="KeyInfoTemplate" />
-    <widget name="list" position="780,100" size="1110,912" itemHeight="38" setEventItemFont="Regular;32" setColWidths="120,220" setColGap="40" setIconDistance="10" transparent="1" scrollbarMode="showOnDemand" />
-    <widget source="Service" render="Label" position="30,525" size="720,30" foregroundColor="transponderinfo" font="Regular;26" valign="center" halign="center" transparent="1" zPosition="1">
-      <convert type="TransponderInfo" />
-    </widget>
-    <widget source="Event" render="Label" position="30,605" size="720,35" foregroundColor="secondFG" font="Regular;32" transparent="1">
-      <convert type="EventName">Name</convert>
-    </widget>
-    <widget source="Event" render="Label" position="30,650" size="720,315" transparent="1" font="Regular;30" halign="block">
-      <convert type="EventName">FullDescription</convert>
-    </widget>
-    <widget source="Event" render="Label" position="30,975" size="330,34" backgroundColor="background" transparent="1" foregroundColor="secondFG" font="Regular;30">
-      <convert type="EventTime">StartTime</convert>
-      <convert type="ClockToText">ShortDate</convert>
-    </widget>
-    <widget source="Event" render="Label" position="202,975" size="120,34" backgroundColor="background" transparent="1" foregroundColor="secondFG" font="Regular;30" halign="right">
-      <convert type="EventTime">StartTime</convert>
-      <convert type="ClockToText">Format:%H:%M</convert>
-    </widget>
-    <widget source="Event" render="Label" position="330,975" size="120,34" backgroundColor="background" transparent="1" foregroundColor="secondFG" font="Regular;30" halign="left">
-      <convert type="EventTime">EndTime</convert>
-      <convert type="ClockToText">Format:- %H:%M</convert>
-    </widget>
-    <widget source="Event" render="Label" position="520,975" size="165,34" backgroundColor="background" transparent="1" foregroundColor="secondFG" font="Regular;30" halign="left">
-      <convert type="EventTime">Duration</convert>
-      <convert type="ClockToText">InMinutes</convert>
-    </widget>
-    <widget source="Event" render="Label" position="590,975" size="160,34" backgroundColor="background" transparent="1" foregroundColor="secondFG" font="Regular;30" halign="right">
-      <convert type="EventTime">Duration</convert>
-      <convert type="ClockToText">AsLengthHours</convert>
-    </widget>
-  </screen>
-  <screen name="EventView" title="Eventview" position="fill" flags="wfNoBorder">
-    <panel name="SelectionTemplate" />
+<screen name="EPGSelection" position="fill" title="EPGSelection" flags="wfNoBorder">
+  <panel name="SelectionTemplate" />
+  <panel name="KeyMenuTemplate" />
+  <panel name="KeyInfoTemplate" />
+  <eLabel position="200,975" size="2,40" zPosition="2" backgroundColor="white" />
+  <eLabel position="470,975" size="2,40" zPosition="2" backgroundColor="white" />
+  <ePixmap pixmap="Pd1loi-HD-night/border/bottom_bg5.png" position="30,595" size="720,3" />
+  <ePixmap pixmap="Pd1loi-HD-night/border/bottom_bg5.png" position="30,969" size="720,3" />
+  <widget name="list" position="780,100" size="1110,912" selectionPixmap="Pd1loi-HD-night/buttons/sel4.png" itemHeight="40" setEventItemFont="Regular;32" setColWidths="120,220" setColGap="40" setIconDistance="10" transparent="1" scrollbarMode="showOnDemand" />
+  <widget source="Service" render="Label" position="30,532" size="720,30" foregroundColor="unffff00" font="Regular;26" valign="center" halign="center" transparent="1" zPosition="1">
+    <convert type="TransponderInfo" />
+  </widget>
+  <widget source="Event" render="Label" position="30,605" size="720,35" foregroundColor="secondFG" font="Regular;32" transparent="1">
+    <convert type="EventName">Name</convert>
+  </widget>
+  <widget source="Event" render="PDRunningText" position="30,650" size="720,315" transparent="1" font="Regular;32" halign="left" foregroundColor="white" options="movetype=running,startpoint=0,direction=top,steptime=60,repeat=5,startdelay=9000,wrap">
+    <convert type="EventName">FullDescription</convert>
+  </widget>
+  <widget source="Event" render="Label" position="30,979" size="330,34" backgroundColor="background" transparent="1" foregroundColor="secondFG" font="Regular;30">
+    <convert type="EventTime">StartTime</convert>
+    <convert type="ClockToText">ShortDate</convert>
+  </widget>
+  <widget source="Event" render="Label" position="202,979" size="120,34" backgroundColor="background" transparent="1" foregroundColor="secondFG" font="Regular;30" halign="right">
+    <convert type="EventTime">StartTime</convert>
+    <convert type="ClockToText">Format:%H:%M</convert>
+  </widget>
+  <widget source="Event" render="Label" position="330,979" size="120,34" backgroundColor="background" transparent="1" foregroundColor="secondFG" font="Regular;30" halign="left">
+    <convert type="EventTime">EndTime</convert>
+    <convert type="ClockToText">Format:- %H:%M</convert>
+  </widget>
+  <widget source="Event" render="Label" position="520,979" size="165,34" backgroundColor="background" transparent="1" foregroundColor="secondFG" font="Regular;30" halign="left">
+    <convert type="EventTime">Duration</convert>
+    <convert type="ClockToText">InMinutes</convert>
+  </widget>
+  <widget source="Event" render="Label" position="590,979" size="160,34" backgroundColor="background" transparent="1" foregroundColor="secondFG" font="Regular;30" halign="right">
+    <convert type="EventTime">Duration</convert>
+    <convert type="ClockToText">AsLengthHours</convert>
+  </widget>
+</screen>
+	<screen name="EventView" title="Eventview" position="fill" flags="wfNoBorder">
+   <panel name="SelectionTemplate" />
     <panel name="KeyMenuTemplate" />
     <ePixmap pixmap="Pd1loi-HD-night/border/bottom_bg5.png" position="30,590" size="720,3" />
-    <widget name="epg_eventname" position="780,100" size="1110,70" transparent="1" font="Regular;30" halign="left" foregroundColor="foreground" />
-    <widget name="FullDescription" position="780,176" size="1110,836" transparent="1" font="Regular;30" halign="block" />
-    <widget source="Service" render="Label" position="30,525" size="720,30" foregroundColor="transponderinfo" font="Regular;26" valign="center" halign="center" transparent="1" zPosition="1">
+    <widget name="epg_description" position="780,100" size="1110,912" transparent="1" font="Regular;36" halign="left" />
+    <widget source="session.CurrentService" render="Label" position="30,532" size="720,30" foregroundColor="unffff00" font="Regular;26" valign="center" halign="center" transparent="1" zPosition="1">
       <convert type="TransponderInfo" />
     </widget>
     <widget name="channel" position="30,592" size="720,45" transparent="1" font="Regular;33" halign="left" />
@@ -526,15 +531,7 @@
     <widget source="session.Event_Now" render="Label" position="30,832" size="720,35" transparent="1" zPosition="1" foregroundColor="blue" font="Regular;32" halign="left">
       <convert type="EventName">Rating</convert>
     </widget>
-    <!--widget source="Event" render="Label" position="30,902" size="60,45" font="Regular;24" backgroundColor="secondBG" zPosition="1" transparent="1" foregroundColor="foreground" halign="left">
-			<convert type="EventName">Pdc</convert>
-		</widget>
-		<widget source="Event" render="Label" position="100,902" size="150,45" font="Regular;24" backgroundColor="secondBG" zPosition="1" transparent="1" foregroundColor="foreground" halign="left">
-			<convert type="EventName">PdcTime</convert>
-		</widget-->
-    <widget source="session.Event_Next" render="Label" position="30,975" size="720,35" font="Regular;30" halign="left" foregroundColor="secondFG" transparent="1">
-      <convert type="EventName">NameNext</convert>
-    </widget>
+    <widget source="Service" render="NextEpgInfo" position="30,943" size="720,64" transparent="1" font="Regular;29" noWrap="1" NumberOfItems="2" noLabel="1" foregroundColor="unffff00" timeColor="grey" numOfSpaces="2" />
   </screen>
   <screen name="EPGSelectionMulti" title="EPG Selection" position="fill" flags="wfNoBorder">
     <panel name="SelectionTemplate" />
@@ -697,29 +694,30 @@
     <widget name="footer" position="0,0" size="0,0" />
   </screen>
   <!-- Service Scan -->
-  <screen name="ServiceScan" title="Service scan" position="fill" flags="wfNoBorder">
-    <panel name="BasicTemplate" />
-    <widget source="FrontendInfo" render="Pixmap" pixmap="icons/scan-s.png" position="30,105" size="96,96" zPosition="2" transparent="1" alphatest="on">
-      <convert type="FrontendInfo">TYPE</convert>
-      <convert type="ValueRange">0,0</convert>
-      <convert type="ConditionalShowHide" />
-    </widget>
-    <widget source="FrontendInfo" render="Pixmap" pixmap="icons/scan-c.png" position="30,105" size="96,96" zPosition="2" transparent="1" alphatest="on">
-      <convert type="FrontendInfo">TYPE</convert>
-      <convert type="ValueRange">1,1</convert>
-      <convert type="ConditionalShowHide" />
-    </widget>
-    <widget source="FrontendInfo" render="Pixmap" pixmap="icons/scan-t.png" position="30,105" size="96,96" zPosition="2" transparent="1" alphatest="on">
-      <convert type="FrontendInfo">TYPE</convert>
-      <convert type="ValueRange">2,2</convert>
-      <convert type="ConditionalShowHide" />
-    </widget>
-    <widget name="network" position="135,105" size="675,45" valign="center" zPosition="2" font="Regular;33" transparent="1" />
-    <widget name="transponder" position="135,157" size="675,45" valign="center" zPosition="2" font="Regular;33" transparent="1" />
-    <widget name="scan_progress" position="30,270" size="810,22" pixmap="Pd1loi-HD-night/infobar/progress_big.png" borderWidth="2" borderColor="uncccccc" />
-    <widget name="scan_state" position="30,307" zPosition="2" size="810,70" valign="top" font="Regular;30" transparent="1" />
-    <widget name="pass" position="30,380" size="810,45" valign="center" font="Regular;33" transparent="1" />
-    <widget name="servicelist" position="870,100" size="1020,912" itemHeight="38" font="Regular;28" selectionDisabled="1" scrollbarMode="showOnDemand" />
+<screen name="ServiceScan" title="Service scan" position="fill" flags="wfNoBorder">
+  <panel name="BasicTemplate" />
+  <panel name="KeyInfoTemplate" />
+  <widget source="FrontendInfo" render="Pixmap" pixmap="Pd1loi-HD-night/icons/scan-s.png" position="30,105" size="96,96" zPosition="2" transparent="1" alphatest="on">
+    <convert type="FrontendInfo">TYPE</convert>
+    <convert type="ValueRange">0,0</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <widget source="FrontendInfo" render="Pixmap" pixmap="Pd1loi-HD-night/icons/scan-c.png" position="30,105" size="96,96" zPosition="2" transparent="1" alphatest="on">
+    <convert type="FrontendInfo">TYPE</convert>
+    <convert type="ValueRange">1,1</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <widget source="FrontendInfo" render="Pixmap" pixmap="Pd1loi-HD-night/icons/scan-t.png" position="30,105" size="96,96" zPosition="2" transparent="1" alphatest="on">
+    <convert type="FrontendInfo">TYPE</convert>
+    <convert type="ValueRange">2,2</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <widget name="network" position="135,105" size="705,45" valign="center" zPosition="2" font="Regular;33" transparent="1" />
+  <widget name="transponder" position="135,157" size="705,45" valign="center" zPosition="2" font="Regular;33" transparent="1" />
+  <widget name="scan_progress" position="30,270" size="810,15" pixmap="Pd1loi-HD-night/infobar/progress_big.png" borderWidth="2" borderColor="uncccccc" />
+  <widget name="scan_state" position="30,307" zPosition="2" size="810,70" valign="top" font="Regular;30" transparent="1" />
+  <widget name="pass" position="30,380" size="810,45" valign="center" font="Regular;33" transparent="1" />
+  <widget name="servicelist" position="870,100" size="1020,912" selectionPixmap="Pd1loi-HD-night/buttons/sel4.png" itemHeight="38" font="Regular;28" selectionDisabled="1" scrollbarMode="showOnDemand" />
   </screen>
   <!-- FastScan -->
   <screen name="FastScanScreen" title="Fast Scan" position="fill" flags="wfNoBorder">
@@ -728,10 +726,10 @@
     <widget name="introduction" position="780,975" size="1110,37" font="Regular;33" halign="center" />
   </screen>
   <screen name="FastScanStatus" title="Fast Scan" position="fill" flags="wfNoBorder">
-    <panel name="BasicTemplate" />
-    <widget name="frontend" pixmap="icons/scan-s.png" position="30,105" size="96,96" zPosition="2" transparent="1" alphatest="on" />
-    <widget name="scan_state" position="30,270" zPosition="2" size="810,45" valign="center" font="Regular;30" transparent="1" />
-    <widget name="scan_progress" position="30,322" size="810,22" pixmap="progress_big.png" borderWidth="2" borderColor="uncccccc" />
+  <panel name="BasicTemplate" />
+  <widget name="frontend" pixmap="Pd1loi-HD-night/icons/scan-s.png" position="30,105" size="96,96" zPosition="2" transparent="1" alphatest="on" />
+  <widget name="scan_state" position="30,270" zPosition="2" size="810,45" valign="center" font="Regular;30" transparent="1" />
+  <widget name="scan_progress" position="30,322" size="810,15" pixmap="Pd1loi-HD-night/infobar/progress_big.png" borderWidth="2" borderColor="uncccccc" />
   </screen>
   	<!-- CableScan -->
   <screen name="CableScanScreen" title="Fast Scan" position="fill" flags="wfNoBorder">
@@ -829,10 +827,10 @@
     <widget source="ServiceList_info" render="Label" position="825,472" size="990,450" backgroundColor="background" zPosition="2" transparent="1" font="Regular;33" />
   </screen>
   <!-- Console -->
-  <screen name="Console" title="Command execution" position="fill" flags="wfNoBorder">
-    <panel name="BasicTemplate" />
-    <widget name="text" position="30,100" size="1860,912" itemHeight="38" font="Fixed;28" transparent="1" foregroundColor="white" scrollbarMode="showOnDemand" />
-  </screen>
+<screen name="Console" title="Command execution" position="fill" flags="wfNoBorder">
+  <panel name="BasicTemplate" />
+  <widget name="text" position="30,100" size="1860,912" itemHeight="40" font="Fixed;32" transparent="1" foregroundColor="myblue" scrollbarMode="showOnDemand" />
+</screen>
   <screen name="Console_Pig" title="Command execution" position="fill" flags="wfNoBorder">
     <panel name="PigTemplate" />
     <widget name="text" position="825,100" size="1035,912" itemHeight="38" font="Fixed;28" transparent="1" foregroundColor="white" scrollbarMode="showOnDemand" />
