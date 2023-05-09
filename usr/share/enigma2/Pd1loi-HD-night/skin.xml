@@ -1772,7 +1772,7 @@
     <widget name="QuestionPixmap" pixmap="icons/input_question.png" position="780,105" size="80,80" alphatest="blend" />
     <widget name="InfoPixmap" pixmap="icons/input_info.png" position="780,105" size="80,80" alphatest="blend" />
     <widget name="WarningPixmap" pixmap="icons/input_warning.png" position="780,105" size="80,80" alphatest="blend" />
-    <widget name="list" selectionPixmap="Pd1loi-HD-night/buttons/sel4.png" position="30,560" size="720,380" itemHeight="38" font="Regular;28" />
+    <widget name="list" selectionPixmap="Pd1loi-HD-night/buttons/sel44.png" position="30,560" size="720,380" itemHeight="38" font="Regular;28" />
   </screen>
   <!-- MessageBoxSimple -->
   <screen name="MessageBoxSimple" position="center,center" size="960,15" title="Message" zPosition="10" flags="wfNoBorder">
@@ -2012,7 +2012,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth) // 2, orgpos.y() + 
   <!-- About -->
   <screen name="About" position="fill" flags="wfNoBorder">
     <panel name="PigTemplate" />
-    <widget name="AboutScrollLabel" font="Regular;28" position="780,100" size="1110,912" zPosition="2" split="1" dividechar=":" colposition="0" />
+    <widget name="AboutScrollLabel" font="Regular;27" position="780,100" size="1110,912" zPosition="2" split="1" dividechar=":" colposition="0" />
   </screen>
   <!-- Memory Info -->
 <screen name="MemoryInfo" position="fill" flags="wfNoBorder">
