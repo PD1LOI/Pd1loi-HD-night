@@ -1189,7 +1189,7 @@
   </screen>
   <screen name="BackupSelection" title="Select files/folders to backup" position="fill" flags="wfNoBorder">
     <panel name="PigTemplate" />
-    <widget name="checkList" position="780,100" size="1110,912" itemHeight="38" font="Regular;28" backgroundColor="background" zPosition="3" transparent="1" scrollbarMode="showOnDemand" />
+    <widget name="checkList" selectionPixmap="Pd1loi-HD-night/buttons/sel4.png" position="780,100" size="1110,912" itemHeight="38" font="Regular;28" backgroundColor="background" zPosition="3" transparent="1" scrollbarMode="showOnDemand" />
   </screen>
   <!-- Opkg installer -->
   <screen name="OpkgInstaller" position="fill" flags="wfNoBorder">
@@ -1218,7 +1218,7 @@
   <!-- Packet Manager -->
   <screen name="PacketManager" title="OPKG upgrade" position="fill" flags="wfNoBorder">
     <panel name="PigTemplate" />
-    <widget source="list" render="Listbox" position="780,105" size="1110,858" zPosition="3" transparent="1" scrollbarMode="showOnDemand">
+    <widget source="list" selectionPixmap="Pd1loi-HD-night/buttons/sel6.png" render="Listbox" position="780,105" size="1110,858" zPosition="3" transparent="1" scrollbarMode="showOnDemand">
       <convert type="TemplatedMultiContent">
 		{"template": [
 		MultiContentEntryText(pos = (7,1), size = (975,36), font=0, flags = RT_HALIGN_LEFT, text = 0), # index 0 is the name
