@@ -238,7 +238,7 @@
     <widget source="session.Event_Now" render="Label" position="545,68" size="400,33" font="Regular;30" halign="right" foregroundColor="blue" backgroundColor="secondBG" transparent="1" zPosition="1">
       <convert type="EventName">SmallRating</convert>
     </widget>
-    <widget source="session.Event_Now" render="Label" position="30,118" size="915,702" font="Regular; 34" halign="block" zPosition="1" transparent="1">
+    <widget source="session.Event_Now" render="Label" position="30,118" size="915,702" font="Regular; 36" halign="block" zPosition="1" transparent="1">
       <convert type="EventName">FullDescription</convert>
     </widget>
     <widget source="session.Event_Next" render="Label" position="975,20" size="915,36" backgroundColor="secondBG" transparent="1" zPosition="1" foregroundColor="unffff00" noWrap="1" font="Regular;33" halign="left">
@@ -250,7 +250,7 @@
     <widget source="session.Event_Next" render="Label" position="1490,68" size="400,33" font="Regular;30" halign="right" foregroundColor="blue" backgroundColor="secondBG" transparent="1" zPosition="1">
       <convert type="EventName">SmallRating</convert>
     </widget>
-    <widget source="session.Event_Next" render="Label" position="975,118" size="915,702" font="Regular; 34" halign="block" zPosition="1" transparent="1">
+    <widget source="session.Event_Next" render="Label" position="975,118" size="915,702" font="Regular; 36" halign="block" zPosition="1" transparent="1">
       <convert type="EventName">FullDescription</convert>
     </widget>
     <panel name="InfoBarTemplate" />
@@ -287,7 +287,7 @@
     <widget source="session.Event_Now" render="Label" position="645,210" size="300,33" font="Regular;30" halign="right" foregroundColor="blue" backgroundColor="secondBG" transparent="1" zPosition="1">
       <convert type="EventName">SmallRating</convert>
     </widget>
-    <widget source="session.Event_Now" render="Label" position="30,260" size="915,560" font="Regular; 34" halign="block" zPosition="1" transparent="1">
+    <widget source="session.Event_Now" render="Label" position="30,260" size="915,560" font="Regular; 36" halign="block" zPosition="1" transparent="1">
       <convert type="EventName">FullDescription</convert>
     </widget>
     <widget source="session.Event_Next" render="Label" position="975,162" size="915,36" backgroundColor="secondBG" transparent="1" zPosition="1" foregroundColor="unffff00" noWrap="1" font="Regular;33" halign="left">
@@ -299,7 +299,7 @@
     <widget source="session.Event_Next" render="Label" position="1590,210" size="300,33" font="Regular;30" halign="right" foregroundColor="blue" backgroundColor="secondBG" transparent="1" zPosition="1">
       <convert type="EventName">SmallRating</convert>
     </widget>
-    <widget source="session.Event_Next" render="Label" position="975,260" size="915,560" font="Regular; 34" halign="block" zPosition="1" transparent="1">
+    <widget source="session.Event_Next" render="Label" position="975,260" size="915,560" font="Regular; 36" halign="block" zPosition="1" transparent="1">
   <convert type="EventName">FullDescription</convert>
 </widget>
     <panel name="InfoBarTemplate" />
