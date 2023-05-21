@@ -676,9 +676,9 @@ MultiContentEntryText(pos=(15,1), size=(870,45), font=0, flags=RT_HALIGN_LEFT, t
 </screen>
 <!--VpnChangerConfigScreen-->
 <screen name="VpnChangerConfigScreen" position="fill" title="ConfigScreen" flags="wfNoBorder">
-<panel name="PigTemplate" />
-<widget name="config" selectionPixmap="Pd1loi-HD-night/buttons/sel4.png" position="870,181" size="1000,600" backgroundColor="black" scrollbarMode="showOnDemand" zPosition="1" transparent="1" />
-<widget name="screenName" position="870,108" size="1000,60" backgroundColor="black" transparent="1" foregroundColor="#ff0000" zPosition="3" font="Regular; 42" valign="top" halign="center" />
+  <panel name="PigTemplate" />
+  <widget name="config" selectionPixmap="Pd1loi-HD-night/buttons/sel4.png" position="870,108" size="1000,800" backgroundColor="black" scrollbarMode="showOnDemand" zPosition="1" transparent="1" />
+  <widget name="screenName" position="29,553" size="732,60" backgroundColor="black" transparent="1" foregroundColor="#ff00" zPosition="3" font="Regular; 42" valign="top" halign="center" />
 </screen>
 <!--FolderScreen-->
 <screen name="FolderScreen" position="fill" title="Sicherungs Ordner">
