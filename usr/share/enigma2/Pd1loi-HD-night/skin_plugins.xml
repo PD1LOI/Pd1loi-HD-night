@@ -757,7 +757,7 @@
     <!--VpnChangerConfigScreen-->
   <screen name="VpnChangerConfigScreen" position="fill" title="ConfigScreen" flags="wfNoBorder">
     <panel name="PigTemplate" />
-    <widget name="config" selectionPixmap="Pd1loi-HD-night/buttons/sel4.png" position="870,108" font="Regular; 26" size="1000,900" backgroundColor="black" scrollbarMode="showOnDemand" zPosition="1" transparent="1" />
+    <widget name="config" selectionPixmap="Pd1loi-HD-night/buttons/sel4.png" position="780,108" font="Regular; 26" size="1110,900" backgroundColor="black" scrollbarMode="showOnDemand" zPosition="1" transparent="1" />
     <widget name="screenName" position="29,553" size="732,60" backgroundColor="black" transparent="1" foregroundColor="#ff00" zPosition="3" font="Regular; 42" valign="top" halign="center" />
   </screen>
   <screen name="FolderScreen" position="fill" title="Sicherungs Ordner">
