@@ -3,6 +3,6 @@ Version: 2.8
 Section: skins
 Priority: optional
 Architecture: all
-Maintainer: Loui Kuperij 
+Maintainer: PD1LOI 
 Description: skins pd1loi-hd-full-hd-night
-Source: {"LastUpdated":"1378039339","Type":"Skin","PostRemoveFlags":"Restart GUI","Title":"skins PD1LOI-HD PD1LOI-Full-HD","PostInstallFlags":"Restart GUI"}
+Source: None
