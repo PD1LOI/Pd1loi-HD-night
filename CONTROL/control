@@ -3,6 +3,7 @@ Version: 3.1.3
 Section: skins
 Priority: optional
 Architecture: all
+HEAD
 Maintainer: Loui Kuperij 
 Description: skins pd1loi-hd-hd-night
 Source: {"LastUpdated":"1378039339","Type":"Skin","PostRemoveFlags":"Restart GUI","Title":"skins PD1LOI-HD PD1LOI-Full-HD","PostInstallFlags":"Restart GUI"}
