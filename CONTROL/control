@@ -3,6 +3,6 @@ Version: 3.0
 Section: skins
 Priority: optional
 Architecture: all
-Maintainer: PD1LOI
-Description: skins pd1loi-hd-night
+Maintainer: @pd1loi
+Description: skins pd1loi-hd-full-night
 Source: None
