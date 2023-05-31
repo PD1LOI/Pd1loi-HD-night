@@ -1612,7 +1612,7 @@
   <!-- Input Device Configuration -->
   <screen name="InputDeviceSelection" title="Select input device" position="fill" flags="wfNoBorder">
     <panel name="PigTemplate" />
-    <widget source="list" selectionPixmap="Pd1loi-HD-night/buttons/sel4.png" render="Listbox" position="780,105" size="1110,720" transparent="1" scrollbarMode="showOnDemand">
+    <widget source="list" selectionPixmap="Pd1loi-HD-night/buttons/sel2.png" render="Listbox" position="780,105" size="1110,720" transparent="1" scrollbarMode="showOnDemand">
       <convert type="TemplatedMultiContent">
         <!-- device, description, devicepng, divpng -->
 	{"template": [
