@@ -1,8 +1,8 @@
-Package: enigma2-plugin-skins-pd1loi-full-hd-night
-Version: 3.0
+Package: enigma2-plugin-skins-pd1loi-hd-night
+Version: 3.1.3
 Section: skins
 Priority: optional
 Architecture: all
-Maintainer: PD1LOI 
-Description: skins pd1loi-hd-full-hd-night
-Source: None
+Maintainer: Loui Kuperij 
+Description: skins pd1loi-hd-hd-night
+Source: {"LastUpdated":"1378039339","Type":"Skin","PostRemoveFlags":"Restart GUI","Title":"skins PD1LOI-HD PD1LOI-Full-HD","PostInstallFlags":"Restart GUI"}
