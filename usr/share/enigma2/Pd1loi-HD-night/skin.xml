@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <skin>
 <!-- Skin: PLi-FullNightHD, based on Magic_HD_Shadow_MiniTV by Vali (c)2009-2010 -->
 <!-- This skin include derived work from VU+NL, Milo, IMS and others -->
@@ -62,55 +62,58 @@
 </fonts>
 <!-- Colors -->
 <colors>
-<color name="toptemplatecolor" value="#00000014"/>
-<color name="basictemplatecolor" value="#00000010"/>
-<color name="selectorcolor" value="#00000020"/>
-<color name="transponderinfo" value="#00808080"/>
-<color name="background" value="#00000000"/>
-<color name="black" value="#00000000"/>
-<color name="blue" value="#00578cc0"/>
-<color name="myblue" value="#0046b8fa" />
+<color name="#1c2c5c" value="#001c2c5c" />
+<color name="#232323" value="#00232323" />
+<color name="#7f000000" value="#7f000000" />
+<color name="#eeeeee" value="#00eeeeee" />
+<color name="background" value="#00000000" />
+<color name="basictemplatecolor" value="#00000010" />
+<color name="black" value="#00000000" />
+<color name="blue" value="#00578cc0" />
 <color name="bluetransparent" value="#08001e4b" />
 <color name="cyan" value="#000090e6" />
 <color name="cyan1" value="#0000deff" />
 <color name="cyan2" value="#0000d2ff" />
-<color name="bluetransparent" value="#08001e4b"/>
-<color name="dark" value="#00242424"/>
-<color name="darkgrey" value="#00555556"/>
-<color name="fallback" value="#00b0b0c0"/>
-<color name="foreground" value="#00f0f0f0"/>
-<color name="green" value="#0056c856"/>
-<color name="greentransparent" value="#08004c00"/>
-<color name="grey" value="#00aaaaaa"/>
-<color name="infobarBG" value="#41080808"/>
-<color name="listbox" value="#000f56a4"/>
-<color name="noTransBG" value="#00101214"/>
-<color name="notavailable" value="#005e5e5e"/>
-<color name="orange" value="#00ffc000"/>
+<color name="dark" value="#00242424" />
+<color name="darkgrey" value="#00555556" />
+<color name="fallback" value="#00b0b0c0" />
+<color name="foreground" value="#00f0f0f0" />
+<color name="green" value="#0056c856" />
+<color name="greentransparent" value="#08004c00" />
+<color name="grey" value="#00aaaaaa" />
+<color name="infobarBG" value="#41080808" />
+<color name="listbox" value="#000f56a4" />
+<color name="myblue" value="#0046b8fa" />
+<color name="notavailable" value="#005e5e5e" />
+<color name="noTransBG" value="#00101214" />
+<color name="orange" value="#00ffc000" />
 <color name="orange1" value="#00ff6600" />
-<color name="unffff00" value="#00ffff00" />
-<color name="rds_text_bg" value="#00003258"/>
-<color name="red" value="#00fa4010"/>
-<color name="redtransparent" value="#084c0000"/>
-<color name="rssviewtop" value="#00005050"/>
-<color name="secondBG" value="#18101214"/>
-<color name="secondFG" value="#00c8aa40"/>
-<color name="selectedBG" value="#06303240"/>
-<color name="selectedFG" value="#00c8aa40"/>
-<color name="transparent" value="#ff000000"/>
-<color name="transpBlack" value="#54111112"/>
-<color name="transpDark" value="#54242424"/>
-<color name="transpWhite" value="#70f0f0f0"/>
-<color name="un33333a" value="#0033333a"/>
+<color name="rds_text_bg" value="#00003258" />
+<color name="red" value="#00fa4010" />
+<color name="redtransparent" value="#084c0000" />
+<color name="rssviewtop" value="#00005050" />
+<color name="secondBG" value="#18101214" />
+<color name="secondFG" value="#00c8aa40" />
+<color name="selectedBG" value="#06303240" />
+<color name="selectedFG" value="#00c8aa40" />
+<color name="selectorcolor" value="#00000020" />
+<color name="toptemplatecolor" value="#00000014" />
+<color name="transparent" value="#ff000000" />
+<color name="transpBlack" value="#54111112" />
+<color name="transpDark" value="#54242424" />
+<color name="transponderinfo" value="#00808080" />
+<color name="transpWhite" value="#70f0f0f0" />
+<color name="un33333a" value="#0033333a" />
+<color name="un40a0aa0" value="#040a0aa0" />
+<color name="un4a00a0a" value="#04a00a0a" />
+<color name="un808888" value="#00808888" />
 <color name="unc6e0f3" value="#00c6e0f3" />
-<color name="un40a0aa0" value="#040a0aa0"/>
-<color name="un4a00a0a" value="#04a00a0a"/>
-<color name="un808888" value="#00808888"/>
-<color name="uncccccc" value="#00cccccc"/>
-<color name="white" value="#00f0f0f0"/>
-<color name="yellow" value="#00c8aa40"/>
-<color name="yellowsoft" value="#00ccc040"/>
-<color name="yellowtransparent" value="#084b4b00"/>
+<color name="uncccccc" value="#00cccccc" />
+<color name="unffff00" value="#00ffff00" />
+<color name="white" value="#00f0f0f0" />
+<color name="yellow" value="#00c8aa40" />
+<color name="yellowsoft" value="#00ccc040" />
+<color name="yellowtransparent" value="#084b4b00" />
 </colors>
 <parameters>
 <parameter name="FallbackReceiverListName" value="8,2,225,38" />
@@ -187,10 +190,10 @@
 </screen>
 <!-- Overscan -->
 <screen name="OverscanWizard" position="fill" flags="wfNoBorder">
-<ePixmap pixmap="skin_default/overscan1920x1080.png" position="fill" size="1920,1080" zPosition="3" alphatest="on" />
+<ePixmap pixmap="skin_default/overscan1920x1080.png" position="0,0" size="1920,1080" zPosition="1" alphatest="on" />
+<widget source="Title" render="Label" position="337,197" size="1244,50" backgroundColor="secondBG" foregroundColor="orange1" transparent="1" zPosition="100" font="Regular; 34" valign="center" halign="center" />
 <ePixmap pixmap="Pd1loi-HD-night/border/top4_bg.png" position="338,197" size="1244,50" zPosition="5" />
-<eLabel position="338,197" size="1244,686" zPosition="3" />
-<widget name="title" position="338,198" size="1244,50" font="Regular;40" backgroundColor="secondBG" foregroundColor="orange1" transparent="1" zPosition="4" />
+<eLabel position="338,197" size="1244,687" zPosition="3" />
 <widget name="introduction" position="338,248" size="1244,630" halign="center" valign="center" font="Regular;30" zPosition="4" />
 <widget name="config" position="338,843" size="1244,40" font="Regular;30" itemHeight="40" zPosition="4" selectionPixmap="Pd1loi-HD-night/buttons/0sel.png" />
 </screen>
@@ -325,7 +328,7 @@
 </widget>
 </screen>
 <!-- DVD Player Infobar -->
-<screen name="DVDPlayer" title="InfoBar" position="150,67" size="1620,352" backgroundColor="transparent" flags="wfNoBorder">
+<screen name="DVDPlayer" title="InfoBar" position="150,18" size="1620,352" backgroundColor="transparent" flags="wfNoBorder">
 <panel name="PlayerTemplate" />
 <widget name="chapterLabel" position="270,150" size="570,52" font="Regular;30" halign="left" valign="center" noWrap="1" borderColor="black" borderWidth="2" backgroundColor="transparent" zPosition="3" />
 <eLabel text="Audio:	" position="270,202" size="135,52" backgroundColor="secondBG" transparent="1" font="Regular;30" borderColor="black" borderWidth="2" valign="center" halign="left" />
