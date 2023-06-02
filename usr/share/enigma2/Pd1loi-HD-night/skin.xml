@@ -1682,22 +1682,22 @@ MultiContentEntryText(pos = (120,9), size = (990,81), font=0, flags = RT_HALIGN_
 <widget name="list" selectionPixmap="Pd1loi-HD-night/buttons/sel44.png" position="30,560" size="720,380" itemHeight="38" font="Regular;28" />
 </screen>
 <!-- MessageBoxSimple -->
-<screen name="MessageBoxSimple" position="center,center" size="960,15" title="Message" zPosition="10" flags="wfNoBorder">
-<widget source="Title" render="Label" position="3,3" size="300,30" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;28" valign="center" halign="left" />
-<widget name="text" foregroundColor="unffff00" position="100,12" size="780,0" font="Regular;32" />
-<widget name="ErrorPixmap" pixmap="icons/input_error.png" position="10,10" size="80,80" alphatest="blend" />
-<widget name="QuestionPixmap" pixmap="icons/input_question.png" position="10,10" size="80,80" alphatest="blend" />
-<widget name="InfoPixmap" pixmap="icons/input_info.png" position="10,10" size="80,80" alphatest="blend" />
-<widget name="WarningPixmap" pixmap="icons/input_warning.png" position="10,10" size="80,80" alphatest="blend" />
-<widget name="list" selectionPixmap="Pd1loi-HD-night/buttons/sel.png" position="150,150" size="720,570" itemHeight="38" font="Regular;28" />
-<widget name="autoresize" position="0,0" size="0,0" font="Regular;28" noWrap="1" />
-<applet type="onLayoutFinish">
+ <screen name="MessageBoxSimple" position="center,center" size="960,15" title="Message" zPosition="10" flags="wfNoBorder">
+    <widget source="Title" render="Label" position="3,3" size="300,30" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;28" valign="center" halign="left" />
+    <widget name="text" foregroundColor="unffff00" position="100,12" size="780,0" font="Regular;32" />
+    <widget name="ErrorPixmap" pixmap="icons/input_error.png" position="10,10" size="80,80" alphatest="blend" />
+    <widget name="QuestionPixmap" pixmap="icons/input_question.png" position="10,10" size="80,80" alphatest="blend" />
+    <widget name="InfoPixmap" pixmap="icons/input_info.png" position="10,10" size="80,80" alphatest="blend" />
+    <widget name="WarningPixmap" pixmap="icons/input_warning.png" position="10,10" size="80,80" alphatest="blend" />
+    <widget name="list" selectionPixmap="Pd1loi-HD-night/buttons/sel.png" position="150,150" size="720,570" itemHeight="38" font="Regular;28" />
+    <widget name="autoresize" position="0,0" size="0,0" font="Regular;28" noWrap="1" />
+    <applet type="onLayoutFinish">
 from enigma import eSize, ePoint
 if self.timerRunning:
-titleheight = 30
+	titleheight = 30
 else:
-titleheight = 0
-self.setTitle("")
+	titleheight = 0
+	self.setTitle("")
 orgwidth = self.instance.size().width()
 orgheight = self.instance.size().height()
 orgpos = self.instance.position()
@@ -1707,18 +1707,18 @@ wsizex = textsize[0] + 90
 wsizey = textsize[1]
 lenlist = len(self.list)*38
 if (lenlist &gt; 380):
-lenlist = 380
+	lenlist = 380
 if (96 &gt; wsizey):
-wsizey = 96
+	wsizey = 96
 if self.type == self.TYPE_YESNO:
-wsizey += lenlist + 15
+	wsizey += lenlist + 15
 if (420 &gt; wsizex):
-wsizex = 420
+	wsizex = 420
 listwidth = self.getListWidth() + 10
 if (listwidth &gt; 1280):
-listwidth = 1280
+	listwidth = 1280
 if (listwidth &gt; wsizex):
-wsizex = listwidth
+	wsizex = listwidth
 wsize = (wsizex, wsizey + titleheight)
 self.instance.resize(eSize(*wsize))
 self["text"].instance.move(ePoint(97, 12 + titleheight))
@@ -1730,13 +1730,13 @@ self["QuestionPixmap"].instance.resize(eSize(80,80))
 self["InfoPixmap"].instance.move(ePoint(7, 7 + titleheight))
 self["InfoPixmap"].instance.resize(eSize(80,80))
 if self.type == self.TYPE_YESNO:
-listsize = (wsizex-6, lenlist)
-self["list"].instance.move(ePoint(3, wsizey - lenlist + titleheight - 3))
-self["list"].instance.resize(eSize(*listsize))
+	listsize = (wsizex-6, lenlist)
+	self["list"].instance.move(ePoint(3, wsizey - lenlist + titleheight - 3))
+	self["list"].instance.resize(eSize(*listsize))
 newwidth = wsize[0]
 self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth) // 2, orgpos.y() + (orgheight - wsizey) // 2))
-</applet>
-</screen>
+	</applet>
+  </screen>
 <!-- TimeDateInput -->
 <screen name="TimeDateInput" title="Time/Date Input" position="fill" flags="wfNoBorder">
 <panel name="PigTemplate" />
