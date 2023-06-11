@@ -1114,9 +1114,9 @@ MultiContentEntryText(pos = (1050,6), size = (22,37), font = 1, flags = RT_HALIG
   </screen>
   <!-- Choose upgrade source -->
   <screen name="OPKGMenu" title="Select OPKG source" position="fill" flags="wfNoBorder">
-    <panel name="PigTemplate" />
-    <widget name="filelist" position="780,105" size="1110,450" itemHeight="38" font="Regular;28" zPosition="3" transparent="1" scrollbarMode="showOnDemand" />
-  </screen>
+  <panel name="PigTemplate" />
+  <widget name="filelist" selectionPixmap="Pd1loi-HD-night/buttons/sel4.png" position="780,105" size="1110,450" itemHeight="38" font="Regular;28" zPosition="3" transparent="1" scrollbarMode="showOnDemand" />
+</screen>
   <!-- Edit upgrade source -->
   <screen name="OPKGSource" title="OPKG source" position="fill" flags="wfNoBorder">
     <panel name="PigTemplate" />
