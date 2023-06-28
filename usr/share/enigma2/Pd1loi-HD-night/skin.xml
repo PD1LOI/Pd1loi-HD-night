@@ -200,7 +200,7 @@
   <!-- Het weer -->
   <screen name="Weermenu" position="fill" title="Het weer" flags="wfNoBorder">
     <panel name="PigTemplate" />
-    <widget name="list" position="780,105" size="1110,912" itemHeight="45" font="Regular;32" scrollbarMode="showOnDemand" selectionPixmap="Pd1loi-HD-night/buttons/sel4.png" />
+    <widget name="list" position="780,105" size="1110,912" itemHeight="45" foregroundColor="white" font="Regular;32" scrollbarMode="showOnDemand" selectionPixmap="Pd1loi-HD-night/buttons/sel4.png" />
     <widget name="Text" position="30,600" size="720,300" zPosition="2" font="Regular;32" foregroundColor="secondFG" valign="center" halign="center" />
   </screen>
   <screen name="secondmenu" position="fill" title="Het weer" flags="wfNoBorder">
@@ -765,41 +765,34 @@
     <eLabel position="0,0" size="450,45" text="Timeshift Live" backgroundColor="transparent" borderWidth="2" font="Regular;37" borderColor="black" />
   </screen>
   <!-- Radio Stuff -->
-  <screen name="ChannelSelectionRadio" position="fill" flags="wfNoBorder">
+  <screen name="ChannelSelectionRadio" position="fill" flags="wfNoBorder" backgroundColor="background">
     <panel name="BasicTemplate" />
     <panel name="KeyMenuTemplate" />
     <panel name="KeyInfoTemplate" />
-    <widget source="session.CurrentService" render="Picon" position="30,907" size="150,90" alphatest="blend" backgroundColor="secondBG" transparent="1" zPosition="1">
+    <widget source="session.CurrentService" render="Picon" position="59,841" size="180,100" alphatest="blend" backgroundColor="secondBG" transparent="1" zPosition="1">
       <convert type="ServiceName">Reference</convert>
     </widget>
     <widget source="session.CurrentService" render="ChannelNumber" borderWidth="2" position="260,820" size="150,75" backgroundColor="secondBG" transparent="1" zPosition="1" foregroundColor="foreground" font="Regular;40" valign="center" halign="left" />
     <widget source="session.CurrentService" render="Label" borderWidth="2" position="387,820" size="774,75" backgroundColor="secondBG" transparent="1" zPosition="1" foregroundColor="foreground" font="Regular;40" valign="center" halign="left">
       <convert type="ServiceName">Name</convert>
     </widget>
-    <widget source="global.CurrentTime" render="Label" borderWidth="2" position="30,785" size="540,45" backgroundColor="secondBG" noWrap="1" transparent="1" zPosition="1" foregroundColor="grey" font="Regular;26" valign="center" halign="left">
+    <widget source="global.CurrentTime" render="Label" borderWidth="2" position="30,785" size="540,45" backgroundColor="secondBG" noWrap="1" transparent="1" zPosition="1" foregroundColor="unffff00" font="Regular;26" valign="center" halign="left">
       <convert type="ClockToText">Date</convert>
     </widget>
-    <widget source="global.CurrentTime" render="Label" borderWidth="2" position="30,820" size="210,75" backgroundColor="secondBG" noWrap="1" transparent="1" zPosition="1" foregroundColor="foreground" font="Regular;39" valign="center" halign="left">
-      <convert type="ClockToText">Format:%H:%M</convert>
-    </widget>
-    <eLabel position="134,837" size="10,33" text=":" transparent="1" borderWidth="2" font="Regular;27" backgroundColor="secondBG" foregroundColor="foreground" valign="center" halign="center" />
-    <widget source="global.CurrentTime" render="Label" borderWidth="2" position="144,837" size="52,33" backgroundColor="secondBG" noWrap="1" transparent="1" zPosition="1" foregroundColor="foreground" font="Regular;27" valign="center" halign="left">
-      <convert type="ClockToText">Format:%S</convert>
-    </widget>
-    <widget source="session.RecordState" render="Pixmap" pixmap="buttons/rec.png" position="205,842" size="30,30" zPosition="3" alphatest="on">
+    <widget source="session.RecordState" render="Pixmap" pixmap="buttons/rec.png" position="1165,842" size="30,30" zPosition="3" alphatest="on">
       <convert type="ConditionalShowHide" />
     </widget>
     <widget source="session.CurrentService" render="Label" borderWidth="2" position="695,785" size="945,45" backgroundColor="secondBG" transparent="1" zPosition="1" foregroundColor="grey" font="Regular;26" valign="center" halign="right">
       <convert type="CryptoInfo">VerboseInfo</convert>
     </widget>
-    <widget source="session.Event_Now" render="Label" position="260,918" size="105,45" backgroundColor="secondBG" transparent="1" zPosition="1" foregroundColor="foreground" font="Regular;36" halign="left">
+    <widget source="session.Event_Now" render="Label" position="260,918" size="105,45" backgroundColor="secondBG" transparent="1" zPosition="1" foregroundColor="green" font="Regular;36" halign="left">
       <convert type="EventTime">StartTime</convert>
       <convert type="ClockToText">Format:%H:%M</convert>
     </widget>
     <widget source="session.Event_Now" render="Label" position="387,918" size="1072,45" backgroundColor="secondBG" transparent="1" zPosition="1" foregroundColor="foreground" noWrap="1" font="Regular;36" halign="left">
       <convert type="EventName">Name</convert>
     </widget>
-    <widget source="session.Event_Now" render="Label" position="1430,918" size="210,45" backgroundColor="secondBG" transparent="1" zPosition="1" foregroundColor="foreground" font="Regular;36" halign="right">
+    <widget source="session.Event_Now" render="Label" position="1430,918" size="210,45" backgroundColor="secondBG" transparent="1" zPosition="1" foregroundColor="unffff00" font="Regular;36" halign="right">
       <convert type="EventTime">Remaining</convert>
       <convert type="RemainingToText">InMinutes</convert>
     </widget>
@@ -874,7 +867,7 @@
     <widget source="session.CurrentService" render="Label" position="1705,796" size="180,25" borderWidth="1" borderColor="black" backgroundColor="transpBlack" zPosition="1" font="Regular;22" transparent="1">
       <convert type="RotorPosition" />
     </widget>
-    <widget name="list" position="780,100" size="1132,675" itemHeight="45" transparent="1" serviceNumberFont="Regular;34" scrollbarMode="showOnDemand" serviceInfoFont="Regular;32" serviceNameFont="Regular;34" serviceItemHeight="45" picServiceEventProgressbar="window/progress.png" progressbarHeight="15" progressBarWidth="60" progressPercentWidth="80" colorEventProgressbarBorder="un33333a" fieldMargins="15" nonplayableMargins="15" colorEventProgressbarBorderSelected="darkgrey" colorServiceDescription="yellowsoft" progressbarBorderWidth="0" foregroundColorServiceNotAvail="#656565" backgroundColorMarked="#656565" colorServiceDescriptionFallback="yellowsoft" colorServiceDescriptionSelectedFallback="yellowsoft" colorFallbackItem="#aaaaaa" colorServiceSelectedFallback="yellowsoft" />
+    <widget name="list" position="780,108" size="1132,675" selectionPixmap="Pd1loi-HD-night/buttons/sel4.png" itemHeight="50" transparent="1" serviceNumberFont="Regular;37" scrollbarMode="showOnDemand" serviceInfoFont="Regular;37" serviceNameFont="Regular;37" serviceItemHeight="50" picServiceEventProgressbar="Pd1loi-HD-night/window/progress.png" progressbarHeight="15" progressBarWidth="70" progressPercentWidth="80" colorEventProgressbarBorder="un33333a" fieldMargins="15" nonplayableMargins="15" colorEventProgressbarBorderSelected="darkgrey" colorServiceDescription="#4FFF86" progressbarBorderWidth="3" foregroundColorServiceNotAvail="#656565" backgroundColorMarked="#656565" colorServiceDescriptionFallback="#4FFF86" colorServiceDescriptionSelectedFallback="#4FFF86" colorFallbackItem="#aaaaaa" colorServiceSelectedFallback="#4FFF86" />
     <widget source="ServiceEvent" render="Label" position="30,528" size="720,30" font="Regular;30" foregroundColor="transponderinfo" halign="center" noWrap="1" zPosition="1">
       <convert type="TransponderInfo">
       </convert>
@@ -886,9 +879,12 @@
       <convert type="RdsInfo">RasInteractiveAvailable</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="RdsDecoder" render="Label" position="30,665" size="750,110" zPosition="2" foregroundColor="selectedFG" font="Regular;34" valign="center" halign="center">
+    <widget source="RdsDecoder" render="Label" position="30,665" size="750,110" zPosition="2" foregroundColor="white" font="Regular;34" valign="center" halign="center">
       <convert type="RdsInfo">RadioText</convert>
     </widget>
+    <widget source="global.CurrentTime" render="Label" borderWidth="2" position="28,943" size="245,60" backgroundColor="secondBG" noWrap="1" transparent="1" zPosition="1" foregroundColor="myblue" font="Time; 58" valign="top" halign="left">
+  <convert type="ClockToText">Format:%H:%M:%S</convert>
+</widget>
   </screen>
   <screen name="RadioInfoBar" title="InfoBar" position="0,0" size="0,0" backgroundColor="background" flags="wfNoBorder">
     <!--dummy screen to keep it backwards compatible with other skins-->
@@ -1114,9 +1110,9 @@ MultiContentEntryText(pos = (1050,6), size = (22,37), font = 1, flags = RT_HALIG
   </screen>
   <!-- Choose upgrade source -->
   <screen name="OPKGMenu" title="Select OPKG source" position="fill" flags="wfNoBorder">
-  <panel name="PigTemplate" />
-  <widget name="filelist" selectionPixmap="Pd1loi-HD-night/buttons/sel4.png" position="780,105" size="1110,450" itemHeight="38" font="Regular;28" zPosition="3" transparent="1" scrollbarMode="showOnDemand" />
-</screen>
+    <panel name="PigTemplate" />
+    <widget name="filelist" selectionPixmap="Pd1loi-HD-night/buttons/sel4.png" position="780,105" size="1110,450" itemHeight="38" font="Regular;28" zPosition="3" transparent="1" scrollbarMode="showOnDemand" />
+  </screen>
   <!-- Edit upgrade source -->
   <screen name="OPKGSource" title="OPKG source" position="fill" flags="wfNoBorder">
     <panel name="PigTemplate" />
