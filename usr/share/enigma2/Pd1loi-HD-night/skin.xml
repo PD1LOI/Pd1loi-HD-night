@@ -857,23 +857,23 @@
     <widget source="session.FrontendStatus" render="Label" position="1698,920" size="165,33" backgroundColor="secondBG" transparent="1" zPosition="1" foregroundColor="foreground" font="Regular;28" halign="center">
       <convert type="FrontendInfo">SNRdB</convert>
     </widget>
-    <widget source="session.FrontendInfo" render="Label" position="1681,855" size="230,60" borderWidth="1" borderColor="black" zPosition="1" backgroundColor="transpBlack" transparent="1" halign="left" font="Regular;30">
+    <widget source="session.FrontendInfo" render="Label" position="1664,848" size="230,70" borderWidth="1" borderColor="black" zPosition="1" backgroundColor="transpBlack" transparent="1" halign="center" font="Regular;30">
       <convert type="FrontendInfo">STRING</convert>
     </widget>
     <widget source="session.CurrentService" render="Label" position="1698,969" size="165,33" backgroundColor="secondBG" transparent="1" zPosition="1" text="DVB-S" font="Regular;28" halign="center">
       <convert type="ServiceOrbitalPosition" />
     </widget>
-    <widget source="session.CurrentService" render="Label" position="1698,828" size="180,25" borderWidth="1" borderColor="black" backgroundColor="transpBlack" zPosition="1" font="Regular;22" transparent="1">
+    <widget source="session.CurrentService" render="Label" position="1693,821" size="180,25" borderWidth="1" borderColor="black" backgroundColor="transpBlack" zPosition="1" font="Regular;22" transparent="1">
       <convert type="RotorPosition" />
     </widget>
     <widget name="list" position="780,108" size="1132,675" selectionPixmap="Pd1loi-HD-night/buttons/sel4.png" itemHeight="50" transparent="1" serviceNumberFont="Regular;37" scrollbarMode="showOnDemand" serviceInfoFont="Regular;37" serviceNameFont="Regular;37" serviceItemHeight="50" picServiceEventProgressbar="Pd1loi-HD-night/window/progress.png" progressbarHeight="15" progressBarWidth="70" progressPercentWidth="80" colorEventProgressbarBorder="un33333a" fieldMargins="15" nonplayableMargins="15" colorEventProgressbarBorderSelected="darkgrey" colorServiceDescription="#4FFF86" progressbarBorderWidth="3" foregroundColorServiceNotAvail="#656565" backgroundColorMarked="#656565" colorServiceDescriptionFallback="#4FFF86" colorServiceDescriptionSelectedFallback="#4FFF86" colorFallbackItem="#aaaaaa" colorServiceSelectedFallback="#4FFF86" />
-    <widget source="ServiceEvent" render="Label" position="30,528" size="720,35" font="Regular; 32" foregroundColor="cyan" halign="center" noWrap="1" zPosition="1">
+    <widget source="ServiceEvent" render="Label" position="30,528" size="764,35" font="Regular; 30" foregroundColor="orange" halign="center" noWrap="1" zPosition="1">
       <convert type="TransponderInfo">
       </convert>
     </widget>
     <widget source="session.Event_Now" render="Label" position="30,120" size="765,623" font="Regular;28" foregroundColor="white">
-  <convert type="EventName">ExtendedDescription</convert>
-</widget>
+      <convert type="EventName">ExtendedDescription</convert>
+    </widget>
     <widget source="RdsDecoder" render="Pixmap" pixmap="icons/rass_logo.png" position="30,575" size="150,90" zPosition="2" alphatest="on">
       <convert type="RdsInfo">RasInteractiveAvailable</convert>
       <convert type="ConditionalShowHide" />
