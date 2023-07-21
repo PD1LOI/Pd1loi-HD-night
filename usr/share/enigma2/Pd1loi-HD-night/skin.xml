@@ -1000,7 +1000,7 @@ MultiContentEntryText(pos = (1050,6), size = (22,37), font = 1, flags = RT_HALIG
   <!-- Minute input -->
   <screen name="MinuteInput" position="center,center" size="360,82" flags="wfNoBorder">
     <ePixmap alphatest="off" pixmap="infobar/bl80.png" position="0,0" size="360,82" zPosition="-1" />
-    <eLabel text="Seek" position="30,22" size="150,37" backgroundColor="secondBG" foregroundColor="secondFG" transparent="1" font="Regular;34" />
+    <eLabel text="Seek" position="30,22" size="150,37" backgroundColor="secondBG" foregroundColor="unffff00" transparent="1" font="Regular;34" />
     <widget name="minutes" transparent="1" position="180,22" size="150,37" halign="right" font="Regular;34" zPosition="1" />
   </screen>
   <!-- MovieContextMenu -->
@@ -1295,7 +1295,7 @@ MultiContentEntryPixmapAlphaTest(pos = (22,7),size = (72,72),png = 2),# index 2 
     </panel>
   </screen>
   <!-- Video wizard -->
-  <screen name="VideoWizard" position="fill" flags="wfNoBorder">
+  <screen name="VideoWizard" position="0,0" flags="wfNoBorder">
     <panel name="WizardMarginsTemplate" />
     <panel name="WizardPictureLangTemplate" />
     <panel name="RemoteControlTemplate" />
@@ -1496,7 +1496,7 @@ MultiContentEntryPixmapAlphaTest(pos = (15,15),size = (72,72),png = 3),# index 4
     </widget>
     <widget source="introduction" render="Label" position="780,975" size="1110,34" backgroundColor="darkgrey" shadowColor="black" shadowOffset="-2,-2" zPosition="1" transparent="1" font="Regular;30" halign="center" />
   </screen>
-  <screen name="UserManager" title="UserManager" position="fill" flags="wfNoBorder">
+  <screen name="UserManager" title="UserManager" position="0,0" flags="wfNoBorder">
     <panel name="PigTemplate" />
     <widget source="config" selectionPixmap="Pd1loi-HD-night/buttons/sel4.png" render="Listbox" position="780,105" size="1110,630" zPosition="3" transparent="1" scrollbarMode="showOnDemand">
       <convert type="TemplatedMultiContent">
@@ -1516,8 +1516,8 @@ MultiContentEntryPixmapAlphaTest(pos = (15,15),size = (72,72),png = 3),# index 4
     <widget source="legend1" render="Label" position="780,105" size="300,75" transparent="1" zPosition="1" font="Regular;27" valign="center" halign="left" />
     <widget source="legend2" render="Label" position="1080,105" size="525,75" transparent="1" zPosition="1" font="Regular;27" valign="center" halign="center" />
     <widget source="legend3" render="Label" position="1590,105" size="300,75" transparent="1" zPosition="1" font="Regular;27" valign="center" halign="right" />
-    <widget source="config" render="Listbox" position="780,210" size="1110,750" scrollbarMode="showOnDemand">
-      <convert type="TemplatedMultiContent">
+    <widget source="config" render="Listbox" selectionPixmap="Pd1loi-HD-night/buttons/sel4.png" position="780,210" size="1110,750" scrollbarMode="showOnDemand">
+  <convert type="TemplatedMultiContent">
 {"template": [
 MultiContentEntryPixmapAlphaTest(pos = (22,15),size = (72,72),png = 0),# index 0 is the isMounted pixmap
 MultiContentEntryText(pos = (150,15),size = (285,37),font=0,flags = RT_HALIGN_LEFT,text = 1),# index 1 is the sharename
@@ -1530,7 +1530,7 @@ MultiContentEntryPixmapAlphaTest(pos = (995,15),size = (72,72),png = 5),# index 
 "itemHeight": 75
 }
 </convert>
-    </widget>
+</widget>
     <widget source="introduction" render="Label" position="780,975" size="1110,34" transparent="1" zPosition="10" font="Regular;30" valign="center" halign="center" />
   </screen>
   <screen name="AutoMountEdit" title="MountEdit" position="fill" flags="wfNoBorder">
@@ -1608,7 +1608,7 @@ MultiContentEntryText(pos = (120,9), size = (990,81), font=0, flags = RT_HALIGN_
   </screen>
   <screen name="InputDeviceSetup" title="Input device setup" position="fill" flags="wfNoBorder">
     <panel name="PigTemplate" />
-    <widget name="config" position="780,100" size="1110,912" itemHeight="38" font="Regular;28" scrollbarMode="showOnDemand" />
+    <widget name="config" selectionPixmap="Pd1loi-HD-night/buttons/sel4.png" position="780,100" size="1110,912" itemHeight="38" font="Regular;28" scrollbarMode="showOnDemand" />
     <widget source="introduction" render="Label" position="780,975" size="1110,34" backgroundColor="darkgrey" shadowColor="black" shadowOffset="-2,-2" zPosition="1" transparent="1" font="Regular;30" halign="center" />
   </screen>
   <!-- Harddisk selection -->
