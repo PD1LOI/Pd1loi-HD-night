@@ -396,23 +396,23 @@
     <widget source="Event" render="PDRunningText" position="30,650" size="720,315" transparent="1" font="Regular;32" halign="left" foregroundColor="white" options="movetype=running,startpoint=0,direction=top,steptime=60,repeat=5,startdelay=9000,wrap">
       <convert type="EventName">FullDescription</convert>
     </widget>
-    <widget source="Event" render="Label" position="30,979" size="330,34" backgroundColor="background" transparent="1" foregroundColor="secondFG" font="Regular;30">
+    <widget source="Event" render="Label" position="30,979" size="150,34" backgroundColor="background" transparent="1" foregroundColor="green" font="Regular;30">
       <convert type="EventTime">StartTime</convert>
       <convert type="ClockToText">ShortDate</convert>
     </widget>
-    <widget source="Event" render="Label" position="202,979" size="120,34" backgroundColor="background" transparent="1" foregroundColor="secondFG" font="Regular;30" halign="right">
+    <widget source="Event" render="Label" position="222,979" size="110,34" backgroundColor="background" transparent="1" foregroundColor="red" font="Regular;30" halign="center">
       <convert type="EventTime">StartTime</convert>
       <convert type="ClockToText">Format:%H:%M</convert>
     </widget>
-    <widget source="Event" render="Label" position="330,979" size="120,34" backgroundColor="background" transparent="1" foregroundColor="secondFG" font="Regular;30" halign="left">
+    <widget source="Event" render="Label" position="332,979" size="120,34" backgroundColor="background" transparent="1" foregroundColor="orange" font="Regular;30" halign="left">
       <convert type="EventTime">EndTime</convert>
       <convert type="ClockToText">Format:- %H:%M</convert>
     </widget>
-    <widget source="Event" render="Label" position="520,979" size="165,34" backgroundColor="background" transparent="1" foregroundColor="secondFG" font="Regular;30" halign="left">
+    <widget source="Event" render="Label" position="520,979" size="150,34" backgroundColor="background" transparent="0" foregroundColor="myblue" font="Regular;30" halign="left">
       <convert type="EventTime">Duration</convert>
       <convert type="ClockToText">InMinutes</convert>
     </widget>
-    <widget source="Event" render="Label" position="590,979" size="160,34" backgroundColor="background" transparent="1" foregroundColor="secondFG" font="Regular;30" halign="right">
+    <widget source="Event" render="Label" position="590,979" size="160,34" backgroundColor="background" transparent="1" foregroundColor="unffff00" font="Regular;30" halign="right">
       <convert type="EventTime">Duration</convert>
       <convert type="ClockToText">AsLengthHours</convert>
     </widget>
@@ -482,9 +482,9 @@
   <screen name="EPGSearchHistory" title="EPGSearch - History" position="fill" flags="wfNoBorder">
     <panel name="SelectionTemplate" />
     <widget source="help" render="Label" position="30,570" size="720,280" backgroundColor="background" transparent="1" font="Regular;30" />
-    <widget source="history" position="780,100" render="Listbox" size="1110,912" itemHeight="38" font="Regular;28" backgroundColor="background" transparent="1" scrollbarMode="showOnDemand">
-      <convert type="StringList" />
-    </widget>
+    <widget source="history" position="780,100" render="Listbox" selectionPixmap="Pd1loi-HD-night/buttons/sel4.png" size="1110,912" itemHeight="38" font="Regular;28" backgroundColor="background" transparent="1" scrollbarMode="showOnDemand">
+  <convert type="StringList" />
+</widget>
   </screen>
   <!-- GraphMultiEPG -->
   <screen name="GraphMultiEPG" title="Electronic Program Guide" position="fill" flags="wfNoBorder">
@@ -1517,7 +1517,7 @@ MultiContentEntryPixmapAlphaTest(pos = (15,15),size = (72,72),png = 3),# index 4
     <widget source="legend2" render="Label" position="1080,105" size="525,75" transparent="1" zPosition="1" font="Regular;27" valign="center" halign="center" />
     <widget source="legend3" render="Label" position="1590,105" size="300,75" transparent="1" zPosition="1" font="Regular;27" valign="center" halign="right" />
     <widget source="config" render="Listbox" selectionPixmap="Pd1loi-HD-night/buttons/sel4.png" position="780,210" size="1110,750" scrollbarMode="showOnDemand">
-  <convert type="TemplatedMultiContent">
+      <convert type="TemplatedMultiContent">
 {"template": [
 MultiContentEntryPixmapAlphaTest(pos = (22,15),size = (72,72),png = 0),# index 0 is the isMounted pixmap
 MultiContentEntryText(pos = (150,15),size = (285,37),font=0,flags = RT_HALIGN_LEFT,text = 1),# index 1 is the sharename
@@ -1530,7 +1530,7 @@ MultiContentEntryPixmapAlphaTest(pos = (995,15),size = (72,72),png = 5),# index 
 "itemHeight": 75
 }
 </convert>
-</widget>
+    </widget>
     <widget source="introduction" render="Label" position="780,975" size="1110,34" transparent="1" zPosition="10" font="Regular;30" valign="center" halign="center" />
   </screen>
   <screen name="AutoMountEdit" title="MountEdit" position="fill" flags="wfNoBorder">
