@@ -1637,7 +1637,7 @@ MultiContentEntryText(pos = (120,9), size = (990,81), font=0, flags = RT_HALIGN_
   <!-- PPanel -->
   <screen flags="wfNoBorder" name="ToplevelPPanel" position="fill" title="Toplevel PPanel">
     <panel name="PigTemplate" />
-    <widget name="nodelist" position="780,100" size="1110,912" itemHeight="38" font="Regular;28" scrollbarMode="showOnDemand" />
+    <widget name="nodelist" position="780,100" selectionPixmap="Pd1loi-HD-night/buttons/sel4.png" size="1110,912" itemHeight="38" font="Regular;28" scrollbarMode="showOnDemand" />
     <widget name="helptext" position="30,560" size="720,390" font="Regular;30" valign="center" halign="left" />
   </screen>
   <screen flags="wfNoBorder" name="PPanel" position="fill" title="PPanel">
@@ -2070,7 +2070,7 @@ MultiContentEntryText(pos = (390,10),size = (645,45),flags = RT_HALIGN_LEFT,text
     <widget name="target" position="780,150" size="1110,38" valign="center" font="Regular;33" />
     <widget name="filelist" position="780,197" size="1110,304" zPosition="1" scrollbarMode="showOnDemand" selectionDisabled="1" />
     <widget name="textbook" position="780,517" size="1110,38" font="Regular;33" />
-    <widget name="booklist" position="787,562" itemHeight="38" font="Regular;28" size="1102,456" zPosition="2" scrollbarMode="showOnDemand" />
+    <widget name="booklist" selectionPixmap="Pd1loi-HD-night/buttons/sel4.png" position="787,562" itemHeight="38" font="Regular;28" size="1102,456" zPosition="2" scrollbarMode="showOnDemand" />
   </screen>
   <!-- Parental Control -->
   <screen name="ParentalControlSetup" position="fill" title="Parental control setup" flags="wfNoBorder">
