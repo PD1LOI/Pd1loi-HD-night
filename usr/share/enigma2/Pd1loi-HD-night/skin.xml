@@ -711,15 +711,15 @@
     <panel name="PigTemplate" />
     <widget name="list" selectionPixmap="Pd1loi-HD-night/buttons/sel4.png" position="780,100" size="1110,874" scrollbarMode="showOnDemand" />
     <widget name="choosen" position="30,570" size="720,360" scrollbarMode="showOnDemand" />
-    <widget name="description" position="780,983" size="1100,29" zPosition="1" font="Regular;24" halign="center" foregroundColor="unffff00" />
+    <widget name="description" position="780,983" selectionPixmap="Pd1loi-HD-night/buttons/sel4.png" size="1100,29" zPosition="1" font="Regular;24" halign="center" foregroundColor="unffff00" />
   </screen>
   <screen name="HotkeySetupSelect" title="" position="fill" flags="wfNoBorder">
-    <panel name="PigTemplate" />
-    <panel name="KeyPrevNextTemplate_Hideable" />
-    <widget name="list" selectionPixmap="Pd1loi-HD-night/buttons/sel4.png" position="780,100" size="1110,874" scrollbarMode="showOnDemand" />
-    <widget name="choosen" position="30,570" size="720,360" scrollbarMode="showOnDemand" />
-    <widget name="description" position="780,983" size="1100,29" zPosition="1" font="Regular;24" halign="center" foregroundColor="unffff00" />
-  </screen>
+  <panel name="PigTemplate" />
+  <panel name="KeyPrevNextTemplate_Hideable" />
+  <widget name="list" selectionPixmap="Pd1loi-HD-night/buttons/sel4.png" position="780,100" size="1110,874" scrollbarMode="showOnDemand" />
+  <widget name="choosen" position="30,570" size="720,360" scrollbarMode="showOnDemand" selectionPixmap="Pd1loi-HD-night/buttons/sel104.png" />
+  <widget name="description" position="780,983" size="1100,29" zPosition="1" font="Regular;24" halign="center" foregroundColor="unffff00" />
+</screen>
   <!--CI Config Menu -->
   <screen name="CIconfigMenu" title="CI Assignment" position="fill" flags="wfNoBorder">
     <panel name="PigTemplate" />
