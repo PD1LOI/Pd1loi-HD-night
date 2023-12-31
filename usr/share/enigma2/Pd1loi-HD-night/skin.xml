@@ -488,16 +488,16 @@
 </screen>
 <!-- GraphMultiEPG -->
 <screen name="GraphMultiEPG" title="Electronic Program Guide" position="fill" flags="wfNoBorder">
-<panel name="SelectionTemplate" />
-<panel name="KeyMenuTemplate" />
-<panel name="KeyInfoTemplate" />
+<panel name="SelectionTemplate"/>
+<panel name="KeyMenuTemplate"/>
+<panel name="KeyInfoTemplate"/>
 <widget source="Event" render="Label" position="780,105" size="225,36" backgroundColor="background" transparent="1" foregroundColor="secondFG" font="Regular;33" valign="top">
 <convert type="EventTime">StartTime</convert>
 <convert type="ClockToText">ShortDate</convert>
 </widget>
 <widget source="Event" render="Label" position="930,105" size="120,36" backgroundColor="background" transparent="1" foregroundColor="secondFG" font="Regular;33" halign="right" valign="top">
 <convert type="EventTime">StartTime</convert>
-<convert type="ClockToText" />
+<convert type="ClockToText"/>
 </widget>
 <widget source="Event" render="Label" position="1050,105" size="120,36" backgroundColor="background" transparent="1" foregroundColor="secondFG" font="Regular;33" halign="left" valign="top">
 <convert type="EventTime">EndTime</convert>
@@ -506,11 +506,11 @@
 <widget source="Event" render="Label" position="1185,105" size="705,36" backgroundColor="background" transparent="1" foregroundColor="secondFG" font="Regular;33" valign="top">
 <convert type="EventName">Name</convert>
 </widget>
-<widget source="Event" render="Progress" pixmap="infobar/pbar.png" position="780,147" size="1110,12" transparent="0" borderWidth="0" backgroundColor="un33333a">
+<widget source="Event" render="Progress" pixmap="Pd1loi-HD-night-Light/infobar/pbar.png" position="780,147" size="1110,12" transparent="0" borderWidth="0" backgroundColor="un33333a">
 <convert type="EventTime">Progress</convert>
 </widget>
-<widget source="Event" render="Label" position="780,165" size="1110,320" backgroundColor="background" transparent="1" font="Regular;28" halign="block">
-<convert type="EventName">FullDescription</convert>
+<widget source="Event" render="PDRunningText" options="movetype=running,startpoint=0,direction=top,steptime=60,repeat=5,startdelay=10000,wrap" position="780,165" size="1110,320" backgroundColor="background" transparent="1" font="Regular;35" halign="block">
+<convert type="EventName">ExtendedDescription</convert>
 </widget>
 <widget source="Event" render="Label" position="780,510" size="1110,30" foregroundColor="blue" backgroundColor="background" transparent="1" font="Regular;27" halign="left">
 <convert type="EventName">Genre</convert>
@@ -518,38 +518,44 @@
 <widget source="Event" render="Label" position="1590,510" size="300,30" foregroundColor="blue" backgroundColor="background" transparent="1" font="Regular;27" halign="right">
 <convert type="EventName">SmallRating</convert>
 </widget>
-<widget name="timeline_text" position="30,555" size="1860,38" itemHeight="38" font="Regular;26" foregroundColor="une5b243" backgroundColor="black" transparent="1" />
-<widget name="list" position="30,598" size="1860,420" itemHeight="75" ServiceFont="Regular;28" transparent="1" scrollbarMode="showNever" EntryBackgroundColor="background" EventNamePadding="6" ServiceNamePadding="6" EntryBorderColor="#cccccc" EntryFont="Regular;28" ServiceBorderVerWidth="3" EventBorderVerWidth="3" RecIconSize="32" IconXPadding="6" IconYPadding="4" />
-<widget name="timeline0" pixmap="window/timeline.png" position="0,593" size="1,422" zPosition="1" />
-<widget name="timeline1" pixmap="window/timeline.png" position="0,593" size="1,422" zPosition="1" />
-<widget name="timeline2" pixmap="window/timeline.png" position="0,593" size="1,422" zPosition="1" />
-<widget name="timeline3" pixmap="window/timeline.png" position="0,593" size="1,422" zPosition="1" />
-<widget name="timeline4" pixmap="window/timeline.png" position="0,593" size="1,422" zPosition="1" />
-<widget name="timeline5" pixmap="window/timeline.png" position="0,593" size="1,422" zPosition="1" />
-<widget name="timeline_now" pixmap="window/timeline-now.png" position="6,593" size="28,422" zPosition="2" alphatest="blend" />
+<widget name="timeline_text" position="30,555" size="1860,45" font="Regular0;26" foregroundColor="unffff00" backgroundColor="#000000" transparent="1"/>
+<widget name="list" selectionPixmap="Pd1loi-HD-night-Light/buttons/sel4.png" position="30,598" size="1860,420" itemHeight="75" ServiceFont="Regular;28" transparent="1" scrollbarMode="showNever"
+EntryBackgroundColor="background" EventNamePadding="6" ServiceNamePadding="6" EntryBorderColor="#cccccc" EntryFont="Regular;28"
+ServiceBorderVerWidth="3" EventBorderVerWidth="3" RecIconSize="32" IconXPadding="6" IconYPadding="4"/>
+<widget name="timeline0" pixmap="Pd1loi-HD-night-Light/window/timeline.png" position="0,593" size="1,422" zPosition="1"/>
+<widget name="timeline1" pixmap="Pd1loi-HD-night-Light/window/timeline.png" position="0,593" size="1,422" zPosition="1"/>
+<widget name="timeline2" pixmap="Pd1loi-HD-night-Light/window/timeline.png" position="0,593" size="1,422" zPosition="1"/>
+<widget name="timeline3" pixmap="Pd1loi-HD-night-Light/window/timeline.png" position="0,593" size="1,422" zPosition="1"/>
+<widget name="timeline4" pixmap="Pd1loi-HD-night-Light/window/timeline.png" position="0,593" size="1,422" zPosition="1"/>
+<widget name="timeline5" pixmap="Pd1loi-HD-night-Light/window/timeline.png" position="0,593" size="1,422" zPosition="1"/>
+<widget name="timeline_now" pixmap="Pd1loi-HD-night-Light/window/timeline-now.png" position="6,593" size="28,422" zPosition="2" alphatest="blend"/>
 </screen>
+
 <screen name="GraphMultiEPGList" title="Electronic Program Guide" position="fill" flags="wfNoBorder">
-<panel name="BasicTemplate" />
-<panel name="KeyMenuTemplate" />
-<panel name="KeyInfoTemplate" />
+<panel name="BasicTemplate"/>
+<panel name="KeyMenuTemplate"/>
+<panel name="KeyInfoTemplate"/>
 <widget source="Event" render="Label" position="30,105" size="1860,37" backgroundColor="background" transparent="1" foregroundColor="secondFG" font="Regular;34" valign="top">
 <convert type="EventTime">StartTime</convert>
 <convert type="ClockToText">Date</convert>
 </widget>
-<widget name="timeline_text" position="30,155" size="1860,38" itemHeight="38" font="Regular;26" foregroundColor="une5b243" backgroundColor="black" transparent="1" />
-<widget name="list" selectionPixmap="Pd1loi-HD-night/buttons/sel4.png" position="30,598" size="1860,420" itemHeight="75" ServiceFont="Regular;28" transparent="1" scrollbarMode="showNever" EntryBackgroundColor="background" EventNamePadding="6" ServiceNamePadding="6" EntryBorderColor="#cccccc" EntryFont="Regular;28" ServiceBorderVerWidth="3" EventBorderVerWidth="3" RecIconSize="32" IconXPadding="6" IconYPadding="4" />
-<widget name="timeline0" pixmap="window/timeline.png" position="0,193" size="1,824" zPosition="1" />
-<widget name="timeline1" pixmap="window/timeline.png" position="0,193" size="1,824" zPosition="1" />
-<widget name="timeline2" pixmap="window/timeline.png" position="0,193" size="1,824" zPosition="1" />
-<widget name="timeline3" pixmap="window/timeline.png" position="0,193" size="1,824" zPosition="1" />
-<widget name="timeline4" pixmap="window/timeline.png" position="0,193" size="1,824" zPosition="1" />
-<widget name="timeline5" pixmap="window/timeline.png" position="0,193" size="1,824" zPosition="1" />
-<widget name="timeline_now" pixmap="window/timeline-now.png" position="6,193" size="28,826" zPosition="2" alphatest="blend" />
+<widget name="timeline_text" position="30,155" size="1860,42" font="Regular0;26" foregroundColor="unffff00" backgroundColor="#000000" transparent="1"/>
+<widget name="list" selectionPixmap="Pd1loi-HD-night-Light/buttons/sel4.png" position="30,198" size="1860,817" itemHeight="75" ServiceFont="Regular;28" transparent="1" scrollbarMode="showNever"
+EntryBackgroundColor="background" EventFontPadding="6" EventNamePadding="6" EntryBorderColor="#cccccc" EntryFont="Regular;28"
+ServiceBorderVerWidth="3" EventBorderVerWidth="3" RecIconSize="32" IconXPadding="6" IconYPadding="4"/>
+<widget name="timeline0" pixmap="Pd1loi-HD-night-Light/window/timeline.png" position="0,193" size="1,824" zPosition="1"/>
+<widget name="timeline1" pixmap="Pd1loi-HD-night-Light/window/timeline.png" position="0,193" size="1,824" zPosition="1"/>
+<widget name="timeline2" pixmap="Pd1loi-HD-night-Light/window/timeline.png" position="0,193" size="1,824" zPosition="1"/>
+<widget name="timeline3" pixmap="Pd1loi-HD-night-Light/window/timeline.png" position="0,193" size="1,824" zPosition="1"/>
+<widget name="timeline4" pixmap="Pd1loi-HD-night-Light/window/timeline.png" position="0,193" size="1,824" zPosition="1"/>
+<widget name="timeline5" pixmap="Pd1loi-HD-night-Light/window/timeline.png" position="0,193" size="1,824" zPosition="1"/>
+<widget name="timeline_now" pixmap="Pd1loi-HD-night-Light/window/timeline-now.png" position="6,193" size="28,826" zPosition="2" alphatest="blend"/>
 </screen>
+
 <screen name="GraphMultiEpgSetup" position="fill" title="Electronic Program Guide Setup" flags="wfNoBorder">
-<panel name="PigTemplate" />
-<panel name="CancelOKTemplate" />
-<widget name="config" selectionPixmap="Pd1loi-HD-night/buttons/sel4.png" position="780,100" size="1110,912" itemHeight="38" font="Regular;28" scrollbarMode="showOnDemand" />
+<panel name="PigTemplate"/>
+<panel name="CancelOKTemplate"/>
+<widget name="config" selectionPixmap="Pd1loi-HD-night-Light/buttons/sel4.png" position="780,100" size="1110,912" itemHeight="45" font="Regular;30" scrollbarMode="showOnDemand"/>
 </screen>
 <screen name="SelectBouquet" position="fill" title="Choose bouquet" flags="wfNoBorder">
 <panel name="PigTemplate" />
@@ -1308,7 +1314,7 @@ MultiContentEntryPixmapAlphaTest(pos = (22,7),size = (72,72),png = 2),# index 2 
 <widget name="portpic" position="top" zPosition="10" size="150,150" transparent="1" alphatest="on" />
 </panel>
 <panel position="fill" layout="stack">
-<widget source="list" render="Listbox" selectionPixmap="Pd1loi-HD-night/buttons/sel4.png" position="fill" font="Regular;34" scrollbarMode="showOnDemand">
+<widget source="list" render="Listbox" position="fill" font="Regular;34" scrollbarMode="showOnDemand">
 <convert type="TemplatedMultiContent">
 {"template": [ MultiContentEntryText(pos = (0,0),size = (1035,42),flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER,text = 0) ],
 "fonts": [gFont("Regular",34)],
@@ -1658,7 +1664,7 @@ MultiContentEntryText(pos = (120,9), size = (990,81), font=0, flags = RT_HALIGN_
 <widget name="linelist" position="30,100" size="1860,912" itemHeight="38" font="Fixed;28" transparent="1" foregroundColor="white" scrollbarMode="showOnDemand" />
 </screen>
 <!-- TextBox -->
-<screen name="TextBox" title="Message" position="0,0" flags="wfNoBorder">
+<screen name="TextBox" title="Message" position="fill" flags="wfNoBorder">
 <panel name="PigTemplate" />
 <panel name="KeyExit" />
 <widget name="text" position="780,105" size="1110,910" font="Regular;32" />
@@ -1938,7 +1944,7 @@ MultiContentEntryText(pos = (75,41), size = (945,84), font = 1, flags = RT_HALIG
 <panel name="BasicTemplate" />
 <ePixmap pixmap="buttons/left.png" position="1064,1030" size="34,34" alphatest="blend" />
 <ePixmap pixmap="buttons/right.png" position="1500,1030" size="34,34" alphatest="blend" />
-<widget name="AboutScrollLabel" font="Regular;30" position="30,100" size="1860,912" zPosition="2" halign="left" />
+<widget name="AboutScrollLabel" font="Regular;26" position="30,100" size="1860,912" zPosition="2" halign="left" />
 </screen>
 <!-- Troubleshoot -->
 <screen name="Troubleshoot" position="fill" flags="wfNoBorder">
