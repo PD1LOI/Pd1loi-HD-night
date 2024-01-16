@@ -470,7 +470,7 @@
     <widget source="Service" render="Label" position="600,525" size="150,30" backgroundColor="secondBG" transparent="1" zPosition="1" foregroundColor="secondFG" font="Regular;26" halign="right">
       <convert type="ServiceOrbitalPosition" />
     </widget>
-    <widget source="Event" render="Label" position="30,615" size="720,350" transparent="1" font="Regular;30" halign="left">
+    <widget source="Event" render="Label" position="30,615" size="720,350" transparent="1" font="Regular;30" halign="block">
       <convert type="EventName">FullDescription</convert>
     </widget>
   </screen>
@@ -1414,7 +1414,7 @@ MultiContentEntryText(pos = (0,0), size = (1080,39), font=0, flags = RT_HALIGN_L
   </screen>
   <screen name="NetworkAdapterSelection" position="fill" flags="wfNoBorder">
     <panel name="PigTemplate" />
-    <widget source="list" selectionPixmap="Pd1loi-HD-night/buttons/sel1.png" render="Listbox" position="780,105" size="1110,420" zPosition="10" scrollbarMode="showOnDemand">
+    <widget source="list" selectionPixmap="Pd1loi-HD-night/buttons/sel4.png" render="Listbox" position="780,105" size="1110,420" zPosition="10" scrollbarMode="showOnDemand">
       <convert type="TemplatedMultiContent">
 {"template": [
 MultiContentEntryText(pos = (135,9),size = (660,48),font=0,flags = RT_HALIGN_LEFT|RT_VALIGN_TOP,text = 1),# index 1 is the interfacename
@@ -1482,7 +1482,7 @@ MultiContentEntryPixmapAlphaTest(pos = (135,0),size = (72,72),png = 6),# index 6
   </screen>
   <screen name="AutoMountManager" title="MountManager" position="fill" flags="wfNoBorder">
     <panel name="PigTemplate" />
-    <widget source="config" render="Listbox" selectionPixmap="Pd1loi-HD-night/buttons/sel1.png" position="780,105" size="1110,720" transparent="1" scrollbarMode="showOnDemand">
+    <widget source="config" selectionPixmap="Pd1loi-HD-night/buttons/sel4.png" render="Listbox" position="780,105" size="1110,720" transparent="1" scrollbarMode="showOnDemand">
   <convert type="TemplatedMultiContent">
 {"template": [
 MultiContentEntryText(pos = (90,7),size = (870,42),font=0,flags = RT_HALIGN_LEFT,text = 0),# index 2 is the Menu Titel
@@ -1498,7 +1498,7 @@ MultiContentEntryPixmapAlphaTest(pos = (15,15),size = (72,72),png = 3),# index 4
   </screen>
   <screen name="UserManager" title="UserManager" position="0,0" flags="wfNoBorder">
     <panel name="PigTemplate" />
-    <widget source="config" selectionPixmap="Pd1loi-HD-night/buttons/sel1.png" render="Listbox" position="780,105" size="1110,630" zPosition="3" transparent="1" scrollbarMode="showOnDemand">
+    <widget source="config" selectionPixmap="Pd1loi-HD-night/buttons/sel4.png" render="Listbox" position="780,105" size="1110,630" zPosition="3" transparent="1" scrollbarMode="showOnDemand">
       <convert type="TemplatedMultiContent">
 {"template": [
 MultiContentEntryText(pos = (120,6),size = (885,75),font=0,flags = RT_HALIGN_LEFT,text = 0),# index 0 is the name
