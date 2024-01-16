@@ -24,14 +24,14 @@
     <widget source="session.CurrentService" render="Label" position="c-109,105" size="219,31" zPosition="2" backgroundColor="transparent" foregroundColor="unffff00" font="Regular;30" borderWidth="2" valign="top" halign="center">
       <convert type="PliExtraInfo">ResolutionString</convert>
     </widget>
-    <eLabel position="0,0" size="225,195" backgroundColor="transparent" borderWidth="2" font="Regular;37" borderColor="black" halign="left" text="&gt;" zPosition="1" />
+    <eLabel position="0,0" size="225,195" backgroundColor="transparent" borderWidth="2" font="Regular;37" borderColor="black" halign="left" text="&gt;" zPosition="1" foregroundColor="unffff00" />
   </screen>
   <screen name="TopTemplate">
     <eLabel position="0,0" size="1920,87" backgroundColor="toptemplatecolor" />
     <ePixmap pixmap="Pd1loi-HD-night/border/top2_bg.png" position="0,0" size="1920,88" />
     <ePixmap pixmap="Pd1loi-HD-night/border/smallshadowline.png" position="0,88" size="1920,3" zPosition="2" />
     <widget source="screen_path" render="Label" position="30,5" size="1860,20" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;20" valign="center" halign="left" foregroundColor="myblue" />
-    <widget source="Title" render="Label" position="30,5" size="1550,75" backgroundColor="secondBG" foregroundColor="orange1" transparent="1" zPosition="1" font="Regular;36" valign="center" halign="left" />
+    <widget source="Title" render="Label" position="26,6" size="1550,75" backgroundColor="secondBG" foregroundColor="orange1" transparent="1" zPosition="1" font="Regular;36" valign="center" halign="left" />
     <widget source="global.CurrentTime" render="Label" position="1665,22" size="225,37" foregroundColor="orange1" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;36" valign="center" halign="right">
       <convert type="ClockToText">Format:%-H:%M:%S</convert>
     </widget>
@@ -274,9 +274,9 @@
     <widget source="global.CurrentTime" render="Label" borderWidth="2" position="30,847" size="360,45" backgroundColor="secondBG" noWrap="1" transparent="1" zPosition="1" foregroundColor="unffff00" font="Regular;26" valign="center" halign="left">
       <convert type="ClockToText">Date</convert>
     </widget>
-    <widget source="global.CurrentTime" render="Label" borderWidth="2" position="34,992" size="245,60" backgroundColor="secondBG" noWrap="1" transparent="1" zPosition="1" foregroundColor="myblue" font="Time; 58" valign="top" halign="left">
-  <convert type="ClockToText">Format:%H:%M:%S</convert>
-</widget>
+    <widget source="global.CurrentTime" render="Label" borderWidth="2" position="34,992" size="245,60" backgroundColor="secondBG" noWrap="1" transparent="1" zPosition="1" foregroundColor="myblue" font="Time; 60" valign="top" halign="left">
+      <convert type="ClockToText">Format:%H:%M:%S</convert>
+    </widget>
     <widget source="session.RecordState" render="Pixmap" pixmap="Pd1loi-HD-night/buttons/rec.png" position="1168,902" size="30,30" zPosition="3" alphatest="on">
       <convert type="ConditionalShowHide">Blink</convert>
     </widget>
@@ -357,10 +357,6 @@
     </widget>
     <widget source="session.CurrentService" render="Label" position="1709,1027" size="170,33" backgroundColor="secondBG" transparent="1" zPosition="1" text="DVB-S" font="Regular;28" halign="center">
       <convert type="ServiceOrbitalPosition" />
-    </widget>
-    <!--<ePixmap pixmap="Pd1loi-HD-night/icons/icon_update_off.png" position="90,52" size="30,30" zPosition="0" alphatest="blend"/>-->
-    <widget source="session.CurrentService" render="Label" position="1705,856" size="180,25" borderWidth="1" borderColor="black" backgroundColor="transpBlack" zPosition="1" font="Regular;22" transparent="1">
-      <convert type="RotorPosition" />
     </widget>
   </screen>
 `</skin>
