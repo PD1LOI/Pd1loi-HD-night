@@ -18,7 +18,7 @@
     <font filename="/usr/share/enigma2/Pd1loi-HD-night/fonts/NotoSans_Regular.ttf" name="Regular2" scale="100" />
     <font filename="/usr/share/enigma2/Pd1loi-HD-night/fonts/LiberationSans-Italic.ttf" name="Crs2" scale="100" />
     <font filename="/usr/share/enigma2/Pd1loi-HD-night/fonts/LiberationSans-Regular.ttf" name="Regular" scale="100" />
-    <font filename="/usr/share/enigma2/Pd1loi-HD-night/fonts/hdi.ttf" name="Crs3" scale="100" />
+    <font filename="/usr/share/enigma2/Pd1loi-HD-night/fonts/hdi.ttf" name="Crs" scale="100" />
     <font filename="/usr/share/enigma2/Pd1loi-HD-night/fonts/mssdr-digitali.ttf" name="Digital" scale="100" />
     <font filename="/usr/share/enigma2/Pd1loi-HD-night/fonts/Time.ttf" name="Time" scale="100" />
     <font filename="/usr/share/enigma2/Pd1loi-HD-night/fonts/lcd.ttf" name="LCD" scale="100" />
@@ -107,6 +107,7 @@
     <color name="un40a0aa0" value="#040a0aa0" />
     <color name="un4a00a0a" value="#04a00a0a" />
     <color name="un808888" value="#00808888" />
+    <color name="unfcc000" value="#00fcc000" />
     <color name="unc6e0f3" value="#00c6e0f3" />
     <color name="uncccccc" value="#00cccccc" />
     <color name="unffff00" value="#00ffff00" />
@@ -348,7 +349,7 @@
     <panel name="SelectionTemplate" />
     <panel name="KeyInfoTemplate" />
     <panel name="KeyMenuInfoTemplate" />
-    <widget name="list" position="780,108" size="1110,900" selectionPixmap="Pd1loi-HD-night/buttons/sel4.png" itemHeight="50" transparent="1" serviceNumberFont="Regular;37" scrollbarMode="showOnDemand" serviceInfoFont="Regular;37" serviceNameFont="Regular;37" serviceItemHeight="50" picServiceEventProgressbar="Pd1loi-HD-night/window/progress.png" progressbarHeight="15" progressBarWidth="70" progressPercentWidth="80" colorEventProgressbarBorder="un33333a" fieldMargins="15" nonplayableMargins="15" colorEventProgressbarBorderSelected="darkgrey" colorServiceDescription="#4FFF86" progressbarBorderWidth="3" foregroundColorServiceNotAvail="#656565" backgroundColorMarked="#656565" colorServiceDescriptionFallback="#4FFF86" colorServiceDescriptionSelectedFallback="#4FFF86" colorFallbackItem="#aaaaaa" colorServiceSelectedFallback="#4FFF86" />
+    <widget name="list" position="780,108" size="1110,900" selectionPixmap="Pd1loi-HD-night/buttons/sel4.png" itemHeight="50" transparent="1" serviceNumberFont="Regular;37" scrollbarMode="showOnDemand" serviceInfoFont="Regular;36" serviceNameFont="Regular;38" serviceItemHeight="50" picServiceEventProgressbar="Pd1loi-HD-night/window/progress.png" progressbarHeight="15" progressBarWidth="70" progressPercentWidth="80" colorEventProgressbarBorder="un33333a" fieldMargins="15" nonplayableMargins="15" colorEventProgressbarBorderSelected="darkgrey" colorServiceDescription="#4FFF86" progressbarBorderWidth="3" foregroundColorServiceNotAvail="#656565" backgroundColorMarked="#656565" colorServiceDescriptionFallback="#4FFF86" colorServiceDescriptionSelectedFallback="#4FFF86" colorFallbackItem="#aaaaaa" colorServiceSelectedFallback="#4FFF86" />
     <widget source="ServiceEvent" render="Label" position="30,532" size="720,30" foregroundColor="unffff00" font="Regular;26" valign="center" halign="center" transparent="1" zPosition="1">
       <convert type="TransponderInfo">NoRoot</convert>
     </widget>
