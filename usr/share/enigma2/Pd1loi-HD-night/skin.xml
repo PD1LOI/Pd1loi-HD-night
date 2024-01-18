@@ -157,22 +157,6 @@
     <color name="ListboxMarkedAndSelectedForeground" color="red" />
     <color name="WindowTitleForeground" color="foreground" />
     <color name="WindowTitleBackground" color="background" />
-    <borderset name="bsWindow">
-      <pixmap filename="Pd1loi-HD-night/window/top_left_corner.png" pos="bpTopLeft" />
-      <pixmap filename="Pd1loi-HD-night/window/top_edge.png" pos="bpTop" />
-      <pixmap filename="Pd1loi-HD-night/window/top_right_corner.png" pos="bpTopRight" />
-      <pixmap filename="Pd1loi-HD-night/window/left_edge.png" pos="bpLeft" />
-      <pixmap filename="Pd1loi-HD-night/window/right_edge.png" pos="bpRight" />
-      <pixmap filename="Pd1loi-HD-night/window/bottom_left_corner.png" pos="bpBottomLeft" />
-      <pixmap filename="Pd1loi-HD-night/window/bottom_edge.png" pos="bpBottom" />
-      <pixmap filename="Pd1loi-HD-night/window/bottom_right_corner.png" pos="bpBottomRight" />
-    </borderset>
-    <borderset name="bsListboxEntry">
-      <pixmap filename="Pd1loi-HD-night/border/line.png" pos="bpTop" />
-      <pixmap filename="Pd1loi-HD-night/border/line.png" pos="bpBottom" />
-      <pixmap filename="Pd1loi-HD-night/border/vline.png" pos="bpLeft" />
-      <pixmap filename="Pd1loi-HD-night/border/vline.png" pos="bpRight" />
-    </borderset>
   </windowstyle>
   <include filename="skin_templates.xml" />
   <include filename="skin_plugins.xml" />
