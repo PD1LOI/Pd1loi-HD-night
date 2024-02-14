@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <skin>
 	<!--Streaminterface-->
 	<screen name="StreamSetupScreen" position="fill" title="Setup StreamInterface">
@@ -1539,7 +1539,7 @@ MultiContentEntryPixmapAlphaBlend(pos = (0, 0), size = (80, 80), png = 2),
 		<eLabel backgroundColor="#999999" font="Regular; 20" foregroundColor="#0f0f0f" halign="center" position="779,108" size="350,30" text="MERLIN  MUSIC  PLAYER" valign="center" zPosition="2"/>
 		<eLabel backgroundColor="#999999" font="Regular; 20" foregroundColor="#0f0f0f" halign="center" position="1541,108" size="350,30" text="WWW.DREAMBOX-TOOLS.INFO" valign="center" zPosition="2"/>
 		<widget name="headertext" position="30,535" zPosition="1" size="700,40" font="Regular; 32" transparent="1" foregroundColor="unffff00" backgroundColor="#00000000"/>
-		<widget name="list" position="780,150" zPosition="1" size="1110,860" selectionPixmap="Pd1loi-HD-night/buttons/sel4.png" font="Regular; 32" scrollbarMode="showOnDemand" transparent="1" itemHeight="35"/>
+		<widget name="list" position="780,150" zPosition="1" size="1110,860" selectionPixmap="Pd1loi-HD-night/buttons/sel4.png" font="Regular; 30" scrollbarMode="showOnDemand" transparent="1" itemHeight="35"/>
 	</screen>
 	<screen name="iDreamAddToDatabase" position="fill" size="1920,1080" title="Add music files to iDream database" flags="wfNoBorder">
 		<ePixmap pixmap="Pd1loi-HD-night/buttons/red.png" position="192,1032" size="34,34" alphatest="blend"/>
