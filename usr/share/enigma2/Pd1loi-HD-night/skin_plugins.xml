@@ -1169,7 +1169,7 @@ MultiContentEntryPixmapAlphaBlend(pos = (0, 0), size = (80, 80), png = 2),
 		<panel name="BasicTemplate"/>
 		<panel name="KeyInfoTemplate"/>
 		<panel name="KeyMenuInfoTemplate"/>
-		<widget name="list" position="900,288" size="945,576" font="Regular;38" zPosition="3" transparent="1" itemHeight="144" selectionPixmap="/usr/lib/enigma2/python/Plugins/Extensions/TVMovies/Images/main/list90093.png"/>
+		<widget name="list" position="872,128" size="945,776" font="Regular;38" zPosition="3" transparent="1" itemHeight="144" selectionPixmap="/usr/lib/enigma2/python/Plugins/Extensions/TVMovies/Images/main/list90093.png"/>
 		<ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Extensions/TVMovies/Images/main/tvgidshd.png" position="210,680" size="435,90" zPosition="3" alphatest="on"/>
 		<ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Extensions/TVMovies/Images/borders/top2_bg.png" position="0,0" size="1920,87"/>
 		<ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Extensions/TVMovies/Images/borders/smallshadowline.png" position="0,87" size="1920,3" zPosition="1"/>
