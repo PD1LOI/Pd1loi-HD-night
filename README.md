@@ -7,6 +7,4 @@ Pd1loi-HD-full-night-skin for OpenPli  Enigma2
 
 Support https://forums.openpli.org/topic/41323-pd1loi-full-hd-test-skin-pli-fullnighthd-skin-mod-1920x1080/
 
-<iframe src="https://player.vimeo.com/video/401350043" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
-
 73 PD1LOI
