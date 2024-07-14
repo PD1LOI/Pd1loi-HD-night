@@ -246,7 +246,7 @@
 	</screen>
 	<!-- Infobar template -->
 	<screen name="InfoBarTemplate" size="fill">
-		<widget source="session.CurrentService" render="Pixmap" pixmap="Pd1loi-HD-night/buttons/stream.png" position="1204,902" size="30,30" zPosition="3" alphatest="on">
+		<widget source="session.CurrentService" render="Pixmap" pixmap="Pd1loi-HD-night/infobar/stream.png" position="1204,900" size="30,30" zPosition="3" alphatest="on">
 			<convert type="ClientsStreaming"/>
 			<convert type="ConditionalShowHide"/>
 		</widget>
@@ -345,7 +345,7 @@
 			<convert type="EventName">Pdc</convert>
 			<convert type="ConditionalShowHide"/>
 		</widget>
-		<widget source="session.CurrentService" render="Pixmap" pixmap="Pd1loi-HD-night/buttons/stream.png" position="1204,902" size="30,30" zPosition="3" alphatest="on">
+		<widget source="session.CurrentService" render="Pixmap" pixmap="Pd1loi-HD-night/infobar/stream.png" position="1204,902" size="30,30" zPosition="3" alphatest="on">
 			<convert type="ClientsStreaming"/>
 			<convert type="ConditionalShowHide"/>
 		</widget>

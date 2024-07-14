@@ -66,7 +66,7 @@
 	<!-- OscamStatus -->
 	<screen name="OscamStatus" position="fill" title="Oscam Status" flags="wfNoBorder">
 		<panel name="PigTemplate"/>
-		<widget source="menu" render="Listbox" position="780,108" size="1110,700" scrollbarMode="showOnDemand" selectionPixmap="Pd1loi-HD-night/buttons/sel4.png" itemHeight="40" transparent="1" zPosition="5">
+		<widget source="menu" render="Listbox" position="780,108" size="1110,910" scrollbarMode="showOnDemand" selectionPixmap="Pd1loi-HD-night/buttons/sel4.png" itemHeight="40" transparent="1" zPosition="5">
 			<convert type="TemplatedMultiContent">
 {"template": [
 MultiContentEntryPixmapAlphaTest(pos = (5, 5), size = (0, 0), png = 0),
@@ -85,7 +85,7 @@ MultiContentEntryText(pos = (10, 0), size = (800, 50), font=0, flags = RT_HALIGN
 		<panel name="KeyMenuTemplate"/>
 		<ePixmap position="920,6" size="80,80" pixmap="Pd1loi-HD-night/icons/oscam.png" alphatest="blend" scale="1" zPosition="5"/>
 		<widget name="status" position="230,1150" size="810,50" font="Regular; 30" halign="center" valign="center" backgroundColor="#101010" transparent="0" zPosition="5"/>
-		<widget name="config" position="780,108" size="1110,700" font="Regular; 30" itemHeight="50" scrollbarMode="showOnDemand" scrollbarWidth="10" enableWrapAround="1" selectionPixmap="Pd1loi-HD-night/buttons/sel4.png" transparent="1" zPosition="5"/>
+		<widget name="config" position="780,108" size="1110,900" font="Regular; 30" itemHeight="50" scrollbarMode="showOnDemand" scrollbarWidth="10" enableWrapAround="1" selectionPixmap="Pd1loi-HD-night/buttons/sel4.png" transparent="1" zPosition="5"/>
 	</screen>
 	<screen name="StatusDataScreen" Title="StatusDataScreen" position="fill" flags="wfNoBorder">
 		<panel name="BasicTemplate"/>
@@ -1649,14 +1649,14 @@ MultiContentEntryPixmapAlphaBlend(pos = (0, 0), size = (80, 80), png = 2),
 	<!-- Cable Scan -->
 	<screen name="CableScanScreen" title="Cable Scan" position="fill" flags="wfNoBorder">
 		<panel name="PigTemplate"/>
-		<widget name="config" position="780,105" size="1110,450" itemHeight="38" font="Regular;28" scrollbarMode="showOnDemand"/>
+		<widget name="config" selectionPixmap="Pd1loi-HD-night/buttons/sel4.png" position="780,105" size="1110,450" itemHeight="38" font="Regular;28" scrollbarMode="showOnDemand"/>
 		<widget name="introduction" position="780,975" size="1110,34" font="Regular;30" halign="center"/>
 	</screen>
 	<screen name="CableScanStatus" title="Cable Scan" position="fill" flags="wfNoBorder">
 		<panel name="PigTemplate"/>
-		<widget name="frontend" pixmap="skin_default/icons/scan-c.png" position="780,180" size="96,96" zPosition="2" transparent="1" alphatest="on"/>
+		<widget name="frontend" pixmap="Pd1loi-HD-night/icons/scan-c.png" position="780,180" size="96,96" zPosition="2" transparent="1" alphatest="on"/>
 		<widget name="scan_state" position="780,345" zPosition="2" size="720,45" valign="center" font="Regular;30" transparent="1"/>
-		<widget name="scan_progress" position="780,397" size="720,22" pixmap="skin_default/progress_big.png" borderWidth="2" borderColor="#cccccc"/>
+		<widget name="scan_progress" position="780,397" size="720,16" pixmap="infobar/progress_big.png" borderWidth="2" borderColor="myblue"/>
 	</screen>
 	<!-- DVD Backup -->
 	<screen name="DVDBackupProgress" position="fill" title="DVD Backup" flags="wfNoBorder">
