@@ -2066,8 +2066,8 @@ MultiContentEntryText(pos = (390,10),size = (645,45),flags = RT_HALIGN_LEFT,text
   </screen>
   <!-- RDS InfoDisplay -->
   <screen name="RdsInfoDisplay" position="0,780" size="1920,300" backgroundColor="transparent" zPosition="-2" flags="wfNoBorder">
-    <widget position="22,53" size="1875,100" backgroundColor="transparent" transparent="1" zPosition="1" foregroundColor="white" borderWidth="1" font="Regular; 46" borderColor="black" valign="center" halign="center" name="RadioText" />
-    <widget position="22,157" size="1875,100" backgroundColor="transparent" transparent="1" zPosition="1" foregroundColor="white" borderWidth="1" font="Regular; 46" borderColor="black" valign="center" halign="center" name="RtpText" />
+    <widget position="22,72" size="1875,75" backgroundColor="transparent" transparent="1" zPosition="1" foregroundColor="white" borderWidth="1" font="Regular; 45" borderColor="black" valign="center" halign="center" name="RadioText" />
+    <widget position="22,147" size="1875,75" backgroundColor="transparent" transparent="1" zPosition="1" foregroundColor="white" borderWidth="1" font="Regular; 45" borderColor="black" valign="center" halign="center" name="RtpText" />
     <widget position="0,0" size="0,0" name="RassLogo" />
   </screen>
   <!-- Unhandled key -->
