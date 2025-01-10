@@ -321,34 +321,9 @@
 		<widget name="number" position="210,22" size="120,39" halign="right" font="Regular;34" zPosition="1" transparent="1"/>
 	</screen>
 	<!-- Channel,EPG,EventInfo -->
-	<screen name="ChannelSelection" title="Channel Selection" position="fill" flags="wfNoBorder">
-		<panel name="SelectionTemplate"/>
-		<panel name="KeyInfoTemplate"/>
+	<screen name="ChannelSelection" position="fill" title="Channel Selection" flags="wfNoBorder">
+		<panel name="ChannelSelectionTemplate"/>
 		<panel name="KeyMenuInfoTemplate"/>
-		<widget name="list" position="780,108" size="1110,900" selectionPixmap="Pd1loi-HD-night/buttons/sel4.png" itemHeight="45" transparent="1" serviceNumberFont="Regular;33" scrollbarMode="showOnDemand" serviceInfoFont="Regular;33" serviceNameFont="Regular;34" serviceItemHeight="45" picServiceEventProgressbar="Pd1loi-HD-night/window/progress.png" progressbarHeight="15" progressBarWidth="70" progressPercentWidth="80" colorEventProgressbarBorder="un33333a" fieldMargins="15" nonplayableMargins="15" colorEventProgressbarBorderSelected="darkgrey" colorServiceDescription="#4FFF86" progressbarBorderWidth="3" foregroundColorServiceNotAvail="#656565" backgroundColorMarked="#656565" colorServiceDescriptionFallback="#4FFF86" colorServiceDescriptionSelectedFallback="#4FFF86" colorFallbackItem="#aaaaaa" colorServiceSelectedFallback="#4FFF86"/>
-		<widget source="ServiceEvent" render="Label" position="30,532" size="720,30" foregroundColor="unffff00" font="Regular;26" valign="center" halign="center" transparent="1" zPosition="1">
-			<convert type="TransponderInfo">NoRoot</convert>
-		</widget>
-		<widget source="ServiceEvent" render="Label" position="30,562" size="90,32" transparent="1" foregroundColor="foreground" font="Regular;28" halign="left" valign="top">
-			<convert type="EventTime">StartTime</convert>
-			<convert type="ClockToText">Format:%H:%M</convert>
-		</widget>
-		<widget source="ServiceEvent" render="Progress" position="120,572" size="540,10" pixmap="Pd1loi-HD-night/window/progress1.png" transparent="0" backgroundColor="un33333a" borderWidth="0">
-			<convert type="EventTime">Progress</convert>
-		</widget>
-		<widget source="ServiceEvent" render="Label" position="660,562" size="90,32" transparent="1" foregroundColor="foreground" font="Regular;28" halign="right" valign="top">
-			<convert type="EventTime">EndTime</convert>
-			<convert type="ClockToText">Format:%H:%M</convert>
-		</widget>
-		<ePixmap pixmap="Pd1loi-HD-night/border/bottom_bg5.png" position="30,595" size="720,3"/>
-		<ePixmap pixmap="Pd1loi-HD-night/border/bottom_bg5.png" position="30,835" size="720,3"/>
-		<widget source="ServiceEvent" render="PDRunningText" position="30,606" size="720,220" transparent="1" font="Regular;32" halign="left" foregroundColor="unc6e0f3" options="movetype=running,startpoint=0,direction=top,steptime=60,repeat=5,startdelay=7000,wrap">
-			<convert type="EventName">FullDescription</convert>
-		</widget>
-		<widget source="ServiceEvent" render="NextEpgInfo" position="30,883" size="720,130" transparent="1" font="Regular;24" noWrap="1" NumberOfItems="4" noLabel="1" foregroundColor="unffff00" timeColor="white" numOfSpaces="2"/>
-		<widget source="ServiceEvent" render="PDEmptyEpg" emptyText="Event data unavailable." position="30,846" size="720,37" font="Regular;29" foregroundColor="cyan1" backgroundColor="black" halign="left" valign="center" transparent="1" zPosition="1">
-			<convert type="EventName">Name</convert>
-		</widget>
 	</screen>
 	<!-- Simple channelselection -->
 	<screen name="SimpleChannelSelection" position="fill" title="Channel Selection" flags="wfNoBorder">
