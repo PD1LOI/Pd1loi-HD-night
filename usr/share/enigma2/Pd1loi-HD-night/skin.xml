@@ -461,7 +461,7 @@
 		<widget source="Event" render="Progress" pixmap="infobar/pbargmepg.png" position="780,147" size="1110,12" transparent="1" borderWidth="2" borderColor="un33333a">
 			<convert type="EventTime">Progress</convert>
 		</widget>
-		<widget source="Event" render="PDRunningText" position="780,165" size="1110,320" backgroundColor="background" transparent="1" font="Regular;28" halign="block" options="movetype=running,startpoint=0,direction=top,steptime=60,repeat=5,startdelay=7000,wrap">&gt;
+		<widget source="Event" render="PDRunningText" position="780,165" size="1110,320" backgroundColor="background" transparent="1" font="Regular;28" halign="center" options="movetype=running,startpoint=0,direction=top,steptime=60,repeat=5,startdelay=7000,wrap" valign="top">&gt;
   <convert type="EventName">FullDescription</convert>
 		</widget>
 		<widget source="Event" render="Label" position="780,510" size="1110,30" foregroundColor="blue" backgroundColor="background" transparent="1" font="Regular;27" halign="left">
@@ -1048,7 +1048,7 @@ MultiContentEntryText(pos = (1050,6), size = (22,37), font = 1, flags = RT_HALIG
 		<widget name="package" position="780,110" size="1110,35" backgroundColor="darkgrey" transparent="1" font="Regular;32"/>
 		<widget name="status" position="780,163" size="1110,70" backgroundColor="darkgrey" transparent="1" font="Regular;32"/>
 		<widget name="slider" position="780,440" size="1110,20" zPosition="2" transparent="1"/>
-		<widget name="activityslider" position="30,1024" size="1860,6" pixmap="window/slider100.png" transparent="1" zPosition="2"/>
+		<widget name="activityslider" position="30,1021" size="1860,6" pixmap="window/slider100.png" transparent="1" zPosition="2"/>
 	</screen>
 	<!-- Choose upgrade source -->
 	<screen name="OPKGMenu" title="Select OPKG source" position="fill" flags="wfNoBorder">
@@ -1565,34 +1565,34 @@ MultiContentEntryText(pos = (120,9), size = (990,81), font=0, flags = RT_HALIGN_
 	<!-- Help -->
 	<screen name="HelpMenu" position="fill" flags="wfNoBorder">
 		<panel name="PigTemplate"/>
-		<widget name="list" selectionPixmap="Pd1loi-HD-night/buttons/sel33.png" position="778,100" size="855,9" itemHeight="24" font="Regular;23" scrollbarMode="showOnDemand"/>
+		<widget name="list" selectionPixmap="Pd1loi-HD-night/buttons/sel33.png" position="780,94" size="855,9" itemHeight="30" font="Regular;26" scrollbarMode="showOnDemand"/>
 		<!-- belongs to old HelpMenu -->
-		<widget name="long_key" conditional="long_key" position="1590,922" size="375,30" foregroundColor="unffff00" font="Regular;24" halign="center"/>
+		<widget name="long_key" conditional="long_key" position="1636,990" size="287,30" foregroundColor="unffff00" font="Regular;26" halign="center"/>
 		<!-- belongs to old HelpMenu -->
 		<widget name="longshift_key0" conditional="longshift_key1" position="30,550" size="720,30" foregroundColor="unffff00" font="Regular;24" halign="center"/>
 		<widget name="longshift_key1" conditional="longshift_key1" position="30,580" size="720,30" foregroundColor="unffff00" font="Regular;24" halign="center"/>
 		<panel position="1659,105" size="231,750">
 			<panel name="RcPanel"/>
 		</panel>
-		<widget source="list" conditional="indicatorU0" render="Listbox" selectionPixmap="Pd1loi-HD-night/buttons/sel33.png" position="780,100" size="855,890" transparent="0" scrollbarMode="showOnDemand">
+		<widget source="list" conditional="indicatorU0" render="Listbox" selectionPixmap="Pd1loi-HD-night/buttons/sel33.png" position="780,103" size="855,890" transparent="0" scrollbarMode="showOnDemand">
 			<convert type="TemplatedMultiContent">
 						{
 					"templates": {
 						# Simple help with no headings ("flat")
 						# data[1:] = [helpText]
 						"default": [
-						40,  # itemHeight
+						50,  # itemHeight
 						[
-						MultiContentEntryText(pos=(0, 6), size=(1100, 57), font=1, text=1),
+						MultiContentEntryText(pos=(0, 6), size=(1100, 50), font=1, text=1),
 						]
 						],
 						# Simple help with headings
 						# data[1:] = [heading, None]  # For heading entries
 						# data[1:] = [None, helpText]  # For help entries
 						"default+headings": [  # data[1:] = [helpText]
-						40,  # itemHeight
+						50,  # itemHeight
 						[
-						MultiContentEntryText(pos=(0, 6), size=(1100, 50), font=0, text=1),
+						MultiContentEntryText(pos=(0, 6), size=(1100, 57), font=0, text=1),
 						MultiContentEntryText(pos=(30, 6), size=(1070, 50), font=1, text=2),
 						]
 						],
@@ -1617,8 +1617,8 @@ MultiContentEntryText(pos = (120,9), size = (990,81), font=0, flags = RT_HALIGN_
 						],
 						],
 					},
-					"fonts": [gFont("Regular", 35), gFont("Regular", 28), gFont("Regular", 28), gFont("Regular", 35)],
-					"itemHeight": 40
+					"fonts": [gFont("Regular", 39), gFont("Regular", 30), gFont("Regular", 30), gFont("Regular", 35)],
+					"itemHeight": 42
 					}
 			</convert>
 		</widget>
