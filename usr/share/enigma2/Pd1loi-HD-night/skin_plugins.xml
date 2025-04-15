@@ -55,13 +55,13 @@
 		<ePixmap pixmap="Pd1loi-HD-night/border/top2_bg.png" position="0,0" size="1920,88"/>
 	</screen>
 	<!-- Automatic System Cleanup -->
-	<screen name="AutomaticCleanupSetup" position="fill" title="Automatic System Cleanup Setup" size="1920,1114">
+	<screen name="AutomaticCleanupSetup" position="fill" title="Automatic System Cleanup Setup">
 		<panel name="PigTemplate"/>
 		<panel name="KeyInfoTemplate"/>
 		<panel name="KeyMenuTemplate"/>
-		<widget name="config" position="780,105" size="1110,300" selectionPixmap="Pd1loi-HD-night/buttons/sel6.png" itemHeight="38" font="Regular; 33" scrollbarMode="showOnDemand"/>
-		<ePixmap pixmap="skin_default/div-h.png" position="780,418" zPosition="1" size="1110,2"/>
-		<widget source="help" render="Label" position="776,428" size="1110,120" font="Regular;33" foregroundColor="unffff00"/>
+		<widget name="config" position="780,105" size="1110,280" selectionPixmap="Pd1loi-HD-night/buttons/sel6.png" itemHeight="38" font="Regular; 33" scrollbarMode="showOnDemand"/>
+		<ePixmap pixmap="skin_default/div-h.png" position="780,390" zPosition="1" size="1110,2"/>
+		<widget source="help" render="Label" position="780,404" size="1110,120" font="Regular;33" foregroundColor="unffff00"/>
 	</screen>
 	<!-- OscamStatus -->
 	<screen name="OscamStatus" position="fill" title="Oscam Status" flags="wfNoBorder">
@@ -251,6 +251,7 @@ MultiContentEntryText(pos = (750, 2), size = ( 50, 40), font=0, flags = RT_HALIG
 	<!-- LogData -->
 	<screen name="LogDataScreen" position="fill" title="LogDataScreen" flags="wfNoBorder">
 		<panel name="BasicTemplate"/>
+		<widget render="Label" source="title" position="30,7" size="870,75" valign="center" zPosition="5" transparent="1" foregroundColor="orange1" font="Regular;36"/>
 		<ePixmap position="920,6" size="80,80" pixmap="Pd1loi-HD-night/icons/oscam.png" alphatest="blend" scale="1" zPosition="5"/>
 		<eLabel position="0,130" size="1920,3" backgroundColor="#202020"/>
 		<widget name="data" position="40,140" size="1860,850" scrollbarMode="showOnDemand" scrollbarWidth="10" itemHeight="25" transparent="1" zPosition="5" foregroundColor="#a0a0a0" foregroundColorSelected="#ffffff" backgroundColor="#000000" backgroundColorSelected="barColor"/>
@@ -349,6 +350,21 @@ MultiContentEntryText(pos = (300, 47), size = (400, 35), font = 2, flags = RT_HA
 	<screen name="FeedreaderMenuMain" position="fill" title="PLi RSS Reader Menu Main">
 		<panel name="PigTemplate"/>
 		<ePixmap pixmap="skin_default/buttons/key_ok.png" alphatest="blend" position="30,1031" size="52,38"/>
+		<widget backgroundColor="darkgrey" font="Regular;39" halign="center" render="Label" position="65,821" size="79,45" source="global.CurrentTime" transparent="1" valign="center" zPosition="1" foregroundColor="darkgrey">
+			<convert type="ClockToText">Format:%H</convert>
+		</widget>
+		<widget backgroundColor="darkgrey" font="Regular;39" halign="center" render="Label" position="134,819" size="79,45" source="global.CurrentTime" transparent="1" valign="center" zPosition="1" foregroundColor="darkgrey">
+			<convert type="ClockToText">Format:%M</convert>
+		</widget>
+		<widget backgroundColor="background" font="Regular; 28" foregroundColor="unffff00" halign="center" position="41,919" size="300,45" render="Label" source="global.CurrentTime" transparent="1" valign="top" zPosition="1">
+			<convert type="ClockToText">Format:%A, %d.%m.%Y</convert>
+		</widget>
+		<widget alphatest="blend" position="41,734" size="300,183" render="MSNWeatherPixmap" source="session.MSNWeather" transparent="0">
+			<convert type="MSNWeather">weathericon,current,/usr/share/enigma2/Pd1loi-HD-night/clock/,png</convert>
+		</widget>
+		<widget backgroundColor="background" font="Regular2; 30" foregroundColor="darkgrey" halign="center" position="180,863" render="Label" size="150,37" source="session.MSNWeather" transparent="1" zPosition="1" valign="top">
+			<convert type="MSNWeather">temperature_current</convert>
+		</widget>
 		<widget name="menu" position="780,105" scrollbarMode="showOnDemand" selectionPixmap="Pd1loi-HD-night/buttons/sel4.png" size="1110,910" font="Regular;32" itemHeight="47" transparent="1"/>
 	</screen>
 	<screen name="FeedScreenContent" position="fill" title="PLi RSS Reader Content">
@@ -1725,7 +1741,7 @@ MultiContentEntryText(pos = (705,30), size = (72,30), font = 1, flags = RT_HALIG
 	<!-- QuickButton -->
 	<screen name="QuickbuttonSetup" position="fill" title="Quickbutton" flags="wfNoBorder">
 		<panel name="PigTemplate"/>
-		<widget name="config" position="780,100" size="1110,912" itemHeight="38" font="Regular;28" selectionPixmap="Pd1loi-HD-night/buttons/sel4.png" scrollbarMode="showOnDemand" transparent="1"/>
+		<widget name="config" position="780,100" size="1110,912" itemHeight="38" font="Regular;28" scrollbarMode="showOnDemand" transparent="1"/>
 	</screen>
 	<!-- OpenWebIf -->
 	<screen name="OpenWebifConfig" position="fill" title="OpenWebif Configuration" flags="wfNoBorder">
@@ -1990,7 +2006,7 @@ MultiContentEntryText(pos=(285,3),size=(120,30),text = 2,flags = RT_HALIGN_CENTE
 		<ePixmap pixmap="Pd1loi-HD-night/buttons/red.png" alphatest="on" position="172,1030" size="34,34"/>
 		<eLabel text="Exit" backgroundColor="secondBG" font="Regular;34" halign="left" position="222,1030" size="330,42" transparent="1" zPosition="1"/>
 		<ePixmap position="142,630" zPosition="4" size="510,180" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/ClassicNetRadio/icons/menu2.jpg" transparent="1" alphatest="on"/>
-		<widget name="menu" selectionPixmap="Pd1loi-HD-night/buttons/sel4.png" font="Regular;36" position="780,100" size="1110,912" scrollbarMode="showOnDemand" transparent="1"/>
+		<widget name="menu" font="Regular;36" position="780,100" size="1110,912" scrollbarMode="showOnDemand" transparent="1"/>
 	</screen>
 	<screen flags="wfNoBorder" name="Favoritescrn" position="fill" title="NetRadio Classic Favorites">
 		<panel name="BasicTemplate"/>
@@ -2431,7 +2447,7 @@ MultiContentEntryText(pos = (750,1), size = (150,36), font=1, flags = RT_HALIGN_
 		<panel name="PigTemplate"/>
 		<panel name="KeyMenuTemplate"/>
 		<panel name="KeyOkTemplate"/>
-		<widget source="config" render="Listbox" selectionPixmap="Pd1loi-HD-night/buttons/sel04.png" position="780,105" size="1110,897" scrollbarMode="showOnDemand">
+		<widget source="config" render="Listbox" position="780,105" size="1110,897" scrollbarMode="showOnDemand">
 			<convert type="TemplatedMultiContent">
 {"template": [
 MultiContentEntryPixmapAlphaTest(pos = (22,15), size = (48,38), png = 0), # index 0 is the PC pixmap (for pixmap it is png= )
@@ -2456,7 +2472,7 @@ MultiContentEntryText(pos = (600,34), size = (375,30), font=1, flags = RT_HALIGN
 	</screen>
 	<screen name="xpowerEdit" position="fill" title="XPower Configuration PC" flags="wfNoBorder">
 		<panel name="PigTemplate"/>
-		<widget name="config" selectionPixmap="Pd1loi-HD-night/buttons/sel4.png" position="780,105" size="1110,375" itemHeight="38" font="Regular;28" scrollbarMode="showOnDemand"/>
+		<widget name="config" position="780,105" size="1110,375" itemHeight="38" font="Regular;28" scrollbarMode="showOnDemand"/>
 		<widget name="0" pixmaps="skin_default/buttons/button_green_off.png,skin_default/buttons/button_green.png" position="885,153" zPosition="10" size="22,24" transparent="1" alphatest="on"/>
 		<widget name="statusbar" position="780,450" size="1110,34" font="Regular;30"/>
 	</screen>
@@ -2483,7 +2499,7 @@ MultiContentEntryText(pos = (600,34), size = (375,30), font=1, flags = RT_HALIGN
 	<!-- Clear Memory -->
 	<screen name="SetupMenu" position="fill" flags="wfNoBorder">
 		<panel name="PigTemplate"/>
-		<widget name="config" selectionPixmap="Pd1loi-HD-night/buttons/sel4.png" position="780,105" size="1110,187" itemHeight="38" font="Regular;28" zPosition="1" scrollbarMode="showOnDemand"/>
+		<widget name="config" position="780,105" size="1110,187" itemHeight="38" font="Regular;28" zPosition="1" scrollbarMode="showOnDemand"/>
 		<widget name="slide" position="1785,765" size="27,150" zPosition="1" borderWidth="1" backgroundColor="secondBG" orientation="orBottomToTop"/>
 		<widget name="memory" position="780,975" size="1110,34" zPosition="1" valign="center" halign="left" font="Regular;30" transparent="1"/>
 	</screen>
@@ -2906,7 +2922,7 @@ MultiContentEntryText(pos = (0, 4), size = (1110, 38), font=0, flags = RT_HALIGN
 	<screen name="weertext" position="fill" flags="wfNoBorder" title="weerbericht">
 		<panel name="PigTemplate"/>
 		<widget name="titles" position="22,15" size="1500,78" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;36" valign="center" halign="left"/>
-		<widget name="weerchat" selectionPixmap="Pd1loi-HD-night/buttons/sel04.png" position="780,123" size="1132,874" font="Regular;35" itemHeight="50" foregroundColor="grey"/>
+		<widget name="weerchat" position="780,123" size="1132,874" font="Regular;35" itemHeight="50" foregroundColor="grey"/>
 		<widget name="PAG" position="1550,1030" size="370,38" backgroundColor="black" zPosition="1" transparent="1" font="Regular;34" halign="left"/>
 	</screen>
 	<screen name="weatherMenuSub1" position="fill" flags="wfNoBorder" title="Weer info">
@@ -2922,7 +2938,7 @@ MultiContentEntryText(pos = (0, 4), size = (1110, 38), font=0, flags = RT_HALIGN
 	</screen>
 	<screen name="View_Slideshow" position="fill" flags="wfNoBorder">
 		<panel name="PigLessTemplate"/>
-		<widget name="pic" position="807,108" size="1080,900" zPosition="2" alphatest="on"/>
+		<widget name="pic" position="center,center" size="1080, 1005" zPosition="2" alphatest="on"/>
 		<widget name="file" position="1,1" size="1, 1"/>
 	</screen>
 	<!-- ## FanControl 2 ##-->
@@ -3094,7 +3110,7 @@ MultiContentEntryText(pos=(160,1), size=(800,100), font=0, flags=RT_HALIGN_LEFT|
 	<!-- ## WikiPedia# -->
 	<screen name="searchWikipedia" position="fill" flags="wfNoBorder">
 		<panel name="PigTemplate"/>
-		<widget name="list" selectionPixmap="Pd1loi-HD-night/buttons/sel44.png" position="780,120" size="1110,900" font="Regular;33" itemHeight="45" scrollbarMode="showOnDemand" foregroundColor="grey" enableWrapAround="1"/>
+		<widget name="list" position="780,120" size="1132,855" font="Regular;33" itemHeight="45" scrollbarMode="showOnDemand" foregroundColor="grey" enableWrapAround="1"/>
 	</screen>
 	<screen name="wikiSearch_en" position="fill" flags="wfNoBorder">
 		<panel name="PigTemplate"/>
@@ -3540,7 +3556,7 @@ MultiContentEntryPixmapAlphaTest(pos = (10, 10), size = (50, 50), png = 1), # in
 	</screen>
 	<screen name="TaskListScreen" position="fill" title="Task list">
 		<panel name="PigTemplate"/>
-		<widget source="tasklist" render="Listbox" selectionPixmap="Pd1loi-HD-night/buttons/sel4.png" position="780,105" size="1110,900" zPosition="7" scrollbarMode="showOnDemand">
+		<widget source="tasklist" render="Listbox" position="780,105" size="1110,900" zPosition="7" scrollbarMode="showOnDemand">
 			<convert type="TemplatedMultiContent">
 {"template": [
 MultiContentEntryText(pos = (5, 8), size = (1110, 25), font=1, flags = RT_HALIGN_LEFT, text = 1), # name
@@ -3555,29 +3571,35 @@ MultiContentEntryText(pos = (930, 40), size = (150, 30), font=0, flags = RT_HALI
 		</widget>
 	</screen>
 	<!-- LCD4linux -->
+<!-- LCD4linux -->
+
 	<screen name="LCDdisplayConfig" position="fill" flags="wfNoBorder">
 		<panel name="BasicTemplate"/>
-		<panel name="ButtonTemplate"/>
-		<widget name="config" selectionPixmap="Pd1loi-HD-night/buttons/sel33.png" position="7,123" size="840,855" font="Regular;33" itemHeight="45" scrollbarMode="showOnDemand" foregroundColor="grey" enableWrapAround="1" scrollbarWidth="6" scrollbarSliderBorderWidth="1" scrollbarSliderForegroundColor="blue" scrollbarSliderBorderColor="blue" scrollbarBackgroundPicture="infobar/scrollbar.png" scrollbarSliderPicture="infobar/scrlbr.png"/>
-		<widget source="introduction" render="Label" position="960,120" size="955,45" zPosition="2" font="Regular;33" foregroundColor="secondFG" halign="center"/>
-		<widget source="LibUSB" render="Label" position="960,170" size="955,45" zPosition="2" font="Regular;33" foregroundColor="secondFG" halign="center"/>
-		<widget source="About" render="Label" position="960,220" size="440,45" zPosition="2" font="Regular;33" foregroundColor="secondFG" halign="left"/>
-		<widget source="Version" render="Label" position="1405,220" size="500,45" zPosition="2" font="Regular;33" foregroundColor="secondFG" halign="right"/>
-		<widget source="LCD1text" render="Label" position="950,270" size="715,35" zPosition="5" font="Regular;27" halign="right" foregroundColor="secondFG"/>
-		<widget source="LCD2text" render="Label" position="950,270" size="715,35" zPosition="5" font="Regular;27" halign="right" foregroundColor="secondFG"/>
-		<widget source="LCD3text" render="Label" position="950,270" size="715,35" zPosition="5" font="Regular;27" halign="right" foregroundColor="secondFG"/>
-		<widget name="LCD1" position="850,330" size="1060,640" zPosition="5" transparent="1" alphatest="on"/>
-		<widget name="LCD2" position="850,330" size="1060,640" zPosition="5" transparent="1" alphatest="on"/>
-		<widget name="LCD3" position="850,330" size="1060,640" zPosition="5" transparent="1" alphatest="on"/>
+		<panel name="KeyMenuTemplate"/>
+		<widget name="config" position="923,123" size="996,855" font="Regular;33" itemHeight="45" scrollbarMode="showOnDemand" foregroundColor="grey" enableWrapAround="1"
+			scrollbarWidth="6" scrollbarSliderBorderWidth="1" scrollbarSliderForegroundColor="blue" scrollbarSliderBorderColor="blue" scrollbarBackgroundPicture="infobar/scrollbar.png" scrollbarSliderPicture="infobar/scrlbr.png"/>
+		<widget source="introduction" render="Label" position="590,983" size="1330,30" zPosition="2" font="Regular;27" foregroundColor="secondFG" halign="center"/>
+		<widget source="LibUSB" render="Label" position="150,700" size="715,35" zPosition="2" font="Regular;27" foregroundColor="red" halign="center"/>
+		<widget source="About" render="Label" position="0,943" size="360,30" zPosition="2" font="Regular;27" foregroundColor="darkgrey" halign="center"/>
+		<widget source="Version" render="Label" position="0,903" size="360,30" zPosition="2" font="Regular;27" foregroundColor="darkgrey" halign="center"/>
+		<widget source="LCD1text" render="Label" position="150,205" size="715,35" zPosition="2" font="Regular;27" halign="right" foregroundColor="secondFG"/>
+		<widget source="LCD2text" render="Label" position="150,240" size="715,35" zPosition="2" font="Regular;27" halign="right" foregroundColor="secondFG"/>
+		<widget source="LCD3text" render="Label" position="150,275" size="715,35" zPosition="2" font="Regular;27" halign="right" foregroundColor="secondFG"/>
+		<widget name="LCD1" position="0,123" size="922,540" zPosition="5" transparent="1" alphatest="on"/>
+		<widget name="LCD2" position="0,123" size="922,540" zPosition="4" transparent="1" alphatest="on"/>
+		<widget name="LCD3" position="0,123" size="922,540" zPosition="3" transparent="1" alphatest="on"/>
 	</screen>
 	<screen name="LCDdisplayMenu" position="fill" flags="wfNoBorder" title="LCD4linux - Config">
 		<panel name="BasicTemplate"/>
-		<widget name="menu" position="780,120" size="1132,855" font="Regular;33" itemHeight="45" scrollbarMode="showOnDemand" foregroundColor="grey" enableWrapAround="1" scrollbarWidth="6" scrollbarSliderBorderWidth="1" scrollbarSliderForegroundColor="blue" scrollbarSliderBorderColor="blue" scrollbarBackgroundPicture="infobar/scrollbar.png" scrollbarSliderPicture="infobar/scrlbr.png"/>
+		<widget name="menu" position="780,120" size="1132,855" font="Regular;33" itemHeight="45" scrollbarMode="showOnDemand" foregroundColor="grey" enableWrapAround="1"
+			scrollbarWidth="6" scrollbarSliderBorderWidth="1" scrollbarSliderForegroundColor="blue" scrollbarSliderBorderColor="blue" scrollbarBackgroundPicture="infobar/scrollbar.png" scrollbarSliderPicture="infobar/scrlbr.png"/>
 	</screen>
 	<screen name="LCDdisplayFile" position="fill" flags="wfNoBorder" title="Select File/Dir...">
 		<panel name="BasicTemplate"/>
-		<eLabel text="Select" position="425,1023" size="400,45" font="buttons;33" foregroundColor="buttongreen" backgroundColor="secondBG" transparent="1" halign="left"/>
-		<widget name="LCDfile" selectionPixmap="Pd1loi-HD-night/buttons/sel4.png" position="780,123" size="1132,855" font="Regular;33" itemHeight="45" scrollbarMode="showOnDemand" foregroundColor="grey" enableWrapAround="1" scrollbarWidth="6" scrollbarSliderBorderWidth="1" scrollbarSliderForegroundColor="blue" scrollbarSliderBorderColor="blue" scrollbarBackgroundPicture="infobar/scrollbar.png" scrollbarSliderPicture="infobar/scrlbr.png"/>
-		<widget source="File" render="Label" position="7,568" size="715,396" font="Regular;33" foregroundColor="secondFG" valign="center" halign="center"/>
+		<ePixmap pixmap="buttons/green.png" position="628,1032" size="34,34" alphatest="blend"/>
+		<eLabel text="Select" position="678,1030" size="400,45" font="Regular;34" foregroundColor="foreground" transparent="1" halign="left"/>
+		<widget name="LCDfile" position="780,123" size="1132,855" font="Regular;33" itemHeight="45" scrollbarMode="showOnDemand" foregroundColor="grey" enableWrapAround="1"
+			scrollbarWidth="6" scrollbarSliderBorderWidth="1" scrollbarSliderForegroundColor="blue" scrollbarSliderBorderColor="blue" scrollbarBackgroundPicture="infobar/scrollbar.png" scrollbarSliderPicture="infobar/scrlbr.png"/>
+		<widget source="File" render="Label" position="7,983" size="1890,30" font="Regular;27" foregroundColor="secondFG" halign="center"/>
 	</screen>
 </skin>
