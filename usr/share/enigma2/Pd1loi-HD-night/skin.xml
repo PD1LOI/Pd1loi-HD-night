@@ -22,7 +22,6 @@
     <font filename="/usr/share/enigma2/Pd1loi-HD-night/fonts/mssdr-digitali.ttf" name="Digital" scale="100" />
     <font filename="/usr/share/enigma2/Pd1loi-HD-night/fonts/Time.ttf" name="Time" scale="100" />
     <font filename="/usr/share/enigma2/Pd1loi-HD-night/fonts/lcd.ttf" name="LCD" scale="100" />
-    <font filename="/usr/share/enigma2/Pd1loi-HD-night/fonts/DejaVuSans.ttf" name="DejaVuSans" scale="100" />
     <font filename="/usr/share/enigma2/Pd1loi-HD-night/fonts/tuxtxt.ttf" name="Console" scale="100" />
     <font filename="/usr/share/enigma2/Pd1loi-HD-night/fonts/andale.ttf" name="Fixed" scale="100" />
     <font filename="/usr/share/enigma2/Pd1loi-HD-night/fonts/army-digital.ttf" name="army-digital" scale="100" />
