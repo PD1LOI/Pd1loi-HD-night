@@ -2,7 +2,7 @@
 <skin>
   <!-- Templates -->
   <screen name="PlayerTemplate">
-    <widget source="session.CurrentService" render="Label" position="336,6" size="1248,74" backgroundColor="transparent" zPosition="1" foregroundColor="white" borderWidth="2" font="Regular;36" borderColor="black" valign="center" halign="center">
+    <widget source="session.CurrentService" render="Label" position="43,3" size="1548,80" backgroundColor="transparent" zPosition="1" foregroundColor="white" borderWidth="2" font="Regular;36" borderColor="black" valign="center" halign="center">
       <convert type="ServiceName">Name</convert>
     </widget>
     <ePixmap pixmap="Pd1loi-HD-night/dvr/scale1024.png" position="42,87" size="1536,12" zPosition="1" />
@@ -21,10 +21,10 @@
     <widget source="global.CurrentTime" render="Label" borderWidth="2" position="1428,4" size="150,37" backgroundColor="transparent" noWrap="1" zPosition="1" foregroundColor="white" font="Regular;33" valign="center" halign="right">
       <convert type="ClockToText">Format:%-H:%M</convert>
     </widget>
-    <widget source="session.CurrentService" render="Label" position="851,105" size="219,31" zPosition="2" backgroundColor="transparent" foregroundColor="unffff00" font="Regular;30" borderWidth="1" valign="top" halign="center" borderColor="fallback">
+    <widget source="session.CurrentService" render="Label" position="717,102" size="219,40" zPosition="2" backgroundColor="transparent" foregroundColor="unffff00" font="Regular;30" borderWidth="1" valign="top" halign="center" borderColor="fallback">
       <convert type="PliExtraInfo">ResolutionString</convert>
     </widget>
-    <eLabel position="0,0" size="225,195" backgroundColor="transparent" borderWidth="2" font="Regular;37" borderColor="black" halign="left" text="&gt;" zPosition="1" foregroundColor="unffff00" />
+    <eLabel position="0,-1" size="225,195" backgroundColor="transparent" borderWidth="2" font="Regular;37" borderColor="black" halign="left" text="&gt;" zPosition="1" foregroundColor="unffff00" />
   </screen>
   <screen name="TopTemplate">
     <eLabel position="0,0" size="1920,87" backgroundColor="toptemplatecolor" />
