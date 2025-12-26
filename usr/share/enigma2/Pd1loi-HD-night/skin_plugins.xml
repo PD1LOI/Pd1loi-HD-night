@@ -3596,8 +3596,7 @@ MultiContentEntryText(pos = (930, 40), size = (150, 30), font=0, flags = RT_HALI
 		<widget name="LCDfile" position="780,123" size="1132,855" font="Regular;33" itemHeight="45" scrollbarMode="showOnDemand" foregroundColor="grey" enableWrapAround="1" scrollbarWidth="6" scrollbarSliderBorderWidth="1" scrollbarSliderForegroundColor="blue" scrollbarSliderBorderColor="blue" scrollbarBackgroundPicture="infobar/scrollbar.png" scrollbarSliderPicture="infobar/scrlbr.png"/>
 		<widget source="File" render="Label" position="7,568" size="715,396" font="Regular;33" foregroundColor="secondFG" valign="center" halign="center"/>
 	</screen>
-	
-		<!-- M3UIPTV -->
+	<!-- M3UIPTV -->
 	<screen name="M3UIPTVManagerConfig" position="fill" flags="wfNoBorder">
 		<panel name="PigTemplate"/>
 		<panel name="DescriptionTemplate"/>
