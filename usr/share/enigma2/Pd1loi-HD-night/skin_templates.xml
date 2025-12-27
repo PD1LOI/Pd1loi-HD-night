@@ -30,7 +30,7 @@
 		<eLabel position="0,0" size="1920,87" backgroundColor="toptemplatecolor"/>
 		<ePixmap pixmap="Pd1loi-HD-night/border/top2_bg.png" position="0,0" size="1920,88"/>
 		<ePixmap pixmap="Pd1loi-HD-night/border/smallshadowline.png" position="0,88" size="1920,3" zPosition="2"/>
-		<widget source="screen_path" render="Label" position="30,5" size="1860,20" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;20" valign="center" halign="left" foregroundColor="myblue"/>
+		<widget source="screenpath" render="Label" position="30,5" size="1860,20" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;20" valign="center" halign="left" foregroundColor="myblue"/>
 		<widget source="Title" render="Label" position="26,6" size="1550,75" backgroundColor="secondBG" foregroundColor="orange1" transparent="1" zPosition="1" font="Regular;36" valign="center" halign="left"/>
 		<widget source="global.CurrentTime" render="Label" position="1665,22" size="225,37" foregroundColor="orange1" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;36" valign="center" halign="right">
 			<convert type="ClockToText">Format:%-H:%M:%S</convert>
