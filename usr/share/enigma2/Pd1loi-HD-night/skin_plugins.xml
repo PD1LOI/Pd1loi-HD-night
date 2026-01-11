@@ -1,5 +1,69 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <skin>
+	<!--Weerinfo -->
+	<screen name="startScreen" position="fill" title="HetWeer" flags="wfNoBorder">
+		<panel name="PigTemplate"/>
+		<panel name="WeerTemplate"/>
+		<panel name="KeyInfoTemplate"/>
+		<widget name="titles" position="30,7" size="1860,75" foregroundColor="orange1" transparent="1" zPosition="1" font="Regular;36" valign="center" halign="left"/>
+		<ePixmap pixmap="Pd1loi-HD-night/buttons/red.png" position="192,1032" size="34,34" alphatest="blend"/>
+		<widget name="list" position="860,101" size="1040,465" scrollbarMode="showOnDemand" font="Regular;34" itemHeight="45" selectionPixmap="Pd1loi-HD-night/buttons/sel4.png"/>
+		<widget name="mess1" position="30,570" size="720,40" foregroundColor="green" font="Console;28"/>
+		<ePixmap pixmap="Pd1loi-HD-night/Images/lo/lokaalsd.png" position="794,104" size="47,32" alphatest="on"/>
+		<ePixmap pixmap="Pd1loi-HD-night/Images/lo/nlflagsd.png" position="794,150" size="47,32" alphatest="on"/>
+		<ePixmap pixmap="Pd1loi-HD-night/Images/lo/beflagsd.png" position="794,195" size="47,32" alphatest="on"/>
+		<ePixmap pixmap="Pd1loi-HD-night/Images/lo/euflagsd.png" position="794,240" size="47,32" alphatest="on"/>
+	</screen>
+	<screen name="weatherMenuSub" position="fill" title="WeerInfo" flags="wfNoBorder">
+		<panel name="PigTemplate"/>
+		<panel name="WeerTemplate"/>
+		<panel name="KeyInfoTemplate"/>
+		<ePixmap pixmap="Pd1loi-HD-night/buttons/red.png" position="192,1032" size="34,34" alphatest="blend"/>
+		<widget name="list" position="780,104" size="1110,900" scrollbarMode="showOnDemand" font="Regular;34" itemHeight="45" selectionPixmap="Pd1loi-HD-night/buttons/sel4.png"/>\n
+<widget name="mess1" position="30,547" size="720,35" foregroundColor="green" font="Console; 28"/>\n
+</screen>
+	<screen name="localcityscreen" position="fill" title="Favoriete Locatie" flags="wfNoBorder">
+		<panel name="PigTemplate"/>
+		<panel name="WeerTemplate"/>
+		<panel name="KeyInfoTemplate"/>
+		<panel name="KeyMenuTemplate"/>
+		<widget name="list" position="800,170" size="1000,600" scrollbarMode="showOnDemand" font="Regular;38" itemHeight="45" selectionPixmap="Pd1loi-HD-night/buttons/sel6.png"/>
+		<widget name="plaatsn" position="800,104" size="375,70" valign="center" halign="left" zPosition="3" foregroundColor="orange1" font="Regular;40" transparent="1"/>
+	</screen>
+	<screen name="lokaalTemp" position="fill" title="LokaalTemp" flags="wfNoBorder">
+		<panel name="KeyInfoTemplate"/>
+		<panel name="WeerTemplate"/>
+		<panel name="KeyMenuTemplate"/>
+		<widget name="label0" position="19,889" size="700,78" font="menulist;37" foregroundColor="grey" valign="bottom" zPosition="1"/>
+		<ePixmap pixmap="Pd1loi-HD-night/border/top2_bg.png" position="fill" size="1920,88"/>
+		<ePixmap pixmap="Pd1loi-HD-night/border/smallshadowline.png" position="0,88" size="1920,3" zPosition="2"/>
+		<widget source="session.VideoPicture" render="Pig" position="30,117" size="719,402" backgroundColor="transparent" zPosition="1"/>
+		<ePixmap pixmap="Pd1loi-HD-night/border/chframe1.png" position="24,110" size="730,415" alphatest="blend"/>
+		<widget name="listdate" position="940,186" size="120,585" scrollbarMode="showOnDemand" font="Regular;33" itemHeight="39" selectionPixmap="/usr/lib/enigma2/python/Plugins/Extensions/WeerInfo/Images/list/list54039.png"/>
+		<widget name="listminmax" position="1100,186" size="300,585" scrollbarMode="showOnDemand" font="Regular;33" itemHeight="39" selectionPixmap="/usr/lib/enigma2/python/Plugins/Extensions/WeerInfo/Images/list/list54039.png"/>
+		<widget name="listbeauf" position="1531,186" size="75,585" scrollbarMode="showOnDemand" font="Regular;33" itemHeight="39" selectionPixmap="/usr/lib/enigma2/python/Plugins/Extensions/WeerInfo/Images/list/list54039.png"/>
+		<widget name="listwind" position="1721,186" size="142,585" scrollbarMode="showOnDemand" font="Regular;33" itemHeight="39" selectionPixmap="/usr/lib/enigma2/python/Plugins/Extensions/WeerInfo/Images/list/list54039.png"/>
+		<widget name="label0" position="46,542" size="700,40" zPosition="2" transparent="1" foregroundColor="secondFG" font="Regular;34"/>
+		<widget name="label1" position="883,120" size="120,50" zPosition="2" transparent="1" foregroundColor="secondFG" font="Regular;44"/>
+		<widget name="label2" position="1100,120" size="300,50" zPosition="2" transparent="1" foregroundColor="secondFG" font="Regular;44"/>
+		<widget name="label3" position="1428,120" size="270,50" zPosition="2" transparent="1" foregroundColor="secondFG" font="Regular;44"/>
+		<widget name="label4" position="1719,120" size="150,50" zPosition="2" transparent="1" foregroundColor="secondFG" font="Regular;44"/>
+		<ePixmap pixmap="Pd1loi-HD-night/buttons/red.png" position="192,1032" size="34,34" alphatest="blend"/>
+		<widget name="listday" position="818,185" size="1065,585" scrollbarMode="showOnDemand" font="Regular;33" itemHeight="39" selectionPixmap="/usr/lib/enigma2/python/Plugins/Extensions/WeerInfo/Images/list/list106539.png"/>
+	</screen>
+	<screen name="weathertalk" title="Weerbericht" position="fill" flags="wfNoBorder">
+		<panel name="PigTemplate"/>
+		<panel name="WeerTemplate"/>
+		<widget name="label0" position="19,889" size="700,78" font="menulist;37" foregroundColor="grey" valign="bottom" zPosition="1"/>
+		<panel name="KeyInfoTemplate"/>
+		<panel name="KeyMenuTemplate"/>
+		<ePixmap pixmap="Pd1loi-HD-night/border/top2_bg.png" position="fill" size="1920,88"/>
+		<ePixmap pixmap="Pd1loi-HD-night/border/smallshadowline.png" position="0,88" size="1920,3" zPosition="2"/>
+		<widget name="weerchat" position="780,123" size="1132,874" font="Regular;36" itemHeight="50" foregroundColor="grey"/>
+		<widget name="PAG" position="1550,1030" size="370,38" backgroundColor="black" zPosition="1" transparent="1" font="Regular;36" halign="left"/>
+		<ePixmap pixmap="Pd1loi-HD-night/buttons/red.png" position="192,1032" size="34,34" alphatest="blend"/>
+	</screen>
+
 	<!-- Merlin Music Player -->
 	<screen name="MerlinMusicPlayerScreen" position="fill" title="Merlin Music Player" flags="wfNoBorder">
 		<panel name="BasicTemplate"/>
