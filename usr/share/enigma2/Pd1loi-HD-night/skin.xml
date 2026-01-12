@@ -1868,7 +1868,7 @@ MultiContentEntryText(pos = (75,41), size = (945,84), font = 1, flags = RT_HALIG
 			<convert type="FrontendInfo">LOCK</convert>
 			<convert type="ConditionalShowHide"/>
 		</widget>
-		<widget name="config" position="450,360" size="1440,643" selectionPixmap="Pd1loi-HD-night/buttons/sel4.png" itemHeight="49" font="Regular;40" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" foregroundColor="unc6e0f3"/>
+		<widget name="config" position="450,360" size="1440,643" selectionPixmap="Pd1loi-HD-night/buttons/sel44.png" itemHeight="49" font="Regular;40" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" foregroundColor="unc6e0f3"/>
 		<widget name="introduction" position="0,0" size="0,0" zPosition="0"/>
 		<eLabel text="Scan" position="678,1030" size="345,38" backgroundColor="black" zPosition="1" transparent="1" font="Regular;34" halign="left" foregroundColor="green"/>
 	</screen>
