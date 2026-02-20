@@ -63,7 +63,6 @@
 		<widget name="PAG" position="1550,1030" size="370,38" backgroundColor="black" zPosition="1" transparent="1" font="Regular;36" halign="left"/>
 		<ePixmap pixmap="Pd1loi-HD-night/buttons/red.png" position="192,1032" size="34,34" alphatest="blend"/>
 	</screen>
-
 	<!-- Merlin Music Player -->
 	<screen name="MerlinMusicPlayerScreen" position="fill" title="Merlin Music Player" flags="wfNoBorder">
 		<panel name="BasicTemplate"/>
@@ -727,14 +726,14 @@ MultiContentEntryText(pos = (300, 47), size = (400, 35), font = 2, flags = RT_HA
 	<screen name="ledManager" position="fill" title="LED Manager 0.2" flags="wfNoBorder">
 		<panel name="PigTemplate"/>
 		<panel name="ButtonGreen"/>
-		<widget name="config" position="780,105" size="1110,152" itemHeight="38" font="Regular;28" scrollbarMode="showOnDemand"/>
+		<widget name="config" selectionPixmap="Pd1loi-HD-night/buttons/sel4.png" position="780,105" size="1110,152" itemHeight="38" font="Regular;28" scrollbarMode="showOnDemand"/>
 		<widget render="Label" source="ButtonGreentext" position="678,1030" size="600,38" font="Regular;34" backgroundColor="darkgrey" zPosition="2" transparent="1" foregroundColor="grey" halign="left"/>
 	</screen>
 	<!-- DreamboxExplorer -->
 	<screen name="DreamExplorerII" position="fill" title="Dream-Explorer" flags="wfNoBorder">
 		<panel name="PigTemplate"/>
 		<panel name="KeyMenuInfoTemplate"/>
-		<widget name="filelist" position="780,100" size="1110,912" scrollbarMode="showOnDemand"/>
+		<widget name="filelist" selectionPixmap="Pd1loi-HD-night/buttons/sel4.png" position="780,100" size="1110,912" scrollbarMode="showOnDemand"/>
 	</screen>
 	<screen name="vInputBox" position="fill" title="Input..." flags="wfNoBorder">
 		<panel name="PigTemplate"/>
@@ -773,7 +772,7 @@ MultiContentEntryText(pos = (300, 47), size = (400, 35), font = 2, flags = RT_HA
 	<gstyle>
 		<gstyles filename="window/separator.png#cached"/>
 	</gstyle>
-	<screen name="Dish" flags="wfNoBorder" position="30,90" size="195,303" title="Dish" zPosition="1" backgroundColor="transparent">
+	<screen name="Dish" flags="wfNoBorder" position="30,90" size="195,310" title="Dish" zPosition="1" backgroundColor="transparent">
 		<widget name="Dishpixmap" position="0,0" size="195,240" zPosition="-1" pixmap="icons/dish.png" transparent="1" alphatest="blend"/>
 		<widget name="turnTime" position="67,7" size="120,30" zPosition="1" font="Regular;26" halign="right" borderWidth="1" transparent="1"/>
 		<widget name="From" position="7,246" size="67,27" zPosition="1" font="Regular;24" halign="left" borderWidth="1" transparent="1"/>
@@ -925,17 +924,17 @@ MultiContentEntryText(pos = (300, 47), size = (400, 35), font = 2, flags = RT_HA
 	<!-- EPG Import Sources -->
 	<screen name="EPGImportSources" position="fill" title="EPG Import Sources" flags="wfNoBorder">
 		<panel name="PigTemplate"/>
-		<widget name="list" position="780,100" size="1110,912" itemHeight="38" font="Regular;28" scrollbarMode="showOnDemand"/>
+		<widget name="list" selectionPixmap="Pd1loi-HD-night/buttons/sel4.png" position="780,100" size="1110,912" itemHeight="38" font="Regular;28" scrollbarMode="showOnDemand"/>
 	</screen>
 	<!-- EPG Import Log -->
 	<screen name="EPGImportLog" position="fill" title="EPG Import Log" flags="wfNoBorder">
 		<panel name="PigTemplate"/>
-		<widget name="list" position="780,100" size="1110,912" itemHeight="38" font="Regular;28" scrollbarMode="showOnDemand"/>
+		<widget name="list" selectionPixmap="Pd1loi-HD-night/buttons/sel4.png" position="780,100" size="1110,912" itemHeight="38" font="Regular;28" scrollbarMode="showOnDemand"/>
 	</screen>
 	<!-- Cross EPG -->
 	<screen flags="wfNoBorder" name="CrossEPG_Menu" position="fill" title="CrossEPG Menu">
 		<panel name="PigTemplate"/>
-		<widget source="list" render="Listbox" transparent="0" position="780,100" size="1110,912" scrollbarMode="showOnDemand">
+		<widget source="list" selectionPixmap="Pd1loi-HD-night/buttons/sel4.png" render="Listbox" transparent="0" position="780,100" size="1110,912" scrollbarMode="showOnDemand">
 			<convert type="TemplatedMultiContent">
 		{"template": [
 			MultiContentEntryPixmapAlphaTest(pos = (18,6), size = (48,48), png = 0),
@@ -950,7 +949,7 @@ MultiContentEntryText(pos = (300, 47), size = (400, 35), font = 2, flags = RT_HA
 	<screen flags="wfNoBorder" name="CrossEPG_Setup" position="fill" title="CrossEPG Setup">
 		<panel name="PigTemplate"/>
 		<widget name="information" position="30,450" size="720,450" halign="center" valign="center" font="Regular;33"/>
-		<widget name="config" position="780,100" size="1110,912" itemHeight="38" font="Regular;28" scrollbarMode="showOnDemand" transparent="1"/>
+		<widget name="config" selectionPixmap="Pd1loi-HD-night/buttons/sel4.png" position="780,100" size="1110,912" itemHeight="38" font="Regular;28" scrollbarMode="showOnDemand" transparent="1"/>
 	</screen>
 	<screen flags="wfNoBorder" name="CrossEPG_Info" position="fill" title="CrossEPG Info">
 		<panel name="PigTemplate"/>
@@ -972,7 +971,7 @@ MultiContentEntryText(pos = (300, 47), size = (400, 35), font = 2, flags = RT_HA
 	</screen>
 	<screen flags="wfNoBorder" name="CrossEPG_Providers" position="fill" title="CrossEPG Providers">
 		<panel name="PigTemplate"/>
-		<widget source="list" render="Listbox" transparent="0" position="780,100" size="1110,912" scrollbarMode="showOnDemand">
+		<widget source="list" selectionPixmap="Pd1loi-HD-night/buttons/sel4.png" render="Listbox" transparent="0" position="780,100" size="1110,912" scrollbarMode="showOnDemand">
 			<convert type="TemplatedMultiContent">
 	{"template": [
 	MultiContentEntryText(pos = (18,1), size = (660,48), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_TOP, text = 0),
@@ -992,7 +991,7 @@ MultiContentEntryText(pos = (300, 47), size = (400, 35), font = 2, flags = RT_HA
 	</screen>
 	<screen flags="wfNoBorder" name="CrossEPG_Ordering" position="fill" title="Cross EPG - Providers start order">
 		<panel name="PigTemplate"/>
-		<widget name="list" position="780,100" size="1110,912" itemHeight="38" font="Regular;28" transparent="1" scrollbarMode="showOnDemand"/>
+		<widget name="list" selectionPixmap="Pd1loi-HD-night/buttons/sel4.png" position="780,100" size="1110,912" itemHeight="38" font="Regular;28" transparent="1" scrollbarMode="showOnDemand"/>
 	</screen>
 	<!-- AtmoLight -->
 	<screen flags="wfNoBorder" name="AtmoLightAbout" position="fill" title="About AtmoLight">
@@ -1730,7 +1729,7 @@ MultiContentEntryText(pos = (300, 47), size = (400, 35), font = 2, flags = RT_HA
 		<panel name="PigTemplate"/>
 		<panel name="KeyHelpMTemplate"/>
 		<panel name="KeyInfoTemplate"/>
-		<widget name="config" position="780,105" size="1110,836" itemHeight="38" font="Regular;28" scrollbarMode="showOnDemand" transparent="1"/>
+		<widget name="config" selectionPixmap="Pd1loi-HD-night/buttons/sel4.png" position="780,105" size="1110,836" itemHeight="38" font="Regular;28" scrollbarMode="showOnDemand" transparent="1"/>
 		<widget source="help" render="Label" position="30,570" size="720,240" font="Regular;30" zPosition="1" halign="left" backgroundColor="secondBG" transparent="1"/>
 	</screen>
 	<screen name="EPGRefreshServiceEditor" position="fill" title="Edit Services to refresh" flags="wfNoBorder">
@@ -1739,7 +1738,7 @@ MultiContentEntryText(pos = (300, 47), size = (400, 35), font = 2, flags = RT_HA
 	</screen>
 	<screen name="EPGRefreshProfile" position="fill" title="EPGRefreshProfile" flags="wfNoBorder">
 		<panel name="PigTemplate"/>
-		<widget name="config" position="780,105" size="1110,400" itemHeight="38" font="Regular;28" scrollbarMode="showOnDemand" transparent="1"/>
+		<widget name="config" selectionPixmap="Pd1loi-HD-night/buttons/sel4.png" position="780,104" size="1110,400" itemHeight="38" font="Regular;28" scrollbarMode="showOnDemand" transparent="1"/>
 	</screen>
 	<screen name="EPGSaveLoadConfiguration" position="fill" flags="wfNoBorder">
 		<panel name="PigTemplate"/>
