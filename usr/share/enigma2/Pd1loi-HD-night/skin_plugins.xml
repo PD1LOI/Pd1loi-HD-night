@@ -1734,7 +1734,7 @@ MultiContentEntryText(pos = (300, 47), size = (400, 35), font = 2, flags = RT_HA
   </screen>
   <screen name="EPGRefreshServiceEditor" position="fill" title="Edit Services to refresh" flags="wfNoBorder">
     <panel name="PigTemplate" />
-    <widget name="config" position="780,105" size="1110,912" itemHeight="38" font="Regular;28" scrollbarMode="showOnDemand" transparent="1" />
+    <widget name="config" selectionPixmap="Pd1loi-HD-night/buttons/sel4.png" position="780,105" size="1110,912" itemHeight="38" font="Regular;28" scrollbarMode="showOnDemand" transparent="1" />
   </screen>
   <screen name="EPGRefreshProfile" position="fill" title="EPGRefreshProfile" flags="wfNoBorder">
     <panel name="PigTemplate" />
@@ -1742,7 +1742,7 @@ MultiContentEntryText(pos = (300, 47), size = (400, 35), font = 2, flags = RT_HA
   </screen>
   <screen name="EPGSaveLoadConfiguration" position="fill" flags="wfNoBorder">
     <panel name="PigTemplate" />
-    <widget name="config" position="780,105" size="1110,836" itemHeight="38" font="Regular;28" scrollbarMode="showOnDemand" transparent="1" />
+    <widget name="config" selectionPixmap="Pd1loi-HD-night/buttons/sel4.png" position="780,105" size="1110,836" itemHeight="38" font="Regular;28" scrollbarMode="showOnDemand" transparent="1" />
     <widget source="epgcachelocation" render="Label" position="30,570" size="720,90" font="Regular;28" zPosition="1" halign="left" backgroundColor="secondBG" transparent="1" />
     <widget source="help" render="Label" position="30,660" size="720,150" itemHeight="38" font="Regular;28" zPosition="1" halign="left" backgroundColor="secondBG" transparent="1" />
   </screen>
