@@ -61,6 +61,7 @@
   </fonts>
   <!-- Colors -->
   <colors>
+    <color name="#0018b9ce" value="#0018b9ce" />
     <color name="#1c2c5c" value="#001c2c5c" />
     <color name="#232323" value="#00232323" />
     <color name="#7f000000" value="#7f000000" />
@@ -1624,7 +1625,7 @@ MultiContentEntryText(pos = (120,9), size = (990,81), font=0, flags = RT_HALIGN_
   <!-- PPanel -->
   <screen flags="wfNoBorder" name="ToplevelPPanel" position="fill" title="Toplevel PPanel">
     <panel name="PigTemplate" />
-    <widget name="nodelist" position="780,100" size="1110,912" itemHeight="38" font="Regular;28" scrollbarMode="showOnDemand" />
+    <widget name="nodelist" selectionPixmap="Pd1loi-HD-night/buttons/sel4.png" position="780,100" size="1110,912" itemHeight="38" font="Regular;28" scrollbarMode="showOnDemand" />
     <widget name="helptext" position="30,560" size="720,390" font="Regular;30" valign="center" halign="left" />
   </screen>
   <screen flags="wfNoBorder" name="PPanel" position="fill" title="PPanel">
