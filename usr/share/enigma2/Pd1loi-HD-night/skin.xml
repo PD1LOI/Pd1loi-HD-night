@@ -534,7 +534,7 @@
   <screen name="Setup" title="Setup" position="fill" flags="wfNoBorder">
     <panel name="PigTemplate" />
     <panel name="VKeyIconPanel" />
-    <!--widget name="HelpWindow" pixmap="buttons/vkey_icon.png" position="75,615" zPosition="1" size="1,1" transparent="1" alphatest="on" /-->
+    <widget name="HelpWindow" pixmap="buttons/vkey_icon.png" position="75,615" zPosition="1" size="1,1" transparent="1" alphatest="on" />
     <widget name="config" selectionPixmap="Pd1loi-HD-night/buttons/sel4.png" position="780,100" size="1110,912" itemHeight="38" font="Regular;28" scrollbarMode="showOnDemand" />
     <widget name="description" position="30,570" size="720,385" font="Regular;30" valign="top" />
   </screen>
