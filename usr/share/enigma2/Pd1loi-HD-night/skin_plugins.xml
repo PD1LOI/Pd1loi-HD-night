@@ -2562,7 +2562,7 @@ MultiContentEntryText(pos = (300, 47), size = (400, 35), font = 2, flags = RT_HA
     <ePixmap pixmap="border/vsmallshadowline.png" position="959,88" size="2,933" zPosition="1" />
     <widget name="list_right" selectionPixmap="Pd1loi-HD-night/buttons/sel4.png" position="970,98" size="925,874" scrollbarMode="showOnDemand" scrollbarSliderBorderColor="grey" scrollbarSliderForegroundColor="grey" />
     <ePixmap pixmap="border/smallshadowline.png" position="0,988" size="1920,1" zPosition="1" />
-    <widget source="list_left_head2" render="Listbox" position="30,990" size="925,30" selectionDisabled="1" transparent="1">
+    <widget source="list_left_head2" render="Listbox" selectionPixmap="Pd1loi-HD-night/buttons/sel4.png" position="30,990" size="925,30" selectionDisabled="1" transparent="1">
       <convert type="TemplatedMultiContent">
 				{"template": [
 					MultiContentEntryText(pos = (30, 0), size = (150, 30), font = 0, flags = RT_HALIGN_LEFT, text = 1), # index 1 is a symbolic mode
@@ -2575,7 +2575,7 @@ MultiContentEntryText(pos = (300, 47), size = (400, 35), font = 2, flags = RT_HA
 				}
 			</convert>
     </widget>
-    <widget source="list_right_head2" render="Listbox" position="965,990" size="925,30" selectionDisabled="1" transparent="1">
+    <widget source="list_right_head2" render="Listbox" selectionPixmap="Pd1loi-HD-night/buttons/sel4.png" position="965,990" size="925,30" selectionDisabled="1" transparent="1">
       <convert type="TemplatedMultiContent">
 				{"template": [
 					MultiContentEntryText(pos = (30, 0), size = (150, 30), font = 0, flags = RT_HALIGN_LEFT, text = 1), # index 1 is a symbolic mode
@@ -2591,13 +2591,13 @@ MultiContentEntryText(pos = (300, 47), size = (400, 35), font = 2, flags = RT_HA
   </screen>
   <screen name="FileCommanderContextMenu" position="fill">
     <panel name="PigTemplate" />
-    <widget name="menu" position="780,105" size="1110,874" itemHeight="38" font="Regular;28" scrollbarMode="showOnDemand" scrollbarSliderBorderColor="grey" scrollbarSliderForegroundColor="grey" />
+    <widget name="menu" selectionPixmap="Pd1loi-HD-night/buttons/sel4.png" position="780,105" size="1110,874" itemHeight="38" font="Regular;28" scrollbarMode="showOnDemand" scrollbarSliderBorderColor="grey" scrollbarSliderForegroundColor="grey" />
   </screen>
   <screen name="FileCommanderSetup" position="fill">
     <panel name="PigTemplate" />
     <panel name="VKeyIconPanel" />
     <widget name="HelpWindow" position="center,350" size="80,0" />
-    <widget name="config" position="780,100" size="1110,912" itemHeight="38" font="Regular;28" scrollbarMode="showOnDemand" scrollbarSliderBorderColor="grey" scrollbarSliderForegroundColor="grey" />
+    <widget name="config" selectionPixmap="Pd1loi-HD-night/buttons/sel4.png" position="780,100" size="1110,912" itemHeight="38" font="Regular;28" scrollbarMode="showOnDemand" scrollbarSliderBorderColor="grey" scrollbarSliderForegroundColor="grey" />
     <!--widget name="help" position="30,540" size="720,72" font="Regular;28" halign="left" valign="center"/-->
     <widget name="description" position="30,570" size="720,300" font="Regular;30" halign="left" valign="top" />
   </screen>
@@ -2607,10 +2607,10 @@ MultiContentEntryText(pos = (300, 47), size = (400, 35), font = 2, flags = RT_HA
     <widget name="list_right_select" selectionPixmap="Pd1loi-HD-night/buttons/sel4.png" position="965,990" size="925,30" font="Regular;26" noWrap="1" foregroundColor="#0000cc60" backgroundColor="secondBG" transparent="1" zPosition="1" />
   </screen>
   <screen name="FileCommanderFileStatInfo" position="center,center" size="840,503" flags="wfNoBorder">
-    <eLabel position="center,center" size="840,503" backgroundColor="grey" />
-    <eLabel position="center,center" size="838,501" backgroundColor="toptemplatecolor" zPosition="1" />
+    <eLabel position="center,center" selectionPixmap="Pd1loi-HD-night/buttons/sel4.png" size="840,503" backgroundColor="grey" />
+    <eLabel position="center,center" selectionPixmap="Pd1loi-HD-night/buttons/sel4.png" size="838,501" backgroundColor="toptemplatecolor" zPosition="1" />
     <widget name="filename" position="20,10" size="800,64" font="Regular;28" valign="center" halign="center" backgroundColor="toptemplatecolor" zPosition="2" />
-    <widget source="list" render="Listbox" position="1,100" size="838,384" scrollbarMode="showOnDemand" selectionDisabled="1" backgroundColor="toptemplatecolor" zPosition="2">
+    <widget source="list" render="Listbox" selectionPixmap="Pd1loi-HD-night/buttons/sel4.png" position="1,100" size="838,384" scrollbarMode="showOnDemand" selectionDisabled="1" backgroundColor="toptemplatecolor" zPosition="2">
       <convert type="TemplatedMultiContent">
 					{"template": [
 						# 0   100 200 300 400 500
