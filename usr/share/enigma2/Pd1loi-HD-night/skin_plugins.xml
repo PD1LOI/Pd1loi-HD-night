@@ -367,8 +367,7 @@ MultiContentEntryText(pos = (750, 2), size = ( 50, 40), font=0, flags = RT_HALIG
     <panel name="BasicTemplate" />
     <widget render="Label" source="title" position="26,6" size="870,75" valign="center" zPosition="5" transparent="1" foregroundColor="orange1" font="Regular;36" />
     <ePixmap position="920,6" size="80,80" pixmap="Pd1loi-HD-night/icons/oscam.png" alphatest="blend" scale="1" zPosition="5" />
-    <eLabel position="0,130" size="1920,3" backgroundColor="#202020" />
-    <widget name="data" position="10,50" size="1900,1032" scrollbarMode="showOnDemand" />
+    <widget name="data" position="10,95" size="1900,920" scrollbarMode="showOnDemand" />
   </screen>
   <!-- OSCAM OscamDataScreen 014/13 -->
   <screen name="OscamDataScreen" position="fill" title="OscamDataScreen" flags="wfNoBorder">
@@ -1093,7 +1092,7 @@ MultiContentEntryText(pos = (300, 47), size = (400, 35), font = 2, flags = RT_HA
     <widget alphatest="on" name="thumbnail" position="0,0" size="195,147" />
     <widget font="Regular;30" foregroundColor="foreground" halign="left" name="title" position="780,150" size="1005,75" transparent="1" valign="center" zPosition="5" />
     <widget position="907,750" render="Listbox" selectionPixmap="Pd1loi-HD-night/buttons/sel104.png" scrollbarMode="showNever" selectionDisabled="1" size="780,159" source="infolist" transparent="1" zPosition="6">
-  <convert type="TemplatedMultiContent">
+      <convert type="TemplatedMultiContent">
 				{"templates":
 					{"default": (159,[
 							MultiContentEntryPixmapAlphaTest(pos = (0,6),size = (195,147),png = 0),
@@ -1109,7 +1108,7 @@ MultiContentEntryText(pos = (300, 47), size = (400, 35), font = 2, flags = RT_HA
 					"itemHeight": 159
 				}
 				</convert>
-</widget>
+    </widget>
     <widget font="Regular;30" halign="left" name="author" position="127,570" size="450,36" transparent="1" valign="top" zPosition="10" />
     <widget font="Regular;30" halign="right" name="duration" position="577,570" size="180,36" transparent="1" valign="top" zPosition="10" />
     <widget font="Regular;30" halign="left" name="published" position="127,615" size="300,36" transparent="1" valign="top" zPosition="10" />
@@ -1958,7 +1957,7 @@ MultiContentEntryText(pos = (300, 47), size = (400, 35), font = 2, flags = RT_HA
   </screen>
   <screen name="View_Slideshow" position="fill" flags="wfNoBorder">
     <panel name="PigLessTemplate" />
-    <widget name="pic" position="center,center" size="1080, 1005" zPosition="2" alphatest="on" />
+    <widget name="pic" position="420,111" size="1080,900" zPosition="2" alphatest="on" />
     <widget name="file" position="1,1" size="1, 1" />
   </screen>
   <!-- ## FanControl 2 ##-->
