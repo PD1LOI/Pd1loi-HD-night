@@ -64,8 +64,11 @@
     <color name="#0018b9ce" value="#0018b9ce" />
     <color name="#1c2c5c" value="#001c2c5c" />
     <color name="#232323" value="#00232323" />
+    <color name="#302C2C39" value="#302c2c39" />
     <color name="#7f000000" value="#7f000000" />
     <color name="#eeeeee" value="#00eeeeee" />
+    <color name="#F0F0F0" value="#00f0f0f0" />
+    <color name="#FFFFFFFF" value="#ffffffff" />
     <color name="background" value="#00000000" />
     <color name="basictemplatecolor" value="#00000010" />
     <color name="black" value="#00000000" />
@@ -121,7 +124,7 @@
     <parameter name="FallbackReceiverListName" value="8,2,225,38" />
     <parameter name="FallbackReceiverListIP" value="300,2,225,38" />
     <parameter name="ConfigListSlider" value="22,2" />
-	  <parameter name="ConfigListSeperator" value="500"/>
+    <parameter name="ConfigListSeperator" value="500" />
     <parameter name="ChoicelistName" value="68,3,1000,31" />
     <parameter name="VirtualKeyBoard" value="69,68" />
     <parameter name="VirtualKeyBoardShiftColors" value="0x00ffffff,0x00ffffff,0x0000ffff,0x00ff00ff" />
@@ -1666,7 +1669,7 @@ MultiContentEntryText(pos = (120,9), size = (990,81), font=0, flags = RT_HALIGN_
     <widget name="QuestionPixmap" pixmap="icons/input_question.png" position="780,105" size="80,80" alphatest="blend" />
     <widget name="InfoPixmap" pixmap="icons/input_info.png" position="780,105" size="80,80" alphatest="blend" />
     <widget name="WarningPixmap" pixmap="icons/input_warning.png" position="780,105" size="80,80" alphatest="blend" />
-    <widget name="list" selectionPixmap="Pd1loi-HD-night/buttons/sel5.png" position="30,560" size="720,380" itemHeight="38" font="Regular;28" />
+    <widget name="list" selectionPixmap="Pd1loi-HD-night/buttons/sel44.png" position="30,560" size="720,380" itemHeight="38" font="Regular;28" />
   </screen>
   <!-- MessageBoxSimple -->
   <screen name="MessageBoxSimple" position="center,center" size="960,15" title="Message" zPosition="10" flags="wfNoBorder">

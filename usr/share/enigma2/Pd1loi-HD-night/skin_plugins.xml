@@ -23,8 +23,8 @@
 <widget name="mess1" position="30,547" size="720,35" foregroundColor="green" font="Console; 28" />\n
 </screen>
   <screen name="localcityscreen" position="fill" title="Favoriete Locatie" flags="wfNoBorder">
-    <panel name="PigTemplate"/>
-<panel name="WeerTemplate"/>
+    <panel name="PigTemplate" />
+    <panel name="WeerTemplate" />
     <panel name="KeyInfoTemplate" />
     <panel name="KeyMenuTemplate" />
     <widget name="list" position="800,170" size="1000,600" scrollbarMode="showOnDemand" font="Regular;38" itemHeight="45" selectionPixmap="Pd1loi-HD-night/buttons/sel6.png" />
@@ -490,7 +490,7 @@ MultiContentEntryText(pos = (300, 47), size = (400, 35), font = 2, flags = RT_HA
   <screen name="RemoteTimerBouquetList" position="fill" flags="wfNoBorder">
     <panel name="PigTemplate" />
     <widget name="text" position="780,100" size="1110,912" zPosition="1" halign="center" valign="center" />
-    <widget name="bouquetlist" position="780,100" size="1110,912" zPosition="2" scrollbarMode="showOnDemand" />
+    <widget name="bouquetlist" selectionPixmap="Pd1loi-HD-night/buttons/sel4.png" position="780,100" size="1110,912" zPosition="2" scrollbarMode="showOnDemand" />
   </screen>
   <screen name="RemoteTimer" position="fill" flags="wfNoBorder">
     <panel name="PigTemplate" />
@@ -1092,8 +1092,8 @@ MultiContentEntryText(pos = (300, 47), size = (400, 35), font = 2, flags = RT_HA
     <panel name="PigTemplate" />
     <widget alphatest="on" name="thumbnail" position="0,0" size="195,147" />
     <widget font="Regular;30" foregroundColor="foreground" halign="left" name="title" position="780,150" size="1005,75" transparent="1" valign="center" zPosition="5" />
-    <widget position="907,750" render="Listbox" scrollbarMode="showNever" selectionDisabled="1" size="780,159" source="infolist" transparent="1" zPosition="6">
-      <convert type="TemplatedMultiContent">
+    <widget position="907,750" render="Listbox" selectionPixmap="Pd1loi-HD-night/buttons/sel104.png" scrollbarMode="showNever" selectionDisabled="1" size="780,159" source="infolist" transparent="1" zPosition="6">
+  <convert type="TemplatedMultiContent">
 				{"templates":
 					{"default": (159,[
 							MultiContentEntryPixmapAlphaTest(pos = (0,6),size = (195,147),png = 0),
@@ -1109,7 +1109,7 @@ MultiContentEntryText(pos = (300, 47), size = (400, 35), font = 2, flags = RT_HA
 					"itemHeight": 159
 				}
 				</convert>
-    </widget>
+</widget>
     <widget font="Regular;30" halign="left" name="author" position="127,570" size="450,36" transparent="1" valign="top" zPosition="10" />
     <widget font="Regular;30" halign="right" name="duration" position="577,570" size="180,36" transparent="1" valign="top" zPosition="10" />
     <widget font="Regular;30" halign="left" name="published" position="127,615" size="300,36" transparent="1" valign="top" zPosition="10" />
